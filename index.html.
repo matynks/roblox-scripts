@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matyáš | Professional Script Hub</title>
+    <style>
+        :root { --main-color: #00ff41; --bg-color: #050505; --card-bg: rgba(20, 20, 20, 0.9); }
+        body { margin: 0; padding: 0; background-color: var(--bg-color); color: white; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; }
+        #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        header { text-align: center; padding: 60px 20px; background: rgba(0, 0, 0, 0.7); border-bottom: 2px solid var(--main-color); box-shadow: 0 0 20px rgba(0, 255, 65, 0.3); }
+        h1 { color: var(--main-color); text-transform: uppercase; letter-spacing: 5px; margin: 0; font-size: 2.5em; text-shadow: 0 0 10px var(--main-color); }
+        .search-bar { width: 90%; max-width: 500px; padding: 15px; margin-top: 30px; background: rgba(34, 34, 34, 0.8); border: 1px solid var(--main-color); color: white; border-radius: 30px; outline: none; text-align: center; }
+        .script-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .card { background: var(--card-bg); border: 1px solid #333; border-radius: 15px; backdrop-filter: blur(5px); transition: 0.4s; overflow: hidden; }
+        .card:hover { border-color: var(--main-color); transform: scale(1.03); box-shadow: 0 0 25px rgba(0, 255, 65, 0.4); }
+        .card-header { background: rgba(0, 255, 65, 0.1); padding: 15px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+        .status-tag { background: var(--main-color); color: black; font-size: 0.7em; padding: 3px 8px; border-radius: 5px; font-weight: 900; }
+        .card-body { padding: 20px; }
+        button { background: transparent; color: var(--main-color); border: 2px solid var(--main-color); width: 100%; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 8px; transition: 0.3s; }
+        button:hover { background: var(--main-color); color: black; }
+    </style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<header>
+    <h1>MATYÁŠ HUB V2</h1>
+    <input type="text" class="search-bar" placeholder="SEARCH SCRIPTS...">
+</header>
+<div class="script-grid">
+    <div class="card">
+        <div class="card-header">Rivals <span class="status-tag">OP / WORKING</span></div>
+        <div class="card-body">
+            <h3>Aimbot + Silent Aim</h3>
+            <p>Advanced combat system with FOV, smooth aim and silent shots.</p>
+            <button onclick="copy('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/matynks/roblox-scripts/main/rivals.lua\'))()')">COPY LOADSTRING</button>
+        </div>
+    </div>
+</div>
+<script>
+    function copy(text) {
+        navigator.clipboard.writeText(text);
+        alert("Script copied! Paste it into Delta.");
+    }
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    let particles = [];
+    class Particle {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2 + 1;
+            this.speedX = Math.random() * 1 - 0.5;
+            this.speedY = Math.random() * 1 - 0.5;
+        }
+        update() {
+            this.x += this.speedX; this.y += this.speedY;
+            if (this.x > canvas.width) this.x = 0; if (this.x < 0) this.x = canvas.width;
+            if (this.y > canvas.height) this.y = 0; if (this.y < 0) this.y = canvas.height;
+        }
+        draw() { ctx.fillStyle = '#00ff41'; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); }
+    }
+    function init() { for (let i = 0; i < 80; i++) { particles.push(new Particle()); } }
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => { p.update(); p.draw(); });
+        requestAnimationFrame(animate);
+    }
+    init(); animate();
+    window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+</script>
+</body>
+</html>
