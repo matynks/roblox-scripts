@@ -14,7 +14,7 @@ import { PartyHat } from "../../props/Accessories";
 import { NavySpace } from "../../graphics/VisionField";
 import { Glow, IconDefs, SparkIcon } from "../../graphics/Icons";
 import { Vignette } from "../../env/Atmosphere";
-import { Label, Ping, bump, step } from "../../lib/acting";
+import { Label, Ping, Stamp, bump, step } from "../../lib/acting";
 import { clamp, ease, lerp, rand } from "../../lib/anim";
 import { P } from "../../lib/timing";
 import { C } from "../../style/palette";
@@ -30,6 +30,7 @@ const tPredict = P(123).start; // 199.37
 const tSpark = P(125).start; // 202.61
 const tLate = P(126).start; // 204.37
 const tNot = P(127).start; // 206.13
+const tRuined = 186.06; // word "ruined"
 
 const Gift: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) => (
   <g transform={`translate(${x},${y}) scale(${s})`}>
@@ -87,6 +88,23 @@ const Triptych: React.FC<{ T: number }> = ({ T }) => {
           <Ping T={T} at={tScare + 0.4} x={-80} y={-60} r={70} hold={1.6} />
         </Panel>
       </svg>
+      {/* opening beat: one big surprise, already spotted, stamped RUINED; clears for the panels */}
+      {T < tGift + 0.1 && (
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity: bump(T, t0 - 0.2, t0 + 0.3, tGift - 0.45, tGift - 0.05) }}>
+          <g transform={`translate(0 ${Math.sin(T * 3) * 6})`}>
+            <Gift x={960} y={560} s={3.4 * ease.outBack(clamp((T - t0 + 0.1) / 0.5))} />
+            <text x={960} y={400} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={90} fill={C.label} opacity={step(T, t0 + 0.3, t0 + 0.6) * (1 - step(T, tRuined - 0.3, tRuined - 0.05))}>
+              ?
+            </text>
+          </g>
+          <Ping T={T} at={185.3} x={960} y={540} r={150} hold={2} />
+        </svg>
+      )}
+      {T < tGift + 0.1 && (
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity: 1 - step(T, tGift - 0.45, tGift - 0.05) }}>
+          <Stamp x={985} y={640} text="RUINED" k={(T - tRuined) / 0.25} size={64} bg="rgba(18,12,20,0.88)" />
+        </svg>
+      )}
       <Label x={960} y={110} text="sneaky surprises · ruined" size={24} color={C.coral} o={step(T, t0, t0 + 0.4)} />
       <Vignette strength={0.5} />
     </AbsoluteFill>
@@ -149,7 +167,11 @@ const Science: React.FC<{ T: number }> = ({ T }) => {
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
         <IconDefs />
         <g opacity={1 - step(T, tDopa - 0.4, tDopa)}>
-          <SparkIcon x={960} y={500} s={1.6} k={0.9 + 0.1 * Math.sin(T * 6)} />
+          {[0, 1, 2].map((i) => {
+            const q = ((T - tWhy) / 1.2 + i / 3) % 1;
+            return T > tWhy ? <circle key={i} cx={960} cy={500} r={60 + q * 260} fill="none" stroke={C.gold} strokeWidth={2} opacity={(1 - q) * 0.35} /> : null;
+          })}
+          <SparkIcon x={960} y={500} s={2.2} k={0.9 + 0.1 * Math.sin(T * 6)} />
         </g>
         {T > tDopa - 0.2 && (
           <g opacity={step(T, tDopa - 0.2, tDopa + 0.2)}>

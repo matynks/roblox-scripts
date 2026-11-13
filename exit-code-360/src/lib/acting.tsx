@@ -92,7 +92,7 @@ export const Ping: React.FC<{ T: number; at: number; x: number; y: number; r?: n
 };
 
 /** Rotated rubber-stamp label (reference: "IMPOSSIBLE"). */
-export const Stamp: React.FC<{ x: number; y: number; text: string; k: number; color?: string; size?: number; rot?: number }> = ({
+export const Stamp: React.FC<{ x: number; y: number; text: string; k: number; color?: string; size?: number; rot?: number; bg?: string }> = ({
   x,
   y,
   text,
@@ -100,13 +100,14 @@ export const Stamp: React.FC<{ x: number; y: number; text: string; k: number; co
   color = C.coral,
   size = 44,
   rot = -7,
+  bg,
 }) => {
   if (k <= 0) return null;
   const s = lerp(1.6, 1, ease.outBack(clamp(k)));
   const w = text.length * size * 0.72 + size;
   return (
     <g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`} opacity={clamp(k * 2)}>
-      <rect x={-w / 2} y={-size * 0.85} width={w} height={size * 1.7} rx={10} fill="none" stroke={color} strokeWidth={4} />
+      <rect x={-w / 2} y={-size * 0.85} width={w} height={size * 1.7} rx={10} fill={bg ?? "none"} stroke={color} strokeWidth={4} />
       <text x={0} y={size * 0.34} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={size} letterSpacing="3" fill={color}>
         {text}
       </text>

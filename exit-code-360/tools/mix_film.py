@@ -474,6 +474,10 @@ def build_sfx():
         hit(A.lowpass(A.crowd(1.2, 1.0), 1200) * np.hanning(N(1.2)), T + 0.1, -33)
 
     # ---------------- S12 nature (125.62–136.3)
+    nsw = N(1.3)  # intro: the 360° ring draws itself, three icons pop on
+    hit(A.reverb(np.sin(2 * np.pi * np.cumsum(np.linspace(330, 660, nsw)) / SR) * np.hanning(nsw), 1.0, 0.4), P(82), -32)
+    for k in range(3):
+        hit(A.pop(), P(82) + 0.38 + k * 0.3, -32, (-0.5, 0.5, 0.0)[k])
     hit(A.ping(880), P(83) + 0.1, -30, -0.3)
     hit(A.ping(1046.5), P(84) + 0.1, -30, 0.3)
     hit(A.reverb(A.chime([659.25, 987.77], 1.0, 0.4), 1.0, 0.4), P(85) + 0.1, -32)
@@ -524,7 +528,9 @@ def build_sfx():
     hit(A.reverb(A.chime([783.99, 1174.66], 1.2, 0.45, [1, 0.5]), 1.0, 0.4), P(116) + 0.1, -31)
 
     # ---------------- S17 dopamine (184.62–207.35)
-    for T in (P(117), P(118), P(119), P(120)):
+    hit(A.ping(1046.5), 185.3, -30)  # the surprise is already spotted
+    hit(A.stamp(), 186.06, -23)  # RUINED
+    for T in (P(118), P(119), P(120)):
         whoosh_at(T + 0.1, 0.45, -31, 500, 1500)
     hit(A.pop(), P(118) + 0.4, -31)
     hit(A.reverb(A.chime([392, 587.33], 1.0, 0.4), 1.0, 0.4), P(121) + 0.1, -33)
