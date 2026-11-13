@@ -63,7 +63,8 @@ const ballPos = (b: (typeof balls)[number], T: number) => {
 export const S09Dodgeball: React.FC<{ T: number }> = ({ T }) => {
   // ---- camera: wide → push on Leo → tilt to scoreboard → teammates → whip to the other team
   const cx = track(T, [[t0 - 0.2, 1120], [tTwelve, 1250], [99.0, 1560], [tOver, 1580], [tOver + 0.4, GYM.board.x], [tCheer - 0.3, GYM.board.x], [tCheer + 0.05, 1640], [tComplaint - 0.1, 1640], [tComplaint + 0.18, 640]]);
-  const cy = track(T, [[t0 - 0.2, 600], [99.0, 640], [tOver, 640], [tOver + 0.4, 330], [tCheer - 0.3, 330], [tCheer + 0.05, 640]]);
+  // keep the scoreboard (y 145–315) wholly inside the letterboxed frame during the push-in
+  const cy = track(T, [[t0 - 0.2, 600], [99.0, 545], [tOver, 545], [tOver + 0.4, 330], [tCheer - 0.3, 330], [tCheer + 0.05, 640]]);
   const zoom = track(T, [[t0 - 0.2, 0.9], [tTwelve, 0.95], [99.0, 1.14], [tOver, 1.16], [tOver + 0.4, 1.7], [tCheer - 0.3, 1.75], [tCheer + 0.05, 1.2], [tComplaint + 0.18, 1.3]]);
   const cam: Cam = { x: cx - 960, y: cy - 540, zoom };
   const whip = bump(T, tComplaint - 0.1, tComplaint, tComplaint + 0.1, tComplaint + 0.2);
@@ -108,7 +109,7 @@ export const S09Dodgeball: React.FC<{ T: number }> = ({ T }) => {
 
   return (
     <AbsoluteFill style={{ filter: whip > 0.05 ? `blur(${(whip * 10).toFixed(1)}px)` : undefined }}>
-      <GymSet cam={cam} t={T} clock={T < tOver ? "03:5" + Math.max(0, 9 - Math.floor((T - t0) * 2)) : "04:00"} gameOver={step(T, tOver + 0.3, tOver + 0.5)}>
+      <GymSet cam={cam} t={T} clock={T < tOver ? "03:5" + Math.min(9, Math.floor(((T - t0) / (tOver - t0)) * 10)) : "04:00"} gameOver={step(T, tOver + 0.3, tOver + 0.5)}>
         {mates.map((x, k) => {
           const c = bump(T, tCheer - 0.05 + k * 0.06, tCheer + 0.15, 106.6, 107.2);
           const pose = blendPose(breathe({ ...STAND, shN: 6, shF: -6 }, T + k), { ...POSES.cheer, bob: 0.08 * Math.abs(Math.sin((T - tCheer) * 8 + k)) }, c);

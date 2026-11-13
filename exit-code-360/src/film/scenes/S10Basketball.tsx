@@ -125,7 +125,7 @@ const Side: React.FC<{ T: number }> = ({ T }) => {
   const coachFace: Partial<Face> = T > tCoach ? { ...FACES.shocked, open: 0.9, lookX: 0.8 } : { ...FACES.neutral, eye: "dot", lookX: 0.8 };
   const zoom = track(T, [[X_SIDE, 1.08], [shotT, 1.1], [swishT, 1.04], [tCoach - 0.25, 1.06], [tCoach + 0.05, 1.35]]);
   const cx = track(T, [[X_SIDE, 1160], [shotT, 1200], [swishT, 1560], [tCoach - 0.25, 1560], [tCoach + 0.05, 640]]);
-  const cam: Cam = { x: cx - 960, y: track(T, [[X_SIDE, 70], [swishT, 10], [tCoach + 0.05, 80]]), zoom };
+  const cam: Cam = { x: cx - 960, y: track(T, [[X_SIDE, 70], [swishT, 10], [tCoach + 0.05, 140]]), zoom }; // coach shot: scoreboard (y ≤ 315) fully out of frame
   const whip = bump(T, tCoach - 0.25, tCoach - 0.12, tCoach - 0.04, tCoach + 0.05);
   const swish = clamp((T - swishT) / 0.4);
   return (
