@@ -13,7 +13,7 @@ import { Vignette } from "../../env/Atmosphere";
 import { NavySpace } from "../../graphics/VisionField";
 import { BrainIcon, EyeIcon, IconDefs } from "../../graphics/Icons";
 import { Layer, type Cam } from "../../lib/camera";
-import { Label, Ping, SenseRing, Shadow, bump, step } from "../../lib/acting";
+import { Label, Ping, SenseRing, Shadow, bump, step, Push } from "../../lib/acting";
 import { clamp, ease, lerp, track } from "../../lib/anim";
 import { P, talk } from "../../lib/timing";
 import { C } from "../../style/palette";
@@ -171,7 +171,9 @@ export const S21Concert: React.FC<{ T: number }> = ({ T }) => {
       )}
       {T >= X_NAVY && T < X_BACK + 0.4 && (
         <AbsoluteFill style={{ opacity: T >= X_BACK ? 1 - step(T, X_BACK, X_BACK + 0.4) : 1 }}>
-          <EyesVsBrain T={T} />
+          <Push T={T} t0={X_NAVY} t1={X_BACK} amt={0.05}>
+            <EyesVsBrain T={T} />
+          </Push>
         </AbsoluteFill>
       )}
       {showLeoCU && (

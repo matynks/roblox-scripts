@@ -11,7 +11,7 @@ import { Foreground, Hills, KEY_LIGHT, PROM, PromenadeSet, SkySea } from "../../
 import { Vignette } from "../../env/Atmosphere";
 import { SparkIcon, IconDefs } from "../../graphics/Icons";
 import { type Cam } from "../../lib/camera";
-import { Label, Shadow, bump, step } from "../../lib/acting";
+import { Label, Shadow, bump, step, Push } from "../../lib/acting";
 import { clamp, ease, lerp, rand, track, wobble } from "../../lib/anim";
 import { P } from "../../lib/timing";
 import { C } from "../../style/palette";
@@ -59,7 +59,12 @@ const Insert: React.FC<{ T: number }> = ({ T }) => {
 };
 
 export const S29Epilogue: React.FC<{ T: number }> = ({ T }) => {
-  if (T >= tBook - 0.15 && T < tOpen - 0.15) return <Insert T={T} />;
+  if (T >= tBook - 0.15 && T < tOpen - 0.15)
+    return (
+      <Push T={T} t0={tBook - 0.15} t1={tOpen - 0.15} amt={0.06}>
+        <Insert T={T} />
+      </Push>
+    );
   const ending = T >= tOpen - 0.15;
   // Mia tiptoes in, then scares
   const mx = ending ? LEO_X - 210 : track(T, [[tTiptoe - 0.2, -160], [tClose + 0.2, LEO_X - 250]], ease.out);

@@ -14,7 +14,7 @@ import { PartyHat } from "../../props/Accessories";
 import { NavySpace } from "../../graphics/VisionField";
 import { Glow, IconDefs, SparkIcon } from "../../graphics/Icons";
 import { Vignette } from "../../env/Atmosphere";
-import { Label, Ping, Stamp, bump, step } from "../../lib/acting";
+import { Label, Ping, Push, Stamp, bump, step } from "../../lib/acting";
 import { clamp, ease, lerp, rand } from "../../lib/anim";
 import { P } from "../../lib/timing";
 import { C } from "../../style/palette";
@@ -241,7 +241,9 @@ export const S17Dopamine: React.FC<{ T: number }> = ({ T }) => {
       {toSci < 1 && <Triptych T={T} />}
       {toSci > 0 && toLate < 1 && (
         <AbsoluteFill style={{ opacity: toSci }}>
-          <Science T={T} />
+          <Push T={T} t0={tWhy - 0.3} t1={tLate} amt={0.05}>
+            <Science T={T} />
+          </Push>
         </AbsoluteFill>
       )}
       {toLate > 0 && (

@@ -9,6 +9,16 @@ import type { Face, Pose } from "../characters/types";
 export const bump = (T: number, a: number, b: number, c: number, d: number) =>
   Math.min(ease.inOut(invLerp(a, b, T)), 1 - ease.inOut(invLerp(c, d, T)));
 
+/** Slow, deliberate camera push for graphic holds: eased scale 1 → 1+amt between t0 and t1. */
+export const pushK = (T: number, t0: number, t1: number, amt = 0.04) => 1 + amt * ease.inOut(clamp((T - t0) / (t1 - t0)));
+/** SVG transform for pushK about (ox, oy). */
+export const pushSvg = (T: number, t0: number, t1: number, amt = 0.04, ox = 960, oy = 540) =>
+  `translate(${ox} ${oy}) scale(${pushK(T, t0, t1, amt)}) translate(${-ox} ${-oy})`;
+/** HTML wrapper version (whole layer, including HTML labels). */
+export const Push: React.FC<{ T: number; t0: number; t1: number; amt?: number; children: React.ReactNode }> = ({ T, t0, t1, amt = 0.04, children }) => (
+  <div style={{ position: "absolute", inset: 0, transform: `scale(${pushK(T, t0, t1, amt)})`, transformOrigin: "960px 540px" }}>{children}</div>
+);
+
 /** 0→1 eased step over [a,b]. */
 export const step = (T: number, a: number, b: number) => ease.inOut(invLerp(a, b, T));
 

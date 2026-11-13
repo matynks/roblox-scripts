@@ -80,7 +80,7 @@ export const S33Phone: React.FC<{ T: number }> = ({ T }) => {
   // shot 2: phone screen
   if (T < tRoof) {
     return (
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #1A2240 0%, #05060C 75%)" }}>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #1A2240 0%, #05060C 75%)", transform: `scale(${1 + 0.06 * ease.inOut(clamp((T - tUnknown + 0.15) / (tRoof - tUnknown + 0.15)))})` }}>
         <div style={{ position: "absolute", left: 700, top: 120, width: 520, height: 900, borderRadius: 60, background: "#0B0D16", border: "6px solid #20263A", boxShadow: "0 0 120px rgba(120,160,255,0.25)" }} />
         <div style={{ position: "absolute", left: 730, top: 170, width: 460, textAlign: "center", fontFamily: FONT, fontWeight: 800, fontSize: 30, letterSpacing: "0.16em", color: C.coral }}>UNKNOWN NUMBER</div>
         <div style={{ position: "absolute", left: 930, top: 230, width: 60, height: 60, borderRadius: 30, background: "#2A3150", textAlign: "center", lineHeight: "60px", fontFamily: FONT, fontWeight: 800, fontSize: 30, color: C.label }}>?</div>

@@ -5,7 +5,7 @@ import { AbsoluteFill } from "remotion";
 import { NavySpace, VisionDiagram, type DiagramState } from "../../graphics/VisionField";
 import { BrainIcon, Glow, IconDefs, StickIcon } from "../../graphics/Icons";
 import { Vignette } from "../../env/Atmosphere";
-import { Label, bump, step } from "../../lib/acting";
+import { Label, bump, step, pushSvg } from "../../lib/acting";
 import { clamp, ease, lerp } from "../../lib/anim";
 import { P } from "../../lib/timing";
 import { C } from "../../style/palette";
@@ -85,7 +85,7 @@ export const S30Reality: React.FC<{ T: number }> = ({ T }) => {
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
         <IconDefs />
         {/* phase A */}
-        <g opacity={aOut}>
+        <g opacity={aOut} transform={pushSvg(T, tPower - 0.2, X_GOR, 0.045)}>
           <g transform={`translate(960,${lerp(520, 150, cardUp)}) scale(${lerp(1, 0.6, cardUp) * card})`}>
             <rect x={-380} y={-70} width={760} height={140} rx={16} fill="none" stroke={C.gold} strokeWidth={4} />
             <text x={0} y={22} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={64} fill={C.gold} letterSpacing="6">
@@ -129,7 +129,7 @@ export const S30Reality: React.FC<{ T: number }> = ({ T }) => {
         )}
         {/* phase C */}
         {cIn > 0 && (
-          <g opacity={cIn}>
+          <g opacity={cIn} transform={pushSvg(T, X_FACT, 414.4, 0.05)}>
             {rows.map((r, i) =>
               T > r.t - 0.3 ? (
                 <g key={i} opacity={step(T, r.t - 0.3, r.t)}>
