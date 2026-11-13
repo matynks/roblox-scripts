@@ -7,8 +7,12 @@ import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition } from "@remotion/renderer";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
-const [outDir, ...times] = process.argv.slice(2);
-const START = 13.7;
+// usage: node tools/qa_stills.mjs <outDir> [--comp Film] <t1> <t2> ...
+const argv = process.argv.slice(2);
+const ci = argv.indexOf("--comp");
+const compId = ci >= 0 ? argv.splice(ci, 2)[1] : "POC";
+const [outDir, ...times] = argv;
+const START = compId === "POC" ? 13.7 : 0;
 const FPS = 30;
 const browserExecutable =
   process.env.REMOTION_BROWSER ??
@@ -17,7 +21,7 @@ const browserExecutable =
 fs.mkdirSync(outDir, { recursive: true });
 const serveUrl = await bundle({ entryPoint: path.join(root, "src/index.ts"), publicDir: path.join(root, "public") });
 const inputProps = { withAudio: false };
-const composition = await selectComposition({ serveUrl, id: "POC", inputProps, browserExecutable });
+const composition = await selectComposition({ serveUrl, id: compId, inputProps, browserExecutable });
 for (const ts of times) {
   const frame = Math.round((Number(ts) - START) * FPS);
   const output = path.join(outDir, `T${Number(ts).toFixed(2)}_f${frame}.png`);

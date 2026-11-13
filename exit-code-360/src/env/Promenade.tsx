@@ -264,7 +264,7 @@ export const PromenadeSet: React.FC<{ cam: Cam; t: number; blur?: number; childr
  * blurred dock posts in the reference's tracking shots. */
 export const Foreground: React.FC<{ cam: Cam; blur?: number; opacity?: number }> = ({ cam, blur = 12, opacity = 1 }) => {
   const p = 1.55;
-  const items = repeatX(cam, p, 1250, 520, 400);
+  const items = repeatX(cam, p, 1250, 1150, 400);
   return (
     <Layer cam={cam} p={p} blur={blur} opacity={opacity}>
       {items.map(({ x, i }) => (

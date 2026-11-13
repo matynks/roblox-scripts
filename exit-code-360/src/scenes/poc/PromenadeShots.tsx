@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Figure } from "../../characters/Figure";
-import { EXTRA, LEO, MIA } from "../../characters/cast";
+import { LEO, MIA } from "../../characters/cast";
 import { FACES, POSES, blendPose, blinkAt, breathe, walk } from "../../characters/poses";
 import { STAND, type Face, type Pose } from "../../characters/types";
 import { CardboardMask, Sandwich } from "../../props/Props";
@@ -12,6 +12,8 @@ import { Vignette } from "../../env/Atmosphere";
 import { Layer, type Cam } from "../../lib/camera";
 import { C } from "../../style/palette";
 import { clamp, ease, invLerp, lerp, track, wobble } from "../../lib/anim";
+import { Shadow, SenseRing, bump, mirrorPose } from "../../lib/acting";
+import { talk } from "../../lib/timing";
 import { CUE, START, integrate, lipSync } from "./timeline";
 
 const TAU = Math.PI * 2;
@@ -21,62 +23,18 @@ const LEO_STRIDE = 262 * LEO_S; // world px per walk cycle (feet stay planted)
 const MIA_STRIDE = 180 * MIA_S;
 const HEAD_H = 326; // ground → head centre for Leo (unscaled)
 
-/** 0→1→0 envelope: rise over [a,b], hold, fall over [c,d]. */
-const bump = (T: number, a: number, b: number, c: number, d: number) =>
-  Math.min(ease.inOut(invLerp(a, b, T)), 1 - ease.inOut(invLerp(c, d, T)));
-
-/** The same pose seen from the other facing, so a facing flip is invisible. */
-const mirrorPose = (p: Pose): Pose => ({
-  ...p,
-  lean: -p.lean,
-  headTilt: -p.headTilt,
-  headX: -p.headX,
-  shN: -p.shF,
-  elN: -p.elF,
-  shF: -p.shN,
-  elF: -p.elN,
-  hipN: -p.hipF,
-  knN: -p.knF,
-  hipF: -p.hipN,
-  knF: -p.knN,
-  footN: 180 - p.footF,
-  footF: 180 - p.footN,
-});
-
-const blendFace = (a: Face, b: Partial<Face>, t: number): Face => {
-  const k = clamp(t);
-  const out: Face = { ...a };
-  (Object.keys(b) as (keyof Face)[]).forEach((key) => {
-    const v = b[key];
-    if (typeof v === "number") (out as Record<string, unknown>)[key] = lerp(a[key] as number, v, k);
-    else if (k >= 0.5) (out as Record<string, unknown>)[key] = v;
-  });
-  return out;
-};
-
-const Shadow: React.FC<{ x: number; y: number; w: number; o?: number }> = ({ x, y, w, o = 0.4 }) => (
-  <ellipse cx={x} cy={y + 3} rx={w} ry={w * 0.16} fill="#07040A" opacity={o} />
-);
-
-/** Thin rings expanding from Leo's head: the visual motif for "seeing behind". */
-const SenseRing: React.FC<{ T: number; at: number; x: number; y: number; r: number; color?: string }> = ({ T, at, x, y, r, color = C.rimWarm }) => (
-  <g>
-    {[0, 0.16].map((d) => {
-      const k = (T - at - d) / 0.75;
-      if (k < 0 || k > 1) return null;
-      return <circle key={d} cx={x} cy={y} r={r * (0.75 + k * 1.1)} fill="none" stroke={color} strokeWidth={3 * (1 - k) + 0.6} opacity={(1 - k) * 0.85} />;
-    })}
-  </g>
-);
-
 // =============================================================== SHOT A ==
-// Wide tracking shot: Leo strolls, sandwich in hand; Mia sulks behind; a
-// cyclist rings from behind; Leo side-steps into a front-facing dancer pose
-// without looking (eyes closed); the bike passes behind him.
+// One continuous take from the first word (T = 0):
+//  0.0– 5.5  Mia tiptoes up behind Leo, cardboard mask on, arms raised, ready
+//  5.8– 9.3  Leo doesn't turn; waves "Hi, Mia" over his shoulder; she groans
+//  9.8–13.4  a pigeon dives at his head; he ducks without looking
+// 13.2–18.9  (approved POC) walk; cyclist rings; dancer side-step; Mia stares
 
+const LEO_X0 = 708;
 const vLeoA = (T: number) =>
   track(T, [
-    [START, 190],
+    [13.15, 0],
+    [13.7, 190],
     [16.2, 190],
     [16.5, 95],
     [17.1, 26],
@@ -84,9 +42,11 @@ const vLeoA = (T: number) =>
     [18.3, 14],
     [18.8, 190],
   ]);
-const leoXA = (T: number) => 760 + integrate(vLeoA, START, T);
-const vMiaA = (T: number) => track(T, [[START, 190], [16.4, 190], [16.95, 0]]);
-const miaXA = (T: number) => 430 + integrate(vMiaA, START, T);
+const leoXA = (T: number) => LEO_X0 + integrate(vLeoA, 13.0, Math.max(13.0, T));
+const MIA_X_READY = 560;
+const vMiaA = (T: number) => track(T, [[13.4, 0], [13.9, 170], [16.4, 170], [16.95, 0]]);
+const miaXA = (T: number) =>
+  T < 5.15 ? track(T, [[0, -150], [5.15, MIA_X_READY]], ease.out) : MIA_X_READY + integrate(vMiaA, 13.3, Math.max(13.3, T));
 
 const FRONT_DANCER: Pose = {
   ...STAND,
@@ -103,23 +63,42 @@ const FRONT_DANCER: Pose = {
   footF: 180,
 };
 
+const PIGEON_T0 = 9.8;
+const PIGEON_PASS = 12.02;
+const pigeonAt = (T: number): GullState | null => {
+  if (T < PIGEON_T0 || T > 13.2) return null;
+  const flap = 30 * Math.sin(TAU * 6.5 * T);
+  if (T < PIGEON_PASS) {
+    const u = ease.in(invLerp(PIGEON_T0, PIGEON_PASS, T));
+    const x = lerp(1560, LEO_X0 + 6, u) + Math.sin(u * Math.PI) * 60;
+    const y = lerp(250, 606, u) - Math.sin(u * Math.PI) * 30;
+    return { x, y, scale: lerp(0.36, 0.46, u), facing: -1, flap: T > 11.2 ? flap + 10 : 8 + 6 * Math.sin(T * 4), bodyTilt: lerp(-6, -26, u) };
+  }
+  const u = invLerp(PIGEON_PASS, 13.2, T);
+  return { x: lerp(LEO_X0 + 6, -260, u), y: 606 - Math.sin(u * Math.PI * 0.8) * 120 - u * 120, scale: 0.46, facing: -1, flap, bodyTilt: lerp(-10, 14, u) };
+};
+
 const ShotA: React.FC<{ T: number }> = ({ T }) => {
-  const t = T - START;
-  const leoDist = integrate(vLeoA, START, T);
-  const leoX = 760 + leoDist;
+  const t = T;
+  const leoDist = integrate(vLeoA, 13.0, Math.max(13.0, T));
+  const leoX = LEO_X0 + leoDist;
   const passX = leoXA(CUE.cyclistPass);
   const cycX = passX + 640 * (T - CUE.cyclistPass);
   const miaX = miaXA(T);
 
-  // camera tracks Leo with leading room
+  // camera: still wide while Leo stands, then tracks him with leading room
   const zoom = track(T, [
-    [START, 1.0],
-    [16.2, 1.05],
+    [0, 1.0],
+    [5.2, 1.07],
+    [9.4, 1.05],
+    [12.3, 1.08],
+    [13.7, 1.06],
+    [16.2, 1.06],
     [16.9, 1.1],
     [18.3, 1.11],
     [18.95, 1.09],
   ]);
-  const cam: Cam = { x: leoX - 960 + 150 / zoom, y: track(T, [[START, 0], [18.95, 16]]), zoom };
+  const cam: Cam = { x: leoX - 960 + 150 / zoom, y: track(T, [[0, 0], [18.95, 16]]), zoom };
 
   // ---- Leo
   const dw = track(T, [[16.22, 0], [16.72, 1], [18.22, 1], [18.62, 0]]);
@@ -127,8 +106,16 @@ const ShotA: React.FC<{ T: number }> = ({ T }) => {
   const lane = track(T, [[16.35, PROM.laneMid], [16.95, PROM.laneNear]]);
   const sc = track(T, [[16.35, LEO_S], [16.95, LEO_S * 1.05]]);
   const phase = leoDist / LEO_STRIDE;
-  const wp = walk(phase, 1);
-  const walkPose: Pose = { ...wp, shN: 30 + 3 * Math.sin(phase * TAU * 2), elN: 80 };
+  const walkAmt = clamp(invLerp(13.12, 13.5, T));
+  const wp = walk(phase, walkAmt);
+  const eatW = Math.max(bump(T, 1.35, 1.6, 2.0, 2.3), bump(T, 4.2, 4.45, 4.85, 5.1), bump(T, 12.55, 12.8, 13.0, 13.25));
+  const walkPose: Pose = { ...wp, shN: lerp(30, 42, eatW) + 3 * Math.sin(phase * TAU * 2) * walkAmt, elN: lerp(80, 106, eatW), headTilt: wp.headTilt - eatW * 4 };
+  // "Hi, Mia": backwards wave over the shoulder, without turning
+  const wave = bump(T, 7.15, 7.42, 8.25, 8.6);
+  let leoPose = blendPose(breathe(walkPose, T, 1 - walkAmt), { shF: -150, elF: -24 + 18 * Math.sin((T - 7.3) * 15) }, wave);
+  // duck under the pigeon
+  const duck = bump(T, 11.6, 11.84, 12.18, 12.5);
+  leoPose = blendPose(leoPose, { ...POSES.crouch, shN: 34, elN: 84, shF: -10, elF: 14, headTilt: 12, lean: 18 }, duck);
   const dancer: Pose = {
     ...FRONT_DANCER,
     elF: FRONT_DANCER.elF + wobble(T, CUE.flourish, 16, 2.2, 2.6),
@@ -136,32 +123,52 @@ const ShotA: React.FC<{ T: number }> = ({ T }) => {
     shN: FRONT_DANCER.shN + 5 * Math.sin((T - 16.8) * 2.4),
   };
   const hop = 0.07 * Math.sin(Math.PI * clamp(invLerp(16.42, 16.8, T))) - 0.04 * Math.sin(Math.PI * clamp(invLerp(16.2, 16.42, T)));
-  const leoPose = { ...blendPose(walkPose, dancer, dw), bob: (1 - dw) * wp.bob + hop };
-  const leoFace: Partial<Face> =
-    T > 16.18 && T < 18.3
-      ? { ...FACES.calm, curve: 0.5 }
-      : { ...FACES.content, blink: blinkAt(T, [14.55, 15.75, 18.7]) };
+  leoPose = { ...blendPose(leoPose, dancer, dw), bob: (1 - dw) * leoPose.bob + hop };
+  const chew = (t0: number) => (T > t0 && T < t0 + 0.9 ? 0.1 + 0.25 * Math.abs(Math.sin((T - t0) * 13)) : 0);
+  let leoFace: Partial<Face> = { ...FACES.content, lookX: 0.4, blink: blinkAt(T, [3.1, 9.2, 14.55, 15.75, 18.7]) };
+  const chewing = chew(2.0) + chew(4.85) + chew(13.0);
+  if (chewing > 0) leoFace = { ...leoFace, mouth: "talk", open: chewing };
+  if (T > 5.7 && T < 6.9) leoFace = { ...FACES.calm, curve: 0.45 };
+  if (T > 7.2 && T < 8.0) leoFace = { ...FACES.calm, mouth: "talk", open: talk(T, 7.3, 7.95) || 0.12 };
+  if (T > 8.0 && T < 9.0) leoFace = { ...FACES.calm, curve: 0.5 };
+  if (T > 11.5 && T < 12.55) leoFace = { ...FACES.calm, curve: 0.45 };
+  if (T >= 12.55 && T < 13.0) leoFace = FACES.smug;
+  if (T > 16.18 && T < 18.3) leoFace = { ...FACES.calm, curve: 0.5 };
 
-  // ---- Mia (far lane, sulking, mask pushed up)
-  const miaDist = integrate(vMiaA, START, T);
-  const mPhase = miaDist / MIA_STRIDE;
-  const mWalkW = 1 - clamp(invLerp(16.5, 16.95, T));
-  const flinch = bump(T, 16.48, 16.62, 16.8, 17.15);
-  const miaWalk = walk(mPhase, 1.2, "sulk");
-  const miaStand: Pose = breathe({ ...STAND, lean: -3, headTilt: 4, shN: 4, shF: -4 }, T);
-  let miaPose = blendPose(miaWalk, miaStand, 1 - mWalkW);
-  miaPose = blendPose(miaPose, { lean: -10, shN: 58, elN: 50, shF: 48, elF: 54, headTilt: -8 }, flinch);
-  const miaFace: Partial<Face> =
-    T < 16.45
-      ? { ...FACES.grumpy, browY: -0.1, blink: blinkAt(T, [15.2]) }
-      : T < 16.9
-        ? FACES.shocked
-        : { ...FACES.stare, blink: blinkAt(T, [17.6]) };
+  // ---- Mia: tiptoe → ready → groan → sulk → follows (far lane)
+  const tiptoe = T < 5.15;
+  const mPhase = tiptoe ? (miaX + 150) / (MIA_STRIDE * 0.62) : (miaX - MIA_X_READY) / MIA_STRIDE;
+  const scareArms = { shN: 158, elN: 34, shF: 148, elF: 38 };
+  let miaPose: Pose;
+  if (tiptoe) {
+    const w = walk(mPhase, 0.65);
+    miaPose = { ...w, ...scareArms, lean: 9, footN: w.footN - 18, footF: w.footF - 18, bob: w.bob + 0.03 };
+  } else {
+    const ready: Pose = { ...STAND, ...scareArms, lean: 10 + 2 * Math.sin(T * 3), hipN: 14, knN: 26, hipF: -8, knF: 18, shN: 150 + 4 * Math.sin(T * 6), shF: 140 + 4 * Math.sin(T * 6 + 1) };
+    const slump: Pose = breathe({ ...STAND, lean: 6, headTilt: 10, shN: 2, elN: 6, shF: -2, elF: 6 }, T);
+    miaPose = blendPose(ready, slump, clamp(invLerp(8.25, 8.75, T)));
+    const mWalk = clamp(invLerp(13.35, 13.8, T)) * (1 - clamp(invLerp(16.5, 16.95, T)));
+    const sulkWalk = walk(mPhase, 1.2, "sulk");
+    const stare: Pose = breathe({ ...STAND, lean: -3, headTilt: 4, shN: 4, shF: -4 }, T);
+    if (T > 13.3) miaPose = blendPose(T < 16.5 ? miaPose : stare, sulkWalk, mWalk);
+    miaPose = blendPose(miaPose, { lean: -8, shN: 50, elN: 50, shF: 44, elF: 54, headTilt: -10 }, bump(T, 12.05, 12.18, 12.35, 12.7));
+    miaPose = blendPose(miaPose, { lean: -10, shN: 58, elN: 50, shF: 48, elF: 54, headTilt: -8 }, bump(T, 16.48, 16.62, 16.8, 17.15));
+  }
+  const maskState = clamp(invLerp(8.3, 8.75, T));
+  let miaFace: Partial<Face> = { ...FACES.grumpy, browY: -0.1, blink: blinkAt(T, [10.4, 15.2]) };
+  if (T < 8.3) miaFace = { ...FACES.laugh, eye: "lid", open: 0.3 };
+  if (T >= 8.3 && T < 9.6) miaFace = { ...FACES.grumpy, mouth: "wobble", eye: "closed", brow: -0.4, browY: -0.2 };
+  if (T >= 12.05 && T < 12.6) miaFace = FACES.shocked;
+  if (T >= 16.45 && T < 16.9) miaFace = FACES.shocked;
+  if (T >= 16.9) miaFace = { ...FACES.stare, blink: blinkAt(T, [17.6]) };
+  const mWalkSwing = T > 13.3 && T < 16.95 ? 0.35 * Math.sin(mPhase * TAU * 2) : tiptoe ? 0.25 * Math.sin(mPhase * TAU * 2) : 0;
+  const miaHair = mWalkSwing + wobble(T, 8.3, 0.8, 2.4, 3) + wobble(T, 12.05, 0.7, 2.5, 3) + wobble(T, 16.5, 0.9, 2.5, 3);
 
   // ---- Cyclist
   const bellEnv = (x: number) => (x < 0 ? 0 : Math.exp(-x * 5));
   const ring = Math.max(bellEnv(T - CUE.bell1), bellEnv(T - CUE.bell2));
   const cycDist = 640 * (T - START);
+  const pigeon = pigeonAt(T);
 
   return (
     <AbsoluteFill>
@@ -180,17 +187,20 @@ const ShotA: React.FC<{ T: number }> = ({ T }) => {
           pose={miaPose}
           face={miaFace}
           light={KEY_LIGHT}
-          hairSwing={0.35 * Math.sin(mPhase * TAU * 2) * mWalkW + wobble(T, 16.5, 0.9, 2.5, 3)}
-          headExtra={<CardboardMask r={MIA.D / 2} state={1} turn={1} />}
+          hairSwing={miaHair}
+          headExtra={<CardboardMask r={MIA.D / 2} state={maskState} turn={1} />}
         />
         {/* cyclist + motion ghosts */}
-        {[2, 1, 0].map((g) => (
-          <g key={g} opacity={g === 0 ? 1 : g === 1 ? 0.2 : 0.09}>
-            <Cyclist id={`cyc${g}`} x={cycX - g * 34} y={PROM.laneMid} scale={0.84} dist={cycDist} ring={g === 0 ? ring : 0} light={KEY_LIGHT} />
-          </g>
-        ))}
+        {T > 14.2 &&
+          [2, 1, 0].map((g) => (
+            <g key={g} opacity={g === 0 ? 1 : g === 1 ? 0.2 : 0.09}>
+              <Cyclist id={`cyc${g}`} x={cycX - g * 34} y={PROM.laneMid} scale={0.84} dist={cycDist} ring={g === 0 ? ring : 0} light={KEY_LIGHT} />
+            </g>
+          ))}
         {/* Leo */}
         <Shadow x={leoX} y={lane} w={48 * sc} />
+        <SenseRing T={T} at={5.82} x={leoX} y={lane - HEAD_H * sc} r={LEO.D * sc * 0.62} />
+        <SenseRing T={T} at={11.35} x={leoX} y={lane - HEAD_H * sc} r={LEO.D * sc * 0.62} />
         <SenseRing T={T} at={CUE.leoSense} x={leoX} y={lane - HEAD_H * sc} r={LEO.D * sc * 0.62} />
         <Figure
           spec={LEO}
@@ -205,6 +215,7 @@ const ShotA: React.FC<{ T: number }> = ({ T }) => {
           holdNear={<Sandwich s={0.85} />}
           holdUpright
         />
+        {pigeon && <Seagull {...pigeon} kind="pigeon" />}
       </PromenadeSet>
       <Foreground cam={cam} />
       <Vignette strength={0.5} />

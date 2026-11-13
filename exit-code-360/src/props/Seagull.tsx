@@ -15,20 +15,20 @@ export type GullState = {
   legs?: number; // 0..1 legs down
   bodyTilt?: number; // degrees
   rim?: string;
+  kind?: "gull" | "pigeon";
 };
 
-const WHITE = "#F3EEF2";
-const UNDER = "#CBC1D0";
-const WING = "#B7AFC2";
-const TIP = "#231A27";
-const BEAK = "#F2B84B";
-const LEG = "#E39A55";
+const PALETTES = {
+  gull: { white: "#F3EEF2", under: "#CBC1D0", wing: "#B7AFC2", wingFar: "#8F879C", tip: "#231A27", beak: "#F2B84B", leg: "#E39A55", head: "#F3EEF2", sheen: "none" },
+  pigeon: { white: "#9A97A8", under: "#7C788C", wing: "#B3AFC0", wingFar: "#7F7B90", tip: "#3A3646", beak: "#2B2630", leg: "#D9897A", head: "#7B7891", sheen: "#5E9C86" },
+};
 
-const Wing: React.FC<{ angle: number; fold: number; far?: boolean }> = ({ angle, fold, far }) => {
+
+const Wing: React.FC<{ angle: number; fold: number; far?: boolean; wing: string; wingFar: string; tip: string }> = ({ angle, fold, far, wing, wingFar, tip }) => {
   // open wing: long tapered shape; folded: lies along the back
   const span = lerp(92, 46, fold);
   const a = lerp(angle, -8, fold);
-  const col = far ? "#8F879C" : WING;
+  const col = far ? wingFar : wing;
   return (
     <g transform={`translate(${lerp(2, -4, fold)},-10) rotate(${-a}) scale(1,${lerp(1, 0.55, fold)})`}>
       <path
@@ -39,7 +39,7 @@ const Wing: React.FC<{ angle: number; fold: number; far?: boolean }> = ({ angle,
       <path
         d={`M${-span * 0.7},${-14} Q${-span * 0.85},${-12} ${-span},${-6} Q${-span * 0.82},${0} ${-span * 0.66},${0}Z`}
         transform={`scale(${lerp(-1, 1, fold)},1)`}
-        fill={TIP}
+        fill={tip}
       />
     </g>
   );
@@ -58,11 +58,21 @@ export const Seagull: React.FC<GullState> = ({
   legs = 0,
   bodyTilt = 0,
   rim = C.rimWarm,
-}) => (
+  kind = "gull",
+}) => {
+  const pal = PALETTES[kind];
+  const WHITE = pal.white;
+  const UNDER = pal.under;
+  const TIP = pal.tip;
+  const BEAK = pal.beak;
+  const LEG = pal.leg;
+  const HEAD = pal.head;
+  const SHEEN = pal.sheen;
+  return (
   <g transform={`translate(${x},${y}) scale(${scale * facing},${scale}) rotate(${bodyTilt})`}>
     {/* far wing */}
     <g opacity={1 - fold}>
-      <Wing angle={flap * 0.85 + 6} fold={fold} far />
+      <Wing angle={flap * 0.85 + 6} fold={fold} far wing={pal.wing} wingFar={pal.wingFar} tip={pal.tip} />
     </g>
     {/* legs */}
     {legs > 0.01 && (
@@ -81,7 +91,8 @@ export const Seagull: React.FC<GullState> = ({
     {/* head */}
     <g transform={`translate(28,-12) rotate(${-headUp * 26})`}>
       <circle cx={0.8} cy={-1} r={13.5} fill={rim} opacity={0.9} />
-      <circle r={13} fill={WHITE} />
+      <circle r={13} fill={HEAD} />
+      {SHEEN !== "none" && <path d="M-12,4 Q-4,12 8,10 L6,14 Q-6,16 -13,8Z" fill={SHEEN} opacity={0.85} />}
       {/* beak (upper + lower) */}
       <path d={`M10,-2 L28,0 L10,4Z`} fill={BEAK} />
       <path d={`M10,3 L24,${3 + beak * 9} L10,${6 + beak * 2}Z`} fill={BEAK} />
@@ -93,6 +104,7 @@ export const Seagull: React.FC<GullState> = ({
       )}
     </g>
     {/* near wing */}
-    <Wing angle={flap} fold={fold} />
+    <Wing angle={flap} fold={fold} wing={pal.wing} wingFar={pal.wingFar} tip={pal.tip} />
   </g>
-);
+  );
+};
