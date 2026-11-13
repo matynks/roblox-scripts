@@ -65,8 +65,8 @@ export type DiagramState = {
 const R = 330; // field radius (diagram units)
 const EYE_Y = -36;
 
-export const VisionDiagram: React.FC<{ s: DiagramState; id: string }> = ({ s, id }) => {
-  const col = s.who === "leo" ? C.gold : C.lineBlue;
+export const VisionDiagram: React.FC<{ s: DiagramState; id: string; center?: React.ReactNode; color?: string; blindLabel?: string; heading?: number }> = ({ s, id, center, color, blindLabel, heading = 0 }) => {
+  const col = color ?? (s.who === "leo" ? C.gold : C.lineBlue);
   const colDim = s.who === "leo" ? "#8C6F2E" : C.lineBlueDim;
   const cy = EYE_Y;
   const half = s.fov / 2;
@@ -86,6 +86,7 @@ export const VisionDiagram: React.FC<{ s: DiagramState; id: string }> = ({ s, id
           <feGaussianBlur stdDeviation="6" />
         </filter>
       </defs>
+      <g transform={`rotate(${heading} 0 ${EYE_Y})`}>
       {/* protractor ticks + guide rings */}
       <g opacity={0.55}>
         {[0.42, 0.72].map((k) => (
@@ -188,8 +189,9 @@ export const VisionDiagram: React.FC<{ s: DiagramState; id: string }> = ({ s, id
           const o = Math.max(0, 0.6 - tt * 0.45);
           return <circle key={k} cx={0} cy={cy} r={rr} fill="none" stroke={col} strokeWidth={2.5} opacity={o} />;
         })}
-      {/* top-down person */}
-      <TopDownPerson who={s.who} />
+      </g>
+      {/* top-down person (or a supplied centre icon) */}
+      {center ?? <TopDownPerson who={s.who} />}
       {/* section labels */}
       {s.ahead > 0.01 && (
         <text x={0} y={cy - R - 46} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={22} letterSpacing="4" fill={col} opacity={s.ahead}>
@@ -207,7 +209,7 @@ export const VisionDiagram: React.FC<{ s: DiagramState; id: string }> = ({ s, id
         })}
       {showBlind && s.blindFill > 0.01 && (
         <text x={0} y={cy + R + 64} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={22} letterSpacing="4" fill={C.coral} opacity={s.blindFill}>
-          BLIND ZONE ≈160°
+          {blindLabel ?? "BLIND ZONE ≈160°"}
         </text>
       )}
     </g>
