@@ -148,7 +148,13 @@ export const S25Climax: React.FC<{ T: number }> = ({ T }) => {
     const yank = ease.out(clamp((T - tYank - 0.2) / 0.5));
     const miaX = CONCERT.miaX - yank * 150;
     const shakeK = T > CRASH ? Math.exp(-(T - CRASH) * 5) : 0;
-    const cam: Cam = { x: 1150 - 960 + Math.sin(T * 60) * 12 * shakeK, y: 590 - 540 + Math.cos(T * 53) * 10 * shakeK, zoom: lerp(1.12, 1.2, clamp((T - CRASH) / 3)) };
+    // close two-shot on Mia + stranger (look up, freeze) → pull back as she is yanked so the
+    // falling light enters from the top → slow push after the crash. Feet (y 1050) stay above the letterbox.
+    const keys = { a: 314.0, b: tYank + 0.15, c: tCrash - 0.1, d: CRASH + 3 };
+    const zoom = track(T, [[keys.a, 1.9], [keys.b, 2.05], [keys.c, 1.1], [CRASH + 0.25, 1.1], [keys.d, 1.6]]);
+    const cyy = track(T, [[keys.a, 905], [keys.b, 905], [keys.c, 645], [CRASH + 0.25, 645], [keys.d, 772]]);
+    const cxx = track(T, [[keys.a, 1130], [keys.b, 1110], [keys.c, 1150], [CRASH + 0.25, 1150], [keys.d, 1140]]);
+    const cam: Cam = { x: cxx - 960 + Math.sin(T * 60) * 12 * shakeK, y: cyy - 540 + Math.cos(T * 53) * 10 * shakeK, zoom };
     const miaFace: Partial<Face> = T < tYank + 0.2 ? { ...FACES.shocked, eye: "wide", lookY: -1 } : { ...FACES.shocked, eye: "dot", lookX: 0.6 };
     const silence = step(T, tSilence - 0.1, tSilence + 0.3);
     const flash = T > CRASH ? Math.exp(-(T - CRASH) * 7) : 0;
