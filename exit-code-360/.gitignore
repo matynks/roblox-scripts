@@ -8,3 +8,8 @@ assets/reference_frames/
 # generated (deterministic; rebuild with tools/mix_audio.py and tools/make_grain.py)
 public/audio/poc_mix.wav
 public/textures/
+public/audio/film_mix.wav
+# render outputs (segments are a cache; final MP4s are delivered, not committed)
+renders/segments/
+renders/*.mp4
+__pycache__/

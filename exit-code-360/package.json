@@ -2,12 +2,14 @@
   "name": "exit-code-360",
   "version": "0.1.0",
   "private": true,
-  "description": "EXIT CODE — What If You Had 360-Degree Vision? Animated explainer (Remotion project)",
+  "description": "EXIT CODE \u2014 What If You Had 360-Degree Vision? Animated explainer (Remotion project)",
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render:poc": "python3 tools/mix_audio.py && node tools/render_parallel.mjs --comp POC --out renders/EXIT_CODE_360_POC_v2.mp4 --audio public/audio/poc_mix.wav --workers 4 --crf 16",
     "still": "remotion still src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "mix:film": "python3 tools/mix_film.py",
+    "render:film": "python3 tools/mix_film.py && node tools/render_film.mjs --comp Film --out renders/EXIT_CODE_360_FULL.mp4 --audio public/audio/film_mix.wav --workers 4 --seg 600 --crf 16"
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.2.8",
