@@ -47,10 +47,10 @@ const Insert: React.FC<{ T: number }> = ({ T }) => {
           <text x={-360} y={-150} fontFamily={FONT} fontWeight={800} fontSize={86} fill="#3A3550" letterSpacing="4">SCARES:</text>
           <text x={150} y={-150} fontFamily={FONT} fontWeight={800} fontSize={110} fill="#C23A48" opacity={1 - one * 0.5}>0</text>
           {one > 0 && <path d={`M140,-210 L${140 + one * 90},-170`} stroke="#3A3550" strokeWidth={10} strokeLinecap="round" />}
-          <text x={270} y={-140} fontFamily={FONT} fontWeight={800} fontSize={130} fill="#2E8A5A" opacity={one} transform={`rotate(-6,300,-180)`}>1</text>
+          <text x={335} y={-140} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={130} fill="#2E8A5A" opacity={one} transform={`rotate(-6,335,-186)`}>1</text>
           <text x={-360} y={90} fontFamily={FONT} fontWeight={800} fontSize={86} fill="#3A3550" letterSpacing="4" opacity={step(T, tTries - 0.1, tTries + 0.2)}>TRIES:</text>
           <text x={120} y={92} fontFamily={FONT} fontWeight={800} fontSize={110} fill="#3A3550" opacity={step(T, tTries - 0.1, tTries + 0.2)}>{n}</text>
-          <circle cx={370} cy={-180} r={80 * one} fill="none" stroke="#2E8A5A" strokeWidth={6} opacity={one} />
+          <circle cx={335} cy={-186} r={80 * one} fill="none" stroke="#2E8A5A" strokeWidth={6} opacity={one} />
         </g>
       </svg>
       <Vignette strength={0.55} />
