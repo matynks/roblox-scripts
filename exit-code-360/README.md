@@ -15,6 +15,7 @@ docs/
   05_POC_TECHNICAL_REPORT.md Stage D: what was built, QA, open issues
   06_FULL_PRODUCTION_PLAN.md per-sequence designs for all 34 sequences, build order
   07_FINAL_PRODUCTION_REPORT.md final specs, sound design, QC results, fixes made during QC
+  08_SHORTS_TEASER.md         30-s 9:16 YouTube Shorts teaser: edit, sound, safe area, QC
 src/
   characters/  rig (Figure.tsx), cast proportions, poses + walk/run cycles, expressions
   props/       cardboard mask, sandwich, seagull, cyclist (IK pedalling)
@@ -22,6 +23,7 @@ src/
   graphics/    field-of-view science diagram, glow icon set (navy infographic style)
   scenes/poc/  timeline (all cues), shots, POC composition (S01–S03 of the film)
   film/        Film.tsx master composition + scenes/ (S04–S34) and the scene table
+  teaser/      Shorts teaser (1080×1920): Teaser.tsx + shots.json (shot / narration list)
   sheets/      character design sheets (rendered from the rig)
   data/        narration_words.json / narration_phrases.json (ASR timing)
 tools/

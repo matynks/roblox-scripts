@@ -152,18 +152,29 @@ const buildChunks = (): Chunk[] => {
   for (const v of VOS) {
     if (v.captions === false) continue;
     const ws = all.filter((w) => w.start >= v.src0 - 0.01 && w.start < v.src1).map((w) => ({ text: w.word, t0: v.at + (w.start - v.src0), t1: v.at + (w.end - v.src0) }));
+    // phrases end at punctuation; a phrase stays whole if it fits (≤ 4 words, ≤ 22 chars),
+    // otherwise it is split into even parts ("A pigeon dives | at your head")
+    const phrases: Chunk["words"][] = [];
     let cur: Chunk["words"] = [];
-    const flush = () => {
-      if (cur.length) chunks.push({ words: cur, t0: cur[0].t0, t1: cur[cur.length - 1].t1, y: v.capY ?? 1330, cap: v.at + (v.src1 - v.src0) });
-      cur = [];
-    };
     for (const w of ws) {
-      const len = cur.map((c) => c.text).join(" ").length + w.text.length;
-      if (cur.length && (len > 17 || cur.length >= 3)) flush();
       cur.push(w);
-      if (/[,.?!]$/.test(w.text)) flush();
+      if (/[,.?!]$/.test(w.text)) {
+        phrases.push(cur);
+        cur = [];
+      }
     }
-    flush();
+    if (cur.length) phrases.push(cur);
+    for (const ph of phrases) {
+      const chars = ph.map((w) => w.text).join(" ").length;
+      const n = Math.max(Math.ceil(ph.length / 4), Math.ceil(chars / 22));
+      const per = Math.ceil(ph.length / n);
+      for (let i = 0; i < ph.length; i += per) {
+        const part = ph.slice(i, i + per);
+        // a caption never outlives the shot its first word is spoken in
+        const cap = shotAt(Math.floor(part[0].t0 * FPS + 1e-6)).f1 / FPS;
+        chunks.push({ words: part, t0: part[0].t0, t1: part[part.length - 1].t1, y: v.capY ?? 1330, cap });
+      }
+    }
   }
   // each chunk stays up until the next one starts (or 0.35 s after its last word)
   chunks.forEach((c, i) => {
@@ -191,6 +202,7 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
         fontSize: 62,
         lineHeight: 1.12,
         wordSpacing: "0.18em",
+        textWrap: "balance",
         textTransform: "uppercase",
         transform: `translateY(-50%) scale(${lerp(0.9, 1, pop)})`,
         opacity: clamp(pop * 1.5),
@@ -234,8 +246,8 @@ const Split: React.FC<{ s: Shot; f: number; T: number }> = ({ s, f, T }) => {
   const line = ease.inOut(clamp(u / 0.3));
   return (
     <AbsoluteFill style={{ background: "#07060C" }}>
-      <Window T={T} c={cropAt(s.top!, T)} h={SPLIT_Y} style={{ top: 0, left: 0, transform: `translateX(${(1 - inTop) * -W}px)` }} />
-      <Window T={T} c={cropAt(s.bottom!, T)} h={H - SPLIT_Y} style={{ top: SPLIT_Y, left: 0, transform: `translateX(${(1 - inBot) * W}px)` }} />
+      <Window T={T} c={cropAt(s.top!, T)} h={SPLIT_Y} style={{ top: 0, left: 0, transform: `translateY(${(1 - inTop) * -140}px)` }} />
+      <Window T={T} c={cropAt(s.bottom!, T)} h={H - SPLIT_Y} style={{ top: SPLIT_Y, left: 0, transform: `translateY(${(1 - inBot) * 140}px)` }} />
       <div style={{ position: "absolute", top: SPLIT_Y - 3, left: W / 2 - (W / 2) * line, width: W * line, height: 6, background: C.gold, boxShadow: "0 0 24px rgba(242,197,92,0.8)" }} />
       <div style={{ position: "absolute", right: 140, top: SPLIT_Y + 40, fontFamily: FONT, fontWeight: 800, fontSize: 44, letterSpacing: "0.14em", color: C.miaPinkLight, textShadow: OUTLINE, opacity: clamp(tag(tMia) * 2), transform: `scale(${lerp(1.3, 1, tag(tMia))})`, transformOrigin: "right center" }}>
         MIA?
