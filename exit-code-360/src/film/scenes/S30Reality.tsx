@@ -110,7 +110,7 @@ export const S30Reality: React.FC<{ T: number }> = ({ T }) => {
             <text x={960} y={300} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={120} fill={C.number} opacity={1 - step(T, tCount + 0.6, tCount + 1.0)}>
               1999
             </text>
-            <g opacity={step(T, tCount, tCount + 0.4) * (1 - stat * 0.6)}>
+            <g opacity={step(T, t1999 + 0.35, t1999 + 0.8) * (1 - stat * 0.6)}>
               <ellipse cx={960} cy={640} rx={380} ry={170} fill="none" stroke={C.grid} strokeWidth={3} strokeDasharray="8 10" />
               {players.map((p, i) => (
                 <StickIcon key={i} x={p.x} y={p.y} s={0.9} color={p.white ? C.number : C.lineBlueDim} pose={i % 3 === 0 ? "arms" : "stand"} />
