@@ -108,7 +108,7 @@ export const S15MrBlack: React.FC<{ T: number }> = ({ T }) => {
           }
         />
         {cctv > 0 && (
-          <g transform={`translate(${leoX - 150},${ROWS[1].hip - 330}) scale(${0.8 + 0.2 * cctv})`} opacity={cctv}>
+          <g transform={`translate(${leoX - 150},${ROWS[1].hip - 215}) scale(${0.8 + 0.2 * cctv})`} opacity={cctv}>
             <IconDefs />
             <Glow color={C.gold} d="M-50,-20 L30,-20 L30,20 L-50,20Z M30,-10 L56,-22 L56,22 L30,10 M-10,20 L-10,44 L-36,44" />
             <circle cx={-36} cy={-6} r={6} fill={C.coral} opacity={0.5 + 0.5 * Math.round((Math.sin(T * 8) + 1) / 2)} />
