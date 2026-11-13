@@ -34,21 +34,21 @@ const Card: React.FC<{ x: number; k: number; value: string; label: string; color
     style={{
       position: "absolute",
       left: x - 170,
-      top: 330,
-      width: 340,
-      height: 230,
+      top: 96, // above both heads (≈ y 370+) so the faces stay readable
+      width: 330,
+      height: 196,
       borderRadius: 18,
       background: "rgba(12,18,38,0.82)",
       border: `2px solid ${color}55`,
       boxShadow: `0 0 40px ${color}22`,
       opacity: clamp(k * 2),
-      transform: `translateY(${(1 - ease.outBack(clamp(k))) * 40}px) scale(${lerp(0.9, 1, ease.out(clamp(k)))})`,
+      transform: `translateY(${(1 - ease.outBack(clamp(k))) * -30}px) scale(${lerp(0.9, 1, ease.out(clamp(k)))})`,
       fontFamily: FONT,
       textAlign: "center",
-      paddingTop: 44,
+      paddingTop: 30,
     }}
   >
-    <div style={{ fontWeight: 800, fontSize: 76, color, fontVariantNumeric: "tabular-nums", textShadow: `0 0 24px ${color}66` }}>{value}</div>
+    <div style={{ fontWeight: 800, fontSize: 70, color, fontVariantNumeric: "tabular-nums", textShadow: `0 0 24px ${color}66` }}>{value}</div>
     <div style={{ fontWeight: 700, fontSize: 20, letterSpacing: "0.22em", color: C.label, marginTop: 10 }}>{label}</div>
   </div>
 );
