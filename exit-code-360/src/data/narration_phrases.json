@@ -1,0 +1,1595 @@
+{
+ "duration": 439.722,
+ "phrases": [
+  {
+   "id": "P001",
+   "start": 0.08,
+   "end": 2.23,
+   "text": "Your little sister tiptoes up behind you,"
+  },
+  {
+   "id": "P002",
+   "start": 2.48,
+   "end": 3.66,
+   "text": "cardboard mask on,"
+  },
+  {
+   "id": "P003",
+   "start": 3.92,
+   "end": 4.8,
+   "text": "arms raised,"
+  },
+  {
+   "id": "P004",
+   "start": 5.04,
+   "end": 5.46,
+   "text": "ready."
+  },
+  {
+   "id": "P005",
+   "start": 5.84,
+   "end": 7.1,
+   "text": "You don't even turn around."
+  },
+  {
+   "id": "P006",
+   "start": 7.36,
+   "end": 9.3,
+   "text": "Hi, Mia she groans."
+  },
+  {
+   "id": "P007",
+   "start": 9.76,
+   "end": 11.43,
+   "text": "A pigeon dives at your head,"
+  },
+  {
+   "id": "P008",
+   "start": 11.83,
+   "end": 12.27,
+   "text": "you duck,"
+  },
+  {
+   "id": "P009",
+   "start": 12.63,
+   "end": 13.43,
+   "text": "without looking."
+  },
+  {
+   "id": "P010",
+   "start": 13.91,
+   "end": 16.06,
+   "text": "A cyclist rings his bell from behind."
+  },
+  {
+   "id": "P011",
+   "start": 16.39,
+   "end": 17.33,
+   "text": "You step aside,"
+  },
+  {
+   "id": "P012",
+   "start": 17.75,
+   "end": 18.68,
+   "text": "like a dancer."
+  },
+  {
+   "id": "P013",
+   "start": 19.19,
+   "end": 20.63,
+   "text": "Mia stares."
+  },
+  {
+   "id": "P014",
+   "start": 20.63,
+   "end": 21.0,
+   "text": "How"
+  },
+  {
+   "id": "P015",
+   "start": 21.59,
+   "end": 22.66,
+   "text": "how did you do that?"
+  },
+  {
+   "id": "P016",
+   "start": 23.26,
+   "end": 25.36,
+   "text": "Then a seagull swoops for your sandwich."
+  },
+  {
+   "id": "P017",
+   "start": 25.66,
+   "end": 26.61,
+   "text": "You hold it high."
+  },
+  {
+   "id": "P018",
+   "start": 26.86,
+   "end": 28.02,
+   "text": "The sea gull leaves,"
+  },
+  {
+   "id": "P019",
+   "start": 28.22,
+   "end": 28.82,
+   "text": "offended."
+  },
+  {
+   "id": "P020",
+   "start": 29.34,
+   "end": 31.93,
+   "text": "A normal human sees about two hundred degrees,"
+  },
+  {
+   "id": "P021",
+   "start": 32.3,
+   "end": 33.11,
+   "text": "everything ahead,"
+  },
+  {
+   "id": "P022",
+   "start": 33.42,
+   "end": 34.62,
+   "text": "and a little to each side."
+  },
+  {
+   "id": "P023",
+   "start": 35.26,
+   "end": 35.79,
+   "text": "Behind you?"
+  },
+  {
+   "id": "P024",
+   "start": 36.54,
+   "end": 36.96,
+   "text": "Nothing."
+  },
+  {
+   "id": "P025",
+   "start": 37.42,
+   "end": 37.75,
+   "text": "You?"
+  },
+  {
+   "id": "P026",
+   "start": 38.22,
+   "end": 39.38,
+   "text": "Three hundred and sixty."
+  },
+  {
+   "id": "P027",
+   "start": 39.74,
+   "end": 40.66,
+   "text": "The whole circle."
+  },
+  {
+   "id": "P028",
+   "start": 41.02,
+   "end": 41.92,
+   "text": "No blindside."
+  },
+  {
+   "id": "P029",
+   "start": 42.22,
+   "end": 42.81,
+   "text": "No back."
+  },
+  {
+   "id": "P030",
+   "start": 43.34,
+   "end": 44.01,
+   "text": "Here's the rule."
+  },
+  {
+   "id": "P031",
+   "start": 44.3,
+   "end": 45.34,
+   "text": "Your eyes got wider."
+  },
+  {
+   "id": "P032",
+   "start": 45.58,
+   "end": 46.61,
+   "text": "Your brain did not."
+  },
+  {
+   "id": "P033",
+   "start": 47.14,
+   "end": 48.52,
+   "text": "Hold up a thumb at arm's length."
+  },
+  {
+   "id": "P034",
+   "start": 48.98,
+   "end": 50.89,
+   "text": "Only that patch is truly sharp."
+  },
+  {
+   "id": "P035",
+   "start": 51.38,
+   "end": 53.59,
+   "text": "Your eyes jump about three times a second."
+  },
+  {
+   "id": "P036",
+   "start": 53.94,
+   "end": 55.42,
+   "text": "Your brain stitches the rest."
+  },
+  {
+   "id": "P037",
+   "start": 55.86,
+   "end": 56.9,
+   "text": "You can see everything."
+  },
+  {
+   "id": "P038",
+   "start": 57.26,
+   "end": 58.63,
+   "text": "but you can only look at one thing."
+  },
+  {
+   "id": "P039",
+   "start": 59.1,
+   "end": 61.67,
+   "text": "So what if you had three hundred and sixty degree vision?"
+  },
+  {
+   "id": "P040",
+   "start": 62.3,
+   "end": 62.76,
+   "text": "Plus,"
+  },
+  {
+   "id": "P041",
+   "start": 63.1,
+   "end": 64.45,
+   "text": "nobody sneaks up on you"
+  },
+  {
+   "id": "P042",
+   "start": 64.94,
+   "end": 65.3,
+   "text": "ever."
+  },
+  {
+   "id": "P043",
+   "start": 65.82,
+   "end": 67.38,
+   "text": "Your surprise party is ruined."
+  },
+  {
+   "id": "P044",
+   "start": 67.88,
+   "end": 69.61,
+   "text": "Forty people hide behind the couch,"
+  },
+  {
+   "id": "P045",
+   "start": 69.96,
+   "end": 70.82,
+   "text": "all spotted."
+  },
+  {
+   "id": "P046",
+   "start": 71.32,
+   "end": 71.76,
+   "text": "Mate,"
+  },
+  {
+   "id": "P047",
+   "start": 72.2,
+   "end": 73.35,
+   "text": "you could at least pretend."
+  },
+  {
+   "id": "P048",
+   "start": 73.72,
+   "end": 74.92,
+   "text": "Pickpockets are doomed."
+  },
+  {
+   "id": "P049",
+   "start": 75.32,
+   "end": 77.0,
+   "text": "A hand slips toward your bag."
+  },
+  {
+   "id": "P050",
+   "start": 77.4,
+   "end": 77.96,
+   "text": "You see it,"
+  },
+  {
+   "id": "P051",
+   "start": 78.28,
+   "end": 79.31,
+   "text": "before it arrives."
+  },
+  {
+   "id": "P052",
+   "start": 79.75,
+   "end": 81.01,
+   "text": "The thief apologizes,"
+  },
+  {
+   "id": "P053",
+   "start": 81.35,
+   "end": 82.04,
+   "text": "then runs."
+  },
+  {
+   "id": "P054",
+   "start": 82.55,
+   "end": 83.63,
+   "text": "Driving lessons."
+  },
+  {
+   "id": "P055",
+   "start": 84.07,
+   "end": 87.35,
+   "text": "Normal drivers turn their heads to check blind spots."
+  },
+  {
+   "id": "P056",
+   "start": 87.35,
+   "end": 87.71,
+   "text": "You"
+  },
+  {
+   "id": "P057",
+   "start": 88.31,
+   "end": 88.74,
+   "text": "never"
+  },
+  {
+   "id": "P058",
+   "start": 89.43,
+   "end": 91.24,
+   "text": "The instructor stares in silence."
+  },
+  {
+   "id": "P059",
+   "start": 91.86,
+   "end": 92.36,
+   "text": "Dude"
+  },
+  {
+   "id": "P060",
+   "start": 92.82,
+   "end": 94.18,
+   "text": "You didn't even look once"
+  },
+  {
+   "id": "P061",
+   "start": 94.82,
+   "end": 95.41,
+   "text": "No need."
+  },
+  {
+   "id": "P062",
+   "start": 95.86,
+   "end": 96.52,
+   "text": "Dodge ball."
+  },
+  {
+   "id": "P063",
+   "start": 96.98,
+   "end": 98.58,
+   "text": "Twelve balls from every angle."
+  },
+  {
+   "id": "P064",
+   "start": 98.98,
+   "end": 99.84,
+   "text": "You dodge them all,"
+  },
+  {
+   "id": "P065",
+   "start": 100.18,
+   "end": 101.02,
+   "text": "facing the wall."
+  },
+  {
+   "id": "P066",
+   "start": 101.46,
+   "end": 102.86,
+   "text": "Game over in four minutes."
+  },
+  {
+   "id": "P067",
+   "start": 103.39,
+   "end": 104.34,
+   "text": "Teammates cheer."
+  },
+  {
+   "id": "P068",
+   "start": 104.75,
+   "end": 106.4,
+   "text": "The other team is writing a complaint."
+  },
+  {
+   "id": "P069",
+   "start": 106.99,
+   "end": 107.77,
+   "text": "Basketball."
+  },
+  {
+   "id": "P070",
+   "start": 108.11,
+   "end": 109.41,
+   "text": "Ten players on the court."
+  },
+  {
+   "id": "P071",
+   "start": 109.79,
+   "end": 111.2,
+   "text": "You see the other nine at once."
+  },
+  {
+   "id": "P072",
+   "start": 111.47,
+   "end": 112.79,
+   "text": "A behind the back pass."
+  },
+  {
+   "id": "P073",
+   "start": 113.07,
+   "end": 113.63,
+   "text": "Perfect."
+  },
+  {
+   "id": "P074",
+   "start": 113.99,
+   "end": 115.4,
+   "text": "The coach drops his clipboard."
+  },
+  {
+   "id": "P075",
+   "start": 115.83,
+   "end": 116.69,
+   "text": "Football next."
+  },
+  {
+   "id": "P076",
+   "start": 117.11,
+   "end": 118.62,
+   "text": "Twenty two players on the pitch."
+  },
+  {
+   "id": "P077",
+   "start": 119.03,
+   "end": 120.69,
+   "text": "A referee can't see behind him."
+  },
+  {
+   "id": "P078",
+   "start": 121.03,
+   "end": 121.57,
+   "text": "You can."
+  },
+  {
+   "id": "P079",
+   "start": 121.99,
+   "end": 122.77,
+   "text": "Every foul,"
+  },
+  {
+   "id": "P080",
+   "start": 123.11,
+   "end": 123.88,
+   "text": "every shove,"
+  },
+  {
+   "id": "P081",
+   "start": 124.23,
+   "end": 125.06,
+   "text": "every dive."
+  },
+  {
+   "id": "P082",
+   "start": 125.62,
+   "end": 127.33,
+   "text": "Nature already tried this once."
+  },
+  {
+   "id": "P083",
+   "start": 127.7,
+   "end": 129.71,
+   "text": "Horses see almost all the way around."
+  },
+  {
+   "id": "P084",
+   "start": 130.18,
+   "end": 131.09,
+   "text": "So do rabbits."
+  },
+  {
+   "id": "P085",
+   "start": 131.38,
+   "end": 132.69,
+   "text": "They're both prey animals."
+  },
+  {
+   "id": "P086",
+   "start": 132.98,
+   "end": 134.4,
+   "text": "Danger can come from anywhere."
+  },
+  {
+   "id": "P087",
+   "start": 134.9,
+   "end": 135.97,
+   "text": "Welcome to the club."
+  },
+  {
+   "id": "P088",
+   "start": 136.52,
+   "end": 137.14,
+   "text": "The catch?"
+  },
+  {
+   "id": "P089",
+   "start": 137.64,
+   "end": 138.84,
+   "text": "Nothing is background."
+  },
+  {
+   "id": "P090",
+   "start": 139.24,
+   "end": 140.61,
+   "text": "A moth flutters left."
+  },
+  {
+   "id": "P091",
+   "start": 140.92,
+   "end": 142.01,
+   "text": "Attention jumps."
+  },
+  {
+   "id": "P092",
+   "start": 142.28,
+   "end": 143.48,
+   "text": "A car honks right."
+  },
+  {
+   "id": "P093",
+   "start": 143.88,
+   "end": 144.34,
+   "text": "Jump."
+  },
+  {
+   "id": "P094",
+   "start": 144.76,
+   "end": 146.18,
+   "text": "A flag flaps behind."
+  },
+  {
+   "id": "P095",
+   "start": 146.68,
+   "end": 147.11,
+   "text": "Jump."
+  },
+  {
+   "id": "P096",
+   "start": 147.79,
+   "end": 150.7,
+   "text": "Seeing everything means getting distracted by everything"
+  },
+  {
+   "id": "P097",
+   "start": 151.23,
+   "end": 153.04,
+   "text": "in class thirty faces"
+  },
+  {
+   "id": "P098",
+   "start": 153.47,
+   "end": 154.37,
+   "text": "every glance,"
+  },
+  {
+   "id": "P099",
+   "start": 154.67,
+   "end": 155.53,
+   "text": "every smirk,"
+  },
+  {
+   "id": "P100",
+   "start": 155.95,
+   "end": 157.47,
+   "text": "every whisper behind a hand,"
+  },
+  {
+   "id": "P101",
+   "start": 157.95,
+   "end": 159.89,
+   "text": "Then a man in a gray suit finds you."
+  },
+  {
+   "id": "P102",
+   "start": 160.35,
+   "end": 161.17,
+   "text": "mister Black."
+  },
+  {
+   "id": "P103",
+   "start": 161.63,
+   "end": 162.4,
+   "text": "He smiles."
+  },
+  {
+   "id": "P104",
+   "start": 162.91,
+   "end": 164.61,
+   "text": "We need a human security camera."
+  },
+  {
+   "id": "P105",
+   "start": 165.31,
+   "end": 166.62,
+   "text": "Forty thousand fans,"
+  },
+  {
+   "id": "P106",
+   "start": 166.91,
+   "end": 167.71,
+   "text": "one concert,"
+  },
+  {
+   "id": "P107",
+   "start": 167.95,
+   "end": 169.21,
+   "text": "ten thousand Euros."
+  },
+  {
+   "id": "P108",
+   "start": 169.68,
+   "end": 170.34,
+   "text": "Just watch."
+  },
+  {
+   "id": "P109",
+   "start": 171.04,
+   "end": 172.38,
+   "text": "Just watch?"
+  },
+  {
+   "id": "P110",
+   "start": 173.12,
+   "end": 173.84,
+   "text": "Just watch."
+  },
+  {
+   "id": "P111",
+   "start": 174.16,
+   "end": 175.43,
+   "text": "And never leave your post."
+  },
+  {
+   "id": "P112",
+   "start": 175.92,
+   "end": 176.84,
+   "text": "But there's a cost."
+  },
+  {
+   "id": "P113",
+   "start": 177.28,
+   "end": 179.3,
+   "text": "A busier picture means a busier mind."
+  },
+  {
+   "id": "P114",
+   "start": 179.76,
+   "end": 180.46,
+   "text": "By noon,"
+  },
+  {
+   "id": "P115",
+   "start": 180.78,
+   "end": 181.72,
+   "text": "your head is buzzing,"
+  },
+  {
+   "id": "P116",
+   "start": 182.22,
+   "end": 184.24,
+   "text": "amazing and overwhelming,"
+  },
+  {
+   "id": "P117",
+   "start": 184.62,
+   "end": 186.46,
+   "text": "and sneaky surprises are ruined,"
+  },
+  {
+   "id": "P118",
+   "start": 186.86,
+   "end": 188.15,
+   "text": "the gift behind a back,"
+  },
+  {
+   "id": "P119",
+   "start": 188.62,
+   "end": 190.07,
+   "text": "the party behind a couch,"
+  },
+  {
+   "id": "P120",
+   "start": 190.46,
+   "end": 191.72,
+   "text": "the scare from behind,"
+  },
+  {
+   "id": "P121",
+   "start": 192.33,
+   "end": 194.52,
+   "text": "Ever wonder why surprises feel so good?"
+  },
+  {
+   "id": "P122",
+   "start": 195.13,
+   "end": 198.82,
+   "text": "Dopamine cells fire hardest when life beats the prediction."
+  },
+  {
+   "id": "P123",
+   "start": 199.37,
+   "end": 200.64,
+   "text": "You can't predict everything,"
+  },
+  {
+   "id": "P124",
+   "start": 200.97,
+   "end": 202.12,
+   "text": "but you see these coming."
+  },
+  {
+   "id": "P125",
+   "start": 202.61,
+   "end": 203.97,
+   "text": "so the spark never lights"
+  },
+  {
+   "id": "P126",
+   "start": 204.37,
+   "end": 205.71,
+   "text": "you smile a second late,"
+  },
+  {
+   "id": "P127",
+   "start": 206.13,
+   "end": 206.93,
+   "text": "or not at all."
+  },
+  {
+   "id": "P128",
+   "start": 207.57,
+   "end": 208.09,
+   "text": "Worse,"
+  },
+  {
+   "id": "P129",
+   "start": 208.29,
+   "end": 209.42,
+   "text": "there's no off switch."
+  },
+  {
+   "id": "P130",
+   "start": 209.89,
+   "end": 212.25,
+   "text": "And one night it costs far more."
+  },
+  {
+   "id": "P131",
+   "start": 212.77,
+   "end": 213.8,
+   "text": "Mia notices."
+  },
+  {
+   "id": "P132",
+   "start": 214.27,
+   "end": 215.06,
+   "text": "Of course she does."
+  },
+  {
+   "id": "P133",
+   "start": 215.63,
+   "end": 216.11,
+   "text": "She"
+  },
+  {
+   "id": "P134",
+   "start": 217.79,
+   "end": 218.86,
+   "text": "keeps a little note book."
+  },
+  {
+   "id": "P135",
+   "start": 219.55,
+   "end": 220.23,
+   "text": "Scares"
+  },
+  {
+   "id": "P136",
+   "start": 220.75,
+   "end": 221.24,
+   "text": "zero."
+  },
+  {
+   "id": "P137",
+   "start": 221.95,
+   "end": 222.63,
+   "text": "Tries"
+  },
+  {
+   "id": "P138",
+   "start": 223.23,
+   "end": 224.61,
+   "text": "four hundred and twelve."
+  },
+  {
+   "id": "P139",
+   "start": 225.25,
+   "end": 226.1,
+   "text": "She holds it up,"
+  },
+  {
+   "id": "P140",
+   "start": 226.29,
+   "end": 226.79,
+   "text": "hopeful."
+  },
+  {
+   "id": "P141",
+   "start": 227.41,
+   "end": 228.51,
+   "text": "Just once, Leo."
+  },
+  {
+   "id": "P142",
+   "start": 228.85,
+   "end": 230.05,
+   "text": "Let me win once."
+  },
+  {
+   "id": "P143",
+   "start": 230.53,
+   "end": 231.89,
+   "text": "You never mean to ruin it."
+  },
+  {
+   "id": "P144",
+   "start": 231.89,
+   "end": 232.2,
+   "text": "You just"
+  },
+  {
+   "id": "P145",
+   "start": 232.85,
+   "end": 233.75,
+   "text": "always see her."
+  },
+  {
+   "id": "P146",
+   "start": 234.29,
+   "end": 234.85,
+   "text": "You laugh."
+  },
+  {
+   "id": "P147",
+   "start": 235.33,
+   "end": 236.34,
+   "text": "The tired laugh."
+  },
+  {
+   "id": "P148",
+   "start": 236.76,
+   "end": 237.44,
+   "text": "not the real one."
+  },
+  {
+   "id": "P149",
+   "start": 237.88,
+   "end": 238.89,
+   "text": "She hears the difference."
+  },
+  {
+   "id": "P150",
+   "start": 239.48,
+   "end": 240.25,
+   "text": "Are you okay?"
+  },
+  {
+   "id": "P151",
+   "start": 240.84,
+   "end": 242.02,
+   "text": "Just tired, you say."
+  },
+  {
+   "id": "P152",
+   "start": 242.6,
+   "end": 243.64,
+   "text": "She grins anyway."
+  },
+  {
+   "id": "P153",
+   "start": 244.12,
+   "end": 245.16,
+   "text": "Tomorrow's concert."
+  },
+  {
+   "id": "P154",
+   "start": 245.48,
+   "end": 246.29,
+   "text": "I got a ticket."
+  },
+  {
+   "id": "P155",
+   "start": 246.68,
+   "end": 247.41,
+   "text": "Mask on."
+  },
+  {
+   "id": "P156",
+   "start": 247.85,
+   "end": 248.88,
+   "text": "Watch your back, Leo."
+  },
+  {
+   "id": "P157",
+   "start": 249.69,
+   "end": 250.1,
+   "text": "Oh"
+  },
+  {
+   "id": "P158",
+   "start": 250.49,
+   "end": 250.9,
+   "text": "wait."
+  },
+  {
+   "id": "P159",
+   "start": 251.61,
+   "end": 252.96,
+   "text": "Everyone else you just see."
+  },
+  {
+   "id": "P160",
+   "start": 253.37,
+   "end": 253.87,
+   "text": "Mia?"
+  },
+  {
+   "id": "P161",
+   "start": 254.49,
+   "end": 254.99,
+   "text": "You look."
+  },
+  {
+   "id": "P162",
+   "start": 255.61,
+   "end": 256.34,
+   "text": "The concert."
+  },
+  {
+   "id": "P163",
+   "start": 256.73,
+   "end": 257.92,
+   "text": "Forty thousand people."
+  },
+  {
+   "id": "P164",
+   "start": 258.51,
+   "end": 260.76,
+   "text": "mister Black's voice crackles in your earpiece."
+  },
+  {
+   "id": "P165",
+   "start": 261.23,
+   "end": 262.23,
+   "text": "Watch Gate Four."
+  },
+  {
+   "id": "P166",
+   "start": 262.67,
+   "end": 263.68,
+   "text": "Only Gate Four."
+  },
+  {
+   "id": "P167",
+   "start": 264.19,
+   "end": 264.82,
+   "text": "Look away,"
+  },
+  {
+   "id": "P168",
+   "start": 265.15,
+   "end": 266.16,
+   "text": "and the deal is over."
+  },
+  {
+   "id": "P169",
+   "start": 266.75,
+   "end": 268.19,
+   "text": "So you stare at Gate Four."
+  },
+  {
+   "id": "P170",
+   "start": 268.7,
+   "end": 270.16,
+   "text": "Behind you metal groans."
+  },
+  {
+   "id": "P171",
+   "start": 270.46,
+   "end": 271.62,
+   "text": "High above the crowd,"
+  },
+  {
+   "id": "P172",
+   "start": 271.82,
+   "end": 273.12,
+   "text": "a stage light shakes."
+  },
+  {
+   "id": "P173",
+   "start": 273.42,
+   "end": 274.54,
+   "text": "A bolt snaps."
+  },
+  {
+   "id": "P174",
+   "start": 274.94,
+   "end": 276.28,
+   "text": "Your eyes see it instantly."
+  },
+  {
+   "id": "P175",
+   "start": 276.62,
+   "end": 277.28,
+   "text": "Your brain?"
+  },
+  {
+   "id": "P176",
+   "start": 277.66,
+   "end": 278.8,
+   "text": "A quarter second late."
+  },
+  {
+   "id": "P177",
+   "start": 279.31,
+   "end": 280.46,
+   "text": "Noticing takes time."
+  },
+  {
+   "id": "P178",
+   "start": 280.99,
+   "end": 281.86,
+   "text": "Then you see her"
+  },
+  {
+   "id": "P179",
+   "start": 282.27,
+   "end": 284.59,
+   "text": "a cardboard mask, right underneath."
+  },
+  {
+   "id": "P180",
+   "start": 285.23,
+   "end": 285.69,
+   "text": "Mia."
+  },
+  {
+   "id": "P181",
+   "start": 286.19,
+   "end": 288.06,
+   "text": "The light hangs eight metres up."
+  },
+  {
+   "id": "P182",
+   "start": 288.43,
+   "end": 290.6,
+   "text": "It falls in about one and a quarter seconds."
+  },
+  {
+   "id": "P183",
+   "start": 291.09,
+   "end": 292.13,
+   "text": "Take away your quarter."
+  },
+  {
+   "id": "P184",
+   "start": 292.61,
+   "end": 293.64,
+   "text": "One second left."
+  },
+  {
+   "id": "P185",
+   "start": 294.05,
+   "end": 295.78,
+   "text": "Mia is fifteen meters away."
+  },
+  {
+   "id": "P186",
+   "start": 296.21,
+   "end": 298.0,
+   "text": "You run five meters per second."
+  },
+  {
+   "id": "P187",
+   "start": 298.45,
+   "end": 299.22,
+   "text": "Three seconds."
+  },
+  {
+   "id": "P188",
+   "start": 299.57,
+   "end": 300.39,
+   "text": "Can you reach her?"
+  },
+  {
+   "id": "P189",
+   "start": 300.85,
+   "end": 301.79,
+   "text": "Not even close."
+  },
+  {
+   "id": "P190",
+   "start": 302.28,
+   "end": 303.21,
+   "text": "You can see everything,"
+  },
+  {
+   "id": "P191",
+   "start": 303.48,
+   "end": 305.03,
+   "text": "but you can only look at one thing"
+  },
+  {
+   "id": "P192",
+   "start": 305.48,
+   "end": 307.14,
+   "text": "Gate Four or Mia?"
+  },
+  {
+   "id": "P193",
+   "start": 307.64,
+   "end": 308.46,
+   "text": "You look at Mia,"
+  },
+  {
+   "id": "P194",
+   "start": 308.76,
+   "end": 309.9,
+   "text": "you scream her name"
+  },
+  {
+   "id": "P195",
+   "start": 310.28,
+   "end": 310.76,
+   "text": "Mia"
+  },
+  {
+   "id": "P196",
+   "start": 311.24,
+   "end": 311.57,
+   "text": "Up"
+  },
+  {
+   "id": "P197",
+   "start": 312.12,
+   "end": 313.64,
+   "text": "Forty thousand heads turn,"
+  },
+  {
+   "id": "P198",
+   "start": 314.01,
+   "end": 314.7,
+   "text": "She looks up,"
+  },
+  {
+   "id": "P199",
+   "start": 315.05,
+   "end": 315.68,
+   "text": "freezes."
+  },
+  {
+   "id": "P200",
+   "start": 316.01,
+   "end": 317.52,
+   "text": "A stranger yanks her back."
+  },
+  {
+   "id": "P201",
+   "start": 317.93,
+   "end": 320.25,
+   "text": "The light crashes where she stood."
+  },
+  {
+   "id": "P202",
+   "start": 320.25,
+   "end": 320.87,
+   "text": "Silence."
+  },
+  {
+   "id": "P203",
+   "start": 321.45,
+   "end": 323.57,
+   "text": "mister Black snarls through the earpiece."
+  },
+  {
+   "id": "P204",
+   "start": 324.09,
+   "end": 324.87,
+   "text": "You're fired."
+  },
+  {
+   "id": "P205",
+   "start": 325.37,
+   "end": 325.82,
+   "text": "The money?"
+  },
+  {
+   "id": "P206",
+   "start": 326.41,
+   "end": 326.81,
+   "text": "Gone."
+  },
+  {
+   "id": "P207",
+   "start": 327.53,
+   "end": 328.74,
+   "text": "Silence would be easy."
+  },
+  {
+   "id": "P208",
+   "start": 329.21,
+   "end": 329.78,
+   "text": "Instead,"
+  },
+  {
+   "id": "P209",
+   "start": 330.09,
+   "end": 330.69,
+   "text": "you point."
+  },
+  {
+   "id": "P210",
+   "start": 331.13,
+   "end": 332.4,
+   "text": "Bolt after bolt."
+  },
+  {
+   "id": "P211",
+   "start": 332.97,
+   "end": 333.64,
+   "text": "Six more,"
+  },
+  {
+   "id": "P212",
+   "start": 333.93,
+   "end": 335.02,
+   "text": "loose across the rig."
+  },
+  {
+   "id": "P213",
+   "start": 335.45,
+   "end": 336.64,
+   "text": "Engineers climb up."
+  },
+  {
+   "id": "P214",
+   "start": 337.25,
+   "end": 338.86,
+   "text": "every one is loose."
+  },
+  {
+   "id": "P215",
+   "start": 339.33,
+   "end": 340.29,
+   "text": "The show stops."
+  },
+  {
+   "id": "P216",
+   "start": 340.69,
+   "end": 341.99,
+   "text": "Nobody else gets hurt."
+  },
+  {
+   "id": "P217",
+   "start": 342.37,
+   "end": 343.76,
+   "text": "The whole crowd claps."
+  },
+  {
+   "id": "P218",
+   "start": 344.13,
+   "end": 346.1,
+   "text": "For the kid with eyes in the back of his head."
+  },
+  {
+   "id": "P219",
+   "start": 346.77,
+   "end": 348.2,
+   "text": "Mia clings to your jacket."
+  },
+  {
+   "id": "P220",
+   "start": 348.77,
+   "end": 349.53,
+   "text": "How did you know?"
+  },
+  {
+   "id": "P221",
+   "start": 350.05,
+   "end": 351.74,
+   "text": "I always look at you, you say."
+  },
+  {
+   "id": "P222",
+   "start": 352.37,
+   "end": 353.12,
+   "text": "Weeks later,"
+  },
+  {
+   "id": "P223",
+   "start": 353.33,
+   "end": 354.94,
+   "text": "Mia tiptoes up behind you,"
+  },
+  {
+   "id": "P224",
+   "start": 355.33,
+   "end": 356.62,
+   "text": "a brand new mask."
+  },
+  {
+   "id": "P225",
+   "start": 357.01,
+   "end": 358.08,
+   "text": "You close your eyes."
+  },
+  {
+   "id": "P226",
+   "start": 358.53,
+   "end": 359.02,
+   "text": "Boo"
+  },
+  {
+   "id": "P227",
+   "start": 359.57,
+   "end": 360.18,
+   "text": "You jump."
+  },
+  {
+   "id": "P228",
+   "start": 360.71,
+   "end": 361.46,
+   "text": "Really jump,"
+  },
+  {
+   "id": "P229",
+   "start": 361.83,
+   "end": 362.86,
+   "text": "a real scream."
+  },
+  {
+   "id": "P230",
+   "start": 363.35,
+   "end": 364.22,
+   "text": "Then you laugh,"
+  },
+  {
+   "id": "P231",
+   "start": 364.63,
+   "end": 365.49,
+   "text": "right on time."
+  },
+  {
+   "id": "P232",
+   "start": 365.99,
+   "end": 367.73,
+   "text": "The spark finally lights up."
+  },
+  {
+   "id": "P233",
+   "start": 368.31,
+   "end": 369.16,
+   "text": "In her notebook,"
+  },
+  {
+   "id": "P234",
+   "start": 369.59,
+   "end": 370.19,
+   "text": "Scares,"
+  },
+  {
+   "id": "P235",
+   "start": 370.63,
+   "end": 370.98,
+   "text": "one,"
+  },
+  {
+   "id": "P236",
+   "start": 371.65,
+   "end": 372.22,
+   "text": "Tries"
+  },
+  {
+   "id": "P237",
+   "start": 372.69,
+   "end": 374.02,
+   "text": "four hundred and thirteen."
+  },
+  {
+   "id": "P238",
+   "start": 374.61,
+   "end": 375.65,
+   "text": "You open your eyes."
+  },
+  {
+   "id": "P239",
+   "start": 376.13,
+   "end": 377.06,
+   "text": "You can see everything,"
+  },
+  {
+   "id": "P240",
+   "start": 377.41,
+   "end": 378.48,
+   "text": "but you only look at her."
+  },
+  {
+   "id": "P241",
+   "start": 379.09,
+   "end": 380.12,
+   "text": "Is any of this real?"
+  },
+  {
+   "id": "P242",
+   "start": 380.69,
+   "end": 381.47,
+   "text": "Not the power."
+  },
+  {
+   "id": "P243",
+   "start": 382.02,
+   "end": 383.72,
+   "text": "no human sees the full circle,"
+  },
+  {
+   "id": "P244",
+   "start": 384.18,
+   "end": 385.35,
+   "text": "but the limit is real."
+  },
+  {
+   "id": "P245",
+   "start": 386.1,
+   "end": 387.42,
+   "text": "In 1999,"
+  },
+  {
+   "id": "P246",
+   "start": 387.7,
+   "end": 392.39,
+   "text": "Daniel Simons and Christopher Chabris asked volunteers to count basketball passes."
+  },
+  {
+   "id": "P247",
+   "start": 392.99,
+   "end": 396.28,
+   "text": "About half never noticed a person in a gorilla suit walking through."
+  },
+  {
+   "id": "P248",
+   "start": 396.99,
+   "end": 398.45,
+   "text": "Seeing isn't noticing."
+  },
+  {
+   "id": "P249",
+   "start": 398.99,
+   "end": 400.99,
+   "text": "The dopamine spark is real, too."
+  },
+  {
+   "id": "P250",
+   "start": 401.55,
+   "end": 404.13,
+   "text": "The overload and the spoiled surprises are fiction."
+  },
+  {
+   "id": "P251",
+   "start": 404.67,
+   "end": 407.24,
+   "text": "Your brain uses about a fifth of your body's energy."
+  },
+  {
+   "id": "P252",
+   "start": 407.79,
+   "end": 409.7,
+   "text": "Thinking harder barely changes that."
+  },
+  {
+   "id": "P253",
+   "start": 410.19,
+   "end": 412.12,
+   "text": "Extra vision wouldn't make you starving,"
+  },
+  {
+   "id": "P254",
+   "start": 412.35,
+   "end": 413.7,
+   "text": "or let you predict everything."
+  },
+  {
+   "id": "P255",
+   "start": 414.34,
+   "end": 416.79,
+   "text": "So could a mind ever watch everything at once?"
+  },
+  {
+   "id": "P256",
+   "start": 417.62,
+   "end": 419.48,
+   "text": "That night your phone buzzes."
+  },
+  {
+   "id": "P257",
+   "start": 420.1,
+   "end": 421.02,
+   "text": "Unknown number."
+  },
+  {
+   "id": "P258",
+   "start": 421.78,
+   "end": 423.33,
+   "text": "We saw what you did at the concert."
+  },
+  {
+   "id": "P259",
+   "start": 424.02,
+   "end": 425.12,
+   "text": "Then a second message"
+  },
+  {
+   "id": "P260",
+   "start": 425.73,
+   "end": 426.75,
+   "text": "You're not the only one."
+  },
+  {
+   "id": "P261",
+   "start": 427.49,
+   "end": 430.3,
+   "text": "So what would you do with three hundred and sixty degree vision?"
+  },
+  {
+   "id": "P262",
+   "start": 430.93,
+   "end": 433.79,
+   "text": "Tell us the sneakiest prank you'd spot coming in the comments."
+  },
+  {
+   "id": "P263",
+   "start": 434.53,
+   "end": 435.95,
+   "text": "And if you'd look at Mia too,"
+  },
+  {
+   "id": "P264",
+   "start": 436.45,
+   "end": 437.07,
+   "text": "hit like."
+  },
+  {
+   "id": "P265",
+   "start": 437.26,
+   "end": 439.06,
+   "text": "and subscribe for more what ifs."
+  }
+ ]
+}
