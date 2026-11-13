@@ -1,0 +1,10 @@
+node_modules/
+out/
+renders/frames/
+renders/qa/
+# third-party reference frames: analysis only, never redistributed
+assets/reference_frames/
+*.log
+# generated (deterministic; rebuild with tools/mix_audio.py and tools/make_grain.py)
+public/audio/poc_mix.wav
+public/textures/
