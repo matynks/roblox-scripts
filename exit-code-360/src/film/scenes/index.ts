@@ -11,6 +11,10 @@ import { S09Dodgeball } from "./S09Dodgeball";
 import { S10Basketball } from "./S10Basketball";
 import { S11Football } from "./S11Football";
 import { S12Nature } from "./S12Nature";
+import { S13Catch } from "./S13Catch";
+import { S14Class } from "./S14Class";
+import { S15MrBlack } from "./S15MrBlack";
+import { S16Cost } from "./S16Cost";
 
 export type SceneDef = { id: string; t0: number; xIn?: number; C: React.FC<{ T: number }> };
 
@@ -26,4 +30,8 @@ export const SCENES: SceneDef[] = [
   { id: "S10 basketball", t0: 106.85, xIn: 0.3, C: S10Basketball },
   { id: "S11 football", t0: 115.7, xIn: 0.3, C: S11Football },
   { id: "S12 nature", t0: 125.5, xIn: 0.45, C: S12Nature },
+  { id: "S13 the catch", t0: 136.3, xIn: 0.4, C: S13Catch },
+  { id: "S14 class", t0: 150.95, xIn: 0.4, C: S14Class },
+  { id: "S15 mr black", t0: 157.85, C: S15MrBlack },
+  { id: "S16 cost", t0: 175.7, xIn: 0.45, C: S16Cost },
 ];

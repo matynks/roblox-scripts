@@ -53,7 +53,7 @@ export const RoadScene: React.FC<{ cam: Cam; t: number; children?: React.ReactNo
 };
 
 /** Hatchback side view, facing +x, origin on the road under the car centre. */
-export const LearnerCar: React.FC<{ x: number; y: number; dist: number; s?: number; bounce?: number }> = ({ x, y, dist, s = 1, bounce = 0 }) => {
+export const LearnerCar: React.FC<{ x: number; y: number; dist: number; s?: number; bounce?: number; learner?: boolean; color?: string }> = ({ x, y, dist, s = 1, bounce = 0, learner = true, color = "#4F7C8A" }) => {
   const rot = (dist / 42) * (180 / Math.PI);
   const wheel = (cx: number) => (
     <g transform={`translate(${cx},-42) rotate(${rot})`}>
@@ -68,8 +68,8 @@ export const LearnerCar: React.FC<{ x: number; y: number; dist: number; s?: numb
     <g transform={`translate(${x},${y + bounce}) scale(${s})`}>
       <ellipse cx={0} cy={4} rx={250} ry={14} fill="#000" opacity={0.4} />
       {/* body */}
-      <path d="M-230,-50 Q-236,-118 -190,-124 L-120,-130 L-70,-196 Q-56,-212 -30,-212 L110,-212 Q140,-212 160,-186 L200,-130 Q236,-124 238,-90 L238,-50 Q238,-36 224,-36 L-216,-36 Q-230,-36 -230,-50Z" fill="#4F7C8A" />
-      <path d="M-226,-96 L236,-96" stroke="#3A5E6A" strokeWidth={4} />
+      <path d="M-230,-50 Q-236,-118 -190,-124 L-120,-130 L-70,-196 Q-56,-212 -30,-212 L110,-212 Q140,-212 160,-186 L200,-130 Q236,-124 238,-90 L238,-50 Q238,-36 224,-36 L-216,-36 Q-230,-36 -230,-50Z" fill={color} />
+      <path d="M-226,-96 L236,-96" stroke="#00000033" strokeWidth={4} />
       <path d="M-70,-196 L-120,-130 L200,-130 L160,-186 Q140,-212 110,-212 L-30,-212 Q-56,-212 -70,-196Z" fill="none" stroke={C.rimWarm} strokeWidth={2} opacity={0.4} />
       {/* windows */}
       <path d="M-58,-192 L-100,-136 L36,-136 L36,-200 L-30,-200 Q-48,-200 -58,-192Z" fill="#20283A" />
@@ -85,11 +85,15 @@ export const LearnerCar: React.FC<{ x: number; y: number; dist: number; s?: numb
       <path d="M238,-84 L600,-130 L600,-30Z" fill="#FFE9B8" opacity={0.08} />
       <rect x={-232} y={-92} width={12} height={20} rx={4} fill="#E04A5A" />
       {/* learner sign */}
-      <rect x={20} y={-252} width={70} height={40} rx={6} fill="#F3EEE6" />
-      <text x={55} y={-221} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={32} fill="#D23A48">
-        L
-      </text>
-      <rect x={30} y={-214} width={50} height={4} fill="#2A2630" />
+      {learner && (
+        <g>
+          <rect x={20} y={-252} width={70} height={40} rx={6} fill="#F3EEE6" />
+          <text x={55} y={-221} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={32} fill="#D23A48">
+            L
+          </text>
+          <rect x={30} y={-214} width={50} height={4} fill="#2A2630" />
+        </g>
+      )}
       {wheel(-150)}
       {wheel(150)}
     </g>
