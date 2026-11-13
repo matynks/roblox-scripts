@@ -20,6 +20,7 @@ import { S18NoOff } from "./S18NoOff";
 import { S19Notebook } from "./S19Notebook";
 import { S21Concert } from "./S21Concert";
 import { S24Physics } from "./S24Physics";
+import { S25Climax } from "./S25Climax";
 
 export type SceneDef = { id: string; t0: number; xIn?: number; C: React.FC<{ T: number }> };
 
@@ -44,4 +45,5 @@ export const SCENES: SceneDef[] = [
   { id: "S19-S20 notebook", t0: 212.45, xIn: 0.6, C: S19Notebook },
   { id: "S21-S23 concert", t0: 251.3, xIn: 0.5, C: S21Concert },
   { id: "S24 physics", t0: 286.0, xIn: 0.35, C: S24Physics },
+  { id: "S25-S28 climax", t0: 302.05, xIn: 0.35, C: S25Climax },
 ];

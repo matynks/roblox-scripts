@@ -135,7 +135,7 @@ export const S21Concert: React.FC<{ T: number }> = ({ T }) => {
             <Ping T={T} at={tMia + 0.05} x={CONCERT.miaX} y={CONCERT.miaHead} r={56} label="MIA?" hold={1.0} />
             {T >= X_BACK && <path d={`M${CONCERT.dangerX + 30},${CONCERT.trussY + 90} L${CONCERT.miaX},${CONCERT.miaHead - 70}`} stroke={C.coral} strokeWidth={3} strokeDasharray="10 10" opacity={step(T, tMask, tMask + 0.4)} />}
             {T >= X_BACK && <Ping T={T} at={tSeeHer + 0.1} x={CONCERT.miaX} y={CONCERT.miaHead} r={64} hold={4.5} color={C.coral} />}
-            <Figure spec={LEO} id="s21leo" x={CONCERT.leoX} y={CONCERT.post} scale={0.8} turn={lookBack > 0.3 ? 0.7 : 1} pose={leoPose} face={leoFace} light={{ x: 0.6, y: -0.8 }} rim={C.gold} headExtra={<Earpiece r={LEO.D / 2} />} />
+            <Figure spec={LEO} id="s21leo" x={CONCERT.leoX} y={CONCERT.post} scale={0.8} turn={lookBack > 0.3 ? 0.7 : 1} pose={leoPose} face={leoFace} light={{ x: 0.6, y: -0.8 }} rim={C.gold} headExtra={<Earpiece r={LEO.D / 2} turn={lookBack > 0.3 ? 0.7 : 1} />} />
             <SenseRing T={T} at={tLook - 0.05} x={CONCERT.leoX} y={CONCERT.post - 326 * 0.8} r={LEO.D * 0.8 * 0.62} />
             <SenseRing T={T} at={tGroan + 0.1} x={CONCERT.leoX} y={CONCERT.post - 326 * 0.8} r={LEO.D * 0.8 * 0.62} color={C.coral} />
             {/* the bolt that snaps */}
@@ -153,7 +153,7 @@ export const S21Concert: React.FC<{ T: number }> = ({ T }) => {
       {earCU && (
         <AbsoluteFill style={{ background: "radial-gradient(ellipse at 40% 50%, #2A2050 0%, #0A0814 75%)" }}>
           <svg width={1920} height={1080}>
-            <Head spec={LEO} id="s21ear" x={760} y={600} size={460} face={{ ...FACES.neutral, eye: "dot", lookX: 0.6 }} turn={0.85} light={{ x: -0.5, y: -0.8 }} rim={STAGE_RIM} extra={<Earpiece r={LEO.D / 2} />} />
+            <Head spec={LEO} id="s21ear" x={760} y={600} size={460} face={{ ...FACES.neutral, eye: "dot", lookX: 0.6 }} turn={0.85} light={{ x: -0.5, y: -0.8 }} rim={STAGE_RIM} extra={<Earpiece r={LEO.D / 2} turn={0.85} />} />
             {/* radio waveform */}
             <g transform="translate(1300,540)">
               <rect x={-220} y={-110} width={440} height={220} rx={24} fill="rgba(12,18,38,0.85)" stroke={C.lineBlue} strokeOpacity={0.4} strokeWidth={2} />
@@ -177,7 +177,7 @@ export const S21Concert: React.FC<{ T: number }> = ({ T }) => {
       {showLeoCU && (
         <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #3A2050 0%, #0A0814 75%)" }}>
           <svg width={1920} height={1080}>
-            <Head spec={LEO} id="s21cu" x={960} y={600} size={420} face={{ ...FACES.shocked, eye: "wide", lookX: -0.7, lookY: -0.3 }} turn={0.4} facing={-1} light={{ x: 0.6, y: -0.8 }} rim={C.coral} extra={<Earpiece r={LEO.D / 2} />} />
+            <Head spec={LEO} id="s21cu" x={960} y={600} size={420} face={{ ...FACES.shocked, eye: "wide", lookX: -0.7, lookY: -0.3 }} turn={0.4} facing={-1} light={{ x: 0.6, y: -0.8 }} rim={C.coral} extra={<Earpiece r={LEO.D / 2} turn={0.4} />} />
           </svg>
           <Vignette strength={0.55} />
         </AbsoluteFill>

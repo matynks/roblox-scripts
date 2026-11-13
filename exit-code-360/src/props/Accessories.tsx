@@ -48,12 +48,17 @@ export const HardHat: React.FC<{ r: number }> = ({ r }) => (
   </g>
 );
 
-export const Earpiece: React.FC<{ r: number; turn?: number }> = ({ r, turn = 1 }) => (
-  <g opacity={turn > 0.3 ? 1 : 0.6}>
-    <circle cx={-0.12 * r} cy={0.02 * r} r={0.12 * r} fill="#E9E6E1" />
-    <path d={`M${-0.12 * r},${0.12 * r} C${-0.3 * r},${0.6 * r} ${-0.1 * r},${0.9 * r} ${-0.4 * r},${1.3 * r}`} stroke="#E9E6E1" strokeWidth={0.05 * r} fill="none" />
-  </g>
-);
+/** Earpiece at the ear (moves from the head's side in front view to behind centre in profile). */
+export const Earpiece: React.FC<{ r: number; turn?: number }> = ({ r, turn = 1 }) => {
+  const ex = lerp(-0.94, -0.22, turn) * r;
+  const ey = 0.06 * r;
+  return (
+    <g>
+      <circle cx={ex} cy={ey} r={0.11 * r} fill="#E9E6E1" />
+      <path d={`M${ex},${ey + 0.1 * r} C${ex - 0.12 * r},${ey + 0.5 * r} ${ex + 0.06 * r},${ey + 0.8 * r} ${ex - 0.08 * r},${ey + 1.25 * r}`} stroke="#E9E6E1" strokeWidth={0.05 * r} fill="none" />
+    </g>
+  );
+};
 
 /** Small backpack for Leo (torso space; back side is -x). */
 export const Backpack: React.FC<{ torsoW: number; torsoLen: number }> = ({ torsoW, torsoLen }) => (
