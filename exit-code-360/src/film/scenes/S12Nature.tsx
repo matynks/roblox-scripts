@@ -3,12 +3,13 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { NavySpace, VisionDiagram, CounterBlock, type DiagramState } from "../../graphics/VisionField";
-import { Glow, HorseIcon, IconDefs, RabbitIcon } from "../../graphics/Icons";
+import { EyeIcon, Glow, HorseIcon, IconDefs, RabbitIcon } from "../../graphics/Icons";
 import { Vignette } from "../../env/Atmosphere";
 import { Label, bump, step } from "../../lib/acting";
 import { clamp, ease, lerp } from "../../lib/anim";
 import { P } from "../../lib/timing";
 import { C } from "../../style/palette";
+import { FONT } from "../../style/fonts";
 
 const t0 = P(82).start; // 125.62
 const tHorse = P(83).start; // 127.70
@@ -48,9 +49,38 @@ export const S12Nature: React.FC<{ T: number }> = ({ T }) => {
       const hy2 = cy + Math.sin(a - 0.06) * (r1 + 18);
       return <Glow key={i} color={C.coral} w={2.6} o={danger * (1 - step(T, tClub - 0.4, tClub))} d={`M${x0},${y0} L${x1},${y1} M${hx1},${hy1} L${x1},${y1} L${hx2},${hy2}`} />;
     });
+  // intro beat "Nature already tried this once.": a 360° ring draws itself around the title,
+  // a horse, a rabbit and an eye pop onto it; everything clears before the horse diagram.
+  const intro = bump(T, t0 - 0.15, t0 + 0.35, tHorse - 0.55, tHorse - 0.15);
+  const R = 250;
+  const draw = ease.inOut(clamp((T - t0) / 1.3));
+  const circ = 2 * Math.PI * R;
+  const icon = (k: number) => ease.outBack(clamp((T - t0 - 0.35 - k * 0.3) / 0.35));
+  const onRing = (deg: number) => ({ x: 960 + Math.cos((deg * Math.PI) / 180) * R, y: 540 + Math.sin((deg * Math.PI) / 180) * R });
+  const pH = onRing(-150);
+  const pR = onRing(-30);
+  const pE = onRing(90);
   return (
     <AbsoluteFill>
       <NavySpace drift={T * 6} />
+      {intro > 0.001 && (
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity: intro }}>
+          <IconDefs />
+          <g transform={`translate(960 540) scale(${lerp(0.94, 1, intro)}) translate(-960 -540)`}>
+            <circle cx={960} cy={540} r={R} fill="none" stroke={C.gold} strokeWidth={10} opacity={0.12} strokeDasharray={`${circ * draw} ${circ}`} transform="rotate(-90 960 540)" />
+            <circle cx={960} cy={540} r={R} fill="none" stroke={C.gold} strokeWidth={2.6} strokeDasharray={`${circ * draw} ${circ}`} transform="rotate(-90 960 540)" strokeLinecap="round" />
+            <HorseIcon x={pH.x} y={pH.y} s={0.62 * icon(0)} color={TEAL} o={clamp(icon(0))} />
+            <RabbitIcon x={pR.x} y={pR.y} s={0.8 * icon(1)} color={TEAL} o={clamp(icon(1))} />
+            <EyeIcon x={pE.x} y={pE.y} s={0.5 * icon(2)} color={C.gold} o={clamp(icon(2))} />
+            <text x={960} y={528} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={76} letterSpacing="10" fill={C.gold} style={{ filter: "drop-shadow(0 0 18px rgba(242,197,92,0.45))" }}>
+              NATURE
+            </text>
+            <text x={960} y={580} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={22} letterSpacing="7" fill={C.label} opacity={step(T, t0 + 0.5, t0 + 0.9)}>
+              ALREADY TRIED THIS ONCE
+            </text>
+          </g>
+        </svg>
+      )}
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
         <IconDefs />
         <VisionDiagram id="s12h" s={diag("human", hx, 560, 0.6, hFov, hA, pulse(0), T, step(T, tHorse + 1.0, tHorse + 1.4) * 0.9)} color={TEAL} heading={90} center={<HorseIcon x={-10} y={-20} s={0.95} color={TEAL} />} />
@@ -59,7 +89,7 @@ export const S12Nature: React.FC<{ T: number }> = ({ T }) => {
         {arrows(hx, 560, 200, 0.2)}
         {arrows(rx, 560, 200, 0.6)}
       </svg>
-      <Label x={960} y={96} text="nature" size={26} color={C.gold} o={bump(T, t0 - 0.1, t0 + 0.4, tPrey - 0.2, tPrey)} />
+      <Label x={960} y={96} text="nature" size={26} color={C.gold} o={bump(T, tHorse - 0.2, tHorse + 0.2, tPrey - 0.2, tPrey)} />
       <Label x={960} y={96} text="prey animals" size={26} color={TEAL} o={bump(T, tPrey, tPrey + 0.4, tClub - 0.3, tClub)} />
       <Label x={960} y={150} text="danger can come from anywhere" size={18} color={C.coral} o={bump(T, tDanger + 0.1, tDanger + 0.5, tClub - 0.3, tClub)} />
       <Label x={960} y={96} text="welcome to the 360° club" size={26} color={C.gold} o={step(T, tClub + 0.2, tClub + 0.6)} />
