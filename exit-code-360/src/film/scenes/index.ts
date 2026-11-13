@@ -21,6 +21,10 @@ import { S19Notebook } from "./S19Notebook";
 import { S21Concert } from "./S21Concert";
 import { S24Physics } from "./S24Physics";
 import { S25Climax } from "./S25Climax";
+import { S29Epilogue } from "./S29Epilogue";
+import { S30Reality } from "./S30Reality";
+import { S33Phone } from "./S33Phone";
+import { S34Outro } from "./S34Outro";
 
 export type SceneDef = { id: string; t0: number; xIn?: number; C: React.FC<{ T: number }> };
 
@@ -46,4 +50,8 @@ export const SCENES: SceneDef[] = [
   { id: "S21-S23 concert", t0: 251.3, xIn: 0.5, C: S21Concert },
   { id: "S24 physics", t0: 286.0, xIn: 0.35, C: S24Physics },
   { id: "S25-S28 climax", t0: 302.05, xIn: 0.35, C: S25Climax },
+  { id: "S29 epilogue", t0: 352.05, xIn: 0.7, C: S29Epilogue },
+  { id: "S30-S32 reality check", t0: 378.75, xIn: 0.6, C: S30Reality },
+  { id: "S33 phone", t0: 414.1, xIn: 0.6, C: S33Phone },
+  { id: "S34 outro", t0: 427.25, xIn: 0.6, C: S34Outro },
 ];

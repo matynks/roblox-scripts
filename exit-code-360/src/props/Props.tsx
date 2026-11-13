@@ -6,7 +6,7 @@ import { lerp } from "../lib/anim";
  * Mia's cardboard scare mask, in HEAD space (r = head radius).
  * state: 0 = worn over the face, 1 = pushed up onto the top of the head.
  */
-export const CardboardMask: React.FC<{ r: number; state: number; turn?: number }> = ({ r, state, turn = 0 }) => {
+export const CardboardMask: React.FC<{ r: number; state: number; turn?: number; variant?: "old" | "new" }> = ({ r, state, turn = 0, variant = "old" }) => {
   const cx = lerp(turn * 0.32 * r, -0.05 * r, state);
   const cy = lerp(0.02 * r, -1.02 * r, state);
   const ang = lerp(0, -22, state);
@@ -18,7 +18,12 @@ export const CardboardMask: React.FC<{ r: number; state: number; turn?: number }
     <g transform={`translate(${cx},${cy}) rotate(${ang}) scale(${sx},${sy})`}>
       {/* elastic strap */}
       <path d={`M${-0.86 * r},${-0.1 * r} Q${-1.15 * r},${-0.15 * r} ${-1.0 * r},${-0.45 * r}`} stroke={marker} strokeWidth={r * 0.05} fill="none" />
-      <path d={shape} fill={C.cardboard} stroke={C.cardboardEdge} strokeWidth={r * 0.06} strokeLinejoin="round" />
+      {variant === "new" && (
+        <path d={`M${-0.7 * r},${-0.78 * r} L${-0.95 * r},${-1.35 * r} L${-0.4 * r},${-0.86 * r} M${0.7 * r},${-0.8 * r} L${0.95 * r},${-1.37 * r} L${0.42 * r},${-0.86 * r}`} fill="#C9473F" stroke={C.cardboardEdge} strokeWidth={r * 0.04} />
+      )}
+      <path d={shape} fill={variant === "new" ? "#E07A4A" : C.cardboard} stroke={C.cardboardEdge} strokeWidth={r * 0.06} strokeLinejoin="round" />
+      {variant === "new" && <path d={`M${-0.6 * r},${0.3 * r} Q0,${0.75 * r} ${0.6 * r},${0.3 * r}Z`} fill="#2B1C12" />}
+      {variant === "new" && <path d={`M${-0.45 * r},${0.34 * r} L${-0.3 * r},${0.5 * r} L${-0.15 * r},${0.36 * r} L0,${0.52 * r} L${0.15 * r},${0.36 * r} L${0.3 * r},${0.5 * r} L${0.45 * r},${0.34 * r}`} stroke="#F6F1EA" strokeWidth={r * 0.06} fill="none" />}
       {/* corrugation hints */}
       {[-0.5, -0.1, 0.3].map((yy) => (
         <path key={yy} d={`M${-0.7 * r},${yy * r} L${0.7 * r},${(yy - 0.03) * r}`} stroke={C.cardboardShade} strokeWidth={r * 0.025} opacity={0.5} />
