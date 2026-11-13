@@ -95,8 +95,10 @@ def main():
         else:
             i += 1
     rep["black_stretches"] = blacks
+    # intended dips: S18 "no off switch" fades to night before Mia's scene (212.45 dissolve)
+    intended = [(211.8, 212.9)]
     for s, e in blacks:
-        if not (s < 0.1 or e > FRAMES / FPS - 0.1):
+        if not (s < 0.1 or e > FRAMES / FPS - 0.1 or any(a <= s and e <= b for a, b in intended)):
             issues.append(f"unexpected black {s}-{e}s")
     # frozen: < 0.15 mean abs change for > 1.5 s
     still = diff < 0.15

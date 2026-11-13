@@ -2,7 +2,7 @@
 
 Animated explainer production project (Remotion + React + TypeScript + SVG, FFmpeg, Python audio tools).
 
-**Status: Proof of Concept v2. Waiting for style approval before full production.**
+**Status: full production complete — 439.733 s, 13,192 frames, 1920×1080, 30 fps, H.264 + AAC. See `docs/07_FINAL_PRODUCTION_REPORT.md`.**
 
 ## Layout
 
@@ -13,28 +13,39 @@ docs/
   03_CHARACTER_DESIGN.md     Stage B: Leo, Mia, Mr. Black
   04_POC_SHOT_BREAKDOWN.md   Stage C: per-phrase shot spec for the POC window
   05_POC_TECHNICAL_REPORT.md Stage D: what was built, QA, open issues
+  06_FULL_PRODUCTION_PLAN.md per-sequence designs for all 34 sequences, build order
+  07_FINAL_PRODUCTION_REPORT.md final specs, sound design, QC results, fixes made during QC
 src/
   characters/  rig (Figure.tsx), cast proportions, poses + walk/run cycles, expressions
   props/       cardboard mask, sandwich, seagull, cyclist (IK pedalling)
-  env/         seaside promenade set (parallax layers), atmosphere (letterbox, grain, motes, vignette)
-  graphics/    field-of-view science diagram (navy infographic style)
-  scenes/poc/  timeline (all cues), shots, POC composition
+  env/         promenade, living room, street, car, gym, pitch, classroom, concert stadium; atmosphere
+  graphics/    field-of-view science diagram, glow icon set (navy infographic style)
+  scenes/poc/  timeline (all cues), shots, POC composition (S01–S03 of the film)
+  film/        Film.tsx master composition + scenes/ (S04–S34) and the scene table
   sheets/      character design sheets (rendered from the rig)
   data/        narration_words.json / narration_phrases.json (ASR timing)
 tools/
   transcribe.py         narration → word/phrase timings (Parakeet-TDT via sherpa-onnx)
   build_timing_map.py   phrases → docs/02_AUDIO_TIMING_MAP.md
-  mix_audio.py          procedural SFX + ambience + mix (narration bit-exact)
+  mix_audio.py          POC soundtrack (procedural SFX + ambience, narration bit-exact)
+  audio_lib.py          synthesized SFX / ambience library (original, no third-party audio)
+  score.py              original procedural score (14 story sections)
+  mix_film.py           full-film cue sheet + beds + score + ducking → public/audio/film_mix.wav
+  qa_audio.py           narration-clarity check (voice vs background per 200 ms)
+  render_film.mjs       parallel segment renderer (H.264 segments, cached) + concat + AAC mux
+  qa_film.py            full-film QC: specs, PTS continuity, blips, black/frozen, cuts, A/V sync, loudness, sheets
   make_grain.py         film-grain textures
   qa_stills.mjs         render QA stills by narration time
   profile.mjs           render-cost profiling
 public/
   audio/narration.mp3   approved narration (SHA-256 41a8651f…7cc6377)
   audio/poc_mix.wav     POC soundtrack (generated)
+  audio/film_mix.wav    film soundtrack (generated, git-ignored)
   fonts/                Montserrat 500–800 (SIL OFL)
   textures/             grain frames (generated)
 renders/
   EXIT_CODE_360_POC_v2.mp4
+  EXIT_CODE_360_FULL.mp4     (generated; delivered directly, not committed)
 assets/
   character_sheets/     rendered sheets
   reference_frames/     (git-ignored) analysis boards from the third-party reference
@@ -49,6 +60,10 @@ npm install
 python3 tools/make_grain.py          # once
 python3 tools/mix_audio.py           # rebuild POC soundtrack from timeline cues
 npm run render:poc                   # → renders/EXIT_CODE_360_POC_v2.mp4 (1920×1080, 30 fps, H.264 + AAC)
+npm run render:film                  # mix + render → renders/EXIT_CODE_360_FULL.mp4 (≈35 min on 4 cores)
+node tools/render_film.mjs --comp Film --out renders/EXIT_CODE_360_FULL.mp4 \
+  --audio public/audio/film_mix.wav --only 4,5   # re-render only changed 600-frame segments
+python3 tools/qa_film.py renders/EXIT_CODE_360_FULL.mp4 public/audio/film_mix.wav renders/qa/film
 npx remotion studio src/index.ts     # interactive preview
 ```
 
