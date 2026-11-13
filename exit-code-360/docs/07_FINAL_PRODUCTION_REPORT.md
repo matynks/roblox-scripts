@@ -21,7 +21,7 @@ Deliverable: `renders/EXIT_CODE_360_FULL.mp4` (269.8 MB; delivered directly, not
 
 ## Sound design and music (all original, all generated in this project)
 
-* **SFX** (`tools/audio_lib.py`, cue sheet in `tools/mix_film.py`): ~350 synchronised cues — footsteps from the walk cycles, bell/bike pass, gulls and pigeon, doors, switches, whooshes, pings, stamps, ball/net/whistle, car pass and horn, metal groan, rattle, bolt snap, falling whistle, crash, applause, phone buzz, UI pops.
+* **SFX** (`tools/audio_lib.py`, cue sheet in `tools/mix_film.py`): 608 synchronised sound events — footsteps from the walk cycles, bell/bike pass, gulls and pigeon, doors, switches, whooshes, pings, stamps, ball/net/whistle, car pass and horn, metal groan, rattle, bolt snap, falling whistle, crash, applause, phone buzz, UI pops.
 * **Ambience beds**: sea, rooms, city, car interior, gym, stadium, classroom, concert crowd + muffled band (automated through the physics graphic, the crash and the silence).
 * **Score** (`tools/score.py`): 14 sections following the story (playful promenade, curious science, upbeat montage, nervous catch, Mr. Black drone, tender notebook, accelerating concert tension, hard cut to silence at the crash, hopeful applause swell, warm epilogue, science pad, eerie cliffhanger, warm outro).
 * Every sound is synthesised from code — no samples, libraries or third-party recordings — so the production owns all rights to it.
