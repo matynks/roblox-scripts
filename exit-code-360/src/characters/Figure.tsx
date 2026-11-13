@@ -35,6 +35,7 @@ export type FigureProps = {
   holdUpright?: boolean; // keep held props upright instead of following the forearm
   headExtra?: React.ReactNode; // drawn in head space (e.g. cardboard mask)
   headExtraBehind?: React.ReactNode;
+  backExtra?: React.ReactNode; // drawn behind the torso, in torso space (bags)
   opacity?: number;
   filter?: string;
 };
@@ -60,6 +61,7 @@ export const Figure: React.FC<FigureProps> = ({
   holdUpright = false,
   headExtra,
   headExtraBehind,
+  backExtra,
   opacity = 1,
   filter,
 }) => {
@@ -324,6 +326,7 @@ export const Figure: React.FC<FigureProps> = ({
         {legPath(legN, ink)}
         {/* torso */}
         <g transform={`rotate(${P.lean})`}>
+          {backExtra}
           {rimOn && S.outfit !== "plain" && (
             <path
               d={torsoD}

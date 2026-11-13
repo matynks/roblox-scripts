@@ -21,6 +21,7 @@ export const S05Title: React.FC<{ T: number }> = ({ T }) => {
   const b = ease.outBack(clamp((T - t360 + 0.15) / 0.5));
   const ring = clamp((T - t360) / 1.2);
   const words = "WHAT IF YOU HAD".split(" ");
+  const dip = clamp((T - 61.95) / 0.35); // dip to black before the time skip
   return (
     <AbsoluteFill>
       <SkySea cam={cam} t={T} />
@@ -98,6 +99,7 @@ export const S05Title: React.FC<{ T: number }> = ({ T }) => {
           EXIT CODE
         </div>
       </AbsoluteFill>
+      <AbsoluteFill style={{ background: "#000", opacity: dip }} />
     </AbsoluteFill>
   );
 };
