@@ -208,7 +208,13 @@ export const S25Climax: React.FC<{ T: number }> = ({ T }) => {
     if (T < tBolts - 0.1) cam = { x: CONCERT.leoX - 250 - 960, y: 600 - 540, zoom: 1.7 };
     else if (T < tEng - 0.1) cam = { x: lerp(900, 1800, clamp((T - tBolts) / 3.6)) - 960, y: 260 - 540, zoom: 1.9 };
     else if (T < tStops - 0.1) cam = { x: 1450 - 960, y: 420 - 540, zoom: 1.1 };
-    else cam = { x: lerp(1200, 1500, clamp((T - tStops) / 7)) - 960, y: 560 - 540, zoom: lerp(0.72, 0.8, clamp((T - tStops) / 7)) };
+    else {
+      // wide on the applause, then push in on Leo for "for the kid with eyes in the back of his head"
+      const pk = ease.inOut(clamp((T - tKid) / 2.4));
+      const wx = lerp(1200, 1500, clamp((T - tStops) / 7));
+      const wz = lerp(0.72, 0.8, clamp((T - tStops) / 7));
+      cam = { x: lerp(wx, 2120, pk) - 960, y: lerp(560, 700, pk) - 540, zoom: lerp(wz, 1.55, pk) };
+    }
     const pointUp = step(T, tPoint - 0.1, tPoint + 0.3);
     const leoPose: Pose = blendPose(breathe(STAND, T), { shN: 155, elN: 6, lean: -4 }, pointUp * (1 - step(T, tStops, tStops + 0.5)));
     const leoFace: Partial<Face> = T > tClaps ? { ...FACES.happy, eye: "dot", curve: 0.45, browShow: 1, brow: 0.5, browY: 0.3 } : T > tPoint ? { ...FACES.determined, lookY: -0.8, lookX: -0.5 } : { ...FACES.sad, eye: "lid", lookY: -0.3, lookX: -0.6 };
