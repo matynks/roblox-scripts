@@ -25,6 +25,6 @@ const composition = await selectComposition({ serveUrl, id: compId, inputProps, 
 for (const ts of times) {
   const frame = Math.round((Number(ts) - START) * FPS);
   const output = path.join(outDir, `T${Number(ts).toFixed(2)}_f${frame}.png`);
-  await renderStill({ serveUrl, composition, frame, output, inputProps, browserExecutable, scale: 0.5 });
+  await renderStill({ serveUrl, composition, frame, output, inputProps, browserExecutable, scale: Number(process.env.QA_SCALE || 0.5) });
   console.log(output);
 }

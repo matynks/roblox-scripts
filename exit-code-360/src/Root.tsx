@@ -5,6 +5,7 @@ import { POC } from "./scenes/poc/POC";
 import { DURATION_FRAMES, FPS } from "./scenes/poc/timeline";
 import { Film } from "./film/Film";
 import { FILM_FRAMES } from "./lib/timing";
+import { Teaser, TEASER_FRAMES } from "./teaser/Teaser";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -24,6 +25,15 @@ export const RemotionRoot: React.FC = () => (
       fps={FPS}
       width={1920}
       height={1080}
+      defaultProps={{ withAudio: true }}
+    />
+    <Composition
+      id="Teaser"
+      component={Teaser}
+      durationInFrames={TEASER_FRAMES}
+      fps={30}
+      width={1080}
+      height={1920}
       defaultProps={{ withAudio: true }}
     />
     <Still id="SheetLeo" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "leo" as const }} />

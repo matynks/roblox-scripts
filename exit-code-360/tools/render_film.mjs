@@ -115,7 +115,7 @@ const ff = [
   ...(audio ? ["-i", audio] : []),
   "-map", "0:v:0", ...(audio ? ["-map", "1:a:0"] : []),
   "-c:v", "copy",
-  ...(audio ? ["-c:a", "aac", "-b:a", "192k", "-ar", "44100"] : []),
+  ...(audio ? ["-c:a", "aac", "-b:a", arg("abr", "192k"), "-ar", "44100"] : []),
   "-movflags", "+faststart",
   out,
 ];

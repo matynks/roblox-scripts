@@ -13,3 +13,6 @@ public/audio/film_mix.wav
 renders/segments/
 renders/*.mp4
 __pycache__/
+# teaser outputs (generated; delivered directly)
+public/audio/teaser_mix.wav
+renders/teaser/

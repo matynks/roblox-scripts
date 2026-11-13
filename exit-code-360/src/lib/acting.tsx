@@ -125,6 +125,10 @@ export const Stamp: React.FC<{ x: number; y: number; text: string; k: number; co
   );
 };
 
+/** Scene captions on/off. The film leaves this at the default (on); the vertical teaser
+ *  turns them off because 16:9 caption strips would be cropped in 9:16 and it sets its own type. */
+export const LabelsVisible = React.createContext(true);
+
 /** Small-caps label (HTML) used for titles and lower thirds. */
 export const Label: React.FC<{ x: number; y: number; text: string; size?: number; color?: string; o?: number; align?: "left" | "center" | "right"; weight?: number; spacing?: string }> = ({
   x,
@@ -136,7 +140,8 @@ export const Label: React.FC<{ x: number; y: number; text: string; size?: number
   align = "center",
   weight = 700,
   spacing = "0.18em",
-}) => (
+}) =>
+  !React.useContext(LabelsVisible) ? null : (
   <div
     style={{
       position: "absolute",
