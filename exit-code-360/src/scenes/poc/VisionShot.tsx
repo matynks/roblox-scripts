@@ -111,7 +111,7 @@ export const VisionShot: React.FC<{ T: number }> = ({ T }) => {
         color={C.number}
         size={hcSize}
         align={split > 0.5 ? "center" : "left"}
-        opacity={clamp(invLerp(CUE.fovOpen - 0.2, CUE.fovOpen + 0.2, T))}
+        opacity={clamp(invLerp(CUE.fovOpen + 0.04, CUE.fovOpen + 0.3, T))}
       />
       <CounterBlock
         x={lerp(2300, 1360, split)}

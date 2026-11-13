@@ -41,13 +41,12 @@ export const CardboardMask: React.FC<{ r: number; state: number; turn?: number }
 };
 
 /** Triangle sandwich, drawn in hand space (origin at the hand). */
-export const Sandwich: React.FC<{ s?: number; bite?: number }> = ({ s = 1, bite = 0 }) => (
+export const Sandwich: React.FC<{ s?: number }> = ({ s = 1 }) => (
   <g transform={`scale(${s})`}>
     <path d="M-22,-4 L26,-30 L24,10 Z" fill="#B9844A" />
     <path d="M-19,-4 L23,-27 L22,7 Z" fill="#EBCB8F" />
     <path d="M-20,-1 L24,-6 L24,2 L-18,4Z" fill="#7DBE5A" />
     <path d="M-14,1 L22,-1 L22,5 L-12,5Z" fill="#E0554A" />
     <path d="M-22,3 L24,6 L24,14 L-20,8Z" fill="#E3C185" />
-    {bite > 0 && <circle cx={25} cy={-26} r={9 * bite} fill="#000" opacity={0} />}
   </g>
 );

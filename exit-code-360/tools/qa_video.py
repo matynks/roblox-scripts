@@ -52,7 +52,10 @@ def main():
     rep["audio_offset_samples_vs_mix"] = lag
     rep["audio_offset_ms"] = round(lag / sr * 1000, 2)
     rep["decoded_audio_seconds"] = round(len(dec) / sr, 3)
-    rep["decoded_peak_dbfs"] = round(20 * np.log10(np.abs(dec).max() + 1e-9), 2)
+    # true per-channel peak (a mono downmix would overstate a centred voice by ~3 dB)
+    raw2 = subprocess.run(["ffmpeg", "-v", "error", "-i", mp4, "-f", "f32le", "-ac", "2", "-ar", "44100", "-"], capture_output=True).stdout
+    st = np.frombuffer(raw2, dtype=np.float32).reshape(-1, 2)
+    rep["decoded_peak_dbfs_per_channel"] = [round(float(20 * np.log10(np.abs(st[:, c]).max() + 1e-9)), 2) for c in (0, 1)]
 
     # motion strips for manual review (10 fps)
     strips = {
