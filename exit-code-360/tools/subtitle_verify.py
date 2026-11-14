@@ -89,14 +89,31 @@ def main():
 
     # ---- cue rules
     P = json.load(open(os.path.join(ROOT, "src/data/narration_phrases.json")))["phrases"]
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", os.path.join(ROOT, "public/audio/narration.mp3"), "-f", "f32le", "-ac", "1", "-ar", "44100", "-"], capture_output=True).stdout
+    nar = np.frombuffer(raw, dtype=np.float32)
+
+    def voiced_after(t0, t1):
+        """loudest 10 ms block of narration in [t0, t1) in dBFS (voiced speech ≈ above −22)"""
+        s = nar[int(t0 * 44100): int(t1 * 44100)]
+        n = len(s) // 441
+        if n == 0:
+            return -99.0
+        return float(20 * np.log10(np.sqrt((s[: n * 441].reshape(n, 441) ** 2).mean(1)).max() + 1e-9))
+
+    rep["continuous_speech_handovers"] = []
     bad = []
     for k, c in enumerate(C):
         if k + 1 < len(C) and c["out"] > C[k + 1]["in"] - 1 / FPS - 1e-6:
             bad.append(f"cue {k + 1} overlaps / touches next")
-        # in continuous speech the recogniser ends a word exactly where the next begins; the cue then
-        # changes one frame before the next word (out may sit up to 0.12 s before that boundary)
-        cont = k + 1 < len(C) and C[k + 1]["speech"][0] - c["speech"][1] < 0.05
-        if c["in"] > c["speech"][0] + 0.034 or c["out"] < c["speech"][1] - (0.12 if cont else 1e-6):
+        # in continuous speech the recogniser ends a word exactly where the next begins, so a cue that
+        # hands over just before the next word is checked against the audio: no voiced narration of its
+        # own line may remain after its out-time
+        covered = c["out"] >= c["speech"][1] - 1e-6
+        if not covered and k + 1 < len(C) and C[k + 1]["speech"][0] - c["speech"][1] < 0.05:
+            v = voiced_after(c["out"], C[k + 1]["speech"][0] - 0.02)
+            rep["continuous_speech_handovers"].append({"cue": k + 1, "out": round(c["out"], 3), "next_word": C[k + 1]["speech"][0], "max_dbfs_after_out": round(v, 1)})
+            covered = v < -22.0
+        if c["in"] > c["speech"][0] + 0.034 or not covered:
             bad.append(f"cue {k + 1} does not cover its speech")
         if len(c["lines"]) > 2 or max(len(l) for l in c["lines"]) > 42:
             bad.append(f"cue {k + 1} layout")

@@ -13,7 +13,7 @@ Deliverables
 * Style: British spelling (grey, metres, apologises) to match the film (euros, mate, pitch); numbers one–ten and sentence-initial numbers spelled out, larger numbers as numerals (200 degrees, 360-degree, 10,000 euros, 412); "Gate 4" as on the on-screen sign; "Mr. Black" as in the film's lower third. Character lines are in quotation marks; attribution was taken from the film's lip-sync windows (e.g. "Mask on." is Mia; "Just watch?" is Leo).
 
 ## Timing
-* 220 cues; ≤ 2 lines; ≤ 42 characters per line; median reading speed well under 17 cps, max 19.5 cps.
+* 220 cues; ≤ 2 lines; ≤ 42 characters per line; reading speed median 12.8 cps, max 19.5 cps.
 * In-time one frame before the first word; out-time 0.35 s after the last word; cues closer than 0.5 s are chained with a clean 2-frame gap; minimum 0.73 s only for single-word beats ("You?", "Jump.").
 * Segmentation follows the speech, not the page: a cost model penalises showing a sentence before it is spoken, straddling a hard shot change, ending a line on an article/preposition/pronoun, splitting numbers, or separating a quoted line from its continuation; in/out times snap to nearby shot changes.
 
@@ -26,6 +26,19 @@ Deliverables
   * 384.1 s "but the limit is real." → raised above the film's own gold caption of the same words.
   * End card (427.4 s–) → in the clear sky between the headline and the cast, keeping the call-to-action row and footer visible.
   * Reality-check facts at 382 s and 410 s → single-line cues that clear the diagram labels.
+
+## Final QC results (`renders/subtitles/verify_report.json`)
+
+| Check | Result |
+|---|---|
+| Original master | SHA-256 unchanged (`97a02f80…7dd5a5`) |
+| Subtitled master | H.264 High, 1920×1080, 30 fps CFR, yuv420p, 13,192 frames, 439.733 s — identical to the original; 324 MB (≈5.7 Mb/s) |
+| Audio | AAC stream bit-identical to the original (packet MD5) |
+| Picture fidelity | PSNR vs original on subtitle-free frames: min 46.5 dB, mean 50.2 dB (visually lossless) |
+| Burn-in sync | 13,192 frames compared with the original: subtitles on screen on exactly the 12,715 frames the cue list specifies — 0 mismatches |
+| Cue rules | 220 cues, 0 violations; reading speed median 12.8 cps, p95 17.3, max 19.5 |
+| Continuous-speech handovers | 5 cues change just before an immediately following word; audio check: no voiced narration of their line remains after the out-time (loudest: an unvoiced final "t" release, −26 dBFS) |
+| Timestamps | SRT/ASS times floored to ms/cs so every cue shows on exactly its frames (verified 220/220) |
 
 ## Burn-in and QC
 * `ffmpeg` + libass onto the existing master — the animation was not re-rendered. x264 CRF 12, preset slow, tune animation, High profile, yuv420p; timestamps passed through; AAC stream copied (bit-identical).
