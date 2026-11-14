@@ -38,3 +38,24 @@ node tools/render_film.mjs --comp Teaser --out renders/teaser/EXIT_CODE_360_TEAS
   --audio public/audio/teaser_mix.wav --workers 4 --seg 225 --crf 16 --abr 256k
 python3 tools/qa_teaser.py renders/teaser/EXIT_CODE_360_TEASER_SHORTS.mp4 public/audio/teaser_mix.wav renders/teaser/qa
 ```
+
+---
+
+# v2 — mystery teaser (no spoilers)
+
+Deliverable: `renders/teaser_v2/EXIT_CODE_360_TEASER_MYSTERY.mp4` (22.0 MB; generated, not committed). v1 and the full film are untouched. Sources: `src/teaser/Mystery.tsx` (composition `TeaserMystery`), `src/teaser/mystery.json` (shots, narration lines, text cards), `tools/teaser_mystery_mix.py`.
+
+**Spoiler rules applied:** nothing from the science sections (no field-of-view diagrams, no "see everything / look at one thing", no physics, gorilla study or reality check), no outcome (the rescue, the aftermath and the epilogue are not shown), no final twist (the phone is seen buzzing; its messages and the rooftop figure are not). Events appear as short glimpses, partly out of order; the crash is heard over black, never seen.
+
+**Structure (30.000 s):** cold-open flash of Leo screaming → his face in a swarm of rings, *HE CAN SEE EVERYTHING.* → Mia sneaks up, *EVEN BEHIND HIM.* / "You don't even turn around." → the pigeon → Mia: "How… how did you do that?" → balls from every side → rings pulsing in the dark → a stranger in a lit doorway, *BUT SOMEONE NOTICED.* → his smile → the earpiece → "Only Gate Four." / "Look away, and the deal is over." → a light shakes high above → *MIA?* in the crowd → Leo's shocked face, *WHAT DID HE SEE?* → Mia looks up → a scream → flash, crash, black → "Silence." / *WHAT WOULD YOU DO?* → a phone buzzes in the dark, *IT'S NOT OVER.* → a gold ring draws itself 0→360°: **WHAT IF YOU HAD 360-DEGREE VISION?** + **EXIT CODE** · *watch the full video on EXIT CODE*.
+
+**Sound:** six narration lines (sample-exact, cut only where the audio is actually silent — measured, not just by ASR word times), the film's own SFX/ambience at the matching film times, and a new mystery cue: braam hook, ticking pulse, heartbeat build, hard stop at the crash, eerie phone bed, ring sweep and title hit timed after "…sixty". Voice leads the background by a median 15.8 dB.
+
+**QC (`QA_SHOTS=src/teaser/mystery.json tools/qa_teaser.py`):** H.264 High 1080×1920, 30 fps CFR, yuv420p, 900 frames, 30.000 s video and audio; AAC-LC stereo 44.1 kHz ≈ 239 kb/s; 0 irregular PTS steps; no one-frame blips; black only on the planned crash cut (frames 608–689; 602–607 are the flash); A/V sync 0.0 ms at five points; −16.7 LUFS, −1.1 dBTP (the untouched narration sets the level). Fixed during QC: caption chunking ("HOW / HOW DID YOU DO THAT?"), the stranger framed too small, the title hit masking "…sixty", "Silence." masked by the crash tail, title entering through pure black.
+
+```bash
+python3 tools/teaser_mystery_mix.py
+node tools/render_film.mjs --comp TeaserMystery --out renders/teaser_v2/EXIT_CODE_360_TEASER_MYSTERY.mp4 \
+  --audio public/audio/teaser_mystery_mix.wav --workers 4 --seg 225 --crf 16 --abr 256k
+QA_SHOTS=src/teaser/mystery.json python3 tools/qa_teaser.py renders/teaser_v2/EXIT_CODE_360_TEASER_MYSTERY.mp4 public/audio/teaser_mystery_mix.wav renders/teaser_v2/qa
+```
