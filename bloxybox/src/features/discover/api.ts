@@ -67,6 +67,7 @@ export function useLeaderboard(slug: string) {
   return useQuery({
     queryKey: queryKeys.leaderboard(slug),
     queryFn: () => rpc<LeaderboardEntry[]>('get_leaderboard', { p_slug: slug, p_limit: 20 }),
+    enabled: slug.length > 0,
     staleTime: 60_000,
   });
 }
