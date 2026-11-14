@@ -157,6 +157,9 @@ Rules:
 
 ## 3. Database schema (Supabase / Postgres 15+)
 
+Eight migrations build the schema (`supabase/migrations/20261114000100..800`); the last one
+provisions accounts that existed before BloxyBox was installed. Apply/verify: `docs/DATABASE_SETUP.md`.
+
 All tables live in `public` with RLS **enabled**. Default table privileges for
 `anon`/`authenticated` are revoked and then granted narrowly. All writes to
 economy tables go through `SECURITY DEFINER` functions with `search_path` pinned.
@@ -258,6 +261,7 @@ src/app/
 | Phase | Scope | Exit criteria |
 | --- | --- | --- |
 | 1 | Assessment, architecture, schema, navigation, risks (this document) | Document committed |
+| — | Database rollout (see `docs/DATABASE_SETUP.md`) | 8 migrations verified on a real Supabase stack; `supabase/checks/verify.sql` all PASS |
 | 2 | Expo project, design tokens, UI primitives, providers, storage, query client, Jest, lint | Typecheck + lint + unit tests pass; app bundles for Android |
 | 3 | Auth (sign-up/in/out), session storage, profile, edit profile, settings, server setup | Auth flows wired; SQL tests for profile RPCs pass |
 | 4 | Wallet, ledger, daily reward, transaction history/detail, inventory, avatar editor | Ledger invariant tests pass |

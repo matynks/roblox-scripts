@@ -44,15 +44,18 @@ bloxybox/
 BloxyBox needs a Supabase project. The free tier is enough.
 
 1. Create a project at <https://supabase.com/dashboard>.
-2. Apply the database migrations, **in filename order**, using either:
-   * **Supabase CLI** (recommended):
-     ```bash
-     cd bloxybox
-     npx supabase login
-     npx supabase link --project-ref <your-project-ref>
-     npx supabase db push
-     ```
-   * **SQL editor**: open each file in `supabase/migrations/` in order and run it.
+2. Apply the 8 database migrations. **Step-by-step guide with preflight and
+   verification: [`docs/DATABASE_SETUP.md`](docs/DATABASE_SETUP.md).** In short:
+   ```bash
+   cd bloxybox && npm install
+   npx supabase login
+   npx supabase link --project-ref <your-project-ref>      # asks for the DATABASE password
+   npx supabase db query --remote --read-only -f supabase/checks/preflight.sql
+   npx supabase db push --remote --dry-run
+   npx supabase db push --remote                           # CLI v3: --remote is required
+   npx supabase db query --remote --read-only -f supabase/checks/verify.sql
+   ```
+   Or paste each file of `supabase/migrations/` into the SQL editor, in filename order.
 3. *(Optional, for development)* Authentication → Providers → Email: turn **Confirm email** off,
    so new accounts can sign in immediately. With it on, the app tells new players to
    confirm their e-mail and then sign in.
@@ -126,7 +129,8 @@ Useful commands:
 | `npm run typecheck` | TypeScript, strict mode |
 | `npm run lint` | ESLint (Expo + React Compiler rules) |
 | `npm test` | Jest unit and component tests |
-| `npm run test:db` | Database test suite against a throwaway local PostgreSQL |
+| `npm run test:db` | Database test suite against a throwaway local PostgreSQL (+ checks of `supabase/checks/*.sql`) |
+| `npm run test:api` | supabase-js smoke test against a **local** Supabase stack (`npx supabase start` first) |
 | `npm run test:all` | All of the above |
 
 ---

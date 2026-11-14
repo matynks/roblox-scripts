@@ -37,6 +37,18 @@ client would.
 | `05_social` | Follow/unfollow, no self-follow, friends = mutual follows, simulated vs real follower totals, connection lists, literal search (wildcards escaped), one counted visit per visitor per day |
 | `06_dev_tools` | Every developer RPC rejects normal users and changes nothing; the denied probe is logged; developer actions work, are ledgered and audited; reset restores starter state; diagnostics report ledger consistency; revoking the role takes effect immediately |
 
+## 2b. Database rollout checks
+
+* `supabase/checks/preflight.sql` (read-only): finds name conflicts before pushing to an existing project.
+* `supabase/checks/verify.sql` (read-only): 15 check groups covering tables, RLS, columns, constraints,
+  indexes, functions, the Auth trigger, policies, privileges, catalog data, profiles for all accounts,
+  schema version and migration history. The DB runner proves it passes on a migrated database, detects
+  tampering and fails cleanly on an empty one.
+* `npm run test:api` (`scripts/api-smoke-test.mjs`): 37 checks with supabase-js against a **local**
+  Supabase stack (`npx supabase start`): sign-up trigger, RLS, purchases, passes, games, social,
+  locked developer tools. It refuses to run against a hosted project.
+* `07_backfill` SQL suite: accounts created before BloxyBox get a profile and wallet; idempotent; existing players untouched.
+
 ## 3. Static checks
 
 * `npm run typecheck`: strict TypeScript with `noUncheckedIndexedAccess`.

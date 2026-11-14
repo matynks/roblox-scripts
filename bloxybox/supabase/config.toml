@@ -13,6 +13,6 @@ site_url = "bloxybox://"
 enable_signup = true
 
 [auth.email]
-enable_signup = true
+enabled = true
 # Set to false while developing to skip the confirmation e-mail.
 enable_confirmations = true

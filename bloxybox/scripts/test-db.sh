@@ -88,6 +88,38 @@ for test_file in "${test_files[@]}"; do
   "${PSQL[@]}" -d postgres -c "drop database \"$db\"" >/dev/null
 done
 
+# The read-only verification script must pass on a fully migrated database ...
+echo "Checking supabase/checks/verify.sql"
+"${PSQL[@]}" -d postgres -c "create database t_verify template bloxybox_template" >/dev/null
+verify_out="$("${PSQL[@]}" -d t_verify -At -F '|' -f "$ROOT/supabase/checks/verify.sql" 2>&1)" || true
+if grep -q '|FAIL|' <<<"$verify_out" || grep -qi 'error' <<<"$verify_out"; then
+  echo "  FAIL  verify.sql on a migrated database"; echo "$verify_out" | sed 's/^/        /'; failed=$((failed + 1)); failures+=("verify_migrated")
+else
+  echo "  PASS  verify.sql reports PASS on a migrated database"; passed=$((passed + 1))
+fi
+# ... must detect tampering (a dropped policy and an illegal grant) ...
+"${PSQL[@]}" -d t_verify -c "drop policy wallets_read_own on public.wallets; grant insert on public.wallets to authenticated;" >/dev/null
+verify_out="$("${PSQL[@]}" -d t_verify -At -F '|' -f "$ROOT/supabase/checks/verify.sql" 2>&1)" || true
+if grep -q '09 RLS policies|FAIL' <<<"$verify_out" && grep -q '10 table privileges.*|FAIL|.*authenticated can insert wallets' <<<"$verify_out"; then
+  echo "  PASS  verify.sql detects a dropped policy and an illegal grant"; passed=$((passed + 1))
+else
+  echo "  FAIL  verify.sql missed tampering"; echo "$verify_out" | sed 's/^/        /'; failed=$((failed + 1)); failures+=("verify_tamper")
+fi
+"${PSQL[@]}" -d postgres -c "drop database t_verify" >/dev/null
+# ... and must fail (not crash) on a project where nothing was applied.
+"${PSQL[@]}" -d postgres -c "create database t_empty" >/dev/null
+# Roles are cluster-wide and already exist; an empty Supabase project only needs auth.users.
+"${PSQL[@]}" -d t_empty -c "create schema auth; create table auth.users (id uuid primary key default gen_random_uuid(), email text, raw_user_meta_data jsonb not null default '{}'::jsonb, created_at timestamptz not null default now()); insert into auth.users (email) values ('someone@example.com');" >/dev/null
+verify_out="$("${PSQL[@]}" -d t_empty -At -F '|' -f "$ROOT/supabase/checks/verify.sql" 2>&1)" || true
+preflight_out="$("${PSQL[@]}" -d t_empty -At -F '|' -f "$ROOT/supabase/checks/preflight.sql" 2>&1)" || true
+if grep -q '01 tables exist|FAIL' <<<"$verify_out" && ! grep -qi 'error' <<<"$verify_out" \
+   && ! grep -q 'CONFLICT' <<<"$preflight_out" && ! grep -qi 'error' <<<"$preflight_out"; then
+  echo "  PASS  verify.sql fails and preflight.sql is clean on an empty project"; passed=$((passed + 1))
+else
+  echo "  FAIL  checks on an empty project"; echo "$verify_out" "$preflight_out" | sed 's/^/        /'; failed=$((failed + 1)); failures+=("verify_empty")
+fi
+"${PSQL[@]}" -d postgres -c "drop database t_empty" >/dev/null
+
 echo
 echo "Database tests: $passed passed, $failed failed"
 if (( failed > 0 )); then

@@ -90,7 +90,7 @@ begin
   -- Diagnostics and logs
   v_result := public.dev_diagnostics();
   perform tests.assert_eq((v_result -> 'economy' ->> 'ledger_consistent')::boolean, true, 'ledger consistent');
-  perform tests.assert_eq(v_result ->> 'schema_version', '20261114000700', 'schema version reported');
+  perform tests.assert_eq(v_result ->> 'schema_version', '20261114000800', 'schema version reported');
   perform tests.assert(jsonb_array_length(public.dev_list_transactions(v_target)) >= 3, 'transactions listed');
   perform tests.assert(jsonb_array_length(public.dev_list_audit_log(200)) >= 9, 'audit log listed');
 

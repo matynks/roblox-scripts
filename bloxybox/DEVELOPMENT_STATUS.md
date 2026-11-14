@@ -19,7 +19,8 @@ checklist in [`docs/TESTING.md`](docs/TESTING.md) on the Galaxy A15.
 | TypeScript (`npm run typecheck`, strict) | ✅ passes |
 | ESLint (`npm run lint`, incl. React Compiler rules) | ✅ passes (one documented, narrowly scoped suppression in Box Stack) |
 | Jest (`npm test`) | ✅ 56 tests in 4 suites pass |
-| Database (`npm run test:db`, PostgreSQL 16) | ✅ 6 suites pass |
+| Database (`npm run test:db`, PostgreSQL 16) | ✅ 7 suites + 3 rollout-check tests pass |
+| Real Supabase stack (CLI 3.1.0, Postgres 17.11) | ✅ `db push` of all 8 migrations; `verify.sql` 15/15 PASS; API smoke test 37/37 |
 | Android JS bundle (`expo export --platform android`) | ✅ builds (Hermes bytecode, ~5.4 MB) |
 | Release APK (Gradle, arm64-v8a) | ✅ builds; `aapt2`/`apksigner` verified (details in Phase 10) |
 | Run on Galaxy A15 | ⬜ not yet done |
@@ -88,6 +89,16 @@ checklist in [`docs/TESTING.md`](docs/TESTING.md) on the Galaxy A15.
   installed for React Native's Gradle toolchain. A normal developer machine needs neither workaround (only JDK 17).
 * Size: R8 minification and resource shrinking are off (the Expo default). Turning them on would shrink the APK
   noticeably, but must be verified on a device first because R8 can strip classes used by native modules.
+
+## Database rollout (2026-11-14)
+* Cause of "Connected, but the BloxyBox database is not set up": migrations not applied to the project
+  (reproduced: Supabase returns `404 PGRST202` for `is_username_available`).
+* Added migration 8 (`backfill_existing_users`): accounts that existed before BloxyBox would otherwise have
+  no profile or wallet. Found by testing `db push` against a project with an existing account.
+* Added `supabase/checks/preflight.sql`, `supabase/checks/verify.sql`, `scripts/api-smoke-test.mjs`,
+  `docs/DATABASE_SETUP.md`; pinned the Supabase CLI (3.1.0) as a dev dependency.
+* Fixed the docs: with CLI v3, `supabase db push` needs `--remote` to target your project.
+* **Not yet done:** applying the migrations to *your* Supabase project, which happens on your machine (see the guide).
 
 ## Known limitations and decisions
 * **Score tampering:** a client-side game can't be made cheat-proof. The server bounds abuse (server clock, rate limits, single submit, session expiry, per-run and daily caps) but can't prove a score was earned.
