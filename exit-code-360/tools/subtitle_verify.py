@@ -93,7 +93,10 @@ def main():
     for k, c in enumerate(C):
         if k + 1 < len(C) and c["out"] > C[k + 1]["in"] - 1 / FPS - 1e-6:
             bad.append(f"cue {k + 1} overlaps / touches next")
-        if c["in"] > c["speech"][0] + 0.034 or c["out"] < c["speech"][1] - 1e-6:
+        # in continuous speech the recogniser ends a word exactly where the next begins; the cue then
+        # changes one frame before the next word (out may sit up to 0.12 s before that boundary)
+        cont = k + 1 < len(C) and C[k + 1]["speech"][0] - c["speech"][1] < 0.05
+        if c["in"] > c["speech"][0] + 0.034 or c["out"] < c["speech"][1] - (0.12 if cont else 1e-6):
             bad.append(f"cue {k + 1} does not cover its speech")
         if len(c["lines"]) > 2 or max(len(l) for l in c["lines"]) > 42:
             bad.append(f"cue {k + 1} layout")

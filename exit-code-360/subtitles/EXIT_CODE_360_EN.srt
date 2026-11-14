@@ -1,5 +1,5 @@
 1
-00:00:00,033 --> 00:00:02,367
+00:00:00,033 --> 00:00:02,366
 Your little sister tiptoes up behind you,
 
 2
@@ -24,7 +24,7 @@ A pigeon dives at your head,
 you duck, without looking.
 
 7
-00:00:13,867 --> 00:00:16,267
+00:00:13,866 --> 00:00:16,266
 A cyclist rings his bell from behind.
 
 8
@@ -36,11 +36,11 @@ You step aside,
 like a dancer.
 
 10
-00:00:18,967 --> 00:00:20,500
+00:00:18,966 --> 00:00:20,500
 Mia stares.
 
 11
-00:00:20,567 --> 00:00:23,133
+00:00:20,566 --> 00:00:23,133
 “How… how did you do that?”
 
 12
@@ -48,7 +48,7 @@ Mia stares.
 Then a seagull swoops for your sandwich.
 
 13
-00:00:25,600 --> 00:00:29,067
+00:00:25,600 --> 00:00:29,066
 You hold it high.
 The seagull leaves, offended.
 
@@ -57,7 +57,7 @@ The seagull leaves, offended.
 A normal human sees about 200 degrees:
 
 15
-00:00:32,267 --> 00:00:35,133
+00:00:32,266 --> 00:00:35,133
 everything ahead,
 and a little to each side.
 
@@ -70,11 +70,11 @@ Behind you?
 Nothing.
 
 18
-00:00:37,367 --> 00:00:38,100
+00:00:37,366 --> 00:00:38,100
 You?
 
 19
-00:00:38,167 --> 00:00:39,633
+00:00:38,166 --> 00:00:39,633
 Three hundred and sixty.
 
 20
@@ -82,11 +82,11 @@ Three hundred and sixty.
 The whole circle.
 
 21
-00:00:40,967 --> 00:00:42,100
+00:00:40,966 --> 00:00:42,100
 No blind side.
 
 22
-00:00:42,167 --> 00:00:43,233
+00:00:42,166 --> 00:00:43,233
 No back.
 
 23
@@ -94,19 +94,19 @@ No back.
 Here’s the rule.
 
 24
-00:00:44,267 --> 00:00:45,467
+00:00:44,266 --> 00:00:45,466
 Your eyes got wider.
 
 25
-00:00:45,533 --> 00:00:46,967
+00:00:45,533 --> 00:00:46,966
 Your brain did not.
 
 26
-00:00:47,033 --> 00:00:48,867
+00:00:47,033 --> 00:00:48,866
 Hold up a thumb at arm’s length.
 
 27
-00:00:48,933 --> 00:00:51,267
+00:00:48,933 --> 00:00:51,266
 Only that patch is truly sharp.
 
 28
@@ -123,11 +123,11 @@ You can see everything,
 but you can only look at one thing.
 
 31
-00:00:59,067 --> 00:01:02,200
+00:00:59,066 --> 00:01:02,200
 So what if you had 360-degree vision?
 
 32
-00:01:02,267 --> 00:01:04,833
+00:01:02,266 --> 00:01:04,833
 Plus, nobody sneaks up on you.
 
 33
@@ -135,7 +135,7 @@ Plus, nobody sneaks up on you.
 Ever.
 
 34
-00:01:05,767 --> 00:01:07,767
+00:01:05,766 --> 00:01:07,766
 Your surprise party is ruined.
 
 35
@@ -144,7 +144,7 @@ Forty people hide behind the couch,
 all spotted.
 
 36
-00:01:11,267 --> 00:01:13,567
+00:01:11,266 --> 00:01:13,566
 “Mate, you could at least pretend.”
 
 37
@@ -152,11 +152,11 @@ all spotted.
 Pickpockets are doomed.
 
 38
-00:01:15,267 --> 00:01:17,300
+00:01:15,266 --> 00:01:17,300
 A hand slips toward your bag.
 
 39
-00:01:17,367 --> 00:01:19,633
+00:01:17,366 --> 00:01:19,633
 You see it before it arrives.
 
 40
@@ -164,7 +164,7 @@ You see it before it arrives.
 The thief apologises, then runs.
 
 41
-00:01:22,500 --> 00:01:23,967
+00:01:22,500 --> 00:01:23,966
 Driving lessons.
 
 42
@@ -177,11 +177,11 @@ to check blind spots.
 You?
 
 44
-00:01:28,267 --> 00:01:29,300
+00:01:28,266 --> 00:01:29,300
 Never.
 
 45
-00:01:29,367 --> 00:01:31,733
+00:01:29,366 --> 00:01:31,733
 The instructor stares in silence.
 
 46
@@ -189,15 +189,15 @@ The instructor stares in silence.
 “Dude… you didn’t even look once.”
 
 47
-00:01:34,767 --> 00:01:35,733
+00:01:34,766 --> 00:01:35,733
 “No need.”
 
 48
-00:01:35,800 --> 00:01:36,867
+00:01:35,800 --> 00:01:36,866
 Dodgeball.
 
 49
-00:01:36,933 --> 00:01:38,867
+00:01:36,933 --> 00:01:38,866
 Twelve balls from every angle.
 
 50
@@ -205,11 +205,11 @@ Twelve balls from every angle.
 You dodge them all, facing the wall.
 
 51
-00:01:41,400 --> 00:01:43,267
+00:01:41,400 --> 00:01:43,266
 Game over in four minutes.
 
 52
-00:01:43,333 --> 00:01:46,867
+00:01:43,333 --> 00:01:46,866
 Teammates cheer.
 The other team is writing a complaint.
 
@@ -218,16 +218,16 @@ The other team is writing a complaint.
 Basketball.
 
 54
-00:01:48,067 --> 00:01:49,667
+00:01:48,066 --> 00:01:49,666
 Ten players on the court.
 
 55
-00:01:49,733 --> 00:01:52,967
+00:01:49,733 --> 00:01:52,966
 You see the other nine at once.
 A behind-the-back pass.
 
 56
-00:01:53,033 --> 00:01:53,867
+00:01:53,033 --> 00:01:53,866
 Perfect.
 
 57
@@ -235,19 +235,19 @@ Perfect.
 The coach drops his clipboard.
 
 58
-00:01:55,767 --> 00:01:57,000
+00:01:55,766 --> 00:01:57,000
 Football next.
 
 59
-00:01:57,067 --> 00:01:58,900
+00:01:57,066 --> 00:01:58,900
 Twenty-two players on the pitch.
 
 60
-00:01:58,967 --> 00:02:00,900
+00:01:58,966 --> 00:02:00,900
 A referee can’t see behind him.
 
 61
-00:02:00,967 --> 00:02:01,867
+00:02:00,966 --> 00:02:01,866
 You can.
 
 62
@@ -255,19 +255,19 @@ You can.
 Every foul, every shove, every dive.
 
 63
-00:02:05,567 --> 00:02:07,600
+00:02:05,566 --> 00:02:07,600
 Nature already tried this once.
 
 64
-00:02:07,667 --> 00:02:10,067
+00:02:07,666 --> 00:02:10,066
 Horses see almost all the way around.
 
 65
-00:02:10,133 --> 00:02:11,267
+00:02:10,133 --> 00:02:11,266
 So do rabbits.
 
 66
-00:02:11,333 --> 00:02:12,867
+00:02:11,333 --> 00:02:12,866
 They’re both prey animals.
 
 67
@@ -275,11 +275,11 @@ They’re both prey animals.
 Danger can come from anywhere.
 
 68
-00:02:14,867 --> 00:02:16,400
+00:02:14,866 --> 00:02:16,400
 Welcome to the club.
 
 69
-00:02:16,467 --> 00:02:17,533
+00:02:16,466 --> 00:02:17,533
 The catch?
 
 70
@@ -291,11 +291,11 @@ Nothing is background.
 A moth flutters left.
 
 72
-00:02:20,867 --> 00:02:22,167
+00:02:20,866 --> 00:02:22,166
 Attention jumps.
 
 73
-00:02:22,233 --> 00:02:23,767
+00:02:22,233 --> 00:02:23,766
 A car honks right.
 
 74
@@ -303,11 +303,11 @@ A car honks right.
 Jump.
 
 75
-00:02:24,700 --> 00:02:26,567
+00:02:24,700 --> 00:02:26,566
 A flag flaps behind.
 
 76
-00:02:26,633 --> 00:02:27,667
+00:02:26,633 --> 00:02:27,666
 Jump.
 
 77
@@ -316,7 +316,7 @@ Seeing everything means getting
 distracted by everything.
 
 78
-00:02:31,167 --> 00:02:33,367
+00:02:31,166 --> 00:02:33,366
 In class, 30 faces:
 
 79
@@ -336,15 +336,15 @@ Then a man in a grey suit finds you.
 Mr. Black.
 
 83
-00:02:41,567 --> 00:02:42,800
+00:02:41,566 --> 00:02:42,800
 He smiles.
 
 84
-00:02:42,867 --> 00:02:45,200
+00:02:42,866 --> 00:02:45,200
 “We need a human security camera.
 
 85
-00:02:45,267 --> 00:02:49,567
+00:02:45,266 --> 00:02:49,566
 Forty thousand fans,
 one concert, 10,000 euros.
 
@@ -357,7 +357,7 @@ Just watch.”
 “Just watch?”
 
 88
-00:02:53,067 --> 00:02:54,033
+00:02:53,066 --> 00:02:54,033
 “Just watch.
 
 89
@@ -365,7 +365,7 @@ Just watch.”
 And never leave your post.”
 
 90
-00:02:55,867 --> 00:02:57,167
+00:02:55,866 --> 00:02:57,166
 But there’s a cost.
 
 91
@@ -377,7 +377,7 @@ A busier picture means a busier mind.
 By noon, your head is buzzing,
 
 93
-00:03:02,167 --> 00:03:06,733
+00:03:02,166 --> 00:03:06,733
 amazing and overwhelming,
 and sneaky surprises are ruined:
 
@@ -386,16 +386,16 @@ and sneaky surprises are ruined:
 the gift behind a back,
 
 95
-00:03:08,567 --> 00:03:12,200
+00:03:08,566 --> 00:03:12,200
 the party behind a couch,
 the scare from behind.
 
 96
-00:03:12,267 --> 00:03:15,000
+00:03:12,266 --> 00:03:15,000
 Ever wonder why surprises feel so good?
 
 97
-00:03:15,067 --> 00:03:19,267
+00:03:15,066 --> 00:03:19,266
 Dopamine cells fire hardest
 when life beats the prediction.
 
@@ -405,7 +405,7 @@ You can’t predict everything,
 but you see these coming,
 
 99
-00:03:22,567 --> 00:03:24,267
+00:03:22,566 --> 00:03:24,266
 so the spark never lights.
 
 100
@@ -413,19 +413,19 @@ so the spark never lights.
 You smile a second late,
 
 101
-00:03:26,067 --> 00:03:27,467
+00:03:26,066 --> 00:03:27,466
 or not at all.
 
 102
-00:03:27,533 --> 00:03:29,767
+00:03:27,533 --> 00:03:29,766
 Worse, there’s no off switch.
 
 103
-00:03:29,833 --> 00:03:32,667
+00:03:29,833 --> 00:03:32,666
 And one night, it costs far more.
 
 104
-00:03:32,733 --> 00:03:34,167
+00:03:32,733 --> 00:03:34,166
 Mia notices.
 
 105
@@ -433,7 +433,7 @@ Mia notices.
 Of course she does.
 
 106
-00:03:35,567 --> 00:03:36,467
+00:03:35,566 --> 00:03:36,466
 She…
 
 107
@@ -441,7 +441,7 @@ She…
 keeps a little notebook.
 
 108
-00:03:39,367 --> 00:03:40,633
+00:03:39,366 --> 00:03:40,633
 Scares:
 
 109
@@ -453,7 +453,7 @@ zero.
 Tries:
 
 111
-00:03:43,167 --> 00:03:45,033
+00:03:43,166 --> 00:03:45,033
 412.
 
 112
@@ -461,19 +461,19 @@ Tries:
 She holds it up, hopeful.
 
 113
-00:03:47,367 --> 00:03:48,733
+00:03:47,366 --> 00:03:48,733
 “Just once, Leo.
 
 114
-00:03:48,800 --> 00:03:50,367
+00:03:48,800 --> 00:03:50,366
 Let me win once.”
 
 115
-00:03:50,433 --> 00:03:51,767
+00:03:50,433 --> 00:03:51,766
 You never mean to ruin it.
 
 116
-00:03:51,833 --> 00:03:54,167
+00:03:51,833 --> 00:03:54,166
 You just… always see her.
 
 117
@@ -481,7 +481,7 @@ You just… always see her.
 You laugh.
 
 118
-00:03:55,267 --> 00:03:56,633
+00:03:55,266 --> 00:03:56,633
 The tired laugh,
 
 119
@@ -489,7 +489,7 @@ The tired laugh,
 not the real one.
 
 120
-00:03:57,800 --> 00:03:59,367
+00:03:57,800 --> 00:03:59,366
 She hears the difference.
 
 121
@@ -505,7 +505,7 @@ She hears the difference.
 She grins anyway.
 
 124
-00:04:04,067 --> 00:04:05,367
+00:04:04,066 --> 00:04:05,366
 “Tomorrow’s concert.
 
 125
@@ -517,7 +517,7 @@ I got a ticket.
 Mask on.
 
 127
-00:04:07,800 --> 00:04:09,567
+00:04:07,800 --> 00:04:09,566
 Watch your back, Leo.
 
 128
@@ -525,7 +525,7 @@ Watch your back, Leo.
 Oh, wait.”
 
 129
-00:04:11,567 --> 00:04:13,267
+00:04:11,566 --> 00:04:13,266
 Everyone else, you just see.
 
 130
@@ -533,28 +533,28 @@ Everyone else, you just see.
 Mia?
 
 131
-00:04:14,467 --> 00:04:15,500
+00:04:14,466 --> 00:04:15,500
 You look.
 
 132
-00:04:15,567 --> 00:04:16,600
+00:04:15,566 --> 00:04:16,600
 The concert.
 
 133
-00:04:16,667 --> 00:04:18,367
+00:04:16,666 --> 00:04:18,366
 Forty thousand people.
 
 134
-00:04:18,433 --> 00:04:21,067
+00:04:18,433 --> 00:04:21,066
 Mr. Black’s voice
 crackles in your earpiece.
 
 135
-00:04:21,133 --> 00:04:22,567
+00:04:21,133 --> 00:04:22,566
 “Watch Gate 4.
 
 136
-00:04:22,633 --> 00:04:24,067
+00:04:22,633 --> 00:04:24,066
 Only Gate 4.
 
 137
@@ -562,7 +562,7 @@ Only Gate 4.
 Look away, and the deal is over.”
 
 138
-00:04:26,700 --> 00:04:28,567
+00:04:26,700 --> 00:04:28,566
 So you stare at Gate 4.
 
 139
@@ -570,7 +570,7 @@ So you stare at Gate 4.
 Behind you, metal groans.
 
 140
-00:04:30,400 --> 00:04:33,167
+00:04:30,400 --> 00:04:33,166
 High above the crowd,
 a stage light shakes.
 
@@ -583,7 +583,7 @@ A bolt snaps.
 Your eyes see it instantly.
 
 143
-00:04:36,567 --> 00:04:37,533
+00:04:36,566 --> 00:04:37,533
 Your brain?
 
 144
@@ -591,11 +591,11 @@ Your brain?
 A quarter second late.
 
 145
-00:04:39,267 --> 00:04:40,867
+00:04:39,266 --> 00:04:40,866
 Noticing takes time.
 
 146
-00:04:40,933 --> 00:04:42,167
+00:04:40,933 --> 00:04:42,166
 Then you see her:
 
 147
@@ -603,7 +603,7 @@ Then you see her:
 a cardboard mask, right underneath.
 
 148
-00:04:45,200 --> 00:04:46,067
+00:04:45,200 --> 00:04:46,066
 Mia.
 
 149
@@ -611,7 +611,7 @@ Mia.
 The light hangs eight metres up.
 
 150
-00:04:48,367 --> 00:04:50,967
+00:04:48,366 --> 00:04:50,966
 It falls
 in about one and a quarter seconds.
 
@@ -620,7 +620,7 @@ in about one and a quarter seconds.
 Take away your quarter.
 
 152
-00:04:52,567 --> 00:04:53,933
+00:04:52,566 --> 00:04:53,933
 One second left.
 
 153
@@ -628,11 +628,11 @@ One second left.
 Mia is 15 metres away.
 
 154
-00:04:56,167 --> 00:04:58,333
+00:04:56,166 --> 00:04:58,333
 You run five metres per second.
 
 155
-00:04:58,400 --> 00:04:59,467
+00:04:58,400 --> 00:04:59,466
 Three seconds.
 
 156
@@ -640,11 +640,11 @@ Three seconds.
 Can you reach her?
 
 157
-00:05:00,800 --> 00:05:02,167
+00:05:00,800 --> 00:05:02,166
 Not even close.
 
 158
-00:05:02,233 --> 00:05:05,367
+00:05:02,233 --> 00:05:05,366
 You can see everything,
 but you can only look at one thing.
 
@@ -653,15 +653,15 @@ but you can only look at one thing.
 Gate 4 or Mia?
 
 160
-00:05:07,567 --> 00:05:08,633
+00:05:07,566 --> 00:05:08,633
 You look at Mia.
 
 161
-00:05:08,700 --> 00:05:10,167
+00:05:08,700 --> 00:05:10,166
 You scream her name.
 
 162
-00:05:10,233 --> 00:05:11,967
+00:05:10,233 --> 00:05:11,966
 “Mia! Up!”
 
 163
@@ -669,15 +669,15 @@ You scream her name.
 Forty thousand heads turn.
 
 164
-00:05:13,967 --> 00:05:15,900
+00:05:13,966 --> 00:05:15,900
 She looks up, freezes.
 
 165
-00:05:15,967 --> 00:05:17,800
+00:05:15,966 --> 00:05:17,800
 A stranger yanks her back.
 
 166
-00:05:17,867 --> 00:05:20,133
+00:05:17,866 --> 00:05:20,133
 The light crashes where she stood.
 
 167
@@ -685,11 +685,11 @@ The light crashes where she stood.
 Silence.
 
 168
-00:05:21,367 --> 00:05:23,967
+00:05:21,366 --> 00:05:23,966
 Mr. Black snarls through the earpiece.
 
 169
-00:05:24,033 --> 00:05:25,267
+00:05:24,033 --> 00:05:25,266
 “You’re fired.
 
 170
@@ -697,7 +697,7 @@ Mr. Black snarls through the earpiece.
 The money?
 
 171
-00:05:26,367 --> 00:05:27,367
+00:05:26,366 --> 00:05:27,366
 Gone.”
 
 172
@@ -705,11 +705,11 @@ Gone.”
 Silence would be easy.
 
 173
-00:05:29,167 --> 00:05:30,967
+00:05:29,166 --> 00:05:30,966
 Instead, you point.
 
 174
-00:05:31,033 --> 00:05:32,867
+00:05:31,033 --> 00:05:32,866
 Bolt after bolt.
 
 175
@@ -717,28 +717,28 @@ Bolt after bolt.
 Six more, loose across the rig.
 
 176
-00:05:35,367 --> 00:05:37,133
+00:05:35,366 --> 00:05:37,133
 Engineers climb up.
 
 177
-00:05:37,200 --> 00:05:39,167
+00:05:37,200 --> 00:05:39,166
 Every one is loose.
 
 178
-00:05:39,233 --> 00:05:40,567
+00:05:39,233 --> 00:05:40,566
 The show stops.
 
 179
-00:05:40,633 --> 00:05:42,267
+00:05:40,633 --> 00:05:42,266
 Nobody else gets hurt.
 
 180
-00:05:42,333 --> 00:05:46,667
+00:05:42,333 --> 00:05:46,666
 The whole crowd claps for the kid
 with eyes in the back of his head.
 
 181
-00:05:46,733 --> 00:05:48,667
+00:05:46,733 --> 00:05:48,666
 Mia clings to your jacket.
 
 182
@@ -746,7 +746,7 @@ Mia clings to your jacket.
 “How did you know?”
 
 183
-00:05:50,000 --> 00:05:52,267
+00:05:50,000 --> 00:05:52,266
 “I always look at you,” you say.
 
 184
@@ -755,11 +755,11 @@ Weeks later, Mia tiptoes up behind you,
 a brand-new mask.
 
 185
-00:05:56,967 --> 00:05:58,400
+00:05:56,966 --> 00:05:58,400
 You close your eyes.
 
 186
-00:05:58,467 --> 00:05:59,467
+00:05:58,466 --> 00:05:59,466
 “Boo!”
 
 187
@@ -767,11 +767,11 @@ You close your eyes.
 You jump.
 
 188
-00:06:00,667 --> 00:06:03,233
+00:06:00,666 --> 00:06:03,233
 Really jump, a real scream.
 
 189
-00:06:03,300 --> 00:06:05,867
+00:06:03,300 --> 00:06:05,866
 Then you laugh, right on time.
 
 190
@@ -779,7 +779,7 @@ Then you laugh, right on time.
 The spark finally lights up.
 
 191
-00:06:08,167 --> 00:06:09,467
+00:06:08,166 --> 00:06:09,466
 In her notebook:
 
 192
@@ -787,11 +787,11 @@ In her notebook:
 Scares:
 
 193
-00:06:10,567 --> 00:06:11,533
+00:06:10,566 --> 00:06:11,533
 one.
 
 194
-00:06:11,600 --> 00:06:12,567
+00:06:11,600 --> 00:06:12,566
 Tries:
 
 195
@@ -799,16 +799,16 @@ Tries:
 413.
 
 196
-00:06:14,467 --> 00:06:16,000
+00:06:14,466 --> 00:06:16,000
 You open your eyes.
 
 197
-00:06:16,067 --> 00:06:18,967
+00:06:16,066 --> 00:06:18,966
 You can see everything,
 but you only look at her.
 
 198
-00:06:19,033 --> 00:06:20,567
+00:06:19,033 --> 00:06:20,566
 Is any of this real?
 
 199
@@ -816,7 +816,7 @@ Is any of this real?
 Not the power.
 
 200
-00:06:21,967 --> 00:06:24,067
+00:06:21,966 --> 00:06:24,066
 No human sees the full circle,
 
 201
@@ -824,22 +824,22 @@ No human sees the full circle,
 but the limit is real.
 
 202
-00:06:26,067 --> 00:06:29,900
+00:06:26,066 --> 00:06:29,900
 In 1999,
 Daniel Simons and Christopher Chabris
 
 203
-00:06:29,967 --> 00:06:32,867
+00:06:29,966 --> 00:06:32,866
 asked volunteers to count
 basketball passes.
 
 204
-00:06:32,933 --> 00:06:36,867
+00:06:32,933 --> 00:06:36,866
 About half never noticed a person
 in a gorilla suit walking through.
 
 205
-00:06:36,933 --> 00:06:38,867
+00:06:36,933 --> 00:06:38,866
 Seeing isn’t noticing.
 
 206
@@ -847,17 +847,17 @@ Seeing isn’t noticing.
 The dopamine spark is real, too.
 
 207
-00:06:41,500 --> 00:06:44,567
+00:06:41,500 --> 00:06:44,566
 The overload
 and the spoiled surprises are fiction.
 
 208
-00:06:44,633 --> 00:06:47,667
+00:06:44,633 --> 00:06:47,666
 Your brain uses about a fifth
 of your body’s energy.
 
 209
-00:06:47,733 --> 00:06:50,067
+00:06:47,733 --> 00:06:50,066
 Thinking harder barely changes that.
 
 210
@@ -874,11 +874,11 @@ So, could a mind ever watch
 everything at once?
 
 213
-00:06:57,567 --> 00:06:59,900
+00:06:57,566 --> 00:06:59,900
 That night, your phone buzzes.
 
 214
-00:06:59,967 --> 00:07:01,667
+00:06:59,966 --> 00:07:01,666
 Unknown number.
 
 215
@@ -886,7 +886,7 @@ Unknown number.
 “We saw what you did at the concert.”
 
 216
-00:07:03,967 --> 00:07:07,367
+00:07:03,966 --> 00:07:07,366
 Then a second message:
 “You’re not the only one.”
 
@@ -896,15 +896,15 @@ So, what would you do
 with 360-degree vision?
 
 218
-00:07:10,867 --> 00:07:14,400
+00:07:10,866 --> 00:07:14,400
 Tell us the sneakiest prank
 you’d spot coming in the comments.
 
 219
-00:07:14,467 --> 00:07:16,333
+00:07:14,466 --> 00:07:16,333
 And if you’d look at Mia too,
 
 220
-00:07:16,400 --> 00:07:19,667
+00:07:16,400 --> 00:07:19,666
 hit like and subscribe for more What Ifs.
 

@@ -14,223 +14,223 @@ Style: Box,Montserrat Thin SemiBold,54,&H00FFFFFF,&H00FFFFFF,&H5A140F14,&H000000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.03,0:00:02.37,Main,,0,0,0,,{\blur0.9}Your little sister tiptoes up behind you,
+Dialogue: 0,0:00:00.03,0:00:02.36,Main,,0,0,0,,{\blur0.9}Your little sister tiptoes up behind you,
 Dialogue: 0,0:00:02.43,0:00:05.73,Main,,0,0,0,,{\blur0.9}cardboard mask on, arms raised, ready.
 Dialogue: 0,0:00:05.80,0:00:07.23,Main,,0,0,0,,{\blur0.9}You don’t even turn around.
 Dialogue: 0,0:00:07.30,0:00:08.43,Main,,0,0,0,,{\blur0.9}“Hi, Mia.”
 Dialogue: 0,0:00:08.50,0:00:09.63,Main,,0,0,0,,{\blur0.9}She groans.
 Dialogue: 0,0:00:09.70,0:00:13.80,Main,,0,0,0,,{\blur0.9}A pigeon dives at your head,\Nyou duck, without looking.
-Dialogue: 0,0:00:13.87,0:00:16.27,Main,,0,0,0,,{\blur0.9}A cyclist rings his bell from behind.
+Dialogue: 0,0:00:13.86,0:00:16.26,Main,,0,0,0,,{\blur0.9}A cyclist rings his bell from behind.
 Dialogue: 0,0:00:16.33,0:00:17.63,Main,,0,0,0,,{\blur0.9}You step aside,
 Dialogue: 0,0:00:17.70,0:00:18.90,Main,,0,0,0,,{\blur0.9}like a dancer.
-Dialogue: 0,0:00:18.97,0:00:20.50,Main,,0,0,0,,{\blur0.9}Mia stares.
-Dialogue: 0,0:00:20.57,0:00:23.13,Main,,0,0,0,,{\blur0.9}“How… how did you do that?”
+Dialogue: 0,0:00:18.96,0:00:20.50,Main,,0,0,0,,{\blur0.9}Mia stares.
+Dialogue: 0,0:00:20.56,0:00:23.13,Main,,0,0,0,,{\blur0.9}“How… how did you do that?”
 Dialogue: 0,0:00:23.20,0:00:25.53,Main,,0,0,0,,{\blur0.9}Then a seagull swoops for your sandwich.
-Dialogue: 0,0:00:25.60,0:00:29.07,Main,,0,0,0,,{\blur0.9}You hold it high.\NThe seagull leaves, offended.
+Dialogue: 0,0:00:25.60,0:00:29.06,Main,,0,0,0,,{\blur0.9}You hold it high.\NThe seagull leaves, offended.
 Dialogue: 0,0:00:29.13,0:00:32.20,Main,,0,0,0,,{\blur0.9}A normal human sees about 200 degrees:
-Dialogue: 0,0:00:32.27,0:00:35.13,Main,,0,0,0,,{\blur0.9}everything ahead,\Nand a little to each side.
+Dialogue: 0,0:00:32.26,0:00:35.13,Main,,0,0,0,,{\blur0.9}everything ahead,\Nand a little to each side.
 Dialogue: 0,0:00:35.20,0:00:36.43,Main,,0,0,0,,{\blur0.9}Behind you?
 Dialogue: 0,0:00:36.50,0:00:37.30,Main,,0,0,0,,{\blur0.9}Nothing.
-Dialogue: 0,0:00:37.37,0:00:38.10,Main,,0,0,0,,{\blur0.9}You?
-Dialogue: 0,0:00:38.17,0:00:39.63,Main,,0,0,0,,{\blur0.9}Three hundred and sixty.
+Dialogue: 0,0:00:37.36,0:00:38.10,Main,,0,0,0,,{\blur0.9}You?
+Dialogue: 0,0:00:38.16,0:00:39.63,Main,,0,0,0,,{\blur0.9}Three hundred and sixty.
 Dialogue: 0,0:00:39.70,0:00:40.90,Main,,0,0,0,,{\blur0.9}The whole circle.
-Dialogue: 0,0:00:40.97,0:00:42.10,Main,,0,0,0,,{\blur0.9}No blind side.
-Dialogue: 0,0:00:42.17,0:00:43.23,Main,,0,0,0,,{\blur0.9}No back.
+Dialogue: 0,0:00:40.96,0:00:42.10,Main,,0,0,0,,{\blur0.9}No blind side.
+Dialogue: 0,0:00:42.16,0:00:43.23,Main,,0,0,0,,{\blur0.9}No back.
 Dialogue: 0,0:00:43.30,0:00:44.20,Main,,0,0,0,,{\blur0.9}Here’s the rule.
-Dialogue: 0,0:00:44.27,0:00:45.47,Main,,0,0,0,,{\blur0.9}Your eyes got wider.
-Dialogue: 0,0:00:45.53,0:00:46.97,Main,,0,0,0,,{\blur0.9}Your brain did not.
-Dialogue: 0,0:00:47.03,0:00:48.87,Main,,0,0,0,,{\blur0.9}Hold up a thumb at arm’s length.
-Dialogue: 0,0:00:48.93,0:00:51.27,Main,,0,0,0,,{\blur0.9}Only that patch is truly sharp.
+Dialogue: 0,0:00:44.26,0:00:45.46,Main,,0,0,0,,{\blur0.9}Your eyes got wider.
+Dialogue: 0,0:00:45.53,0:00:46.96,Main,,0,0,0,,{\blur0.9}Your brain did not.
+Dialogue: 0,0:00:47.03,0:00:48.86,Main,,0,0,0,,{\blur0.9}Hold up a thumb at arm’s length.
+Dialogue: 0,0:00:48.93,0:00:51.26,Main,,0,0,0,,{\blur0.9}Only that patch is truly sharp.
 Dialogue: 0,0:00:51.33,0:00:53.83,Main,,0,0,0,,{\blur0.9}Your eyes jump about three times a second.
 Dialogue: 0,0:00:53.90,0:00:55.73,Main,,0,0,0,,{\blur0.9}Your brain stitches the rest.
 Dialogue: 0,0:00:55.80,0:00:59.00,Main,,0,0,0,,{\blur0.9}You can see everything,\Nbut you can only look at one thing.
-Dialogue: 0,0:00:59.07,0:01:02.20,Main,,0,0,0,,{\blur0.9}So what if you had 360-degree vision?
-Dialogue: 0,0:01:02.27,0:01:04.83,Main,,0,0,0,,{\blur0.9}Plus, nobody sneaks up on you.
+Dialogue: 0,0:00:59.06,0:01:02.20,Main,,0,0,0,,{\blur0.9}So what if you had 360-degree vision?
+Dialogue: 0,0:01:02.26,0:01:04.83,Main,,0,0,0,,{\blur0.9}Plus, nobody sneaks up on you.
 Dialogue: 0,0:01:04.90,0:01:05.70,Main,,0,0,0,,{\blur0.9}Ever.
-Dialogue: 0,0:01:05.77,0:01:07.77,Main,,0,0,0,,{\blur0.9}Your surprise party is ruined.
+Dialogue: 0,0:01:05.76,0:01:07.76,Main,,0,0,0,,{\blur0.9}Your surprise party is ruined.
 Dialogue: 0,0:01:07.83,0:01:11.20,Main,,0,0,0,,{\blur0.9}Forty people hide behind the couch,\Nall spotted.
-Dialogue: 0,0:01:11.27,0:01:13.57,Main,,0,0,0,,{\blur0.9}“Mate, you could at least pretend.”
+Dialogue: 0,0:01:11.26,0:01:13.56,Main,,0,0,0,,{\blur0.9}“Mate, you could at least pretend.”
 Dialogue: 0,0:01:13.63,0:01:15.20,Main,,0,0,0,,{\blur0.9}Pickpockets are doomed.
-Dialogue: 0,0:01:15.27,0:01:17.30,Main,,0,0,0,,{\blur0.9}A hand slips toward your bag.
-Dialogue: 0,0:01:17.37,0:01:19.63,Main,,0,0,0,,{\blur0.9}You see it before it arrives.
+Dialogue: 0,0:01:15.26,0:01:17.30,Main,,0,0,0,,{\blur0.9}A hand slips toward your bag.
+Dialogue: 0,0:01:17.36,0:01:19.63,Main,,0,0,0,,{\blur0.9}You see it before it arrives.
 Dialogue: 0,0:01:19.70,0:01:22.43,Main,,0,0,0,,{\blur0.9}The thief apologises, then runs.
-Dialogue: 0,0:01:22.50,0:01:23.97,Main,,0,0,0,,{\blur0.9}Driving lessons.
+Dialogue: 0,0:01:22.50,0:01:23.96,Main,,0,0,0,,{\blur0.9}Driving lessons.
 Dialogue: 0,0:01:24.03,0:01:27.23,Main,,0,0,0,,{\blur0.9}Normal drivers turn their heads\Nto check blind spots.
 Dialogue: 0,0:01:27.30,0:01:28.20,Main,,0,0,0,,{\blur0.9}You?
-Dialogue: 0,0:01:28.27,0:01:29.30,Main,,0,0,0,,{\blur0.9}Never.
-Dialogue: 0,0:01:29.37,0:01:31.73,Main,,0,0,0,,{\blur0.9}The instructor stares in silence.
+Dialogue: 0,0:01:28.26,0:01:29.30,Main,,0,0,0,,{\blur0.9}Never.
+Dialogue: 0,0:01:29.36,0:01:31.73,Main,,0,0,0,,{\blur0.9}The instructor stares in silence.
 Dialogue: 0,0:01:31.80,0:01:34.70,Main,,0,0,0,,{\blur0.9}“Dude… you didn’t even look once.”
-Dialogue: 0,0:01:34.77,0:01:35.73,Main,,0,0,0,,{\blur0.9}“No need.”
-Dialogue: 0,0:01:35.80,0:01:36.87,Box,,0,0,0,,Dodgeball.
-Dialogue: 0,0:01:36.93,0:01:38.87,Box,,0,0,0,,Twelve balls from every angle.
+Dialogue: 0,0:01:34.76,0:01:35.73,Main,,0,0,0,,{\blur0.9}“No need.”
+Dialogue: 0,0:01:35.80,0:01:36.86,Box,,0,0,0,,Dodgeball.
+Dialogue: 0,0:01:36.93,0:01:38.86,Box,,0,0,0,,Twelve balls from every angle.
 Dialogue: 0,0:01:38.93,0:01:41.33,Box,,0,0,0,,You dodge them all, facing the wall.
-Dialogue: 0,0:01:41.40,0:01:43.27,Main,,0,0,0,,{\blur0.9}Game over in four minutes.
-Dialogue: 0,0:01:43.33,0:01:46.87,Box,,0,0,0,,Teammates cheer.\NThe other team is writing a complaint.
+Dialogue: 0,0:01:41.40,0:01:43.26,Main,,0,0,0,,{\blur0.9}Game over in four minutes.
+Dialogue: 0,0:01:43.33,0:01:46.86,Box,,0,0,0,,Teammates cheer.\NThe other team is writing a complaint.
 Dialogue: 0,0:01:46.93,0:01:48.00,Main,,0,0,0,,{\blur0.9}Basketball.
-Dialogue: 0,0:01:48.07,0:01:49.67,Main,,0,0,0,,{\blur0.9}Ten players on the court.
-Dialogue: 0,0:01:49.73,0:01:52.97,Box,,0,0,0,,You see the other nine at once.\NA behind-the-back pass.
-Dialogue: 0,0:01:53.03,0:01:53.87,Box,,0,0,0,,Perfect.
+Dialogue: 0,0:01:48.06,0:01:49.66,Main,,0,0,0,,{\blur0.9}Ten players on the court.
+Dialogue: 0,0:01:49.73,0:01:52.96,Box,,0,0,0,,You see the other nine at once.\NA behind-the-back pass.
+Dialogue: 0,0:01:53.03,0:01:53.86,Box,,0,0,0,,Perfect.
 Dialogue: 0,0:01:53.93,0:01:55.70,Box,,0,0,0,,The coach drops his clipboard.
-Dialogue: 0,0:01:55.77,0:01:57.00,Main,,0,0,0,,{\blur0.9}Football next.
-Dialogue: 0,0:01:57.07,0:01:58.90,Main,,0,0,0,,{\blur0.9}Twenty-two players on the pitch.
-Dialogue: 0,0:01:58.97,0:02:00.90,Main,,0,0,0,,{\blur0.9}A referee can’t see behind him.
-Dialogue: 0,0:02:00.97,0:02:01.87,Main,,0,0,0,,{\blur0.9}You can.
+Dialogue: 0,0:01:55.76,0:01:57.00,Main,,0,0,0,,{\blur0.9}Football next.
+Dialogue: 0,0:01:57.06,0:01:58.90,Main,,0,0,0,,{\blur0.9}Twenty-two players on the pitch.
+Dialogue: 0,0:01:58.96,0:02:00.90,Main,,0,0,0,,{\blur0.9}A referee can’t see behind him.
+Dialogue: 0,0:02:00.96,0:02:01.86,Main,,0,0,0,,{\blur0.9}You can.
 Dialogue: 0,0:02:01.93,0:02:05.50,Main,,0,0,0,,{\blur0.9}Every foul, every shove, every dive.
-Dialogue: 0,0:02:05.57,0:02:07.60,Main,,0,0,0,,{\blur0.9}Nature already tried this once.
-Dialogue: 0,0:02:07.67,0:02:10.07,Main,,0,0,0,,{\blur0.9}Horses see almost all the way around.
-Dialogue: 0,0:02:10.13,0:02:11.27,Main,,0,0,0,,{\blur0.9}So do rabbits.
-Dialogue: 0,0:02:11.33,0:02:12.87,Main,,0,0,0,,{\blur0.9}They’re both prey animals.
+Dialogue: 0,0:02:05.56,0:02:07.60,Main,,0,0,0,,{\blur0.9}Nature already tried this once.
+Dialogue: 0,0:02:07.66,0:02:10.06,Main,,0,0,0,,{\blur0.9}Horses see almost all the way around.
+Dialogue: 0,0:02:10.13,0:02:11.26,Main,,0,0,0,,{\blur0.9}So do rabbits.
+Dialogue: 0,0:02:11.33,0:02:12.86,Main,,0,0,0,,{\blur0.9}They’re both prey animals.
 Dialogue: 0,0:02:12.93,0:02:14.80,Main,,0,0,0,,{\blur0.9}Danger can come from anywhere.
-Dialogue: 0,0:02:14.87,0:02:16.40,Main,,0,0,0,,{\blur0.9}Welcome to the club.
-Dialogue: 0,0:02:16.47,0:02:17.53,Main,,0,0,0,,{\blur0.9}The catch?
+Dialogue: 0,0:02:14.86,0:02:16.40,Main,,0,0,0,,{\blur0.9}Welcome to the club.
+Dialogue: 0,0:02:16.46,0:02:17.53,Main,,0,0,0,,{\blur0.9}The catch?
 Dialogue: 0,0:02:17.60,0:02:19.13,Main,,0,0,0,,{\blur0.9}Nothing is background.
 Dialogue: 0,0:02:19.20,0:02:20.80,Main,,0,0,0,,{\blur0.9}A moth flutters left.
-Dialogue: 0,0:02:20.87,0:02:22.17,Main,,0,0,0,,{\blur0.9}Attention jumps.
-Dialogue: 0,0:02:22.23,0:02:23.77,Main,,0,0,0,,{\blur0.9}A car honks right.
+Dialogue: 0,0:02:20.86,0:02:22.16,Main,,0,0,0,,{\blur0.9}Attention jumps.
+Dialogue: 0,0:02:22.23,0:02:23.76,Main,,0,0,0,,{\blur0.9}A car honks right.
 Dialogue: 0,0:02:23.83,0:02:24.63,Main,,0,0,0,,{\blur0.9}Jump.
-Dialogue: 0,0:02:24.70,0:02:26.57,Main,,0,0,0,,{\blur0.9}A flag flaps behind.
-Dialogue: 0,0:02:26.63,0:02:27.67,Main,,0,0,0,,{\blur0.9}Jump.
+Dialogue: 0,0:02:24.70,0:02:26.56,Main,,0,0,0,,{\blur0.9}A flag flaps behind.
+Dialogue: 0,0:02:26.63,0:02:27.66,Main,,0,0,0,,{\blur0.9}Jump.
 Dialogue: 0,0:02:27.73,0:02:31.10,Main,,0,0,0,,{\blur0.9}Seeing everything means getting\Ndistracted by everything.
-Dialogue: 0,0:02:31.17,0:02:33.37,Main,,0,0,0,,{\blur0.9}In class, 30 faces:
+Dialogue: 0,0:02:31.16,0:02:33.36,Main,,0,0,0,,{\blur0.9}In class, 30 faces:
 Dialogue: 0,0:02:33.43,0:02:35.83,Main,,0,0,0,,{\blur0.9}every glance, every smirk,
 Dialogue: 0,0:02:35.90,0:02:37.83,Main,,0,0,0,,{\blur0.9}every whisper behind a hand.
 Dialogue: 0,0:02:37.90,0:02:40.23,Main,,0,0,0,,{\blur0.9}Then a man in a grey suit finds you.
 Dialogue: 0,0:02:40.30,0:02:41.50,Main,,0,0,0,,{\blur0.9}Mr. Black.
-Dialogue: 0,0:02:41.57,0:02:42.80,Main,,0,0,0,,{\blur0.9}He smiles.
-Dialogue: 0,0:02:42.87,0:02:45.20,Main,,0,0,0,,{\blur0.9}“We need a human security camera.
-Dialogue: 0,0:02:45.27,0:02:49.57,Main,,0,0,0,,{\blur0.9}Forty thousand fans,\None concert, 10,000 euros.
+Dialogue: 0,0:02:41.56,0:02:42.80,Main,,0,0,0,,{\blur0.9}He smiles.
+Dialogue: 0,0:02:42.86,0:02:45.20,Main,,0,0,0,,{\blur0.9}“We need a human security camera.
+Dialogue: 0,0:02:45.26,0:02:49.56,Main,,0,0,0,,{\blur0.9}Forty thousand fans,\None concert, 10,000 euros.
 Dialogue: 0,0:02:49.63,0:02:50.93,Main,,0,0,0,,{\blur0.9}Just watch.”
 Dialogue: 0,0:02:51.00,0:02:53.00,Main,,0,0,0,,{\blur0.9}“Just watch?”
-Dialogue: 0,0:02:53.07,0:02:54.03,Main,,0,0,0,,{\blur0.9}“Just watch.
+Dialogue: 0,0:02:53.06,0:02:54.03,Main,,0,0,0,,{\blur0.9}“Just watch.
 Dialogue: 0,0:02:54.10,0:02:55.80,Main,,0,0,0,,{\blur0.9}And never leave your post.”
-Dialogue: 0,0:02:55.87,0:02:57.17,Main,,0,0,0,,{\blur0.9}But there’s a cost.
+Dialogue: 0,0:02:55.86,0:02:57.16,Main,,0,0,0,,{\blur0.9}But there’s a cost.
 Dialogue: 0,0:02:57.23,0:02:59.63,Main,,0,0,0,,{\blur0.9}A busier picture means a busier mind.
 Dialogue: 0,0:02:59.70,0:03:02.10,Main,,0,0,0,,{\blur0.9}By noon, your head is buzzing,
-Dialogue: 0,0:03:02.17,0:03:06.73,Main,,0,0,0,,{\blur0.9}amazing and overwhelming,\Nand sneaky surprises are ruined:
+Dialogue: 0,0:03:02.16,0:03:06.73,Main,,0,0,0,,{\blur0.9}amazing and overwhelming,\Nand sneaky surprises are ruined:
 Dialogue: 0,0:03:06.80,0:03:08.50,Main,,0,0,0,,{\blur0.9}the gift behind a back,
-Dialogue: 0,0:03:08.57,0:03:12.20,Main,,0,0,0,,{\blur0.9}the party behind a couch,\Nthe scare from behind.
-Dialogue: 0,0:03:12.27,0:03:15.00,Main,,0,0,0,,{\blur0.9}Ever wonder why surprises feel so good?
-Dialogue: 0,0:03:15.07,0:03:19.27,Main,,0,0,0,,{\blur0.9}Dopamine cells fire hardest\Nwhen life beats the prediction.
+Dialogue: 0,0:03:08.56,0:03:12.20,Main,,0,0,0,,{\blur0.9}the party behind a couch,\Nthe scare from behind.
+Dialogue: 0,0:03:12.26,0:03:15.00,Main,,0,0,0,,{\blur0.9}Ever wonder why surprises feel so good?
+Dialogue: 0,0:03:15.06,0:03:19.26,Main,,0,0,0,,{\blur0.9}Dopamine cells fire hardest\Nwhen life beats the prediction.
 Dialogue: 0,0:03:19.33,0:03:22.50,Main,,0,0,0,,{\blur0.9}You can’t predict everything,\Nbut you see these coming,
-Dialogue: 0,0:03:22.57,0:03:24.27,Main,,0,0,0,,{\blur0.9}so the spark never lights.
+Dialogue: 0,0:03:22.56,0:03:24.26,Main,,0,0,0,,{\blur0.9}so the spark never lights.
 Dialogue: 0,0:03:24.33,0:03:26.00,Main,,0,0,0,,{\blur0.9}You smile a second late,
-Dialogue: 0,0:03:26.07,0:03:27.47,Main,,0,0,0,,{\blur0.9}or not at all.
-Dialogue: 0,0:03:27.53,0:03:29.77,Main,,0,0,0,,{\blur0.9}Worse, there’s no off switch.
-Dialogue: 0,0:03:29.83,0:03:32.67,Main,,0,0,0,,{\blur0.9}And one night, it costs far more.
-Dialogue: 0,0:03:32.73,0:03:34.17,Main,,0,0,0,,{\blur0.9}Mia notices.
+Dialogue: 0,0:03:26.06,0:03:27.46,Main,,0,0,0,,{\blur0.9}or not at all.
+Dialogue: 0,0:03:27.53,0:03:29.76,Main,,0,0,0,,{\blur0.9}Worse, there’s no off switch.
+Dialogue: 0,0:03:29.83,0:03:32.66,Main,,0,0,0,,{\blur0.9}And one night, it costs far more.
+Dialogue: 0,0:03:32.73,0:03:34.16,Main,,0,0,0,,{\blur0.9}Mia notices.
 Dialogue: 0,0:03:34.23,0:03:35.50,Main,,0,0,0,,{\blur0.9}Of course she does.
-Dialogue: 0,0:03:35.57,0:03:36.47,Main,,0,0,0,,{\blur0.9}She…
+Dialogue: 0,0:03:35.56,0:03:36.46,Main,,0,0,0,,{\blur0.9}She…
 Dialogue: 0,0:03:37.73,0:03:39.30,Main,,0,0,0,,{\blur0.9}keeps a little notebook.
-Dialogue: 0,0:03:39.37,0:03:40.63,Box,,0,0,0,,Scares:
+Dialogue: 0,0:03:39.36,0:03:40.63,Box,,0,0,0,,Scares:
 Dialogue: 0,0:03:40.70,0:03:41.83,Box,,0,0,0,,zero.
 Dialogue: 0,0:03:41.90,0:03:43.10,Box,,0,0,0,,Tries:
-Dialogue: 0,0:03:43.17,0:03:45.03,Box,,0,0,0,,412.
+Dialogue: 0,0:03:43.16,0:03:45.03,Box,,0,0,0,,412.
 Dialogue: 0,0:03:45.10,0:03:47.30,Main,,0,0,0,,{\blur0.9}She holds it up, hopeful.
-Dialogue: 0,0:03:47.37,0:03:48.73,Main,,0,0,0,,{\blur0.9}“Just once, Leo.
-Dialogue: 0,0:03:48.80,0:03:50.37,Main,,0,0,0,,{\blur0.9}Let me win once.”
-Dialogue: 0,0:03:50.43,0:03:51.77,Main,,0,0,0,,{\blur0.9}You never mean to ruin it.
-Dialogue: 0,0:03:51.83,0:03:54.17,Main,,0,0,0,,{\blur0.9}You just… always see her.
+Dialogue: 0,0:03:47.36,0:03:48.73,Main,,0,0,0,,{\blur0.9}“Just once, Leo.
+Dialogue: 0,0:03:48.80,0:03:50.36,Main,,0,0,0,,{\blur0.9}Let me win once.”
+Dialogue: 0,0:03:50.43,0:03:51.76,Main,,0,0,0,,{\blur0.9}You never mean to ruin it.
+Dialogue: 0,0:03:51.83,0:03:54.16,Main,,0,0,0,,{\blur0.9}You just… always see her.
 Dialogue: 0,0:03:54.23,0:03:55.20,Main,,0,0,0,,{\blur0.9}You laugh.
-Dialogue: 0,0:03:55.27,0:03:56.63,Main,,0,0,0,,{\blur0.9}The tired laugh,
+Dialogue: 0,0:03:55.26,0:03:56.63,Main,,0,0,0,,{\blur0.9}The tired laugh,
 Dialogue: 0,0:03:56.70,0:03:57.73,Main,,0,0,0,,{\blur0.9}not the real one.
-Dialogue: 0,0:03:57.80,0:03:59.37,Box,,0,0,0,,She hears the difference.
+Dialogue: 0,0:03:57.80,0:03:59.36,Box,,0,0,0,,She hears the difference.
 Dialogue: 0,0:03:59.43,0:04:00.63,Box,,0,0,0,,“Are you okay?”
 Dialogue: 0,0:04:00.70,0:04:02.43,Main,,0,0,0,,{\blur0.9}“Just tired,” you say.
 Dialogue: 0,0:04:02.50,0:04:04.00,Main,,0,0,0,,{\blur0.9}She grins anyway.
-Dialogue: 0,0:04:04.07,0:04:05.37,Main,,0,0,0,,{\blur0.9}“Tomorrow’s concert.
+Dialogue: 0,0:04:04.06,0:04:05.36,Main,,0,0,0,,{\blur0.9}“Tomorrow’s concert.
 Dialogue: 0,0:04:05.43,0:04:06.43,Main,,0,0,0,,{\blur0.9}I got a ticket.
 Dialogue: 0,0:04:06.50,0:04:07.73,Main,,0,0,0,,{\blur0.9}Mask on.
-Dialogue: 0,0:04:07.80,0:04:09.57,Main,,0,0,0,,{\blur0.9}Watch your back, Leo.
+Dialogue: 0,0:04:07.80,0:04:09.56,Main,,0,0,0,,{\blur0.9}Watch your back, Leo.
 Dialogue: 0,0:04:09.63,0:04:11.50,Main,,0,0,0,,{\blur0.9}Oh, wait.”
-Dialogue: 0,0:04:11.57,0:04:13.27,Main,,0,0,0,,{\blur0.9}Everyone else, you just see.
+Dialogue: 0,0:04:11.56,0:04:13.26,Main,,0,0,0,,{\blur0.9}Everyone else, you just see.
 Dialogue: 0,0:04:13.33,0:04:14.40,Main,,0,0,0,,{\blur0.9}Mia?
-Dialogue: 0,0:04:14.47,0:04:15.50,Main,,0,0,0,,{\blur0.9}You look.
-Dialogue: 0,0:04:15.57,0:04:16.60,Main,,0,0,0,,{\blur0.9}The concert.
-Dialogue: 0,0:04:16.67,0:04:18.37,Main,,0,0,0,,{\blur0.9}Forty thousand people.
-Dialogue: 0,0:04:18.43,0:04:21.07,Main,,0,0,0,,{\blur0.9}Mr. Black’s voice\Ncrackles in your earpiece.
-Dialogue: 0,0:04:21.13,0:04:22.57,Main,,0,0,0,,{\blur0.9}“Watch Gate 4.
-Dialogue: 0,0:04:22.63,0:04:24.07,Main,,0,0,0,,{\blur0.9}Only Gate 4.
+Dialogue: 0,0:04:14.46,0:04:15.50,Main,,0,0,0,,{\blur0.9}You look.
+Dialogue: 0,0:04:15.56,0:04:16.60,Main,,0,0,0,,{\blur0.9}The concert.
+Dialogue: 0,0:04:16.66,0:04:18.36,Main,,0,0,0,,{\blur0.9}Forty thousand people.
+Dialogue: 0,0:04:18.43,0:04:21.06,Main,,0,0,0,,{\blur0.9}Mr. Black’s voice\Ncrackles in your earpiece.
+Dialogue: 0,0:04:21.13,0:04:22.56,Main,,0,0,0,,{\blur0.9}“Watch Gate 4.
+Dialogue: 0,0:04:22.63,0:04:24.06,Main,,0,0,0,,{\blur0.9}Only Gate 4.
 Dialogue: 0,0:04:24.13,0:04:26.63,Main,,0,0,0,,{\blur0.9}Look away, and the deal is over.”
-Dialogue: 0,0:04:26.70,0:04:28.57,Main,,0,0,0,,{\blur0.9}So you stare at Gate 4.
+Dialogue: 0,0:04:26.70,0:04:28.56,Main,,0,0,0,,{\blur0.9}So you stare at Gate 4.
 Dialogue: 0,0:04:28.63,0:04:30.33,Main,,0,0,0,,{\blur0.9}Behind you, metal groans.
-Dialogue: 0,0:04:30.40,0:04:33.17,Main,,0,0,0,,{\blur0.9}High above the crowd,\Na stage light shakes.
+Dialogue: 0,0:04:30.40,0:04:33.16,Main,,0,0,0,,{\blur0.9}High above the crowd,\Na stage light shakes.
 Dialogue: 0,0:04:33.23,0:04:34.83,Main,,0,0,0,,{\blur0.9}A bolt snaps.
 Dialogue: 0,0:04:34.90,0:04:36.50,Main,,0,0,0,,{\blur0.9}Your eyes see it instantly.
-Dialogue: 0,0:04:36.57,0:04:37.53,Main,,0,0,0,,{\blur0.9}Your brain?
+Dialogue: 0,0:04:36.56,0:04:37.53,Main,,0,0,0,,{\blur0.9}Your brain?
 Dialogue: 0,0:04:37.60,0:04:39.20,Main,,0,0,0,,{\blur0.9}A quarter second late.
-Dialogue: 0,0:04:39.27,0:04:40.87,Main,,0,0,0,,{\blur0.9}Noticing takes time.
-Dialogue: 0,0:04:40.93,0:04:42.17,Main,,0,0,72,,{\blur0.9}{\an8}Then you see her:
+Dialogue: 0,0:04:39.26,0:04:40.86,Main,,0,0,0,,{\blur0.9}Noticing takes time.
+Dialogue: 0,0:04:40.93,0:04:42.16,Main,,0,0,72,,{\blur0.9}{\an8}Then you see her:
 Dialogue: 0,0:04:42.23,0:04:45.13,Main,,0,0,0,,{\blur0.9}a cardboard mask, right underneath.
-Dialogue: 0,0:04:45.20,0:04:46.07,Main,,0,0,0,,{\blur0.9}Mia.
+Dialogue: 0,0:04:45.20,0:04:46.06,Main,,0,0,0,,{\blur0.9}Mia.
 Dialogue: 0,0:04:46.13,0:04:48.30,Main,,0,0,0,,{\blur0.9}The light hangs eight metres up.
-Dialogue: 0,0:04:48.37,0:04:50.97,Main,,0,0,0,,{\blur0.9}It falls\Nin about one and a quarter seconds.
+Dialogue: 0,0:04:48.36,0:04:50.96,Main,,0,0,0,,{\blur0.9}It falls\Nin about one and a quarter seconds.
 Dialogue: 0,0:04:51.03,0:04:52.50,Main,,0,0,0,,{\blur0.9}Take away your quarter.
-Dialogue: 0,0:04:52.57,0:04:53.93,Main,,0,0,0,,{\blur0.9}One second left.
+Dialogue: 0,0:04:52.56,0:04:53.93,Main,,0,0,0,,{\blur0.9}One second left.
 Dialogue: 0,0:04:54.00,0:04:56.10,Main,,0,0,0,,{\blur0.9}Mia is 15 metres away.
-Dialogue: 0,0:04:56.17,0:04:58.33,Main,,0,0,0,,{\blur0.9}You run five metres per second.
-Dialogue: 0,0:04:58.40,0:04:59.47,Main,,0,0,0,,{\blur0.9}Three seconds.
+Dialogue: 0,0:04:56.16,0:04:58.33,Main,,0,0,0,,{\blur0.9}You run five metres per second.
+Dialogue: 0,0:04:58.40,0:04:59.46,Main,,0,0,0,,{\blur0.9}Three seconds.
 Dialogue: 0,0:04:59.53,0:05:00.73,Main,,0,0,0,,{\blur0.9}Can you reach her?
-Dialogue: 0,0:05:00.80,0:05:02.17,Main,,0,0,0,,{\blur0.9}Not even close.
-Dialogue: 0,0:05:02.23,0:05:05.37,Main,,0,0,0,,{\blur0.9}You can see everything,\Nbut you can only look at one thing.
+Dialogue: 0,0:05:00.80,0:05:02.16,Main,,0,0,0,,{\blur0.9}Not even close.
+Dialogue: 0,0:05:02.23,0:05:05.36,Main,,0,0,0,,{\blur0.9}You can see everything,\Nbut you can only look at one thing.
 Dialogue: 0,0:05:05.43,0:05:07.50,Box,,0,0,72,,{\an8}Gate 4 or Mia?
-Dialogue: 0,0:05:07.57,0:05:08.63,Main,,0,0,0,,{\blur0.9}You look at Mia.
-Dialogue: 0,0:05:08.70,0:05:10.17,Main,,0,0,0,,{\blur0.9}You scream her name.
-Dialogue: 0,0:05:10.23,0:05:11.97,Main,,0,0,0,,{\blur0.9}“Mia! Up!”
+Dialogue: 0,0:05:07.56,0:05:08.63,Main,,0,0,0,,{\blur0.9}You look at Mia.
+Dialogue: 0,0:05:08.70,0:05:10.16,Main,,0,0,0,,{\blur0.9}You scream her name.
+Dialogue: 0,0:05:10.23,0:05:11.96,Main,,0,0,0,,{\blur0.9}“Mia! Up!”
 Dialogue: 0,0:05:12.03,0:05:13.90,Main,,0,0,0,,{\blur0.9}Forty thousand heads turn.
-Dialogue: 0,0:05:13.97,0:05:15.90,Main,,0,0,0,,{\blur0.9}She looks up, freezes.
-Dialogue: 0,0:05:15.97,0:05:17.80,Main,,0,0,0,,{\blur0.9}A stranger yanks her back.
-Dialogue: 0,0:05:17.87,0:05:20.13,Main,,0,0,0,,{\blur0.9}The light crashes where she stood.
+Dialogue: 0,0:05:13.96,0:05:15.90,Main,,0,0,0,,{\blur0.9}She looks up, freezes.
+Dialogue: 0,0:05:15.96,0:05:17.80,Main,,0,0,0,,{\blur0.9}A stranger yanks her back.
+Dialogue: 0,0:05:17.86,0:05:20.13,Main,,0,0,0,,{\blur0.9}The light crashes where she stood.
 Dialogue: 0,0:05:20.20,0:05:21.30,Main,,0,0,0,,{\blur0.9}Silence.
-Dialogue: 0,0:05:21.37,0:05:23.97,Main,,0,0,0,,{\blur0.9}Mr. Black snarls through the earpiece.
-Dialogue: 0,0:05:24.03,0:05:25.27,Main,,0,0,0,,{\blur0.9}“You’re fired.
+Dialogue: 0,0:05:21.36,0:05:23.96,Main,,0,0,0,,{\blur0.9}Mr. Black snarls through the earpiece.
+Dialogue: 0,0:05:24.03,0:05:25.26,Main,,0,0,0,,{\blur0.9}“You’re fired.
 Dialogue: 0,0:05:25.33,0:05:26.30,Main,,0,0,0,,{\blur0.9}The money?
-Dialogue: 0,0:05:26.37,0:05:27.37,Main,,0,0,0,,{\blur0.9}Gone.”
+Dialogue: 0,0:05:26.36,0:05:27.36,Main,,0,0,0,,{\blur0.9}Gone.”
 Dialogue: 0,0:05:27.43,0:05:29.10,Main,,0,0,0,,{\blur0.9}Silence would be easy.
-Dialogue: 0,0:05:29.17,0:05:30.97,Main,,0,0,0,,{\blur0.9}Instead, you point.
-Dialogue: 0,0:05:31.03,0:05:32.87,Main,,0,0,0,,{\blur0.9}Bolt after bolt.
+Dialogue: 0,0:05:29.16,0:05:30.96,Main,,0,0,0,,{\blur0.9}Instead, you point.
+Dialogue: 0,0:05:31.03,0:05:32.86,Main,,0,0,0,,{\blur0.9}Bolt after bolt.
 Dialogue: 0,0:05:32.93,0:05:35.30,Main,,0,0,0,,{\blur0.9}Six more, loose across the rig.
-Dialogue: 0,0:05:35.37,0:05:37.13,Main,,0,0,0,,{\blur0.9}Engineers climb up.
-Dialogue: 0,0:05:37.20,0:05:39.17,Main,,0,0,0,,{\blur0.9}Every one is loose.
-Dialogue: 0,0:05:39.23,0:05:40.57,Main,,0,0,0,,{\blur0.9}The show stops.
-Dialogue: 0,0:05:40.63,0:05:42.27,Main,,0,0,0,,{\blur0.9}Nobody else gets hurt.
-Dialogue: 0,0:05:42.33,0:05:46.67,Main,,0,0,0,,{\blur0.9}The whole crowd claps for the kid\Nwith eyes in the back of his head.
-Dialogue: 0,0:05:46.73,0:05:48.67,Main,,0,0,0,,{\blur0.9}Mia clings to your jacket.
+Dialogue: 0,0:05:35.36,0:05:37.13,Main,,0,0,0,,{\blur0.9}Engineers climb up.
+Dialogue: 0,0:05:37.20,0:05:39.16,Main,,0,0,0,,{\blur0.9}Every one is loose.
+Dialogue: 0,0:05:39.23,0:05:40.56,Main,,0,0,0,,{\blur0.9}The show stops.
+Dialogue: 0,0:05:40.63,0:05:42.26,Main,,0,0,0,,{\blur0.9}Nobody else gets hurt.
+Dialogue: 0,0:05:42.33,0:05:46.66,Main,,0,0,0,,{\blur0.9}The whole crowd claps for the kid\Nwith eyes in the back of his head.
+Dialogue: 0,0:05:46.73,0:05:48.66,Main,,0,0,0,,{\blur0.9}Mia clings to your jacket.
 Dialogue: 0,0:05:48.73,0:05:49.93,Main,,0,0,0,,{\blur0.9}“How did you know?”
-Dialogue: 0,0:05:50.00,0:05:52.27,Main,,0,0,0,,{\blur0.9}“I always look at you,” you say.
+Dialogue: 0,0:05:50.00,0:05:52.26,Main,,0,0,0,,{\blur0.9}“I always look at you,” you say.
 Dialogue: 0,0:05:52.33,0:05:56.90,Main,,0,0,0,,{\blur0.9}Weeks later, Mia tiptoes up behind you,\Na brand-new mask.
-Dialogue: 0,0:05:56.97,0:05:58.40,Main,,0,0,0,,{\blur0.9}You close your eyes.
-Dialogue: 0,0:05:58.47,0:05:59.47,Main,,0,0,0,,{\blur0.9}“Boo!”
+Dialogue: 0,0:05:56.96,0:05:58.40,Main,,0,0,0,,{\blur0.9}You close your eyes.
+Dialogue: 0,0:05:58.46,0:05:59.46,Main,,0,0,0,,{\blur0.9}“Boo!”
 Dialogue: 0,0:05:59.53,0:06:00.60,Main,,0,0,0,,{\blur0.9}You jump.
-Dialogue: 0,0:06:00.67,0:06:03.23,Main,,0,0,0,,{\blur0.9}Really jump, a real scream.
-Dialogue: 0,0:06:03.30,0:06:05.87,Main,,0,0,0,,{\blur0.9}Then you laugh, right on time.
+Dialogue: 0,0:06:00.66,0:06:03.23,Main,,0,0,0,,{\blur0.9}Really jump, a real scream.
+Dialogue: 0,0:06:03.30,0:06:05.86,Main,,0,0,0,,{\blur0.9}Then you laugh, right on time.
 Dialogue: 0,0:06:05.93,0:06:08.10,Main,,0,0,0,,{\blur0.9}The spark finally lights up.
-Dialogue: 0,0:06:08.17,0:06:09.47,Box,,0,0,0,,In her notebook:
+Dialogue: 0,0:06:08.16,0:06:09.46,Box,,0,0,0,,In her notebook:
 Dialogue: 0,0:06:09.53,0:06:10.50,Box,,0,0,0,,Scares:
-Dialogue: 0,0:06:10.57,0:06:11.53,Box,,0,0,0,,one.
-Dialogue: 0,0:06:11.60,0:06:12.57,Box,,0,0,0,,Tries:
+Dialogue: 0,0:06:10.56,0:06:11.53,Box,,0,0,0,,one.
+Dialogue: 0,0:06:11.60,0:06:12.56,Box,,0,0,0,,Tries:
 Dialogue: 0,0:06:12.63,0:06:14.40,Box,,0,0,0,,413.
-Dialogue: 0,0:06:14.47,0:06:16.00,Main,,0,0,0,,{\blur0.9}You open your eyes.
-Dialogue: 0,0:06:16.07,0:06:18.97,Main,,0,0,0,,{\blur0.9}You can see everything,\Nbut you only look at her.
-Dialogue: 0,0:06:19.03,0:06:20.57,Main,,0,0,0,,{\blur0.9}Is any of this real?
+Dialogue: 0,0:06:14.46,0:06:16.00,Main,,0,0,0,,{\blur0.9}You open your eyes.
+Dialogue: 0,0:06:16.06,0:06:18.96,Main,,0,0,0,,{\blur0.9}You can see everything,\Nbut you only look at her.
+Dialogue: 0,0:06:19.03,0:06:20.56,Main,,0,0,0,,{\blur0.9}Is any of this real?
 Dialogue: 0,0:06:20.63,0:06:21.90,Main,,0,0,0,,{\blur0.9}Not the power.
-Dialogue: 0,0:06:21.97,0:06:24.07,Main,,0,0,0,,{\blur0.9}No human sees the full circle,
+Dialogue: 0,0:06:21.96,0:06:24.06,Main,,0,0,0,,{\blur0.9}No human sees the full circle,
 Dialogue: 0,0:06:24.13,0:06:26.00,Main,,0,0,114,,{\blur0.9}but the limit is real.
-Dialogue: 0,0:06:26.07,0:06:29.90,Main,,0,0,0,,{\blur0.9}In 1999,\NDaniel Simons and Christopher Chabris
-Dialogue: 0,0:06:29.97,0:06:32.87,Main,,0,0,0,,{\blur0.9}asked volunteers to count\Nbasketball passes.
-Dialogue: 0,0:06:32.93,0:06:36.87,Main,,0,0,0,,{\blur0.9}About half never noticed a person\Nin a gorilla suit walking through.
-Dialogue: 0,0:06:36.93,0:06:38.87,Main,,0,0,0,,{\blur0.9}Seeing isn’t noticing.
+Dialogue: 0,0:06:26.06,0:06:29.90,Main,,0,0,0,,{\blur0.9}In 1999,\NDaniel Simons and Christopher Chabris
+Dialogue: 0,0:06:29.96,0:06:32.86,Main,,0,0,0,,{\blur0.9}asked volunteers to count\Nbasketball passes.
+Dialogue: 0,0:06:32.93,0:06:36.86,Main,,0,0,0,,{\blur0.9}About half never noticed a person\Nin a gorilla suit walking through.
+Dialogue: 0,0:06:36.93,0:06:38.86,Main,,0,0,0,,{\blur0.9}Seeing isn’t noticing.
 Dialogue: 0,0:06:38.93,0:06:41.43,Main,,0,0,0,,{\blur0.9}The dopamine spark is real, too.
-Dialogue: 0,0:06:41.50,0:06:44.57,Main,,0,0,0,,{\blur0.9}The overload\Nand the spoiled surprises are fiction.
-Dialogue: 0,0:06:44.63,0:06:47.67,Main,,0,0,0,,{\blur0.9}Your brain uses about a fifth\Nof your body’s energy.
-Dialogue: 0,0:06:47.73,0:06:50.07,Main,,0,0,0,,{\blur0.9}Thinking harder barely changes that.
+Dialogue: 0,0:06:41.50,0:06:44.56,Main,,0,0,0,,{\blur0.9}The overload\Nand the spoiled surprises are fiction.
+Dialogue: 0,0:06:44.63,0:06:47.66,Main,,0,0,0,,{\blur0.9}Your brain uses about a fifth\Nof your body’s energy.
+Dialogue: 0,0:06:47.73,0:06:50.06,Main,,0,0,0,,{\blur0.9}Thinking harder barely changes that.
 Dialogue: 0,0:06:50.13,0:06:52.23,Main,,0,0,0,,{\blur0.9}Extra vision wouldn’t make you starving,
 Dialogue: 0,0:06:52.30,0:06:54.23,Main,,0,0,0,,{\blur0.9}or let you predict everything.
 Dialogue: 0,0:06:54.30,0:06:57.50,Main,,0,0,0,,{\blur0.9}So, could a mind ever watch\Neverything at once?
-Dialogue: 0,0:06:57.57,0:06:59.90,Main,,0,0,0,,{\blur0.9}That night, your phone buzzes.
-Dialogue: 0,0:06:59.97,0:07:01.67,Main,,0,0,0,,{\blur0.9}Unknown number.
+Dialogue: 0,0:06:57.56,0:06:59.90,Main,,0,0,0,,{\blur0.9}That night, your phone buzzes.
+Dialogue: 0,0:06:59.96,0:07:01.66,Main,,0,0,0,,{\blur0.9}Unknown number.
 Dialogue: 0,0:07:01.73,0:07:03.90,Main,,0,0,0,,{\blur0.9}“We saw what you did at the concert.”
-Dialogue: 0,0:07:03.97,0:07:07.37,Main,,0,0,0,,{\blur0.9}Then a second message:\N“You’re not the only one.”
+Dialogue: 0,0:07:03.96,0:07:07.36,Main,,0,0,0,,{\blur0.9}Then a second message:\N“You’re not the only one.”
 Dialogue: 0,0:07:07.43,0:07:10.80,Main,,0,0,580,,{\blur0.9}So, what would you do\Nwith 360-degree vision?
-Dialogue: 0,0:07:10.87,0:07:14.40,Main,,0,0,580,,{\blur0.9}Tell us the sneakiest prank\Nyou’d spot coming in the comments.
-Dialogue: 0,0:07:14.47,0:07:16.33,Main,,0,0,580,,{\blur0.9}And if you’d look at Mia too,
-Dialogue: 0,0:07:16.40,0:07:19.67,Main,,0,0,580,,{\blur0.9}hit like and subscribe for more What Ifs.
+Dialogue: 0,0:07:10.86,0:07:14.40,Main,,0,0,580,,{\blur0.9}Tell us the sneakiest prank\Nyou’d spot coming in the comments.
+Dialogue: 0,0:07:14.46,0:07:16.33,Main,,0,0,580,,{\blur0.9}And if you’d look at Mia too,
+Dialogue: 0,0:07:16.40,0:07:19.66,Main,,0,0,580,,{\blur0.9}hit like and subscribe for more What Ifs.

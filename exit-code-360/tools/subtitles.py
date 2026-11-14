@@ -329,13 +329,16 @@ def timing(toks, segs):
     return cues
 
 
+# Times are frame-exact values; they are floored (not rounded) to the format's unit so every in/out lands
+# on or just before its frame: a subtitle shows on frame n when start <= n/30 < end. Rounding up by even
+# 1 ms would hide it on its first frame or keep it one frame too long.
 def ts_srt(t):
-    ms = int(round(t * 1000))
+    ms = int(math.floor(t * 1000 + 1e-6))
     return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
 
 
 def ts_ass(t):
-    cs = int(round(t * 100))
+    cs = int(math.floor(t * 100 + 1e-6))
     return f"{cs // 360000}:{cs // 6000 % 60:02d}:{cs // 100 % 60:02d}.{cs % 100:02d}"
 
 
