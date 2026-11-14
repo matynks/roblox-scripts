@@ -7,6 +7,7 @@ import { Film } from "./film/Film";
 import { FILM_FRAMES } from "./lib/timing";
 import { Teaser, TEASER_FRAMES } from "./teaser/Teaser";
 import { Mystery, MYSTERY_FRAMES } from "./teaser/Mystery";
+import { Thumbnail } from "./thumbnail/Thumbnail";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -46,6 +47,7 @@ export const RemotionRoot: React.FC = () => (
       height={1920}
       defaultProps={{ withAudio: true }}
     />
+    <Still id="Thumbnail" component={Thumbnail} width={1280} height={720} defaultProps={{ look: 1 }} />
     <Still id="SheetLeo" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "leo" as const }} />
     <Still id="SheetMia" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "mia" as const }} />
     <Still id="SheetBlack" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "black" as const }} />

@@ -24,6 +24,7 @@ src/
   scenes/poc/  timeline (all cues), shots, POC composition (S01–S03 of the film)
   film/        Film.tsx master composition + scenes/ (S04–S34) and the scene table
   teaser/      Shorts teasers (1080×1920): Teaser.tsx + shots.json (v1), Mystery.tsx + mystery.json (v2)
+  thumbnail/   YouTube thumbnail still (1280×720) composed from the production assets
   sheets/      character design sheets (rendered from the rig)
   data/        narration_words.json / narration_phrases.json (ASR timing)
 tools/
@@ -48,6 +49,8 @@ public/
 renders/
   EXIT_CODE_360_POC_v2.mp4
   EXIT_CODE_360_FULL.mp4     (generated; delivered directly, not committed)
+thumbnail/
+  EXIT_CODE_360_THUMBNAIL.png  1280×720 YouTube thumbnail (render: Still "Thumbnail" at 2× → Lanczos to 1280×720)
 assets/
   character_sheets/     rendered sheets
   reference_frames/     (git-ignored) analysis boards from the third-party reference
