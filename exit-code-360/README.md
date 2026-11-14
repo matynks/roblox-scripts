@@ -50,7 +50,8 @@ renders/
   EXIT_CODE_360_POC_v2.mp4
   EXIT_CODE_360_FULL.mp4     (generated; delivered directly, not committed)
 thumbnail/
-  EXIT_CODE_360_THUMBNAIL.png  1280×720 YouTube thumbnail (render: Still "Thumbnail" at 2× → Lanczos to 1280×720)
+  EXIT_CODE_360_THUMBNAIL.png     1280×720 YouTube thumbnail, v2 redesign (Still "ThumbnailV2" at 2× → Lanczos to 1280×720)
+  EXIT_CODE_360_THUMBNAIL_v1.png  first version (Still "Thumbnail")
 assets/
   character_sheets/     rendered sheets
   reference_frames/     (git-ignored) analysis boards from the third-party reference
