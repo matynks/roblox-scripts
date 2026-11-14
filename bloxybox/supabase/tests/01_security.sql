@@ -33,7 +33,7 @@ declare
     'start_game_session', 'submit_game_result', 'get_leaderboard',
     'follow_user', 'unfollow_user', 'get_profile_summary', 'list_connections', 'search_players',
     'record_profile_visit',
-    'dev_whoami', 'dev_find_users', 'dev_set_balance', 'dev_adjust_balance', 'dev_set_stats',
+    'dev_whoami', 'dev_find_users', 'dev_get_user', 'dev_set_balance', 'dev_adjust_balance', 'dev_set_stats',
     'dev_grant_item', 'dev_revoke_item', 'dev_grant_pass', 'dev_revoke_pass', 'dev_reset_user',
     'dev_diagnostics', 'dev_list_transactions', 'dev_list_audit_log'
   ];

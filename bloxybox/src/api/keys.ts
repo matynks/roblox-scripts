@@ -1,0 +1,20 @@
+/** Central TanStack Query keys. Everything a user owns is scoped under ['me'] so it can be invalidated together. */
+export const queryKeys = {
+  me: ['me'] as const,
+  profile: (userId: string) => ['profile', userId] as const,
+  wallet: ['me', 'wallet'] as const,
+  transactions: ['me', 'transactions'] as const,
+  transaction: (id: number) => ['me', 'transactions', id] as const,
+  dailyReward: ['me', 'daily-reward'] as const,
+  inventory: ['me', 'inventory'] as const,
+  passOwnership: ['me', 'passes'] as const,
+  progress: ['me', 'progress'] as const,
+  listings: ['catalog', 'listings'] as const,
+  items: ['catalog', 'items'] as const,
+  experiences: ['catalog', 'experiences'] as const,
+  gamePasses: ['catalog', 'game-passes'] as const,
+  leaderboard: (slug: string) => ['leaderboard', slug] as const,
+  connections: (userId: string, kind: string) => ['connections', userId, kind] as const,
+  playerSearch: (query: string) => ['player-search', query] as const,
+  dev: ['dev'] as const,
+};

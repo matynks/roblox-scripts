@@ -78,6 +78,7 @@ begin
   v_status := public.get_daily_reward_status();
   perform tests.assert_eq((v_status ->> 'available')::boolean, true, 'reward available on day one');
   perform tests.assert_eq((v_status ->> 'next_amount')::integer, 100, 'day one amount');
+  perform tests.assert_eq((v_status ->> 'next_streak')::integer, 1, 'next streak on day one');
 
   v_result := public.claim_daily_reward();
   perform tests.assert_eq((v_result ->> 'amount')::integer, 100, 'first claim pays 100');
@@ -93,6 +94,14 @@ begin
   v_result := public.claim_daily_reward();
   perform tests.assert_eq((v_result ->> 'streak')::integer, 7, 'streak continues');
   perform tests.assert_eq((v_result ->> 'amount')::integer, 220, 'day seven amount');
+
+  -- A missed day: status already reports the reset streak before claiming.
+  perform tests.as_owner();
+  update public.profile_stats set last_daily_claim = (now() at time zone 'utc')::date - 2 where user_id = v_uid;
+  perform tests.authenticate(v_uid);
+  v_status := public.get_daily_reward_status();
+  perform tests.assert_eq((v_status ->> 'next_streak')::integer, 1, 'status shows streak will reset');
+  perform tests.assert_eq((v_status ->> 'streak')::integer, 7, 'stored streak still reported');
 
   -- A gap resets the streak.
   perform tests.as_owner();

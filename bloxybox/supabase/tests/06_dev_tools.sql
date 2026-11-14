@@ -15,6 +15,7 @@ begin
 
   foreach v_call in array array[
     format('select public.dev_find_users(%L)', ''),
+    format('select public.dev_get_user(%L)', v_user),
     format('select public.dev_set_balance(%L, 999999)', v_user),
     format('select public.dev_adjust_balance(%L, 999999)', v_user),
     format('select public.dev_set_stats(%L, 1000000)', v_user),
@@ -55,6 +56,10 @@ begin
   perform tests.authenticate(v_dev);
   perform tests.assert_eq((public.dev_whoami() ->> 'is_developer')::boolean, true, 'whoami says yes');
   perform tests.assert_eq(jsonb_array_length(public.dev_find_users('test')), 1, 'find users');
+  v_result := public.dev_get_user(v_target);
+  perform tests.assert_eq((v_result -> 'wallet' ->> 'balance')::bigint, 500::bigint, 'snapshot balance');
+  perform tests.assert_eq(jsonb_array_length(v_result -> 'item_ids'), 3, 'snapshot items');
+  perform tests.assert_eq((v_result ->> 'is_developer')::boolean, false, 'target is not a developer');
 
   -- Balance
   v_result := public.dev_set_balance(v_target, 25000, 'QA');

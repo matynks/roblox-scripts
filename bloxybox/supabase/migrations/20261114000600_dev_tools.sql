@@ -103,6 +103,39 @@ begin
 end;
 $$;
 
+-- Full simulated-data snapshot of one user (RLS hides most of this from normal clients).
+create function public.dev_get_user(p_user_id uuid)
+returns jsonb
+language plpgsql
+security definer
+set search_path = ''
+as $$
+begin
+  perform public._require_developer();
+  perform public._require_target(p_user_id);
+
+  return (
+    select jsonb_build_object(
+      'id', p.id,
+      'username', p.username,
+      'display_name', p.display_name,
+      'created_at', p.created_at,
+      'is_developer', exists (select 1 from public.user_roles r where r.user_id = p.id and r.role = 'developer'),
+      'wallet', jsonb_build_object('balance', w.balance, 'lifetime_earned', w.lifetime_earned, 'lifetime_spent', w.lifetime_spent),
+      'stats', to_jsonb(s) - 'user_id',
+      'item_ids', coalesce((select jsonb_agg(i.item_id) from public.inventory i where i.user_id = p.id), '[]'::jsonb),
+      'pass_ids', coalesce((select jsonb_agg(o.pass_id) from public.game_pass_ownership o where o.user_id = p.id), '[]'::jsonb),
+      'followers_real', (select count(*) from public.follows f where f.followee_id = p.id),
+      'following', (select count(*) from public.follows f where f.follower_id = p.id)
+    )
+    from public.profiles p
+    join public.wallets w on w.user_id = p.id
+    join public.profile_stats s on s.user_id = p.id
+    where p.id = p_user_id
+  );
+end;
+$$;
+
 create function public.dev_set_balance(p_user_id uuid, p_balance bigint, p_reason text default null)
 returns jsonb
 language plpgsql
@@ -464,6 +497,7 @@ revoke all on function public._audit(text, uuid, jsonb) from public, anon, authe
 revoke all on function public._require_target(uuid) from public, anon, authenticated;
 revoke all on function public.dev_whoami() from public, anon, authenticated;
 revoke all on function public.dev_find_users(text) from public, anon, authenticated;
+revoke all on function public.dev_get_user(uuid) from public, anon, authenticated;
 revoke all on function public.dev_set_balance(uuid, bigint, text) from public, anon, authenticated;
 revoke all on function public.dev_adjust_balance(uuid, bigint, text) from public, anon, authenticated;
 revoke all on function public.dev_set_stats(uuid, bigint, bigint, bigint, bigint) from public, anon, authenticated;
@@ -479,6 +513,7 @@ revoke all on function public.dev_list_audit_log(integer) from public, anon, aut
 -- Callable by any signed-in user; each one rejects non-developers itself.
 grant execute on function public.dev_whoami() to authenticated;
 grant execute on function public.dev_find_users(text) to authenticated;
+grant execute on function public.dev_get_user(uuid) to authenticated;
 grant execute on function public.dev_set_balance(uuid, bigint, text) to authenticated;
 grant execute on function public.dev_adjust_balance(uuid, bigint, text) to authenticated;
 grant execute on function public.dev_set_stats(uuid, bigint, bigint, bigint, bigint) to authenticated;

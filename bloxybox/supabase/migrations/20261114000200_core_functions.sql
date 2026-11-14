@@ -311,6 +311,7 @@ begin
   return jsonb_build_object(
     'available', v_stats.last_daily_claim is distinct from v_today,
     'streak', coalesce(v_stats.daily_streak, 0),
+    'next_streak', v_next_streak,
     'next_amount', public.daily_reward_amount(v_next_streak),
     'next_claim_at', ((v_today + 1)::timestamp at time zone 'utc'),
     'server_time', now()
