@@ -16,6 +16,7 @@ docs/
   06_FULL_PRODUCTION_PLAN.md per-sequence designs for all 34 sequences, build order
   07_FINAL_PRODUCTION_REPORT.md final specs, sound design, QC results, fixes made during QC
   08_SHORTS_TEASER.md         30-s 9:16 YouTube Shorts teasers: v1 (summary) and v2 (mystery, no spoilers)
+  09_YOUTUBE_PUBLISHING.md    title, description (with chapters and sources) and tags for upload
 src/
   characters/  rig (Figure.tsx), cast proportions, poses + walk/run cycles, expressions
   props/       cardboard mask, sandwich, seagull, cyclist (IK pedalling)
