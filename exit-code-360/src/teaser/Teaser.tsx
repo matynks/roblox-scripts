@@ -17,8 +17,8 @@ import WORDS from "../data/narration_words.json";
 
 loadFonts();
 
-type Key = [number, number, number, number];
-type Shot = {
+export type Key = [number, number, number, number];
+export type Shot = {
   id: string;
   f0: number;
   f1: number;
@@ -30,16 +30,16 @@ type Shot = {
   bottom?: Key[];
   whip?: [number, number];
 };
-type Vo = { src0: number; src1: number; at: number; captions?: boolean; capY?: number };
+export type Vo = { src0: number; src1: number; at: number; captions?: boolean; capY?: number };
 
 const FPS = DATA.fps;
 const SHOTS = DATA.shots as Shot[];
 const VOS = DATA.vo as Vo[];
-const W = 1080;
-const H = 1920;
+export const W = 1080;
+export const H = 1920;
 // Shorts safe area: keep type inside x 140–940 and y 230–1500 (top bar, right action
 // column and bottom title/channel overlay stay clear).
-const SAFE_W = 800;
+export const SAFE_W = 800;
 
 export const TEASER_FRAMES = DATA.frames;
 
@@ -47,7 +47,7 @@ const shotAt = (f: number) => SHOTS.find((s) => f >= s.f0 && f < s.f1) ?? SHOTS[
 const timeIn = (s: Shot, f: number) => s.src + ((f - s.f0) / FPS) * (s.speed ?? 1);
 
 /** eased interpolation through crop keys by film time */
-const cropAt = (keys: Key[], T: number) => {
+export const cropAt = (keys: Key[], T: number) => {
   if (T <= keys[0][0]) return keys[0];
   for (let i = 0; i < keys.length - 1; i++) {
     const a = keys[i];
@@ -61,7 +61,7 @@ const cropAt = (keys: Key[], T: number) => {
 };
 
 /** the film's scene table at time T (same cross-dissolve rule as the master composition) */
-const SceneAt: React.FC<{ T: number }> = ({ T }) => (
+export const SceneAt: React.FC<{ T: number }> = ({ T }) => (
   <AbsoluteFill style={{ background: "#000" }}>
     {SCENES.map((s, i) => {
       const next = SCENES[i + 1];
@@ -79,7 +79,7 @@ const SceneAt: React.FC<{ T: number }> = ({ T }) => (
 );
 
 /** a window of size w×h looking at stage point (cx, cy) at scale k */
-const Window: React.FC<{ T: number; c: Key; w?: number; h?: number; blur?: number; style?: React.CSSProperties }> = ({ T, c, w = W, h = H, blur = 0, style }) => {
+export const Window: React.FC<{ T: number; c: Key; w?: number; h?: number; blur?: number; style?: React.CSSProperties }> = ({ T, c, w = W, h = H, blur = 0, style }) => {
   const [, cx, cy, k] = c;
   return (
     <div style={{ position: "absolute", width: w, height: h, overflow: "hidden", background: "#000", ...style }}>
@@ -102,9 +102,9 @@ const Window: React.FC<{ T: number; c: Key; w?: number; h?: number; blur?: numbe
 };
 
 // ------------------------------------------------------------------ typography
-const OUTLINE = "0 0 2px #0B0812, 2px 2px 0 #0B0812, -2px 2px 0 #0B0812, 2px -2px 0 #0B0812, -2px -2px 0 #0B0812, 0 6px 18px rgba(0,0,0,0.65)";
+export const OUTLINE = "0 0 2px #0B0812, 2px 2px 0 #0B0812, -2px 2px 0 #0B0812, 2px -2px 0 #0B0812, -2px -2px 0 #0B0812, 0 6px 18px rgba(0,0,0,0.65)";
 
-const slamK = (f: number, f0: number, dur = 6) => ease.outBack(clamp((f - f0) / dur));
+export const slamK = (f: number, f0: number, dur = 6) => ease.outBack(clamp((f - f0) / dur));
 
 const Headline: React.FC<{ f: number; f0: number; f1: number; y: number; kicker: string; main: string; size?: number; color?: string; kickerColor?: string }> = ({
   f,
@@ -144,12 +144,13 @@ const Headline: React.FC<{ f: number; f0: number; f1: number; y: number; kicker:
 };
 
 type Word = { word: string; start: number; end: number };
-type Chunk = { words: { text: string; t0: number; t1: number }[]; t0: number; t1: number; y: number; cap: number };
+export type Chunk = { words: { text: string; t0: number; t1: number }[]; t0: number; t1: number; y: number; cap: number };
 
-const buildChunks = (): Chunk[] => {
+export const buildChunks = (vos: Vo[] = VOS, shots: Shot[] = SHOTS, fps = FPS, maxWords = 4, gapBreak = Infinity): Chunk[] => {
   const all = (WORDS as { words: Word[] }).words;
   const chunks: Chunk[] = [];
-  for (const v of VOS) {
+  const shotOf = (f: number) => shots.find((s) => f >= s.f0 && f < s.f1) ?? shots[shots.length - 1];
+  for (const v of vos) {
     if (v.captions === false) continue;
     const ws = all.filter((w) => w.start >= v.src0 - 0.01 && w.start < v.src1).map((w) => ({ text: w.word, t0: v.at + (w.start - v.src0), t1: v.at + (w.end - v.src0) }));
     // phrases end at punctuation; a phrase stays whole if it fits (≤ 4 words, ≤ 22 chars),
@@ -157,6 +158,11 @@ const buildChunks = (): Chunk[] => {
     const phrases: Chunk["words"][] = [];
     let cur: Chunk["words"] = [];
     for (const w of ws) {
+      // a real pause (gapBreak) also ends a phrase: "How… | how did you do that?"
+      if (cur.length && w.t0 - cur[cur.length - 1].t1 > gapBreak) {
+        phrases.push(cur);
+        cur = [];
+      }
       cur.push(w);
       if (/[,.?!]$/.test(w.text)) {
         phrases.push(cur);
@@ -166,12 +172,12 @@ const buildChunks = (): Chunk[] => {
     if (cur.length) phrases.push(cur);
     for (const ph of phrases) {
       const chars = ph.map((w) => w.text).join(" ").length;
-      const n = Math.max(Math.ceil(ph.length / 4), Math.ceil(chars / 22));
+      const n = Math.max(Math.ceil(ph.length / maxWords), Math.ceil(chars / 22));
       const per = Math.ceil(ph.length / n);
       for (let i = 0; i < ph.length; i += per) {
         const part = ph.slice(i, i + per);
         // a caption never outlives the shot its first word is spoken in
-        const cap = shotAt(Math.floor(part[0].t0 * FPS + 1e-6)).f1 / FPS;
+        const cap = shotOf(Math.floor(part[0].t0 * fps + 1e-6)).f1 / fps;
         chunks.push({ words: part, t0: part[0].t0, t1: part[part.length - 1].t1, y: v.capY ?? 1330, cap });
       }
     }
@@ -185,8 +191,8 @@ const buildChunks = (): Chunk[] => {
 };
 const CHUNKS = buildChunks();
 
-const Captions: React.FC<{ t: number }> = ({ t }) => {
-  const c = CHUNKS.find((k) => t >= k.t0 - 0.04 && t < k.t1);
+export const Captions: React.FC<{ t: number; chunks?: Chunk[]; size?: number }> = ({ t, chunks = CHUNKS, size = 62 }) => {
+  const c = chunks.find((k) => t >= k.t0 - 0.04 && t < k.t1);
   if (!c) return null;
   const pop = ease.outBack(clamp((t - c.t0 + 0.04) / 0.12));
   return (
@@ -199,7 +205,7 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
         textAlign: "center",
         fontFamily: FONT,
         fontWeight: 800,
-        fontSize: 62,
+        fontSize: size,
         lineHeight: 1.12,
         wordSpacing: "0.18em",
         textWrap: "balance",
@@ -225,7 +231,7 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ------------------------------------------------------------------ grain (9:16)
-const Grain916: React.FC<{ f: number }> = ({ f }) => (
+export const Grain916: React.FC<{ f: number }> = ({ f }) => (
   <AbsoluteFill style={{ mixBlendMode: "overlay", opacity: 0.075, pointerEvents: "none" }}>
     <Img
       src={staticFile(`textures/grain_${Math.floor(f / 2.5) % 8}.png`)}

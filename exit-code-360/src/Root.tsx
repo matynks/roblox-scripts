@@ -6,6 +6,7 @@ import { DURATION_FRAMES, FPS } from "./scenes/poc/timeline";
 import { Film } from "./film/Film";
 import { FILM_FRAMES } from "./lib/timing";
 import { Teaser, TEASER_FRAMES } from "./teaser/Teaser";
+import { Mystery, MYSTERY_FRAMES } from "./teaser/Mystery";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -31,6 +32,15 @@ export const RemotionRoot: React.FC = () => (
       id="Teaser"
       component={Teaser}
       durationInFrames={TEASER_FRAMES}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ withAudio: true }}
+    />
+    <Composition
+      id="TeaserMystery"
+      component={Mystery}
+      durationInFrames={MYSTERY_FRAMES}
       fps={30}
       width={1080}
       height={1920}

@@ -18,7 +18,7 @@ import numpy as np
 import soundfile as sf
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SHOTS = json.load(open(os.path.join(ROOT, "src/teaser/shots.json")))
+SHOTS = json.load(open(os.path.join(ROOT, os.environ.get("QA_SHOTS", "src/teaser/shots.json"))))
 FPS, FRAMES, W, H, SR = 30, SHOTS["frames"], 1080, 1920, 44100
 
 
@@ -66,10 +66,17 @@ def main():
     rep["cuts_off_plan"] = unplanned
     lum = fr.mean((1, 2))
     dark = [int(i) for i in range(len(lum)) if lum[i] < 4]
-    rep["black_frames"] = [dark[0], dark[-1]] if dark else []
+    runs = []
+    for i in dark:  # contiguous dark runs [first, last]
+        if runs and i == runs[-1][1] + 1:
+            runs[-1][1] = i
+        else:
+            runs.append([i, i])
+    rep["black_runs"] = runs
     black_shot = next(s for s in SHOTS["shots"] if s.get("layout") == "black")
-    if dark and (dark[0] < black_shot["f0"] or dark[-1] >= black_shot["f1"] + 1):
-        issues.append(f"black outside the planned crash cut: {dark[:5]}…")
+    for a0, a1 in runs:
+        if a0 < black_shot["f0"] or a1 >= black_shot["f1"] + 1:
+            issues.append(f"black outside the planned crash cut: frames {a0}-{a1}")
 
     dec = np.frombuffer(run(["ffmpeg", "-v", "error", "-i", mp4, "-f", "f32le", "-ac", "2", "-ar", str(SR), "-"], text=False).stdout, dtype=np.float32).reshape(-1, 2)
     m, sr = sf.read(ref, dtype="float32")

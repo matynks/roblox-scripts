@@ -1,0 +1,229 @@
+{
+  "note": "EXIT CODE 360 - mystery teaser v2 (YouTube Shorts, 1080x1920, 30 fps, 900 frames = 30.000 s). Glimpses only, no explanations: nothing from the science sections, the rescue, the aftermath, the epilogue or the final twist. Same conventions as shots.json (crop keys = [filmT, stage cx, stage cy, k]).",
+  "fps": 30,
+  "frames": 900,
+  "shots": [
+    {
+      "id": "S1 cold open - Leo screams (no context)",
+      "f0": 0,
+      "f1": 14,
+      "src": 309.1,
+      "crop": [
+        [309.1, 1460, 470, 3.0],
+        [309.57, 1450, 470, 2.7]
+      ]
+    },
+    {
+      "id": "S2 his face in a swarm of rings",
+      "f0": 14,
+      "f1": 48,
+      "src": 181.3,
+      "crop": [
+        [181.3, 960, 545, 2.35],
+        [182.43, 960, 545, 2.05]
+      ]
+    },
+    {
+      "id": "S3 Mia sneaks up behind him",
+      "f0": 48,
+      "f1": 96,
+      "src": 3.1,
+      "crop": [
+        [3.1, 700, 540, 1.85],
+        [4.7, 720, 540, 1.95]
+      ]
+    },
+    {
+      "id": "S4 he doesn't turn around",
+      "f0": 96,
+      "f1": 135,
+      "src": 5.82,
+      "crop": [
+        [5.82, 740, 540, 1.95],
+        [7.12, 760, 540, 2.1]
+      ]
+    },
+    {
+      "id": "S5 pigeon - he ducks without looking",
+      "f0": 135,
+      "f1": 162,
+      "src": 11.72,
+      "crop": [
+        [11.72, 900, 540, 1.85],
+        [12.62, 860, 540, 1.95]
+      ]
+    },
+    {
+      "id": "S6 Mia: how did you do that?",
+      "f0": 162,
+      "f1": 227,
+      "src": 20.54,
+      "crop": [
+        [20.54, 690, 600, 2.2],
+        [22.71, 780, 600, 2.25]
+      ]
+    },
+    {
+      "id": "S7 balls from every side",
+      "f0": 227,
+      "f1": 260,
+      "src": 99.35,
+      "crop": [
+        [99.35, 1235, 540, 1.85],
+        [100.45, 1225, 540, 2.0]
+      ]
+    },
+    {
+      "id": "S8 rings pulsing in the dark",
+      "f0": 260,
+      "f1": 302,
+      "src": 208.05,
+      "crop": [
+        [208.05, 960, 540, 2.0],
+        [209.45, 960, 540, 2.3]
+      ]
+    },
+    {
+      "id": "S9 a stranger in the doorway",
+      "f0": 302,
+      "f1": 338,
+      "src": 158.75,
+      "crop": [
+        [158.75, 1695, 680, 2.4],
+        [159.35, 1440, 680, 2.4],
+        [159.95, 1030, 680, 2.4]
+      ]
+    },
+    {
+      "id": "S10 his smile",
+      "f0": 338,
+      "f1": 371,
+      "src": 161.55,
+      "crop": [
+        [161.55, 1170, 540, 2.2],
+        [162.65, 1170, 520, 2.4]
+      ]
+    },
+    {
+      "id": "S11 the earpiece crackles",
+      "f0": 371,
+      "f1": 401,
+      "src": 258.7,
+      "crop": [
+        [258.7, 770, 575, 1.9],
+        [259.7, 770, 600, 2.1]
+      ]
+    },
+    {
+      "id": "S12 only Gate Four",
+      "f0": 401,
+      "f1": 434,
+      "src": 262.6,
+      "crop": [
+        [262.6, 1460, 500, 2.1],
+        [263.7, 1460, 500, 2.25]
+      ]
+    },
+    {
+      "id": "S13 look away and the deal is over",
+      "f0": 434,
+      "f1": 497,
+      "src": 264.15,
+      "crop": [
+        [264.15, 920, 520, 1.9],
+        [266.25, 920, 500, 2.2]
+      ]
+    },
+    {
+      "id": "S14 a light shakes high above",
+      "f0": 497,
+      "f1": 515,
+      "src": 272.0,
+      "crop": [
+        [272.0, 870, 470, 2.2],
+        [272.6, 870, 470, 2.45]
+      ]
+    },
+    {
+      "id": "S15 Mia somewhere in the crowd",
+      "f0": 515,
+      "f1": 533,
+      "src": 253.55,
+      "crop": [
+        [253.55, 990, 540, 1.85],
+        [254.15, 990, 540, 2.0]
+      ]
+    },
+    {
+      "id": "S16 what did he see?",
+      "f0": 533,
+      "f1": 557,
+      "src": 285.19,
+      "crop": [
+        [285.19, 960, 560, 1.85],
+        [285.99, 960, 560, 2.0]
+      ]
+    },
+    {
+      "id": "S17 Mia looks up",
+      "f0": 557,
+      "f1": 587,
+      "src": 314.3,
+      "crop": [
+        [314.3, 1000, 540, 1.9],
+        [315.3, 1040, 540, 2.05]
+      ]
+    },
+    {
+      "id": "S18 he screams",
+      "f0": 587,
+      "f1": 602,
+      "src": 309.6,
+      "crop": [
+        [309.6, 1330, 540, 1.85],
+        [310.1, 1360, 540, 2.0]
+      ]
+    },
+    {
+      "id": "BLACK - a crash, then silence (nothing shown)",
+      "f0": 602,
+      "f1": 690,
+      "src": 318.53,
+      "layout": "black"
+    },
+    {
+      "id": "S20 a phone buzzes in the dark",
+      "f0": 690,
+      "f1": 750,
+      "src": 417.9,
+      "crop": [
+        [417.9, 1580, 560, 2.2],
+        [418.9, 1560, 560, 2.2],
+        [419.9, 1100, 560, 2.0]
+      ]
+    },
+    {
+      "id": "TITLE",
+      "f0": 750,
+      "f1": 900,
+      "src": 0,
+      "layout": "title"
+    }
+  ],
+  "vo": [
+    { "src0": 5.82, "src1": 7.12, "at": 3.2 },
+    { "src0": 20.54, "src1": 22.71, "at": 5.4 },
+    { "src0": 262.6, "src1": 263.7, "at": 13.366667 },
+    { "src0": 264.15, "src1": 266.25, "at": 14.466667 },
+    { "src0": 320.15, "src1": 320.95, "at": 21.35, "captions": false },
+    { "src0": 38.18, "src1": 39.42, "at": 25.36, "captions": false }
+  ],
+  "text": [
+    { "f0": 2, "f1": 48, "kicker": "HE CAN SEE", "main": "EVERYTHING.", "gold": true },
+    { "f0": 50, "f1": 96, "kicker": "EVEN", "main": "BEHIND HIM.", "gold": true },
+    { "f0": 304, "f1": 371, "kicker": "BUT SOMEONE", "main": "NOTICED.", "gold": false },
+    { "f0": 533, "f1": 587, "kicker": "WHAT DID", "main": "HE SEE?", "gold": true },
+    { "f0": 652, "f1": 690, "kicker": "WHAT WOULD", "main": "YOU DO?", "gold": true, "y": 800 },
+    { "f0": 700, "f1": 750, "kicker": "IT'S NOT", "main": "OVER.", "gold": false }
+  ]
+}

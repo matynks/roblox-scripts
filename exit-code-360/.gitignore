@@ -16,3 +16,5 @@ __pycache__/
 # teaser outputs (generated; delivered directly)
 public/audio/teaser_mix.wav
 renders/teaser/
+public/audio/teaser_mystery_mix.wav
+renders/teaser_v2/
