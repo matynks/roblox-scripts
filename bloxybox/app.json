@@ -76,7 +76,8 @@
       ],
       "expo-secure-store",
       "expo-sqlite",
-      "expo-asset"
+      "expo-asset",
+      "./plugins/withReleaseSigning"
     ],
     "experiments": {
       "typedRoutes": true

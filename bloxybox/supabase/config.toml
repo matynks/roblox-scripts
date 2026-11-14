@@ -1,0 +1,18 @@
+# Supabase CLI configuration for BloxyBox.
+# Only the values BloxyBox depends on are set; the CLI uses its defaults for the rest.
+# Migrations live in ./migrations and are applied with `supabase db push`
+# (hosted project) or automatically by `supabase start` (local stack).
+project_id = "bloxybox"
+
+[db]
+major_version = 17
+
+[auth]
+# Sessions are stored on the device; no web redirects are used.
+site_url = "bloxybox://"
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+# Set to false while developing to skip the confirmation e-mail.
+enable_confirmations = true

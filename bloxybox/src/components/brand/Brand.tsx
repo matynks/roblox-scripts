@@ -36,9 +36,9 @@ export const LogoMark = memo(function LogoMark({ size = 48 }: { size?: number })
       <Path d="M32 10 L56 22 L60 12 L38 2 Z" fill="#FFC23D" />
       <Path d="M32 10 L38 2 L60 12 L56 22" fill="none" stroke="#FFE08A" strokeWidth={1.5} strokeLinejoin="round" />
       {/* face: two eyes and a smile on the right face */}
-      <Rect x={38} y={36} width={4} height={6} rx={2} fill="#0B0C14" transform="skewY(-26)" />
-      <Rect x={46} y={40} width={4} height={6} rx={2} fill="#0B0C14" transform="skewY(-26)" />
-      <Path d="M38 50 Q44 54 50 47" stroke="#0B0C14" strokeWidth={2.4} strokeLinecap="round" fill="none" />
+      <Rect x={37.5} y={35.3} width={4} height={6.4} rx={2} fill="#0B0C14" />
+      <Rect x={45.5} y={31.3} width={4} height={6.4} rx={2} fill="#0B0C14" />
+      <Path d="M37 49.6 Q44 50.5 50 43.2" stroke="#0B0C14" strokeWidth={2.4} strokeLinecap="round" fill="none" />
     </Svg>
   );
 });

@@ -207,7 +207,7 @@ User RPCs (`authenticated` only):
 | `record_profile_visit(uuid)` | once per visitor per day |
 
 Developer RPCs (role-checked on every call, audited):
-`dev_whoami`, `dev_find_users`, `dev_set_balance`, `dev_adjust_balance`,
+`dev_whoami`, `dev_find_users`, `dev_get_user`, `dev_set_balance`, `dev_adjust_balance`,
 `dev_set_stats`, `dev_grant_item`, `dev_revoke_item`, `dev_grant_pass`,
 `dev_revoke_pass`, `dev_reset_user`, `dev_diagnostics`, `dev_list_transactions`,
 `dev_list_audit_log`.

@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { AppError, toAppError } from '@/api/errors';
 import { validateBackendConfig } from '@/lib/config';
 import { formatCompact, formatCountdown, formatNumber, formatRelative, formatSigned } from '@/lib/format';
