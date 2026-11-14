@@ -52,6 +52,7 @@ renders/
   EXIT_CODE_360_FULL.mp4     (generated; delivered directly, not committed)
 thumbnail/
   EXIT_CODE_360_THUMBNAIL_FINAL.png  FINAL 1280×720 thumbnail — story scene (Still "ThumbnailScene" at 2× → Lanczos to 1280×720)
+  EXIT_CODE_360_SHORTS_THUMBNAIL.png 2160×3840 (9:16) Shorts thumbnail for the teaser (Still "ShortsThumbnail" at 2×)
   EXIT_CODE_360_THUMBNAIL.png     v2 redesign (Still "ThumbnailV2")
   EXIT_CODE_360_THUMBNAIL_v1.png  first version (Still "Thumbnail")
 assets/

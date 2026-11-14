@@ -11,6 +11,7 @@ import { Thumbnail } from "./thumbnail/Thumbnail";
 import { ThumbnailV2 } from "./thumbnail/ThumbnailV2";
 import { ThumbnailFinal } from "./thumbnail/ThumbnailFinal";
 import { ThumbnailScene } from "./thumbnail/ThumbnailScene";
+import { ShortsThumbnail } from "./thumbnail/ShortsThumbnail";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -56,6 +57,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="ThumbnailV2Smirk" component={ThumbnailV2} width={1280} height={720} defaultProps={{ ring: "orbit" as const, expr: "smirk" as const }} />
     <Still id="ThumbnailFinal" component={ThumbnailFinal} width={1280} height={720} />
     <Still id="ThumbnailScene" component={ThumbnailScene} width={1280} height={720} />
+    <Still id="ShortsThumbnail" component={ShortsThumbnail} width={1080} height={1920} />
     <Still id="SheetLeo" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "leo" as const }} />
     <Still id="SheetMia" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "mia" as const }} />
     <Still id="SheetBlack" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "black" as const }} />
