@@ -21,7 +21,7 @@ checklist in [`docs/TESTING.md`](docs/TESTING.md) on the Galaxy A15.
 | Jest (`npm test`) | ✅ 56 tests in 4 suites pass |
 | Database (`npm run test:db`, PostgreSQL 16) | ✅ 6 suites pass |
 | Android JS bundle (`expo export --platform android`) | ✅ builds (Hermes bytecode, ~5.4 MB) |
-| Release APK (Gradle, arm64-v8a) | see Phase 10 below |
+| Release APK (Gradle, arm64-v8a) | ✅ builds; `aapt2`/`apksigner` verified (details in Phase 10) |
 | Run on Galaxy A15 | ⬜ not yet done |
 
 ## Phase 1 — Inspection and architecture ✅
@@ -75,9 +75,19 @@ checklist in [`docs/TESTING.md`](docs/TESTING.md) on the Galaxy A15.
 * Fixed during QA: missing `expo-asset` dependency (found by component tests; it would have crashed icon rendering at runtime); a possible crash during sign-out navigation (`useUserId`); a streak display bug after a missed day (server now returns `next_streak`).
 * Not yet done: on-device profiling (memory, frame times), network-interruption testing on a real phone.
 
-## Phase 10 — Release preparation 🟡
+## Phase 10 — Release preparation ✅ / 🟡
 * `scripts/build-apk.sh` (local Gradle build), `eas.json` (preview APK / production AAB), release-signing config plugin driven by environment variables, `.env.example`, README build and install instructions, `docs/RELEASE_CHECKLIST.md`.
-* APK build result: recorded below once the Gradle build in this session finishes.
+* ✅ **Release APK built and verified** (2026-11-14): `dist/bloxybox-1.0.0-release-arm64.apk`, 46.5 MB,
+  package `com.bloxybox.app`, versionName 1.0.0 / versionCode 1, minSdk 24, targetSdk 36, ABI arm64-v8a.
+  Permissions: INTERNET, VIBRATE, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE (unused biometric permissions pulled in
+  by expo-secure-store are explicitly removed). `apksigner verify` passes.
+  **Signed with the debug key** because no upload keystore exists yet: installable on your own phone, not for distribution.
+  No Supabase URL is baked in, so first launch shows the Server setup screen.
+* Build notes from this environment: the sandbox's network rate-limited Maven Central, so Gradle was pointed at
+  Google's official Maven Central mirror through a local init script (not part of the project), and JDK 17 had to be
+  installed for React Native's Gradle toolchain. A normal developer machine needs neither workaround (only JDK 17).
+* Size: R8 minification and resource shrinking are off (the Expo default). Turning them on would shrink the APK
+  noticeably, but must be verified on a device first because R8 can strip classes used by native modules.
 
 ## Known limitations and decisions
 * **Score tampering:** a client-side game can't be made cheat-proof. The server bounds abuse (server clock, rate limits, single submit, session expiry, per-run and daily caps) but can't prove a score was earned.
