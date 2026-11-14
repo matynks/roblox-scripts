@@ -9,6 +9,7 @@ import { Teaser, TEASER_FRAMES } from "./teaser/Teaser";
 import { Mystery, MYSTERY_FRAMES } from "./teaser/Mystery";
 import { Thumbnail } from "./thumbnail/Thumbnail";
 import { ThumbnailV2 } from "./thumbnail/ThumbnailV2";
+import { ThumbnailFinal } from "./thumbnail/ThumbnailFinal";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -52,6 +53,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="ThumbnailV2" component={ThumbnailV2} width={1280} height={720} defaultProps={{ ring: "orbit" as const, expr: "awe" as const }} />
     <Still id="ThumbnailV2Flat" component={ThumbnailV2} width={1280} height={720} defaultProps={{ ring: "flat" as const, expr: "awe" as const }} />
     <Still id="ThumbnailV2Smirk" component={ThumbnailV2} width={1280} height={720} defaultProps={{ ring: "orbit" as const, expr: "smirk" as const }} />
+    <Still id="ThumbnailFinal" component={ThumbnailFinal} width={1280} height={720} />
     <Still id="SheetLeo" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "leo" as const }} />
     <Still id="SheetMia" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "mia" as const }} />
     <Still id="SheetBlack" component={CharacterSheet} width={1920} height={1080} defaultProps={{ who: "black" as const }} />
