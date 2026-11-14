@@ -19,3 +19,6 @@ renders/teaser/
 public/audio/teaser_mystery_mix.wav
 renders/teaser_v2/
 renders/thumbnail/
+# subtitle build outputs (fonts converted from public/fonts, review sheets, burned-in MP4)
+renders/subtitles/
+renders/subtitled/

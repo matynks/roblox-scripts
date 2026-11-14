@@ -17,6 +17,7 @@ docs/
   07_FINAL_PRODUCTION_REPORT.md final specs, sound design, QC results, fixes made during QC
   08_SHORTS_TEASER.md         30-s 9:16 YouTube Shorts teasers: v1 (summary) and v2 (mystery, no spoilers)
   09_YOUTUBE_PUBLISHING.md    title, description (with chapters and sources) and tags for upload
+  10_SUBTITLES.md             English subtitles: verified transcript, timing rules, design, burn-in QC
 src/
   characters/  rig (Figure.tsx), cast proportions, poses + walk/run cycles, expressions
   props/       cardboard mask, sandwich, seagull, cyclist (IK pedalling)
@@ -50,6 +51,9 @@ public/
 renders/
   EXIT_CODE_360_POC_v2.mp4
   EXIT_CODE_360_FULL.mp4     (generated; delivered directly, not committed)
+subtitles/
+  EXIT_CODE_360_EN.srt            English subtitles (sidecar, YouTube captions)
+  EXIT_CODE_360_EN.ass            styled subtitles used for the burn-in
 thumbnail/
   EXIT_CODE_360_THUMBNAIL_FINAL.png  FINAL 1280×720 thumbnail — story scene (Still "ThumbnailScene" at 2× → Lanczos to 1280×720)
   EXIT_CODE_360_SHORTS_THUMBNAIL.png 2160×3840 (9:16) Shorts thumbnail for the teaser (Still "ShortsThumbnail" at 2×)
