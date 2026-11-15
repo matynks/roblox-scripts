@@ -347,7 +347,7 @@ language sql stable security definer set search_path = '' as $$
   select jsonb_build_object(
     'balance', (select balance from public.wallets where user_id = p_user),
     'level', p.level,
-    'xp', p.xp
+    'total_xp', p.xp
   ) from public.profiles p where p.id = p_user;
 $$;
 
