@@ -249,8 +249,12 @@ export class GameEngine {
     const spawnZone = role.work_zone && zoneByKey(role.work_zone);
     let pos = saved ? { x: saved.x, y: saved.y } : null;
     if (!pos) {
-      pos = spawnZone?.kind === 'building' ? { ...spawnZone.doors.outside } : randomFreePoint(this.rand, 'plaza');
-      pos.x += (this.rand() - 0.5) * 60;
+      if (spawnZone?.kind === 'building') {
+        pos = { ...spawnZone.doors.outside };
+        pos.x += (this.rand() - 0.5) * 50;
+      } else {
+        pos = randomFreePoint(this.rand, spawnZone?.key ?? 'plaza');
+      }
     }
     const inventory = new Map();
     if (ch) for (const row of db.all('SELECT game_item_id, quantity FROM character_inventory WHERE character_id = ? AND quantity > 0', ch.id)) inventory.set(row.game_item_id, row.quantity);

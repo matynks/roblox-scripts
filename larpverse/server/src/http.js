@@ -65,8 +65,10 @@ export function readBody(req, limitBytes) {
     req.on('data', (c) => {
       size += c.length;
       if (size > limitBytes) {
+        // Stop buffering; the 413 is sent and the socket closed once the response is written.
+        req.removeAllListeners('data');
+        req.pause();
         reject(E.tooLarge());
-        req.destroy();
         return;
       }
       chunks.push(c);

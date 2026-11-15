@@ -92,9 +92,13 @@ export function syncSystemBadges(userId) {
   const primary = db.get('SELECT id FROM accounts WHERE owner_user_id = ? AND is_primary = 1', userId);
   if (!primary) return;
   const role = db.value('SELECT staff_role FROM users WHERE id = ?', userId);
-  for (const b of db.all("SELECT * FROM badges WHERE kind = 'system'")) {
-    const qualifies = STAFF_RANK[role] >= STAFF_RANK[b.required_staff_role ?? 'owner'];
-    if (qualifies) {
+  const system = db.all("SELECT * FROM badges WHERE kind = 'system'");
+  // Show only the highest system badge the login qualifies for.
+  const best = system
+    .filter((b) => STAFF_RANK[role] >= STAFF_RANK[b.required_staff_role ?? 'owner'])
+    .sort((a, b) => STAFF_RANK[b.required_staff_role] - STAFF_RANK[a.required_staff_role])[0];
+  for (const b of system) {
+    if (best && b.id === best.id) {
       db.run('INSERT OR IGNORE INTO account_badges (account_id, badge_id, awarded_at) VALUES (?, ?, ?)', primary.id, b.id, now());
     } else {
       db.run('DELETE FROM account_badges WHERE account_id = ? AND badge_id = ?', primary.id, b.id);

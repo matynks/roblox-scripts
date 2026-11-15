@@ -191,7 +191,7 @@ const PRESETS = [
     kind: 'rare_showcase', name: 'Rare Item Showcase', description: 'Wears and showcases the rarest items in the catalog.',
     data: {
       balance: 60000, badges: { mode: 'add', keys: ['collector'] },
-      inventory: { mode: 'add', skus: ['collectible-golden-crown-of-larpverse', 'collectible-valkyrie-wings', 'collectible-rainbow-aura', 'collectible-diamond-tiara', 'special-golden-aura', 'accessory-seraph-wings'] },
+      inventory: { mode: 'add', skus: ['collectible-golden-crown-of-larpverse', 'collectible-valkyrie-wings', 'collectible-rainbow-aura', 'collectible-diamond-tiara', 'special-golden-aura', 'accessory-seraph-wings', 'face-starstruck'] },
       look: { equippedSkus: ['collectible-golden-crown-of-larpverse', 'collectible-valkyrie-wings', 'collectible-rainbow-aura', 'face-starstruck'] },
       profile: { statusText: 'Rare item showcase', showcaseSkus: ['collectible-golden-crown-of-larpverse', 'collectible-valkyrie-wings', 'collectible-rainbow-aura', 'collectible-diamond-tiara', 'special-golden-aura', 'accessory-seraph-wings'] },
     },

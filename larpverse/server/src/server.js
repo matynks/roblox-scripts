@@ -144,6 +144,10 @@ async function handle(req, res, router, limiter) {
     sendJson(res, ctx.status, result === undefined ? { ok: true } : result);
   } catch (e) {
     if (e instanceof HttpError) {
+      if (e.status === 413) {
+        res.setHeader('Connection', 'close');
+        res.on('finish', () => req.destroy());
+      }
       sendJson(res, e.status, { error: { code: e.code, message: e.message, details: e.details ?? null } });
     } else if (e?.code === 'ERR_SQLITE_ERROR' && /constraint/i.test(e.message)) {
       sendJson(res, 409, { error: { code: 'constraint', message: friendlyConstraint(e.message) } });

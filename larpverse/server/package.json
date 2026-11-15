@@ -12,6 +12,6 @@
     "dev": "node --watch --disable-warning=ExperimentalWarning src/index.js",
     "migrate": "node --disable-warning=ExperimentalWarning src/cli.js migrate",
     "reset-admin": "node --disable-warning=ExperimentalWarning src/cli.js reset-admin",
-    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 test/"
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 test/*.test.js"
   }
 }
