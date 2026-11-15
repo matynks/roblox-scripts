@@ -19,7 +19,6 @@ const make = (store = memoryStore()) =>
     uuid: () => randomUUID(),
     sha256: async (s) => createHash('sha256').update(s).digest('hex'),
     now: () => clock,
-    persistDelayMs: 0,
   });
 
 async function registered(b = make(), username = 'Tester1') {

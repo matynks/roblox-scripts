@@ -114,16 +114,17 @@ export const Headshot = memo(function Headshot({ config, size = 44, ring, backgr
   );
 });
 
+// Square crop boxes (viewBox x y w h) framing each slot on the mannequin.
 const THUMB_VIEW: Record<ItemSlot, string> = {
-  hat: '26 -8 148 136',
-  hair: '26 6 148 148',
-  face: '48 52 104 82',
-  face_accessory: '44 58 112 74',
-  neck: '48 112 104 70',
-  back: '-6 70 212 170',
-  shirt: '28 118 144 90',
-  pants: '44 172 112 72',
-  shoes: '52 206 96 40',
+  hat: '30 -4 140 140',
+  hair: '30 6 140 140',
+  face: '50 42 100 100',
+  face_accessory: '48 44 104 104',
+  neck: '52 104 96 96',
+  back: '-12 36 224 224',
+  shirt: '42 108 116 116',
+  pants: '54 166 92 92',
+  shoes: '62 186 76 76',
 };
 
 const MANNEQUIN = '#E9C9A6';

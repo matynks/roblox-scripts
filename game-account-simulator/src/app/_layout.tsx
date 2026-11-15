@@ -2,7 +2,7 @@ import { Fredoka_500Medium, Fredoka_600SemiBold, Fredoka_700Bold } from '@expo-g
 import { Nunito_500Medium, Nunito_600SemiBold, Nunito_700Bold, Nunito_800ExtraBold, useFonts } from '@expo-google-fonts/nunito';
 import { QueryClientProvider } from '@tanstack/react-query';
 import * as Linking from 'expo-linking';
-import { Stack } from 'expo-router';
+import { router, Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
@@ -28,7 +28,10 @@ function RootNavigator() {
     (backend as any)
       .handleDeepLink(url)
       .then((r: string | null) => {
-        if (r === 'recovery') setRecovering(true);
+        if (r === 'recovery') {
+          setRecovering(true);
+          router.replace('/reset-password');
+        }
         if (r === 'signed_in') toast.success('Email confirmed', 'Welcome to Blockora!');
       })
       .catch(() => toast.error('Link expired', 'Please request a new link.'));

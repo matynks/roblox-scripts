@@ -32,7 +32,7 @@ export function Button({ title, onPress, variant = 'primary', size = 'md', icon,
   const inactive = disabled || loading;
 
   const fg = { primary: '#fff', gold: '#2A1A00', danger: '#fff', secondary: t.text, ghost: t.primary, outline: t.text }[variant];
-  const bg = { primary: 'transparent', gold: t.gold, danger: t.danger, secondary: t.surfaceAlt, ghost: 'transparent', outline: 'transparent' }[variant];
+  const bg = { primary: 'transparent', gold: '#FFC53D', danger: t.danger, secondary: t.surfaceAlt, ghost: 'transparent', outline: 'transparent' }[variant];
 
   const content = (
     <View style={[styles.inner, { height, paddingHorizontal: size === 'sm' ? 14 : 20 }]}>

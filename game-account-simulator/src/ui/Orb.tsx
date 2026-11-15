@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import { View } from 'react-native';
 import Svg, { Defs, LinearGradient, Path, Stop } from 'react-native-svg';
 
@@ -7,16 +8,17 @@ import { useTheme } from './theme';
 
 /** The Orb — Blockora's simulated currency mark (original artwork). */
 export function OrbIcon({ size = 18 }: { size?: number }) {
+  const id = `orb${useId().replace(/[^a-zA-Z0-9]/g, '')}`;
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" accessibilityLabel="Orbs">
       <Defs>
-        <LinearGradient id="orbFill" x1="0" y1="0" x2="1" y2="1">
+        <LinearGradient id={id} x1="0" y1="0" x2="1" y2="1">
           <Stop offset="0" stopColor="#FFE08A" />
           <Stop offset="0.55" stopColor="#FFC53D" />
           <Stop offset="1" stopColor="#F59E0B" />
         </LinearGradient>
       </Defs>
-      <Path d="M12 1.6 21.2 6.9v10.2L12 22.4 2.8 17.1V6.9Z" fill="url(#orbFill)" stroke="#B86E00" strokeWidth={1.2} strokeLinejoin="round" />
+      <Path d="M12 1.6 21.2 6.9v10.2L12 22.4 2.8 17.1V6.9Z" fill={`url(#${id})`} stroke="#B86E00" strokeWidth={1.2} strokeLinejoin="round" />
       <Path d="M12 5.4 17.6 8.6v6.8L12 18.6l-5.6-3.2V8.6Z" fill="#FFF4CC" opacity={0.55} />
       <Path d="M12 5.4 17.6 8.6 12 11.8 6.4 8.6Z" fill="#FFFFFF" opacity={0.65} />
     </Svg>

@@ -48,7 +48,6 @@ export interface LocalDeps {
   uuid: () => string;
   sha256: (s: string) => Promise<string>;
   now?: () => Date;
-  persistDelayMs?: number;
 }
 
 const DB_KEY = 'blockora.offline.db.v1';
@@ -131,7 +130,6 @@ export class LocalBackend implements Backend {
   private ready: Promise<void>;
   private sessionUser: string | null = null;
   private listeners = new Set<(e: AuthEvent, s: SessionInfo | null) => void>();
-  private persistTimer: ReturnType<typeof setTimeout> | null = null;
   private catalogById = new Map(CATALOG.map((c) => [c.id, c]));
   private gameById = new Map(GAMES.map((g) => [g.id, g]));
 
@@ -163,14 +161,14 @@ export class LocalBackend implements Backend {
     if (s && this.db.profiles[s]) this.sessionUser = s;
   }
 
-  private schedulePersist() {
-    if (this.persistTimer) clearTimeout(this.persistTimer);
-    this.persistTimer = setTimeout(() => void this.persistNow(), this.deps.persistDelayMs ?? 250);
+  private writing: Promise<void> = Promise.resolve();
+  /** Persist after every mutation; writes are serialized so the last state always wins. */
+  private commit(): Promise<void> {
+    this.writing = this.writing.then(() => this.persistNow()).catch(() => undefined);
+    return this.writing;
   }
 
   async persistNow() {
-    if (this.persistTimer) clearTimeout(this.persistTimer);
-    this.persistTimer = null;
     // Bound growth so the store stays small on low-end devices.
     if (this.db.sessions.length > 300) this.db.sessions = this.db.sessions.slice(-300);
     if (this.db.activity.length > 600) this.db.activity = this.db.activity.slice(-600);
@@ -538,7 +536,7 @@ export class LocalBackend implements Backend {
     const acct = this.db.accounts[id];
     acct.salt = this.deps.uuid();
     acct.hash = await this.deps.sha256(`${acct.salt}:${newPassword}`);
-    this.schedulePersist();
+    await this.commit();
   }
   async resendConfirmation() {}
 
@@ -597,7 +595,7 @@ export class LocalBackend implements Backend {
     if (p.level < req) fail('THEME_LOCKED', `This theme unlocks at level ${req}.`);
     if (display !== p.display_name) p.display_name_changed_at = this.iso();
     Object.assign(p, { display_name: display, bio: i.bio, status_text: i.status_text.trim(), profile_theme: i.profile_theme });
-    this.schedulePersist();
+    await this.commit();
   }
   async changeUsername(newUsername: string, key: string) {
     const id = await this.uid();
@@ -616,13 +614,13 @@ export class LocalBackend implements Backend {
     }
     p.username = v;
     p.username_changed_at = this.iso();
-    this.schedulePersist();
+    await this.commit();
     return { username: v, cost, ...this.state(id) };
   }
   async updateSettings(patch: Partial<T.Settings>) {
     const id = await this.uid();
     this.db.settings[id] = { ...(this.db.settings[id] ?? DEFAULT_SETTINGS), ...patch };
-    this.schedulePersist();
+    await this.commit();
     return { ...this.db.settings[id] };
   }
   async claimDailyReward(): Promise<T.DailyClaimResult> {
@@ -637,7 +635,7 @@ export class LocalBackend implements Backend {
     const xp = this.addXp(id, 15);
     this.bumpQuests(id, 'daily_claimed', 1);
     const unlocked = this.evaluateAchievements(id);
-    this.schedulePersist();
+    await this.commit();
     return { reward, streak, next_reward: dailyRewardForStreak(streak + 1), leveled_up: xp.leveled_up, unlocked, ...this.state(id) };
   }
   async getDailyQuests(): Promise<T.DailyQuests> {
@@ -665,7 +663,7 @@ export class LocalBackend implements Backend {
     this.applyCurrency(id, q!.rewardOrbs, 'quest_reward', `Quest: ${q!.title}`, ['quest', key], `quest:${day}:${key}`);
     this.addXp(id, q!.rewardXp);
     const unlocked = this.evaluateAchievements(id);
-    this.schedulePersist();
+    await this.commit();
     return { reward: q!.rewardOrbs, unlocked, ...this.state(id) };
   }
   async getAchievements(): Promise<T.AchievementProgress[]> {
@@ -730,12 +728,12 @@ export class LocalBackend implements Backend {
     this.db.notifications.forEach((n) => {
       if (n.user_id === id && !n.read_at && (!ids || ids.includes(n.id))) n.read_at = this.iso();
     });
-    this.schedulePersist();
+    await this.commit();
   }
   async deleteNotification(nid: string) {
     const id = await this.uid();
     this.db.notifications = this.db.notifications.filter((n) => !(n.id === nid && n.user_id === id));
-    this.schedulePersist();
+    await this.commit();
   }
 
   // ── marketplace ───────────────────────────────────────────────────────
@@ -822,7 +820,7 @@ export class LocalBackend implements Backend {
     this.bumpQuests(id, 'items_bought', 1);
     const sets = this.checkSets(id);
     const unlocked = this.evaluateAchievements(id);
-    this.schedulePersist();
+    await this.commit();
     return { status: 'ok', item_id: itemId, inventory_item_id: invId, serial_number: serial, unlocked, sets_completed: sets, leveled_up: xp.leveled_up, ...this.state(id) };
   }
   async toggleItemFavorite(itemId: string) {
@@ -831,7 +829,7 @@ export class LocalBackend implements Backend {
     const has = this.db.favorites.includes(k);
     this.db.favorites = has ? this.db.favorites.filter((x) => x !== k) : [...this.db.favorites, k];
     this.db.favCounts[itemId] = Math.max(0, (this.db.favCounts[itemId] ?? 0) + (has ? -1 : 1));
-    this.schedulePersist();
+    await this.commit();
     return { favorited: !has, favorites_count: this.db.favCounts[itemId] };
   }
   async listFavoriteItemIds() {
@@ -853,7 +851,7 @@ export class LocalBackend implements Backend {
     const id = await this.uid();
     const v = this.validateAvatar(id, config);
     this.db.avatars[id] = v;
-    this.schedulePersist();
+    await this.commit();
     return v;
   }
   async listOutfits() {
@@ -871,7 +869,7 @@ export class LocalBackend implements Backend {
     if (isPublic) this.log(id, 'outfit_shared', { outfit_id: oid, name: n });
     this.bumpQuests(id, 'outfit_actions', 1);
     const unlocked = this.evaluateAchievements(id);
-    this.schedulePersist();
+    await this.commit();
     return { id: oid, unlocked };
   }
   async updateOutfit(oid: string, name: string, isPublic: boolean, config?: AvatarConfig) {
@@ -880,14 +878,14 @@ export class LocalBackend implements Backend {
     if (!o) fail('OUTFIT_NOT_FOUND', 'Outfit not found.');
     if (config) Object.assign(o!, this.validateAvatar(id, config));
     Object.assign(o!, { name: name.trim().slice(0, 30), is_public: isPublic, updated_at: this.iso() });
-    this.schedulePersist();
+    await this.commit();
   }
   async deleteOutfit(oid: string) {
     const id = await this.uid();
     const before = this.db.outfits.length;
     this.db.outfits = this.db.outfits.filter((o) => !(o.id === oid && o.user_id === id));
     if (this.db.outfits.length === before) fail('OUTFIT_NOT_FOUND', 'Outfit not found.');
-    this.schedulePersist();
+    await this.commit();
   }
   async wearOutfit(oid: string) {
     const id = await this.uid();
@@ -978,7 +976,7 @@ export class LocalBackend implements Backend {
     if (vote === -1) s.dislikes++;
     if (vote) this.db.votes[k] = vote;
     else delete this.db.votes[k];
-    this.schedulePersist();
+    await this.commit();
     return { my_vote: vote, likes: s.likes, dislikes: s.dislikes };
   }
   async toggleGameFavorite(gid: string) {
@@ -987,7 +985,7 @@ export class LocalBackend implements Backend {
     const has = this.db.gameFavs.includes(k);
     this.db.gameFavs = has ? this.db.gameFavs.filter((x) => x !== k) : [...this.db.gameFavs, k];
     this.db.gameStats[gid].favorites += has ? -1 : 1;
-    this.schedulePersist();
+    await this.commit();
     return { favorited: !has, favorites: this.db.gameStats[gid].favorites };
   }
   async listGamePasses(): Promise<T.GamePassListing[]> {
@@ -1012,7 +1010,7 @@ export class LocalBackend implements Backend {
     this.addXp(id, Math.min(50, 5 + Math.floor(p!.price / 100)));
     this.bumpQuests(id, 'items_bought', 1);
     const unlocked = this.evaluateAchievements(id);
-    this.schedulePersist();
+    await this.commit();
     return { status: 'ok', unlocked, ...this.state(id) };
   }
   async startGameSession(gid: string): Promise<T.GameSession> {
@@ -1038,7 +1036,7 @@ export class LocalBackend implements Backend {
     const r = computeGameReward({ score, elapsedSeconds: elapsed, scorePerOrb: g.scorePerOrb, maxOrbsPerSession: g.maxOrbsPerSession, dailyOrbCap: g.dailyOrbCap, orbsEarnedToday: today, maxScorePerSecond: g.maxScorePerSecond, scoreGrace: g.scoreGrace, xpPerPlay: g.xpPerPlay, orbMultiplier: s!.perks.orb_multiplier, xpMultiplier: s!.perks.xp_multiplier });
     if (r.status === 'rejected') {
       s!.status = 'rejected';
-      this.schedulePersist();
+      await this.commit();
       return { status: 'rejected', reason: r.reason, orbs: 0, xp: 0, ...this.state(id) };
     }
     const key = `${id}|${g.id}`;
@@ -1058,7 +1056,7 @@ export class LocalBackend implements Backend {
     const unlocked = this.evaluateAchievements(id);
     const result = { status: 'ok' as const, score, orbs: r.orbs, xp: r.xp, orb_multiplier: s!.perks.orb_multiplier ?? 1, daily_cap_reached: r.dailyCapReached, is_new_best: newBest, best_score: Math.max(score, prev?.best_score ?? 0), leveled_up: xp.leveled_up, unlocked };
     Object.assign(s!, { status: 'completed', result, orbs: r.orbs, duration_ms: durationMs });
-    this.schedulePersist();
+    await this.commit();
     return { ...result, ...this.state(id) };
   }
 
@@ -1164,7 +1162,7 @@ export class LocalBackend implements Backend {
       else this.notify(target, 'friend_accepted', `${me.display_name} accepted your friend request`, `@${me.username}`, { user_id: id, username: me.username });
       this.bumpQuests(id, 'social_actions', 1);
       const unlocked = this.evaluateAchievements(id);
-      this.schedulePersist();
+      await this.commit();
       return { status: 'friends' as const, unlocked };
     }
     if (this.db.requests.some((r) => r.sender_id === id && r.receiver_id === target && r.status === 'pending')) fail('REQUEST_PENDING', 'Your friend request is already pending.');
@@ -1173,7 +1171,7 @@ export class LocalBackend implements Backend {
     this.db.requests.push(req);
     this.notify(target, 'friend_request', `${me.display_name} sent you a friend request`, `@${me.username}`, { user_id: id, username: me.username, request_id: req.id });
     this.bumpQuests(id, 'social_actions', 1);
-    this.schedulePersist();
+    await this.commit();
     return { status: 'pending' as const, unlocked: [] };
   }
   async respondFriendRequest(rid: string, accept: boolean) {
@@ -1187,19 +1185,19 @@ export class LocalBackend implements Backend {
       this.notify(r!.sender_id, 'friend_accepted', `${me.display_name} accepted your friend request`, `@${me.username}`, { user_id: id });
       this.evaluateAchievements(id);
     }
-    this.schedulePersist();
+    await this.commit();
   }
   async cancelFriendRequest(rid: string) {
     const id = await this.uid();
     const r = this.db.requests.find((x) => x.id === rid && x.sender_id === id && x.status === 'pending');
     if (!r) fail('REQUEST_NOT_FOUND', 'This friend request is no longer pending.');
     r!.status = 'cancelled';
-    this.schedulePersist();
+    await this.commit();
   }
   async removeFriend(target: string) {
     const id = await this.uid();
     this.db.friendships = this.db.friendships.filter((f) => f !== `${id}|${target}` && f !== `${target}|${id}`);
-    this.schedulePersist();
+    await this.commit();
   }
   async follow(target: string) {
     const id = await this.uid();
@@ -1220,13 +1218,13 @@ export class LocalBackend implements Backend {
     }
     this.bumpQuests(id, 'social_actions', 1);
     this.evaluateAchievements(id);
-    this.schedulePersist();
+    await this.commit();
     return { followed_back: back };
   }
   async unfollow(target: string) {
     const id = await this.uid();
     this.db.follows = this.db.follows.filter((f) => f !== `${id}|${target}`);
-    this.schedulePersist();
+    await this.commit();
   }
   async block(target: string) {
     const id = await this.uid();
@@ -1238,12 +1236,12 @@ export class LocalBackend implements Backend {
     this.db.requests.forEach((r) => {
       if (r.status === 'pending' && ((r.sender_id === id && r.receiver_id === target) || (r.sender_id === target && r.receiver_id === id))) r.status = 'cancelled';
     });
-    this.schedulePersist();
+    await this.commit();
   }
   async unblock(target: string) {
     const id = await this.uid();
     this.db.blocks = this.db.blocks.filter((b) => b !== `${id}|${target}`);
-    this.schedulePersist();
+    await this.commit();
   }
   async listBlocked() {
     const id = await this.uid();
