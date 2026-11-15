@@ -1,0 +1,2 @@
+-- Local development seed. Content and the NPC world ship as migrations;
+-- player accounts are created through the app or the test suite.

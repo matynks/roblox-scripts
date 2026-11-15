@@ -58,7 +58,11 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "gen:content": "tsx scripts/generate-content-sql.ts",
+    "typecheck": "tsc --noEmit",
+    "db:reset": "supabase db reset",
+    "test:integration": "tsx --test --test-concurrency=1 tests/integration/*.test.ts"
   },
   "private": true
 }
