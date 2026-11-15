@@ -1,6 +1,6 @@
 # Video #2 — Story Bible: *What If Humans Never Needed Sleep?*
 
-**v3 · 2026-11-15 · revised after the producer's review of v1 and a final independent review of v2 ([05_FINAL_REVIEW.md](05_FINAL_REVIEW.md)) · for the Story Lock gate (G2)**
+**v4 · 2026-11-15 · v3 plus the producer's narrow correction pass ([06_V4_CORRECTIONS.md](06_V4_CORRECTIONS.md)); earlier reviews in [05_FINAL_REVIEW.md](05_FINAL_REVIEW.md) · for the Story Lock gate (G2)**
 
 This is the story plan, not the script.
 * **Draft beats:** lines in quotation marks show tone, intent and length. The script stage writes the real narration and computes the script audit.
@@ -26,7 +26,7 @@ Sleep is timed by two **separate** systems (B01). We call them the **hourglass**
   * **Light at night suppresses melatonin and can shift the clock** (B08, B09).
 
 ### The rules of this world (HYPOTHETICAL ASSUMPTION — ledger HR1–HR8)
-1. **Moment zero:** one ordinary **Monday night** is the last time anyone sleeps. Nobody notices until Tuesday night. From then on, **nobody needs sleep**, including babies born afterwards.
+1. **Moment zero:** one ordinary **Monday night in September** is the last time anyone sleeps. Nobody notices until Tuesday night. From then on, **nobody needs sleep**, including babies born afterwards.
 2. **Nobody ever gets tired** from being awake. The hourglass never fills.
 3. **Not sleeping causes no harm.** Whatever sleep did — known and unknown — now happens while awake.
 4. **The clock works exactly as it does today** — reset by light, melatonin in darkness, suppressed and shifted by light at night. **The only change: none of it makes anyone sleepy.**
@@ -68,127 +68,130 @@ Sleep is timed by two **separate** systems (B01). We call them the **hourglass**
 
 | When | What happens | Ch |
 |---|---|---|
-| **Monday night — moment zero** | The last night anyone sleeps; nobody knows it. Mia dreams of the two of them on the hill under a sky full of stars. | 2 |
+| **A Monday night in September — moment zero** | The last night anyone sleeps; nobody knows it. Mia dreams of the two of them on the hill under a sky full of stars. | 2 |
 | Tuesday (Day 1) | At breakfast Mia draws the dream; Leo says "When I have time"; she writes WHEN LEO HAS TIME under it. That night, nobody gets tired. | 3 |
 | Year 1 | The economy goes 24/7. Mum takes the night shift; cities rebuild their timetables; schools split into shifts. | 4, 5 |
 | Years 2–5 | Schedules split. Leo joins BLACK 24 at 18 and tells Mia (11) "Next week" about the hill. Her notebook stays blank. | 6 |
-| Year 10, September | A 24-hour civilisation. Leo, 25, runs night operations. Mum's nights have paid for Mia's place at university (term starts 14 September). Mia, 18, leaves on the 7 a.m. train. In September the sky stays dark until about 5 a.m., so there are stars before her train. | 7, 8 |
+| Year 10, 12 May, 03:02 | Mia texts "I GOT IN!! 🎓 Hill before I go?" Leo answers 👍 from his desk without looking up. | 7 |
+| Year 10, September (exactly ten years after moment zero) | A 24-hour civilisation. Leo, 25, runs night operations. Mum's nights have paid for Mia's place at university (term starts 14 September). On the night before her 7 a.m. train they leave the office at about 3:10, drive out, and have stars until about 5 a.m. (in September the sky stays dark until then), and she is back in time for the train. | 7, 8 |
 
 ## 5. Pacing plan
 
-Word counts are **measured** from the draft beats in §6, counting the quoted words; per-beat seconds are in §6. **v3 totals 1,015 words in 7:40**, an overall 132 words/min. The wordless beats (montages, the chapter 8 silences) are deliberate. Nothing is stretched (BRIEF); the script audit (stage 5) measures the final numbers.
+Word counts are **measured** from the draft beats in §6; only quoted speech is counted, and "a.m." counts as one word. Every beat is also checked on its own: **no beat may exceed 160 words/min** (v4 rule, LL-66). **v4 totals 1,031 words in 7:50**, 132 words/min overall, with designed wordless beats. Speech alone, at Video #1's 141 words/min, takes 7:19. Nothing is stretched (BRIEF); the script audit (stage 5) measures the final numbers.
 
-| # | Chapter | Brief window | Planned | Words (v2 → v3) | Pace v3 | Job in the story | Open loops (→ closed in) |
+| # | Chapter | Brief window | Planned v4 | Δ vs window | Words | Pace | Open loops (→ closed in) |
 |---|---|---|---|---|---|---|---|
-| 1 | The Impossible Question | 0:00–0:35 | 35 s | 87 → 87 | 149 wpm | premise + open questions | L1 why is everyone awake? (2) · L2 ten years? (7) · L3 never dreamed? (2 rule, 7) · L7 the 3 a.m. desk (8) |
-| 2 | The Biological Breakthrough | 0:35–1:30 | 60 s (+5) | 153 → 145 | 145 wpm | what sleep does, what we don't know, the rules | — |
-| 3 | The First 24 Hours | 1:30–2:20 | 52 s (+2) | 126 → 113 | 130 wpm | wonder; the promise; the clock still works | L5 the drawing (8) · L9 "When I have time" (8) |
-| 4 | The World Economy | 2:20–3:20 | 61 s (+1) | 158 → 144 | 142 wpm | 24/7 economy; winners and losers; hours ≠ output | L6 Mum's night shift (7) |
-| 5 | A City That Never Sleeps | 3:20–4:20 | 65 s (+5) | 157 → 153 | 141 wpm | Mum's midnight train; transit, repairs, schools, energy, sky; not every city | sets up the split |
-| 6 | The Hidden Cost | 4:20–5:30 | 69 s (−1) | 153 → 147 | 128 wpm | together or apart; "goodnight" fades; boundaries; happiness; "Next week" | L8 the signature line (8) |
-| 7 | Ten Years Later | 5:30–6:40 | 63 s (−7) | 142 → 130 | 124 wpm | civilisation at scale; the largest consequences; why Mia leaves | closes L2, L3, L6 |
-| 8 | The Final Question | 6:40–7:30 | 55 s (+5) | 112 → 96 | 105 wpm | one person, one choice, the question to the viewer | closes L5, L7, L8, L9 |
+| 1 | The Impossible Question | 0:00–0:35 (35 s) | 0:00–0:37 (37 s) | +6 % | 86 | 139 wpm | L1 why is everyone awake? (2) · L2 ten years? (7) · L3 never dreamed? (2, 7) · L7 the 3 a.m. desk (8) |
+| 2 | The Biological Breakthrough | 0:35–1:30 (55 s) | 0:37–1:37 (60 s) | +9 % | 145 | 145 wpm | — |
+| 3 | The First 24 Hours | 1:30–2:20 (50 s) | 1:37–2:29 (52 s) | +4 % | 111 | 128 wpm | L5 the drawing (8) · L9 "When I have time" (8) |
+| 4 | The World Economy | 2:20–3:20 (60 s) | 2:29–3:37 (68 s) | +13 % | 164 | 145 wpm | L6 Mum's night shift (7) |
+| 5 | A City That Never Sleeps | 3:20–4:20 (60 s) | 3:37–4:42 (65 s) | +8 % | 151 | 139 wpm | sets up the split |
+| 6 | The Hidden Cost | 4:20–5:30 (70 s) | 4:42–5:51 (69 s) | −1 % | 147 | 128 wpm | L8 the signature line (8) |
+| 7 | Ten Years Later | 5:30–6:40 (70 s) | 5:51–6:54 (63 s) | −10 % | 128 | 122 wpm | closes L2, L3, L6 |
+| 8 | The Final Question | 6:40–7:30 (50 s) | 6:54–7:50 (56 s) | +12 % | 99 | 106 wpm | closes L5, L7, L8, L9 |
 
-* **Chapter windows:** every chapter is within ±15 % of the brief's window except chapter 7 at −10 %, which is inside ±15 % too. The total runs 10 s over 7:30, inside "about 7–8 minutes".
-* **v2's pacing risk is resolved:** chapters 2, 4 and 5 now run at 141–145 words/min, in line with Video #1's 141. Only the hook (chapter 1) is faster, at 149, which suits a fast-paced opening.
-* **New, smaller risk:** at Video #1's pace the 1,015 words take about 7:12 of speech. The plan's 7:40 depends on the wordless beats landing as designed. If the voice runs fast, the film ends nearer 7:20 — still within the brief.
+* **Every chapter is within ±15 %** of its window. The total is 20 s over 7:30, inside "about 7–8 minutes".
+* **v3 → v4 timing changes**, all timing-only except the RAND wording:
+  * chapter 4 grows by 7 s for the RAND attribution;
+  * the hook's promise beat gets 10 s instead of 7 (26 words had been planned at about 220 words/min);
+  * chapter 8 is re-allocated, because v3 gave the 21-word reality line only 6 s.
 
 ---
 
 ## 6. The chapters
 
-### Chapter 1 — The Impossible Question (0:00–0:35)
+### Chapter 1 — The Impossible Question (0:00–0:37)
 
 *Brief: start immediately with a powerful hook; the premise is understood at once; curiosity about the consequences; no long introduction.*
 
 **Hook — FAST-PACED V2.**
-* **First 3 s (v3):** the thumbnail image in motion, a paradox (3 a.m. and a full playground) and sound from frame 1.
+* **First 3 s (v4):** frame 1 is a wide, instantly readable shot of the full playground under the 3:00 clock, with sound. The thumbnail close-up follows at 0:02.
 * **By 0:09:** the premise.
 * **The curiosity gap:** ten years, no dreams.
 * **The reason to stay:** the first 24 hours, the next ten years.
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 0:00–0:03 | **Frame 1 — no black, no silence.** Extreme close-up of Leo's (25) wide-open eye; in its reflection a huge luminous clock reads **3:00** *(the thumbnail image)*. The camera pulls back through the office glass: a city at full daytime intensity under a night sky, and a floodlit playground with kids on the swings. City roar, a school bell and creaking swings from frame 1. | "It's three a.m. — and the playground is full." | HR1 |
-| 0:03–0:10 | Fast cuts: a school with every classroom lit; a traffic jam; Leo at the window. Label band: *TEN YEARS FROM NOW*. | "The schools are open. Traffic's jammed. And nobody here has slept… in ten years." | HR1 |
+| 0:00–0:03 | **0:00.0 — frame 1, a wide shot already in motion (no pull-back):** a floodlit playground packed with children fills the lower two-thirds of the frame — two swings at the top of their arc, a slide, kids running. Behind it, the night city: a navy sky without stars, every window lit. Centred above the skyline, a huge luminous clock face reads **3:00** (teal and cool white). Night, 3:00 and a full playground all read at phone size from the first frame; the camera only pushes in 2 %. **Sound from frame 1:** laughter, swing chains, a distant school bell, traffic hum. **0:02.0 — cut to the thumbnail shot:** an extreme close-up of Leo's (25) wide-open eyes at an office window, the 3:00 clock and the floodlit playground reflected in the glass. Hold to 0:03. | "It's three a.m. — and the playground is full." (spoken 0:00.2–0:03.0, running over the cut) | HR1 |
+| 0:03–0:10 | Fast cuts: a school with every classroom lit; a traffic jam. Label band: *TEN YEARS FROM NOW*. | "The schools are open. Traffic's jammed. And nobody here has slept… in ten years." | HR1 |
 | 0:10–0:19 | Today: Earth's night side, windows going dark in waves, people lying down. | "Tonight, almost everyone on Earth will lie down in the dark and sleep. About a third of your life — more than twenty years." | A01, CALC-01 |
-| 0:19–0:26 | Leo (15) in bed; his eyes snap open. | "So what if you never needed to sleep again? Not tired. Not sick. Just… awake." | HR1–HR3 |
-| 0:26–0:33 | Glimpses: a sunrise after a sleepless night; a 24-hour city; a child's notebook of blank pages. | "This is the first twenty-four hours. The next ten years. And why, in this world, a whole generation of kids has never had a single dream." | HR5 |
-| 0:33–0:35 | Title: **WHAT IF HUMANS NEVER NEEDED SLEEP?** · EXIT CODE | — | — |
+| 0:19–0:25 | Leo (15) in bed; his eyes snap open. | "So what if you never needed to sleep again? Not tired. Not sick. Just… awake." | HR1–HR3 |
+| 0:25–0:35 | Glimpses: a sunrise after a sleepless night; a 24-hour city; a child's notebook of blank pages. | "This is the first twenty-four hours. The next ten years. And why, in this world, a whole generation of kids has never had a single dream." | HR5 |
+| 0:35–0:37 | Title: **WHAT IF HUMANS NEVER NEEDED SLEEP?** · EXIT CODE | — | — |
 
 Transition: the clock hands spin backwards; label: *TEN YEARS EARLIER*.
 
-### Chapter 2 — The Biological Breakthrough (0:35–1:35)
+### Chapter 2 — The Biological Breakthrough (0:37–1:37)
 
 *Brief: what sleep normally does — brain, memory, learning, metabolism, immunity, biological clocks; what the breakthrough would have to change; no invented mechanism presented as science.*
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 0:35–0:39 | Label band: *MONDAY — THE LAST NIGHT ANYONE SLEEPS.* Leo (15) yawning over homework; Mia (8) asleep, her notebook under her hand. | "So what does sleep actually do?" | HR1 |
-| 0:39–0:51 | Navy science graphic. **Hourglass:** sand of tiny dots filling inside a brain; a coffee cup caps it. **Clock:** a small clock deep in the brain; light from the eyes nudges its hands back into place. | "Two systems run it. An hourglass — a chemical called adenosine that builds up while you're awake. Coffee blocks its signal. And a clock deep in your brain, reset every day by light." | B01–B05 |
-| 0:51–1:07 | Three fast icons from a sleeping brain: a film strip replaying Leo's guitar chord; virus icons (tag *1 study · 164 adults*); sugar cubes beside an "age" dial (tag *1 study · 11 men*). | "Studies suggest it helps your brain lock in what you learned. In one study, people sleeping six hours or less had about four times the odds of catching a cold. In another, six short nights left young men handling blood sugar worse." | C01, C03, C05 |
-| 1:07–1:14 | Two mouse-lab cards stamped YES and NO; a question mark over a dreaming brain. | "Some of it, nobody understands: what REM sleep is for, or whether sleep really cleans the brain." | D02, D04 (C06 + C08 as the cards) |
-| 1:14–1:26 | The hourglass freezes; the clock keeps ticking. | "A breakthrough would have to stop the hourglass and do all of sleep's work — even the parts we don't understand. How? Nobody knows. That's the thought experiment." | HR2, HR3, HR8, D01 |
-| 1:26–1:35 | **The rule card**, four lines appearing one by one. | "In this world: you're never tired. Skipping sleep never hurts. Your body clock keeps ticking. And with no sleep… nobody dreams." | HR2–HR5 |
+| 0:37–0:41 | Label band: *MONDAY — THE LAST NIGHT ANYONE SLEEPS.* Leo (15) yawning over homework; Mia (8) asleep, her notebook under her hand. | "So what does sleep actually do?" | HR1 |
+| 0:41–0:53 | Navy science graphic. **Hourglass:** sand of tiny dots filling inside a brain; a coffee cup caps it. **Clock:** a small clock deep in the brain; light from the eyes nudges its hands back into place. | "Two systems run it. An hourglass — a chemical called adenosine that builds up while you're awake. Coffee blocks its signal. And a clock deep in your brain, reset every day by light." | B01–B05 |
+| 0:53–1:09 | Three fast icons from a sleeping brain: a film strip replaying Leo's guitar chord; virus icons (tag *1 study · 164 adults*); sugar cubes beside an "age" dial (tag *1 study · 11 men*). | "Studies suggest it helps your brain lock in what you learned. In one study, people sleeping six hours or less had about four times the odds of catching a cold. In another, six short nights left young men handling blood sugar worse." | C01, C03, C05 |
+| 1:09–1:16 | Two mouse-lab cards stamped YES and NO; a question mark over a dreaming brain. | "Some of it, nobody understands: what REM sleep is for, or whether sleep really cleans the brain." | D02, D04 (C06 + C08 as the cards) |
+| 1:16–1:28 | The hourglass freezes; the clock keeps ticking. | "A breakthrough would have to stop the hourglass and do all of sleep's work — even the parts we don't understand. How? Nobody knows. That's the thought experiment." | HR2, HR3, HR8, D01 |
+| 1:28–1:37 | **The rule card**, four lines appearing one by one. | "In this world: you're never tired. Skipping sleep never hurts. Your body clock keeps ticking. And with no sleep… nobody dreams." | HR2–HR5 |
 
 *Optional, only if the script audit leaves room:* "A rare gene lets some people sleep less than most of us — but they still sleep." (F03; no hour figures)
 
-### Chapter 3 — The First 24 Hours (1:35–2:27)
+### Chapter 3 — The First 24 Hours (1:37–2:29)
 
 *Brief: the first day; many additional waking hours; family, hobbies, education, sports, entertainment, personal projects; different ways people use the time.*
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 1:35–1:42 | **Tuesday breakfast — the planted detail.** Mia (8) holds up her drawing: two stick figures on a hill under a sky crowded with stars. Leo (15), grabbing toast, barely looks. Mia writes underneath in big capitals: **WHEN LEO HAS TIME**. | Mia: "Look — it's us, on the hill! Can we go?" Leo: "Sure. When I have time." | HR1 |
-| 1:42–1:47 | 10 p.m. The family on the couch, wide awake. | "That night, nobody gets tired. Not you. Not Mum. Not anyone." | HR2 |
-| 1:47–1:58 | **The 1 a.m. montage**, each beat 1–1.5 s in its own colour pocket of the city: a packed 24-hour gym; a game server crashing under record players; Grandma starting a painting; a student opening a language course; a dad and kid building a treehouse by headlamp; a garage band; one office where a man in a grey suit books 3 a.m. meetings. | "By one a.m., the city is training, gaming, painting, studying — and one man in a grey suit is booking meetings for three a.m." | SP |
-| 1:58–2:00 | Mia in bed, eyes open, her notebook open at a fresh page beside the pillow. *(no words)* | — | HR5 |
-| 2:00–2:14 | **4 a.m. — the clock at work.** Leo in the dark kitchen, lights off. A soft indigo glow drifts from a small gland at the centre of a cut-away brain. He switches on the lamp and the glow thins; off again, and it slowly returns. | "In the dark, a gland deep in your brain still releases melatonin — your body's signal of night. Switch on a light, and it fades. You're not tired. Your body just knows it's night." | B06, B08, HR4 |
-| 2:14–2:27 | Sunrise. Leo on the balcony. | "Twenty-four hours awake, and you feel fine. You just got eight hours back — almost three thousand hours a year. Eight billion people did the same maths. So did their bosses." | CALC-02 |
+| 1:37–1:44 | **Tuesday breakfast — the planted detail.** Mia (8) holds up her drawing: two stick figures on a hill under a sky crowded with stars. Leo (15), grabbing toast, barely looks. Mia writes underneath in big capitals: **WHEN LEO HAS TIME**. The camera holds on the caption for 2 s, legible at phone size *(caption seen 1 of 3)*. | Mia: "Look — it's us, on the hill! Can we go?" Leo: "Sure. When I have time." | HR1 |
+| 1:44–1:49 | 10 p.m. The family on the couch, wide awake. | "That night, nobody gets tired. Not you. Not Mum. Not anyone." | HR2 |
+| 1:49–2:00 | **The 1 a.m. montage**, each beat 1–1.5 s in its own colour pocket of the city: a packed 24-hour gym; a game server crashing under record players; Grandma starting a painting; a student opening a language course; a dad and kid building a treehouse by headlamp; a garage band; one office where a man in a grey suit books 3 a.m. meetings. | "By one a.m., the city is training, gaming, painting, studying — and one man in a grey suit is booking meetings for three a.m." | SP |
+| 2:00–2:02 | Mia in bed, eyes open, her notebook open at a fresh page beside the pillow. *(no words)* | — | HR5 |
+| 2:02–2:16 | **4 a.m. — the clock at work.** Leo in the dark kitchen, lights off. A soft indigo glow drifts from a small gland at the centre of a cut-away brain. He switches on the lamp and the glow thins; off again, and it slowly returns. | "In the dark, a gland deep in your brain still releases melatonin — your body's signal of night. Switch on a light, and it fades. You're not tired. Your body just knows it's night." | B06, B08, HR4 |
+| 2:16–2:29 | Sunrise. Leo on the balcony. | "Twenty-four hours awake, and you feel fine. You just got eight hours back — almost three thousand hours a year. Eight billion people did the same maths. So did their bosses." | CALC-02 |
 
-### Chapter 4 — The World Economy (2:27–3:28)
+### Chapter 4 — The World Economy (2:29–3:37)
 
 *Brief: continuous business operations, flexible shifts, night-time services, automation, changing employment patterns; who benefits and who loses; more hours ≠ more productivity or happiness.*
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 2:27–2:35 | A world map; on every continent the crowd icons double. Footnote: *assumes ~8 h of sleep; 7–9 h → 3.4–4.9 billion*. | "Overnight, humanity's waking time grows by about half — roughly the waking hours of four billion extra people." | CALC-03 |
-| 2:35–2:46 | Mr. Black's sign reads "BLACK & CO."; the "& CO." slides off and a neon "24" lights up. Warehouses and call centres glow at 3 a.m. | "Mr. Black's company becomes BLACK 24. It never closes. Even today, about one in six US workers works outside regular daytime hours. Now the night shift is just… a shift." | SP-01, G02 |
-| 2:46–2:48 | Montage, no words: a bank, a dentist and a delivery at 3 a.m.; mattress and sleeping-pill shops shuttered. | "Some jobs boom. Others vanish." | SP-03 |
-| 2:48–3:03 | Winners and losers on split cards (winners: business, customer, student; losers: worker, mattress). | "Winners? Companies, customers — and the cost of too little sleep, estimated at up to four hundred and eleven billion dollars a year in the US, disappears. Losers? Workers: when everyone can work more, an hour might be worth less." | G01, SP-02 |
-| 3:03–3:16 | An output curve rises, flattens, and ends in a question mark. | "But more hours aren't more output. In First World War factories, each hour past about forty-nine a week added less. Those workers got tired — whether tireless ones could stay focused, nobody knows." | G03, D05 |
-| 3:16–3:28 | Mum signs BLACK 24's night-shift contract. Cut to dinner: her chair is empty. | "Mum takes BLACK 24's night shift. It pays more — enough to start Mia's university fund. Her chair at dinner stays empty." | (story) |
+| 2:29–2:37 | A world map; on every continent the crowd icons double. Footnote: *assumes ~8 h of sleep; 7–9 h → 3.4–4.9 billion*. | "Overnight, humanity's waking time grows by about half — roughly the waking hours of four billion extra people." | CALC-03 |
+| 2:37–2:49 | Mr. Black's sign reads "BLACK & CO."; the "& CO." slides off and a neon "24" lights up. Warehouses and call centres glow at 3 a.m. | "Mr. Black's company becomes BLACK 24. It never closes. Even today, about one in six US workers works outside regular daytime hours. Now the night shift is just… a shift." | SP-01, G02 |
+| 2:49–2:51 | Montage, no words: a bank, a dentist and a delivery at 3 a.m.; mattress and sleeping-pill shops shuttered. | "Some jobs boom. Others vanish." | SP-03 |
+| 2:51–3:15 | Winners and losers on split cards (winners: business, customer, student; losers: worker, mattress). The RAND figure appears as a sourced card: *RAND Europe, 2016 · lack of sleep among US workers · up to $411 bn a year*. | "Winners? Companies and customers. In 2016, RAND estimated that lack of sleep cost the US economy up to four hundred and eleven billion dollars a year — in missed work, lower productivity and earlier deaths. Here, that could shrink, though a nonstop world may bring new costs. Losers? Workers: when everyone can work more, an hour might be worth less." | G01, SP-19, SP-02 |
+| 3:15–3:28 | An output curve rises, flattens, and ends in a question mark. | "But more hours aren't more output. In First World War factories, each hour past about forty-nine a week added less. Those workers got tired — whether tireless ones could stay focused, nobody knows." | G03, D05 |
+| 3:28–3:37 | Mum signs BLACK 24's night-shift contract. Cut to dinner: her chair is empty. | "Mum takes BLACK 24's night shift. It pays more — enough to start Mia's university fund. Her chair at dinner stays empty." | (story) |
 
-### Chapter 5 — A City That Never Sleeps (3:28–4:33)
+### Chapter 5 — A City That Never Sleeps (3:37–4:42)
 
 *Brief: public transport, restaurants, hospitals, schools, entertainment, infrastructure, energy consumption; do not assume every city runs 24 hours.*
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 3:28–3:36 | Mum, BLACK 24 lanyard on, squeezed into a packed train at midnight. | "Mum's train to work leaves at midnight — packed. New York's subway already runs all night. Now many cities try." | H01, SP-05 |
-| 3:36–3:45 | Engineers with head-torches on empty tracks at night; then the same tracks with trains thundering past the crew. | "London keeps its all-night Tube to weekends — weeknights are for repairs. So in a city that never stops, when do you fix it?" | H08, SP-06 |
-| 3:45–3:49 | Montage: a 3 a.m. diner, a 4 a.m. operating theatre, a 5 a.m. concert. | "Dinner at three. Surgery at four. Concerts at five." | SP |
-| 3:49–3:55 | A school timetable with three sessions; Mia arrives at 8 a.m., Leo at 9 p.m. | "Schools split into shifts: Mia's starts at eight a.m., yours at nine p.m." | SP-07 |
-| 3:55–4:06 | Grid graphic: night demand climbing while the solar line sits at zero; batteries, wind, dams and gas plants fill the gap. | "Lighting in homes, offices and streets already takes about eight percent of the world's electricity. Keep it on all night and demand climbs — just when solar panels produce nothing." | H02, H03, SP-08 |
-| 4:06–4:17 | The stars fading out; birds singing under streetlights; turtle hatchlings crawling toward a promenade's lights. | "Over eighty percent of people already live under light-polluted skies. Here, stars fade faster, birds sing at the wrong hour, turtle hatchlings lose the sea." | H04, H06, SP-09 |
-| 4:17–4:33 | Split screen: a megacity's glare beside a small town under a sky full of stars. | "But not every place switches on. Some towns follow Flagstaff, Arizona — the world's first International Dark Sky City — and keep their nights dark. On purpose. Cities adapted in a year. People took longer." | H07, SP-05 |
+| 3:37–3:45 | Mum, BLACK 24 lanyard on, squeezed into a packed train at midnight. | "Mum's train to work leaves at midnight — packed. New York's subway already runs all night. Now many cities try." | H01, SP-05 |
+| 3:45–3:54 | Engineers with head-torches on empty tracks at night; then the same tracks with trains thundering past the crew. | "London keeps its all-night Tube to weekends — weeknights are for repairs. So in a city that never stops, when do you fix it?" | H08, SP-06 |
+| 3:54–3:58 | Montage: a 3 a.m. diner, a 4 a.m. operating theatre, a 5 a.m. concert. | "Dinner at three. Surgery at four. Concerts at five." | SP |
+| 3:58–4:04 | A school timetable with three sessions; Mia arrives at 8 a.m., Leo at 9 p.m. | "Schools split into shifts: Mia's starts at eight a.m., yours at nine p.m." | SP-07 |
+| 4:04–4:15 | Grid graphic: night demand climbing while the solar line sits at zero; batteries, wind, dams and gas plants fill the gap. | "Lighting in homes, offices and streets already takes about eight percent of the world's electricity. Keep it on all night and demand climbs — just when solar panels produce nothing." | H02, H03, SP-08 |
+| 4:15–4:26 | The stars fading out; birds singing under streetlights; turtle hatchlings crawling toward a promenade's lights. | "Over eighty percent of people already live under light-polluted skies. Here, stars fade faster, birds sing at the wrong hour, turtle hatchlings lose the sea." | H04, H06, SP-09 |
+| 4:26–4:42 | Split screen: a megacity's glare beside a small town under a sky full of stars. | "But not every place switches on. Some towns follow Flagstaff, Arizona — the world's first International Dark Sky City — and keep their nights dark. On purpose. Cities adapted in a year. People took longer." | H07, SP-05 |
 
-### Chapter 6 — The Hidden Cost (4:33–5:42)
+### Chapter 6 — The Hidden Cost (4:42–5:51)
 
 *Brief: human consequences — more time together? relationships and routines? longer work? boundaries? happier? Balanced and scientifically honest.*
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 4:33–4:39 | Warm amber vignettes: a midnight family dinner, a 4 a.m. walk with friends, a parent reading to a child. | "At first, people spend more time together." | SP |
-| 4:39–4:52 | A 24-hour clock with three coloured arcs, labelled MUM · NIGHTS, LEO · NIGHT SCHOOL, MIA · MORNINGS, barely overlapping. Then three small inner clocks drift out of step. | "Then the schedules split. Awake twenty-four hours a day — and almost never together. Nobody says goodnight anymore. Your body clocks drift apart too — the lights never go off." | SP-10, SP-18, SP-17, B09 |
-| 4:52–4:59 | Leo, 18, gets a BLACK 24 lanyard. | "At eighteen, you join BLACK 24 too. Nights. You're good at it. You're always available." | (story) |
-| 4:59–5:02 | Mia (11) at his door, holding the notebook open at the drawing; Leo on a call waves her off. | Leo: "Next week." | (story) |
-| 5:02–5:16 | A phone lights up at 3 a.m.: Mr. Black — *"You're up, right?"* | "And that's the trap. Sleep was the one excuse nobody could argue with. Now nobody's ever asleep. France and Australia already give workers a right to disconnect — work was leaking into our nights long before this." | SP-11, G06 |
-| 5:16–5:32 | An inverted-U curve; at one end someone learning the cello or caring for a parent, at the other someone scrolling at 4 a.m. | "Would more time make us happier? Research suggests free time helps up to about two hours a day — but past about five, well-being can dip, unless that time goes to something that matters. Some people flourish. Some drift." | G04, SP-12 |
-| 5:32–5:38 | Mia turns the pages: one drawing, then blank page after blank page. | "Mia's notebook stays blank. And science still can't say what dreams were for." | HR5, D03, SP-13 |
-| 5:38–5:42 | **Signature line**, on screen and in voice. | **"We didn't lose sleep. We lost the night."** | — |
+| 4:42–4:48 | Warm amber vignettes: a midnight family dinner, a 4 a.m. walk with friends, a parent reading to a child. | "At first, people spend more time together." | SP |
+| 4:48–5:01 | A 24-hour clock with three coloured arcs, labelled MUM · NIGHTS, LEO · NIGHT SCHOOL, MIA · MORNINGS, barely overlapping. Then three small inner clocks drift out of step. | "Then the schedules split. Awake twenty-four hours a day — and almost never together. Nobody says goodnight anymore. Your body clocks drift apart too — the lights never go off." | SP-10, SP-18, SP-17, B09 |
+| 5:01–5:08 | Leo, 18, gets a BLACK 24 lanyard. | "At eighteen, you join BLACK 24 too. Nights. You're good at it. You're always available." | (story) |
+| 5:08–5:11 | Mia (11) at his door, holding the notebook open at the drawing, the caption WHEN LEO HAS TIME legible *(seen 2 of 3)*. Leo, on a call, waves her off. She adds a tally mark under the caption. | Leo: "Next week." | (story) |
+| 5:11–5:25 | A phone lights up at 3 a.m.: Mr. Black — *"You're up, right?"* | "And that's the trap. Sleep was the one excuse nobody could argue with. Now nobody's ever asleep. France and Australia already give workers a right to disconnect — work was leaking into our nights long before this." | SP-11, G06 |
+| 5:25–5:41 | An inverted-U curve; at one end someone learning the cello or caring for a parent, at the other someone scrolling at 4 a.m. | "Would more time make us happier? Research suggests free time helps up to about two hours a day — but past about five, well-being can dip, unless that time goes to something that matters. Some people flourish. Some drift." | G04, SP-12 |
+| 5:41–5:47 | Mia turns the pages: one drawing, then blank page after blank page. | "Mia's notebook stays blank. And science still can't say what dreams were for." | HR5, D03, SP-13 |
+| 5:47–5:51 | **Signature line**, on screen and in voice. | **"We didn't lose sleep. We lost the night."** | — |
 
-### Chapter 7 — Ten Years Later (5:42–6:45)
+### Chapter 7 — Ten Years Later (5:51–6:54)
 
 *Brief: a cinematic hypothetical vision of civilisation ten years on; cities, services, businesses, routines; speculative, not a prediction; build toward the largest consequences.*
 
@@ -196,31 +199,31 @@ The whole chapter is framed as imagined ("Imagine it's ten years on…"); every 
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 5:42–5:46 | **TEN YEARS LATER.** | "Imagine it's ten years on. You're twenty-five." | — |
-| 5:46–5:51 | Earth from orbit; the night side glowing. | "From space, Earth's night side glows brighter than ever." | SP-09 |
-| 5:51–5:58 | The giant 3:00 clock over a jammed street — the callback to the hook. | "Three a.m. is just another rush hour. Days don't end anymore — they change shifts." | SP-15 |
-| 5:58–6:03 | Trains run nose to tail; small robots repair a tunnel wall between them. | "Trains never stop. Robots fix the tunnels between them." | SP-06 |
-| 6:03–6:09 | BLACK 24 logos everywhere. | "The economy is bigger. But for many people, the working week crept up, not down." | SP-11 |
-| 6:09–6:18 | A coach of tourists in a dark-sky town, all looking up; a "QUIET HOURS" sign on a parliament's steps. | "Darkness is a luxury now — people travel just to see stars. Some countries pass night laws: hours when nobody can be called to work." | SP-14, SP-11 |
-| 6:18–6:28 | A classroom at 3 a.m. A teacher describes dreams like ancient history; a child asks, "What did it feel like?" | "And there's a whole generation of children who have never had a single dream." | HR5 (rule-derived), SP-13 |
-| 6:28–6:45 | Leo at a BLACK 24 control desk; on his phone, Mia: *"I GOT IN!! 🎓"* He sends 👍 at 3:02 a.m. without looking up. Mum in the warehouse. Mia packing; the notebook goes into her bag; the letter reads *Term starts 14 September*. | "You run night operations at BLACK 24. Mum's nights paid for Mia's place at university. She leaves tomorrow — to study the brain, and find out what dreams were for. Which brings us back to three a.m." | (story), D03 |
+| 5:51–5:55 | **TEN YEARS LATER.** | "Imagine it's ten years on. You're twenty-five." | — |
+| 5:55–6:00 | Earth from orbit; the night side glowing. | "From space, Earth's night side glows brighter than ever." | SP-09 |
+| 6:00–6:07 | The giant 3:00 clock over a jammed street — the callback to the hook. | "Three a.m. is just another rush hour. Days don't end anymore — they change shifts." | SP-15 |
+| 6:07–6:12 | Trains run nose to tail; small robots repair a tunnel wall between them. | "Trains never stop. Robots fix the tunnels between them." | SP-06 |
+| 6:12–6:18 | BLACK 24 logos everywhere. | "The economy is bigger. But for many people, the working week crept up, not down." | SP-11 |
+| 6:18–6:27 | A coach of tourists in a dark-sky town, all looking up; a "QUIET HOURS" sign on a parliament's steps. | "Darkness is a luxury now — people travel just to see stars. Some countries pass night laws: hours when nobody can be called to work." | SP-14, SP-11 |
+| 6:27–6:37 | A classroom at 3 a.m. A teacher describes dreams like ancient history; a child asks, "What did it feel like?" | "And there's a whole generation of children who have never had a single dream." | HR5 (rule-derived), SP-13 |
+| 6:37–6:54 | Leo at a BLACK 24 control desk. His phone, dated **12 MAY · 03:02**: Mia — *"I GOT IN!! 🎓 Hill before I go?"* He sends 👍 without looking up. Mum in the warehouse. **September:** Mia packing; the letter reads *Term starts 14 September*; the notebook goes into her bag. | "You run night operations at BLACK 24. Mum's nights paid for Mia's place at university. She leaves tomorrow — to study the brain, and find out what dreams were for. Which brings us back to three a.m." | (story), D03 |
 
-### Chapter 8 — The Final Question (6:45–7:40)
+### Chapter 8 — The Final Question (6:54–7:50)
 
 *Brief: return to the individual; humanity has gained enormous waking time — what would people actually do with it? End with the line; the final moment must feel meaningful; no generic outro.*
 
 | Time | Picture | Draft beat | Claims |
 |---|---|---|---|
-| 6:45–6:50 | 3:00 a.m. — the hook's shot, now understood: Leo at his desk by the office window. | "Three a.m. You're at your desk, like every night." | — |
-| 6:50–6:58 | Mia in the glass lobby, backpack on, holding the old notebook. | Mia: "My train's at seven. Come to the hill with me — just tonight." Leo: "I can't. I'm on shift." | (story) |
-| 6:58–7:06 | She leaves the notebook open on his desk and goes. He turns blank page after blank page… then the drawing, and under it, in an eight-year-old's capitals, **WHEN LEO HAS TIME**. He looks up at the clock: 3:00. | Leo, barely aloud: "When Leo has time." | — |
-| 7:06–7:09 | He stands; his chair spins empty — an echo of Mum's chair. He runs after her. *(music only)* | — | — |
-| 7:09–7:13 | The car leaves the glow. His phone lights up — MR. BLACK: *"Where are you?"* — and he switches it off. Stars appear. | "Out past the last streetlight, the stars come back." | — |
-| 7:13–7:19 | The hill. Mia holds the drawing up against the real sky: the same hill, the same stars. *(no words)* | — | — |
-| 7:19–7:23 | They lie in the grass. | "In the dark, your body clocks finally get a real night." | SP-17, B06 |
-| 7:23–7:28 | Mia, eyes closed, a half-smile. | Mia: "Don't fall asleep on me." Leo, smiling: "Goodnight, Mia." | SP-18 (payoff) |
-| 7:28–7:34 | A beat of silence; the camera rises into the stars. | "Back in the real world, sleep experts recommend at least seven hours a night — and science still can't fully explain why." | A05, D01 |
-| 7:34–7:40 | Hold on the stars. | **"If you never had to sleep again… what would you do with the life you got back?"** · silence · EXIT CODE mark · **no outro** | — |
+| 6:54–6:57 | 3:00 a.m. — the hook's shot, now understood: Leo at his desk by the office window. | "You're at your desk, like every night." | — |
+| 6:57–7:05 | Mia in the glass lobby, backpack on, holding the old notebook. | Mia: "My train's at seven. Come to the hill with me — just tonight." Leo: "I can't. I'm on shift." | (story) |
+| 7:05–7:11 | She leaves the notebook open on his desk and goes. He turns blank page after blank page… then the drawing; under it, in an eight-year-old's capitals, **WHEN LEO HAS TIME** *(seen 3 of 3)*, and below that a long column of tally marks, one for every time she asked. He looks up at the clock: 3:00. | Leo, barely aloud: "When Leo has time." | — |
+| 7:11–7:13 | He stands; his chair spins empty — an echo of Mum's chair. He runs after her. *(music only)* | — | — |
+| 7:13–7:17 | The car leaves the glow. His phone lights up — MR. BLACK: *"Where are you?"* — and he switches it off. Stars appear. | "Out past the last streetlight, the stars come back." | — |
+| 7:17–7:20 | The hill. Mia holds the drawing up against the real sky: the same hill, the same stars. *(no words)* | — | — |
+| 7:20–7:27 | They lie in the grass, awake. | "No light up here holds back your body's signal of night. It isn't sleep. It's just night." | B06, B08, HR2, HR5 |
+| 7:27–7:31 | Mia, eyes closed, a half-smile. | Mia: "Don't fall asleep on me." Leo, smiling: "Goodnight, Mia." | SP-18 (payoff) |
+| 7:31–7:41 | A beat of silence; the camera rises into the stars. | "Back in the real world, sleep experts recommend at least seven hours a night — and science still can't fully explain why." | A05, D01 |
+| 7:41–7:50 | Hold on the stars. | **"If you never had to sleep again… what would you do with the life you got back?"** · silence · EXIT CODE mark · **no outro** | — |
 
 ---
 
@@ -235,7 +238,7 @@ The whole chapter is framed as imagined ("Imagine it's ten years on…"); every 
 | Stars | 3 (drawing) · 5 (fading) · 7 (luxury) · 8 (payoff) | the night itself |
 | Empty chairs | 4 (Mum) · 8 (Leo) | where the hours go — and the choice to get up |
 | "Goodnight" | 6 ("Nobody says goodnight anymore") · 8 (Leo says it) | a pause chosen, not required |
-| **"When I have time"** | 3 (Leo's brush-off; Mia writes it under the drawing) · 6 ("Next week.") · 7 (👍 at 3:02 a.m.) · 8 (he reads it aloud) | the story's irony: more time than anyone ever had, and no time |
+| **"When I have time"** | 3 ("Sure. When I have time."; the caption WHEN LEO HAS TIME, seen 1 of 3) · 6 ("Next week."; caption seen 2 of 3; her first tally mark) · 7 (👍 to "Hill before I go?", 12 May) · 8 (caption seen 3 of 3 above a column of tally marks; he reads it aloud) | the story's irony: more time than anyone ever had, and no time |
 
 ## 8. Retention plan
 
@@ -351,3 +354,12 @@ Full findings with severity, evidence and corrections are in [05_FINAL_REVIEW.md
   * chapter 7's family exposition trimmed and shown instead;
   * chapter 5 opens on Mum's midnight train;
   * hospitals get a beat ("Surgery at four").
+
+### Producer's narrow correction pass (v3 → v4)
+The original and revised wording of every change is in [06_V4_CORRECTIONS.md](06_V4_CORRECTIONS.md):
+* RAND attribution and what it measured;
+* the circadian line;
+* the visible promise chain (caption seen three times, tally marks, "Hill before I go?");
+* the exact first three seconds;
+* timeline anchors (September moment zero, 12 May message);
+* timing fixes for beats that were too short for their words.

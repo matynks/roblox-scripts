@@ -1,6 +1,6 @@
 # Video #2 — Claim Ledger
 
-**v3 · 2026-11-15 · revised after the producer's review of v1 and the final review of v2.** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
+**v4 · 2026-11-15 · v3 plus the producer's narrow correction pass.** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
 
 Sources are in [01_RESEARCH.md §4](01_RESEARCH.md#4-source-list):
 * **Level A** — abstract, official page or the authors' own release.
@@ -50,9 +50,9 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | B03 | Caffeine keeps you alert mainly by blocking adenosine's receptors. | ESTABLISHED FACT | S08 | Narrate as "blocking its signal". | 2 |
 | B04 | The master clock is a small cluster of nerve cells deep in the brain (the suprachiasmatic nucleus). It keeps clocks all over the body in step. | ESTABLISHED FACT | S05, S53 | — | 2 |
 | B05 | Left alone, the human clock runs a little longer than a day — about 24 hours 11 minutes — so it is reset every day, mainly by light reaching the eyes. | ESTABLISHED FACT | S54, S05 | — | 2 |
-| B06 | Melatonin is made by the **pineal gland**, not by the clock itself. The master clock drives its production and light inhibits it, so levels rise in darkness and peak at night. | ESTABLISHED FACT | S07, S53 | **Never** "the clock releases melatonin". | 3 |
+| B06 | Melatonin is made by the **pineal gland**, not by the clock itself. The master clock drives its production and light inhibits it, so levels rise in darkness and peak at night. | ESTABLISHED FACT | S07, S53 | **Never** "the clock releases melatonin". | 3, 8 |
 | B07 | Melatonin carries the message of darkness to the clock and the body. In humans it helps prepare for sleep — sleepiness rises about two hours after its evening onset — but it is not a sedative. | RESEARCH-SUPPORTED EVIDENCE | S53 | A review; the author has a declared commercial interest. Narrate only "the body's signal of night". | 3 |
-| B08 | Ordinary room light at night suppresses melatonin — by more than half during usual sleep hours in one study — and delays its evening rise. | RESEARCH-SUPPORTED EVIDENCE | S52 | Retrospective analysis, 116 young adults. Never "light switches it off". | 3 |
+| B08 | Ordinary room light at night suppresses melatonin — by more than half during usual sleep hours in one study — and delays its evening rise. | RESEARCH-SUPPORTED EVIDENCE | S52 | Retrospective analysis, 116 young adults. Never "light switches it off". | 3, 8 |
 | B09 | Light is the clock's strongest time cue. Light at the wrong time can shift the clock, and night-shift workers' clocks often stay out of step with their schedules. | RESEARCH-SUPPORTED EVIDENCE | S05, S55, S56 | Reviews of shift work. | 6 |
 | B10 | Core body temperature has a daily rhythm, lowest in the early-morning hours. | ESTABLISHED FACT | S09 | Level S only → **not narrated** (dropped from chapter 3). | — |
 | B11 | The clock's molecular gears earned the 2017 Nobel Prize. | ESTABLISHED FACT | S06 | — | opt |
@@ -102,7 +102,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Claim | Class | Sources | Notes | Ch |
 |---|---|---|---|---|---|
-| G01 | The cost of too little sleep is estimated at up to $411 billion a year in the US. | RESEARCH-SUPPORTED EVIDENCE | S37 | RAND Europe, 2016. A **model estimate and upper bound**. Covers lost productivity (absenteeism, presenteeism) and higher mortality among workers sleeping < 7 h compared with 7–9 h (≈ 2.28 % of GDP; ≈ 1.2 M working days). The model's internals were not read in full. The construct is **insufficient sleep**, never "tiredness". No emphasis words ("alone"). | 4 |
+| G01 | In 2016, RAND estimated that lack of sleep cost the US economy up to $411 billion a year — in missed work, lower productivity and earlier deaths. | RESEARCH-SUPPORTED EVIDENCE | S37 | RAND Europe, 2016; a **model estimate and upper bound** of losses from lack of sleep among the US **working population**. It counts absenteeism and presenteeism (lost productivity) plus higher mortality among those sleeping less than 7–9 h (≈ 2.28 % of GDP; ≈ 1.2 M working days); the model's internals were not read in full. **Always attributed to RAND 2016.** It is never said to "disappear" in this world: RAND's comparison is people sleeping 7–9 h, not a world without sleep. Any consequence for this world is SP-19 and is hedged. The construct is lack of sleep — never "tiredness"; no emphasis words. | 4 |
 | G02 | Even today, about one in six US workers doesn't work a regular daytime schedule. | ESTABLISHED FACT | S38 | BLS, 2017–18. | 4 |
 | G03 | In First World War munitions factories, past about 49 hours a week each extra hour added less, and a 70-hour week produced little more than 56 hours. | RESEARCH-SUPPORTED EVIDENCE | S39 | Historical, one sector, workers who got tired — pair with D05. | 4 |
 | G04 | Research suggests free time lifts well-being up to about two hours a day, then levels off; beyond about five it can dip, unless the time is spent on something meaningful. | RESEARCH-SUPPORTED EVIDENCE | S40 | Correlational data plus experiments. Say "around". | 6 |
@@ -167,7 +167,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Rule |
 |---|---|
-| HR1 | **Moment zero:** one ordinary **Monday night** is the last time anyone sleeps; people wake on Tuesday morning as usual. From then on, no human needs sleep, including babies born afterwards. The change is global and simultaneous, and nobody notices it until Tuesday night. |
+| HR1 | **Moment zero:** one ordinary **Monday night in September** is the last time anyone sleeps; people wake on Tuesday morning as usual. From then on, no human needs sleep, including babies born afterwards. The change is global and simultaneous, and nobody notices it until Tuesday night. |
 | HR2 | Sleep pressure never builds: nobody ever feels sleepy or exhausted from being awake. |
 | HR3 | Whatever sleep does for brain and body — the parts science knows and the parts it doesn't — now happens while awake. Not sleeping causes no harm. |
 | HR4 | **The circadian system works exactly as it does today.** The master clock keeps roughly 24-hour time and is reset by light. In darkness it drives the pineal gland to make melatonin; light at night still suppresses melatonin and can shift the clock. **The only change: none of this ever makes anyone sleepy.** |
@@ -196,8 +196,9 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | SP-14 | Darkness becomes rare and valued; dark-sky towns become destinations. | H07 | 7 |
 | SP-15 | "3 a.m. is just another rush hour." | SP-01, SP-07 | 7 |
 | SP-16 | *(optional)* Entertainment that simulates dreams becomes popular. | HR5 | opt |
-| SP-17 | Under lights that never go off, people's body clocks drift out of step with the sun and with each other. | B08, B09; health effects UNKNOWN (D06), not narrated | 6, 8 |
+| SP-17 | Under lights that never go off, people's body clocks drift out of step with the sun and with each other. | B08, B09; health effects UNKNOWN (D06), not narrated | 6 |
 | SP-18 | With no bedtime, the habit of saying "goodnight" fades. | HR1, HR2 (cultural guess) | 6 |
+| SP-19 | Without sleep, the losses RAND attributed to lack of sleep **could shrink** — but a world that never stops may bring new costs. | G01 (what RAND measured); D05, D06 (unknowns) | 4 |
 
 ## Withdrawn or not narrated
 
@@ -230,3 +231,8 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 * **HR1** — moment zero defined: the last sleep is a Monday night.
 * **CALC-02** — narrated as "almost three thousand hours".
 * **SP-18** added ("goodnight" fades), as the setup for chapter 8.
+
+## Changes in v4 (producer's narrow correction pass)
+* **G01** — attributed to RAND 2016 in the narration, with what RAND measured (missed work, lower productivity, earlier deaths). "Disappears" is withdrawn; the hedged consequence is the new **SP-19**.
+* **HR1** — moment zero is a Monday night **in September**, so the ending is exactly ten years later.
+* **B06 and B08** are now also used in chapter 8 ("No light up here holds back your body's signal of night"). **SP-17** is used in chapter 6 only; v3's chapter 8 line "your body clocks finally get a real night" is withdrawn.

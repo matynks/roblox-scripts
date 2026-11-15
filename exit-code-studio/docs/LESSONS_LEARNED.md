@@ -81,6 +81,11 @@ Sources of evidence:
 | LL-59 | Story | Hook opened on black with a low-information line | §6 |
 | LL-60 | Story | The story's moment zero was undefined | §6 |
 | LL-61 | Story | Redundancy and narration that repeats the picture | §6 |
+| LL-62 | Science | A real statistic carried into the hypothetical world | §5 |
+| LL-63 | Science | A story science line that contradicted a world rule | §5 |
+| LL-64 | Story | Payoff hung on a setup the audience met only once | §6 |
+| LL-65 | Story | Hook image readable only at the end of a camera move | §6 |
+| LL-66 | Process | Beats planned shorter than their words — hidden by averages | §6 |
 
 ---
 
@@ -581,6 +586,48 @@ Sources of evidence:
 * **Fix:** each fact is told once; picture-only beats carry the rest.
 * **Standard?** Yes, §6 "narration vs picture".
 * **Avoid:** keep a cross-chapter fact list. Narration adds what the picture can't; motifs are the only deliberate repeats.
+
+## Video #2 pre-production — from the producer's narrow correction pass on Story Lock v3 (2026-11-15)
+
+### LL-62 · A real statistic carried into the hypothetical world
+* **What happened:** v3 said the $411 bn cost "disappears" in the no-sleep world. RAND compared people sleeping 7–9 hours, not a world without sleep, so its model doesn't carry over — and a nonstop world may bring costs RAND never modelled.
+* **Why:** a real figure was used as a punchline for the hypothetical.
+* **Fix:** the figure is attributed to RAND 2016 and described as RAND measured it (missed work, lower productivity, earlier deaths); the consequence is hedged (SP-19).
+* **Standard?** Yes — §5.2 "real statistics stay in their own frame".
+* **Avoid:** real numbers describe the real world; anything they imply about the imagined world is speculation and is said as such.
+
+### LL-63 · A story science line that contradicted a world rule
+* **What happened:** "In the dark, your body clocks finally get a real night" implied the clocks had been broken and that darkness gives back something sleep used to give. World rule HR4 says the clock works normally.
+* **Why:** the line was written for emotion and checked against the science, but not against the world rules.
+* **Fix:** "No light up here holds back your body's signal of night. It isn't sleep. It's just night." It states only that light suppresses melatonin, and explicitly rules out sleep.
+* **Standard?** Yes — §5.2 "world-rule consistency".
+* **Avoid:** every science line inside the story is checked twice — against the sources and against the world rules.
+
+### LL-64 · Payoff hung on a setup the audience met only once
+* **What happened:** in v3, Leo's turning point depended on viewers remembering one breakfast line from five minutes earlier. The 👍 in chapter 7 was a reaction, not a promise.
+* **Why:** the setup/payoff audit checked that a setup existed, not that the audience would recognise it.
+* **Fix:** the caption is seen three times (ch. 3, 6, 8); tally marks show every time Mia asked; the 👍 now answers "Hill before I go?". The payoff stays wordless apart from "When Leo has time."
+* **Standard?** Yes — §6 "recognition test".
+* **Avoid:** a setup must be met at least twice before its payoff, and the payoff uses the character's own words or handwriting — never a narrated explanation of the emotion.
+
+### LL-65 · Hook image readable only at the end of a camera move
+* **What happened:** v3's opening began on an eye and only revealed the playground — the paradox — after a long pull-back.
+* **Why:** the v1.2 rule demanded the thumbnail image on frame 1, which pushed the actual premise image behind a camera move.
+* **Fix:** frame 1 is a wide, instantly readable shot of the full playground under the 3:00 clock; the thumbnail close-up follows at 0:02.
+* **Standard?** Yes — §6 "first three seconds" refined: frame 1 readable at a glance; thumbnail image within 3 s.
+* **Avoid:** test frame 1 as a still at phone size — it must make sense without motion or narration.
+
+### LL-66 · Beats planned shorter than their words — hidden by averages
+* **What happened:** chapter averages looked fine (≤ 145 words/min), but individual beats didn't fit:
+  * the hook's promise line was 26 words in 7 s (≈ 220 words/min);
+  * the chapter 8 reality line was 21 words in 6 s;
+  * the opening line was 8 words in 2.2 s.
+
+  The word counter also had a bug that undercounted one row. Separately, a 03:02 message timestamp could be read as the same night as chapter 8.
+* **Why:** pacing was checked per chapter, not per beat, and the counter wasn't tested. Diegetic times weren't checked against the timeline.
+* **Fix:** beats re-timed (wording unchanged); the counter fixed to count only quoted speech, with "a.m." as one word; the message dated 12 May.
+* **Standard?** Yes — §6 "per-beat speech rate" and "diegetic dates".
+* **Avoid:** check every beat at ≤ 160 words/min (lower for emotional beats), and check every on-screen date or time against the moment zero.
 
 ---
 

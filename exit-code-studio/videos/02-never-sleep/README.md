@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 1–2 | Inspect, audit, upgrade plan | ✅ **G1 approved** 2026-11-15 | audit presented in session; standards in `../../docs/` |
 | 3 | Research | ✅ v1.2, 2026-11-15 | [docs/01_RESEARCH.md](docs/01_RESEARCH.md) — 62 sources with verification levels (S52–S63 added in reviews) |
-| 4 | Story Bible + Story Lock | ⏳ **v3 awaiting G2** — v1 reviewed by the producer (6 issues); v2 independently reviewed (27 findings, 25 fixed) | [docs/02_CLAIM_LEDGER.md](docs/02_CLAIM_LEDGER.md) v3, [docs/03_STORY_BIBLE.md](docs/03_STORY_BIBLE.md) v3, [docs/04_STORY_LOCK.md](docs/04_STORY_LOCK.md) v3, [docs/05_FINAL_REVIEW.md](docs/05_FINAL_REVIEW.md) |
+| 4 | Story Bible + Story Lock | ⏳ **v4 awaiting G2** — v1 reviewed by the producer (6 issues); v2 independently reviewed (27 findings); v3 narrow producer pass (5 points) | [docs/02_CLAIM_LEDGER.md](docs/02_CLAIM_LEDGER.md) v4, [docs/03_STORY_BIBLE.md](docs/03_STORY_BIBLE.md) v4, [docs/04_STORY_LOCK.md](docs/04_STORY_LOCK.md) v4, [docs/05_FINAL_REVIEW.md](docs/05_FINAL_REVIEW.md), [docs/06_V4_CORRECTIONS.md](docs/06_V4_CORRECTIONS.md) |
 | 5–6 | Script + review | not started | — |
 | 7 | Voiceover (producer, ElevenLabs web app) | not started | — |
 | 8 | Project setup (shared core) | not started | — |
