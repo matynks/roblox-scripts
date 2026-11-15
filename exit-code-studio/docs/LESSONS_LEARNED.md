@@ -64,6 +64,16 @@ Sources of evidence:
 | LL-42 | Subtitles | Rounding put cues on the wrong frames | §13 |
 | LL-43 | Subtitles | Verifier rule too strict for continuous speech | §13 |
 | LL-44 | Data | Stale data file in an old format | §3 |
+| LL-45 | Science | Population-scale number built on a 7-person study | §5 |
+| LL-46 | Science | Headline comparison without its method | §5 |
+| LL-47 | Science | Circadian and melatonin explanation simplified into errors | §5 |
+| LL-48 | Science | A world rule presented as a consequence | §5 |
+| LL-49 | Science | Evidence classes used loosely | §5 |
+| LL-50 | Story | Character motivations missing | §6 |
+| LL-51 | Process | Self-review missed issues the producer found | §6 |
+| LL-52 | Science | Narration resting on secondary sources | §5 |
+| LL-53 | Story | Pacing planned by guesswork | §6 |
+| LL-54 | Story | Predictable ending repeating Video #1 | §6 |
 
 ---
 
@@ -409,6 +419,110 @@ Sources of evidence:
 * **Fix:** removed and regenerated.
 * **Standard?** Yes, §3: generated data carries a schema version and is regenerated, not reused.
 * **Avoid:** version generated files.
+
+## Video #2 pre-production — from the producer's review of Story Lock v1 (2026-11-15)
+
+### LL-45 · Population-scale number built on a 7-person study
+* **What happened:** Story Lock v1 said a sleepless night costs about 135 extra calories, and "across humanity, that's like feeding half a billion more people" (CALC-04). The input was one study of 7 adults lying in bed (S36); the output was a claim about the world's food supply.
+* **Why:** a dramatic number won over its evidence. No rule forbade scaling up small studies, and labelling it "speculative" didn't stop it reaching the narration.
+* **Fix:** withdrawn from the story and the ledger, together with SP-04.
+* **Standard?** Yes, §5: the "no scaling up" rule.
+* **Avoid:** before a number enters a script, ask whether the study's authors would sign that sentence.
+
+### LL-46 · Headline comparison without its method
+* **What happened:** v1 said humanity would gain "the waking hours of about four billion extra people". It showed no inputs, didn't state its assumption (8 hours for everyone), and didn't show how sensitive the result is: 3.4–4.9 billion for 7–9 hours.
+* **Why:** calculations were written as one-line results.
+* **Fix:**
+  * a worked method with sourced inputs (S51, S57, S58, A01);
+  * a sensitivity table;
+  * narration that holds across the range ("about half / roughly four billion");
+  * an on-screen footnote;
+  * class HYPOTHETICAL ASSUMPTION.
+* **Standard?** Yes, §5: the calculation rule.
+* **Avoid:** no derived number without its method and range.
+
+### LL-47 · Circadian and melatonin explanation simplified into errors
+* **What happened:**
+  * v1 said "the clock releases melatonin" — it's the pineal gland.
+  * It said "light switches it off" — light suppresses it.
+  * It had melatonin "flowing" at 4 a.m. in a lit room, contradicting light suppression.
+  * It narrated the early-morning temperature low on secondary sources only.
+  * The hook called sleep "unconscious" / "switching off" — the sleeping brain is active, and dreams are experiences.
+* **Why:** mechanism sentences were shortened from memory and summaries without checking which structure does what, under which conditions, and how strongly.
+* **Fix:**
+  * rebuilt from S52–S56: pineal gland, suppression by light, daily reset, shifting;
+  * the chapter 3 beat moved into the dark, with a lamp test;
+  * the temperature line dropped;
+  * the hook's wording corrected.
+* **Standard?** Yes, §5: the mechanism check and everyday-word rule.
+* **Avoid:** for every mechanism sentence, name the structure, the condition and the strength of the verb, and check all three against a level-A source.
+
+### LL-48 · A world rule presented as a consequence
+* **What happened:** v1 classed "no sleep, no dreams" as a speculative consequence and revealed it as if it followed from science. It can't be derived: what dreams are for is unknown, and so is whether dream-like experience could exist without sleep.
+* **Why:** no rule separated what we impose (world rules) from what we guess (speculation).
+* **Fix:** world rule HR5, stated on the chapter 2 rule card; the narration says "in this world".
+* **Standard?** Yes, §5: rule-derived claims are HYPOTHETICAL ASSUMPTION; SPECULATIVE SCENARIO is only for how people and institutions respond.
+* **Avoid:** for each claim, ask "did we choose this, or would evidence predict it?"
+
+### LL-49 · Evidence classes used loosely
+* **What happened:** ledger v1 mixed non-standard labels into the class column:
+  * "arithmetic";
+  * "ESTABLISHED (recommendation)";
+  * "RESEARCH-SUPPORTED (strong)";
+  * "UNKNOWN for humans".
+
+  It gave narration hints, not definitions.
+* **Why:** the standard's class table was brief, and qualifiers were mixed into class names.
+* **Fix:** ledger v2 has full definitions, exactly one class per claim, qualifiers in Notes, and the weakest-input rule.
+* **Standard?** Yes, §5.
+* **Avoid:** an automatic check (script stage) that every ledger row uses one of the five exact class names.
+
+### LL-50 · Character motivations missing
+* **What happened:**
+  * v1 said Mia "leaves tomorrow" without saying why.
+  * Mum's motive was only "30 % more pay", and her thread had no ending.
+  * Leo's path from 15 to running night operations was missing.
+  * The 3 a.m. climax put Leo at home, which is unlikely in a 24-hour world.
+* **Why:** the Story Lock template had no fields for motivation or decision logic.
+* **Fix:** a motivation table for each character (want, need, key decisions and why, consistency with Video #1 traits) and revised scene logic.
+* **Standard?** Yes, §6: motivation and decision-logic fields in the Story Lock.
+* **Avoid:** for every decision, answer "why now?" and "why not the obvious alternative?"
+
+### LL-51 · Self-review missed issues the producer found
+* **What happened:** Story Lock v1 was presented as ready, and the producer found six substantive problems (P1–P6). A deliberate second review then found 15 more (R1–R15 in the Story Bible's review log), including:
+  * overgeneralisations ("every big city tries");
+  * overstatements ("Earth's night side barely looks like night");
+  * a factual slip about Flagstaff;
+  * a point-of-view slip.
+* **Why:** before presenting, drafts were checked for internal consistency (IDs, links), not for truth, logic and quality.
+* **Fix:** a written review log in the Story Bible.
+* **Standard?** Yes, §6: a critical-review protocol with checklist before every gate.
+* **Avoid:** attack every gate document as if someone else wrote it, before showing it.
+
+### LL-52 · Narration resting on secondary sources
+* **What happened:** v1 planned to narrate claims backed only by level-S sources:
+  * short-sleeper hour figures;
+  * "France was first";
+  * night-time transit maintenance;
+  * the early-morning temperature low.
+* **Why:** the source level was recorded but not tied to any rule about narration.
+* **Fix:** replaced with level-A sources (the DEC2 abstract, INRS / Library of Congress, Fair Work Ombudsman, TfL) or dropped from the narration.
+* **Standard?** Yes, §5: narrated facts need level-A sources.
+* **Avoid:** check the source-level column before a claim gets a chapter number.
+
+### LL-53 · Pacing planned by guesswork
+* **What happened:** v1's word budgets were estimates. Counting showed chapter 2 planned at roughly 150–190 words for a 55 s slot. v2's measured plan still has chapters 2, 4 and 5 at 150–155 words/min against Video #1's 141.
+* **Why:** there was no per-beat timing, and words were estimated rather than counted.
+* **Fix:** per-beat second budgets; words counted by script from the draft beats; the remaining risk flagged.
+* **Standard?** Yes, §6.
+* **Avoid:** count, don't estimate.
+
+### LL-54 · Predictable ending repeating Video #1
+* **What happened:** v1's climax — Mr. Black's promotion versus Mia — repeated Video #1's choice (the Gate 4 job versus Mia) and turned Mr. Black into a cartoon tempter.
+* **Why:** reusing the cast pulled the previous story's structure in with it.
+* **Fix:** the choice now comes from Leo's own habit: he refuses, Mia leaves the notebook, he changes his mind.
+* **Standard?** Yes, §6: checklist item "predictability and repetition against earlier episodes".
+* **Avoid:** compare every climax with the climaxes of earlier videos.
 
 ---
 

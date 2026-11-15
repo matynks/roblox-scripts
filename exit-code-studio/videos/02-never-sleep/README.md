@@ -7,8 +7,8 @@
 | # | Stage | Status | Evidence |
 |---|---|---|---|
 | 1–2 | Inspect, audit, upgrade plan | ✅ **G1 approved** 2026-11-15 | audit presented in session; standards in `../../docs/` |
-| 3 | Research | ✅ done 2026-11-15 | [docs/01_RESEARCH.md](docs/01_RESEARCH.md) — 50 sources, verification levels |
-| 4 | Story Bible + Story Lock | ⏳ **awaiting G2** | [docs/02_CLAIM_LEDGER.md](docs/02_CLAIM_LEDGER.md), [docs/03_STORY_BIBLE.md](docs/03_STORY_BIBLE.md), [docs/04_STORY_LOCK.md](docs/04_STORY_LOCK.md) |
+| 3 | Research | ✅ v1.1, 2026-11-15 | [docs/01_RESEARCH.md](docs/01_RESEARCH.md) — 60 sources with verification levels (S52–S61 added after review) |
+| 4 | Story Bible + Story Lock | ⏳ **v2 awaiting G2** — v1 reviewed by the producer (6 issues), revised | [docs/02_CLAIM_LEDGER.md](docs/02_CLAIM_LEDGER.md) v2, [docs/03_STORY_BIBLE.md](docs/03_STORY_BIBLE.md) v2 (review log §12), [docs/04_STORY_LOCK.md](docs/04_STORY_LOCK.md) v2 |
 | 5–6 | Script + review | not started | — |
 | 7 | Voiceover (producer, ElevenLabs web app) | not started | — |
 | 8 | Project setup (shared core) | not started | — |

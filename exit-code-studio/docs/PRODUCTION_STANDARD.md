@@ -1,6 +1,6 @@
 # EXIT CODE — PRODUCTION STANDARD
 
-**Version 1.0 · 2026-11-15 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward**
+**Version 1.1 · 2026-11-15 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1 tightens §5 and §6 after the producer's review of Story Lock v1 (LL-45–LL-54)
 
 > WE DON'T START OVER. WE BUILD FORWARD.
 
@@ -73,14 +73,26 @@ The sequence follows the reference tutorial — script engine (session → title
 
 ## 5. Science and fact standard [IN FORCE]
 
-| Class | Meaning | How the narration may say it |
-|---|---|---|
-| **ESTABLISHED FACT** | settled science, official statistics, definitions, arithmetic | plainly ("Your brain has a master clock.") |
-| **RESEARCH-SUPPORTED EVIDENCE** | peer-reviewed findings that are not settled, or rest on few, small or animal studies | signal it: "studies suggest", "in one study", "linked to", "in mice" — never "proves" |
-| **HYPOTHETICAL ASSUMPTION** | the rules of the imagined world | "imagine", "in this world", "let's say" |
-| **SPECULATIVE SCENARIO** | consequences we extrapolate from the rules | "might", "could", "would probably" — never a prediction |
-| **UNKNOWN** | open scientific questions | "nobody knows yet", "scientists still argue" |
+### 5.1 The five evidence classes (v1.1: full definitions — LL-49)
 
+| Class | Definition | Minimum evidence | How the narration may say it |
+|---|---|---|---|
+| **ESTABLISHED FACT** | Settled knowledge: scientific consensus or textbook physiology, replicated findings, official statistics, laws and other public facts, definitions, and arithmetic whose inputs are all established. | A level-A source (agency, professional society, major review, official page or primary data). | Plainly, keeping the source's qualifiers ("about", "in the US", the year). |
+| **RESEARCH-SUPPORTED EVIDENCE** | Credible peer-reviewed findings that are not settled: single or few studies, small samples, animal studies, observational associations, model-based estimates, or findings contradicted by other studies. | A level-A source, with study type, size and limits recorded in the ledger. | The evidence is signalled — "studies suggest", "in one study", "in mice", "linked to", "estimated". Never "proves", and no causal claim beyond the study design. |
+| **HYPOTHETICAL ASSUMPTION** | The rules of the thought experiment — conditions not true in the real world — and anything that follows from those rules by logic or arithmetic alone. | None from science. Listed as a world rule or a rule-derived claim, with its reasoning shown. | Framed as the premise: "imagine", "in this world". Never attributed to science. |
+| **SPECULATIVE SCENARIO** | Reasoned guesses about how people, businesses, cities and societies might respond to the world rules. Plausible and untestable — not predictions. | Grounded in real evidence where possible; the ledger shows the grounding. | "might", "could", "would probably", or inside a clearly imagined frame. |
+| **UNKNOWN** | Questions science has not answered: the evidence is absent, conflicting or too weak. | The sources that show the gap or disagreement, where they exist. | "nobody knows", "scientists still disagree", "science can't yet say". |
+
+### 5.2 Rules
+* **One class per claim.** A claim takes the class of its **weakest input**: all-established inputs → ESTABLISHED; any world-rule input → HYPOTHETICAL ASSUMPTION; a guess about behaviour → SPECULATIVE SCENARIO. Qualifiers go in the ledger's notes, never in the class name. (LL-49)
+* **World rule or speculation?** Anything that follows from the premise by logic is a **world rule** and is stated as one on screen (e.g. "in this world, nobody dreams"). SPECULATIVE SCENARIO is only for how people and institutions respond. (LL-48)
+* **Narrated facts need level-A sources.** Level-S material may inform visuals or optional texture only. (LL-52)
+* **No scaling up.** Results from small, lab or animal studies are never extrapolated to population-level numbers. (LL-45)
+* **Calculations:** every derived number has a worked method, sourced inputs, stated assumptions and a sensitivity range. The narration wording must hold across the whole range, and the assumption is shown on screen where it matters. (LL-46)
+* **Mechanism check:** every sentence about how the body works names the right structure, the condition (for example light or dark) and a verb no stronger than the source ("suppresses", not "switches off"). It is checked against a level-A source. Metaphors (e.g. "hourglass", "clock") are labelled as metaphors in the ledger. (LL-47)
+* **Everyday words must not contradict the science** — for example, sleep is not "unconscious" or "switching off". (LL-47)
+
+### 5.3 Ledger and sources
 * Every factual sentence in a script has a claim ID; the fact ledger lists claim → script line.
 * **Sources:** peer-reviewed papers, reviews and meta-analyses; government and intergovernmental agencies (NIH, CDC, BLS, UN, IARC); professional societies (AASM, SRS). Press releases and news are used only to locate or summarise a primary source and are marked as such.
 * **Numbers keep their qualifiers** ("up to", "about", "in one study of 164 adults"). Arithmetic is shown in the ledger.
@@ -90,7 +102,27 @@ The sequence follows the reference tutorial — script engine (session → title
 
 ## 6. Story and script standard [IN FORCE]
 
-**Story Lock fields** (REF, extended): title · central question · hook · signature line · payoff · the rule · baseline → extreme · hero · cast · planted detail · hidden cost · crisis · the choice · resolution · check section · safety lesson · final line · fact bank · packaging · voice · length. Locked at G2, before any script.
+**Story Lock fields** (REF, extended): title · central question · hook · signature line · payoff · the rule · baseline → extreme · hero · cast · **character motivations** · planted detail · hidden cost · crisis · the choice · resolution · check section · safety lesson · final line · fact bank · packaging · voice · length. Locked at G2, before any script.
+
+**Characters (v1.1, LL-50).** Every named character has a written:
+* **want** and **need**;
+* the **reason for each key decision**, answering "why now?" and "why not the obvious alternative?";
+* a check against traits established in earlier episodes.
+
+Scenes must be logical inside the world's rules (e.g. where people are at 3 a.m. in a 24-hour world).
+
+**Pacing plan (v1.1, LL-53).** Every chapter's beats get planned seconds, and words are **counted from the draft beats, not estimated**. Chapters stay within ±15 % of their window, and any chapter faster than the voice's measured pace is flagged.
+
+**Critical review before every gate (v1.1, LL-51).** Before a gate document (Story Lock, script, storyboard, preview) is presented, it gets a written **review log** of problems found and fixes made, against this checklist:
+1. every claim sourced, classed and worded to its class (§5);
+2. calculations and mechanisms checked (§5.2);
+3. character motivation and decision logic;
+4. point of view and continuity;
+5. pacing measured;
+6. repetition — within the video and against earlier episodes;
+7. predictability (LL-54);
+8. overgeneralisation and overstatement;
+9. every sentence serves a purpose — no filler, no unnecessary explanation.
 
 **Retention principles** (BRIEF): immediate payoff · open questions answered later · escalation from individuals to cities and civilisation · meaningful visual changes · new information throughout · strong chapter transitions · no unnecessary repetition · no artificial suspense · emotional payoff.
 
@@ -209,3 +241,4 @@ Destructive changes · deleting or overwriting existing assets · major architec
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-11-15 | First edition, from the Video #1 audit, the reference tutorial and the Video #2 brief. |
+| 1.1 | 2026-11-15 | After the producer's review of Story Lock v1 (six issues) and a self-review that found 15 more. Changes: full definitions of the five classes; the one-class and weakest-input rule; world rule vs speculation; level-A sources for narration; no scaling up; the calculation rule; the mechanism check (§5). Character motivation fields; measured pacing plan; a critical-review protocol before every gate (§6). Evidence: LL-45–LL-54. |
