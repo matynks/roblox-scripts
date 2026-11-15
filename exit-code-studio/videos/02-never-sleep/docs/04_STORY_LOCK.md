@@ -1,6 +1,6 @@
 # STORY LOCK — *What If Humans Never Needed Sleep?*
 
-**v4 (final for G2) · 2026-11-15** — v3 plus the producer's narrow correction pass. Every change from v3, original next to revised, is in [06_V4_CORRECTIONS.md](06_V4_CORRECTIONS.md).
+**v4 · APPROVED by the producer (G2), 2026-11-15** — v3 plus the producer's narrow correction pass. Every change from v3, original next to revised, is in [06_V4_CORRECTIONS.md](06_V4_CORRECTIONS.md).
 
 * Story detail: [03_STORY_BIBLE.md](03_STORY_BIBLE.md) v4
 * Evidence: [02_CLAIM_LEDGER.md](02_CLAIM_LEDGER.md) v4
@@ -54,4 +54,16 @@
 
 ---
 
-**LOCK THIS STORY?** (yes / change [field] / more)
+**Locked:** approved by the producer on 2026-11-15 (G2), with three production requirements for the script stage: exact September dates, a notebook legible on a phone, and the full playground on screen for the whole first line.
+
+## Errata recorded at the script stage (2026-11-15)
+
+The locked fields above are left exactly as approved. These notes correct bookkeeping and record what the three production requirements changed. The full reasons are in the change table of [`script/SCRIPT_v1.md`](../script/SCRIPT_v1.md), and every check is computed in [`script/AUDIT_v1.md`](../script/AUDIT_v1.md).
+
+1. **FACT BANK — G05** is listed, but it has not been narrated since v3; it only grounds SP-10.
+2. **FACT BANK — CALC-02** ("almost three thousand hours a year") and **I01** ("eight billion people") are narrated in the draft beats but were missing from the list.
+3. **FACT BANK — script stage.** B02 (adenosine) is no longer narrated, to keep chapter 2 inside its window. B07 and B08 guide the wording and the picture but are not narrated as research. Ledger v4.1 adds SP-20–SP-22 for approved beats that had no scenario ID, and corrects G04's construct ("something productive", not "meaningful").
+4. **HOOK** (production requirement 3): the playground holds for the whole first line, so the cut to the thumbnail shot moves from 0:02.0 to the end of the line (planned 0:03.2).
+5. **LEO'S MOTIVATION, chapter 8** (production requirement 2): "a long column of tally marks" becomes 15 marks in three groups of five, sized for a phone. The clock at the reading moment is analog and just past three (≈ 3:02), because the scene happens minutes after 3:00.
+6. **MOMENT ZERO** (production requirement 1), exact dates: last sleep on the night of Monday 12 → Tuesday 13 September; the hook is 13 September of Year 10 at 03:00; the train is at 07:00 that morning; term starts on 14 September.
+7. **LENGTH:** the script plans 7:56 and 1,066 spoken words (Lock: 7:50 and 1,031). Every chapter stays within ±15 %.

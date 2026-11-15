@@ -86,6 +86,10 @@ Sources of evidence:
 | LL-64 | Story | Payoff hung on a setup the audience met only once | §6 |
 | LL-65 | Story | Hook image readable only at the end of a camera move | §6 |
 | LL-66 | Process | Beats planned shorter than their words — hidden by averages | §6 |
+| LL-67 | Story | A fixed cut time fought the spoken line | §6 |
+| LL-68 | Science | A ledger wording drifted from the study's construct | §5.3 |
+| LL-69 | Process | Accuracy qualifiers added time the plan hadn't counted | §6 |
+| LL-70 | Tools | A new checker reported its own bugs as script errors | §6 |
 
 ---
 
@@ -628,6 +632,39 @@ Sources of evidence:
 * **Fix:** beats re-timed (wording unchanged); the counter fixed to count only quoted speech, with "a.m." as one word; the message dated 12 May.
 * **Standard?** Yes — §6 "per-beat speech rate" and "diegetic dates".
 * **Avoid:** check every beat at ≤ 160 words/min (lower for emotional beats), and check every on-screen date or time against the moment zero.
+
+### LL-67 · A fixed cut time fought the spoken line
+* **What happened:** Story Lock v4 cut from the playground to the thumbnail shot at 0:02.0, and Standard v1.3 required the thumbnail "within the first 3 s". The producer then required the full playground on screen for the whole first line. That line is 8 words; at the voice's measured ≈ 192 words/min it ends at ≈ 0:02.95, so a 0:02.0 cut would have landed mid-sentence.
+* **Why:** the cut was placed against a clock, not against the words. Two rules (thumbnail by 3 s; frame 1 readable) were checked separately and never against the line's real length.
+* **Fix:** the first cut comes when the word "full" ends plus 4 frames (planned 0:03.2, estimated ≈ 0:03.1). If the generated line runs long, the shot runs long. The tool computes the earliest legal cut from the line.
+* **Standard?** Yes — §6 "first three seconds" (v1.4).
+* **Avoid:** set cut times from the spoken words they sit under, never from a fixed timecode; check opening rules together against the line's measured length.
+
+### LL-68 · A ledger wording drifted from the study's construct
+* **What happened:** ledger G04 said free time helps "unless the time is spent on something **meaningful**". The study (S40, Sharif et al. 2021) compared **productive** with unproductive uses of free time, as our own research notes recorded. The wrong word survived the Story Lock reviews and was caught only at the script stage.
+* **Why:** reviews checked the narration against the ledger, and the ledger was treated as correct.
+* **Fix:** G04 corrected in ledger v4.1; the script says "something productive".
+* **Standard?** Yes — §5.3 "construct re-check at the script stage" (v1.4).
+* **Avoid:** before a claim is narrated, read its ledger wording against the source's own terms one more time.
+
+### LL-69 · Accuracy qualifiers added time the plan hadn't counted
+* **What happened:** the Lock's draft beats counted 1,031 words. Writing the hedges and scope words in full ("is thought to be one of its signals", "mainly by light", "an estimated", "a study of… munitions factories found", "adults") pushed chapter 2 past +15 %. One fact (B02, adenosine) was dropped from the narration to stay inside the window, and chapters 2 and 4 finished at +13.6 % and +14.2 %.
+* **Why:** draft beats carried short forms of research claims; their required qualifiers were added only when the final sentences were written.
+* **Fix:** wording tightened elsewhere; B02 replaced by the shorter established fact "Coffee masks it" (B03); every change recorded in the script's change table.
+* **Standard?** Yes — §6 "pacing plan" (v1.4).
+* **Avoid:** write draft beats with their final qualifiers before counting words.
+
+### LL-70 · A new checker reported its own bugs as script errors
+* **What happened:** the first run of `script_audit.py` reported 11 errors, and **all 11 were the checker's own bugs**:
+  * four sentences ending in "a.m." or "p.m." were counted as having no full stop;
+  * five fragments that continue an attributed sentence ("Lower productivity.", "Earlier deaths.", "Unless that time goes into something productive.") failed, because the rule looked only one sentence back for the evidence signal;
+  * "eight extra hours" and "eight hours back" were read as Leo's age.
+
+  The second run found one more ("starts at eight a.m." read as an age). The real script problems at this stage came from the warnings (an undeclared repetition) and from reading the paste text aloud (a repeated verb, a logic gap, run-together speakers) — not from the errors.
+* **Why:** the rules were written and run on the real script at once, with no known-answer cases — the same gap as LL-66's counter bug.
+* **Fix:** the bugs were fixed; the tool now runs 14 known-answer self-tests and refuses to report if one fails.
+* **Standard?** Yes — §6 "script audit" (v1.4).
+* **Avoid:** give every new automatic check a passing and a failing example before trusting what it reports.
 
 ---
 

@@ -105,7 +105,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | G01 | In 2016, RAND estimated that lack of sleep cost the US economy up to $411 billion a year — in missed work, lower productivity and earlier deaths. | RESEARCH-SUPPORTED EVIDENCE | S37 | RAND Europe, 2016; a **model estimate and upper bound** of losses from lack of sleep among the US **working population**. It counts absenteeism and presenteeism (lost productivity) plus higher mortality among those sleeping less than 7–9 h (≈ 2.28 % of GDP; ≈ 1.2 M working days); the model's internals were not read in full. **Always attributed to RAND 2016.** It is never said to "disappear" in this world: RAND's comparison is people sleeping 7–9 h, not a world without sleep. Any consequence for this world is SP-19 and is hedged. The construct is lack of sleep — never "tiredness"; no emphasis words. | 4 |
 | G02 | Even today, about one in six US workers doesn't work a regular daytime schedule. | ESTABLISHED FACT | S38 | BLS, 2017–18. | 4 |
 | G03 | In First World War munitions factories, past about 49 hours a week each extra hour added less, and a 70-hour week produced little more than 56 hours. | RESEARCH-SUPPORTED EVIDENCE | S39 | Historical, one sector, workers who got tired — pair with D05. | 4 |
-| G04 | Research suggests free time lifts well-being up to about two hours a day, then levels off; beyond about five it can dip, unless the time is spent on something meaningful. | RESEARCH-SUPPORTED EVIDENCE | S40 | Correlational data plus experiments. Say "around". | 6 |
+| G04 | Research suggests free time lifts well-being up to about two hours a day, then levels off; beyond about five it can dip, unless the time is spent on something productive. | RESEARCH-SUPPORTED EVIDENCE | S40 | Correlational data plus experiments. Say "around". The study's moderator is **productive vs unproductive** use of the time (research §2.11); v4.1 corrects "meaningful", which was not the study's measure. | 6 |
 | G05 | In the US, people were already spending less time with friends and others outside their homes. | RESEARCH-SUPPORTED EVIDENCE | S41, S42 | 2003–2020 / 2003–2019. | 6 |
 | G06 | Some countries already give workers a "right to disconnect": France since 2017, Australia since 2024. | ESTABLISHED FACT | S60, S59 | France: negotiate terms or adopt a charter. Australia: may refuse unreasonable after-hours contact. **Don't say "first".** | 6 |
 
@@ -199,6 +199,9 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | SP-17 | Under lights that never go off, people's body clocks drift out of step with the sun and with each other. | B08, B09; health effects UNKNOWN (D06), not narrated | 6 |
 | SP-18 | With no bedtime, the habit of saying "goodnight" fades. | HR1, HR2 (cultural guess) | 6 |
 | SP-19 | Without sleep, the losses RAND attributed to lack of sleep **could shrink** — but a world that never stops may bring new costs. | G01 (what RAND measured); D05, D06 (unknowns) | 4 |
+| SP-20 | At first, the extra hours bring people together (before schedules split). | (story logic; balances SP-10) | 6 |
+| SP-21 | A world that never stops has a bigger economy. | CALC-03, SP-01 (more hours worked); not a prediction | 7 |
+| SP-22 | On the first night, people fill the extra hours with exercise, games, art and study. | HR1, HR6, HR7 (human nature unchanged) | 3 |
 
 ## Withdrawn or not narrated
 
@@ -236,3 +239,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 * **G01** — attributed to RAND 2016 in the narration, with what RAND measured (missed work, lower productivity, earlier deaths). "Disappears" is withdrawn; the hedged consequence is the new **SP-19**.
 * **HR1** — moment zero is a Monday night **in September**, so the ending is exactly ten years later.
 * **B06 and B08** are now also used in chapter 8 ("No light up here holds back your body's signal of night"). **SP-17** is used in chapter 6 only; v3's chapter 8 line "your body clocks finally get a real night" is withdrawn.
+
+## Changes in v4.1 (script stage, bookkeeping only)
+* **SP-20, SP-21 and SP-22 added** so that three approved beats which had no scenario ID can be traced: "At first, they do" (ch. 6), "The economy is bigger" (ch. 7) and the 1 a.m. montage (ch. 3). The story is unchanged.
+* **G04 wording corrected:** "something meaningful" → "something productive". S40 compared productive with unproductive uses of free time; "meaningful" was not what it measured (construct-fidelity rule, Standard §5.2).

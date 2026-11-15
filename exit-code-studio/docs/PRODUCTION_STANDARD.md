@@ -1,6 +1,6 @@
 # EXIT CODE — PRODUCTION STANDARD
 
-**Version 1.3 · 2026-11-15 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1–v1.3 tighten §5 and §6 after the producer's reviews of Story Lock v1 and v3 and the final review of v2 (LL-45–LL-66)
+**Version 1.4 · 2026-11-15 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1–v1.4 tighten §5 and §6 after the producer's reviews of Story Lock v1 and v3, the final review of v2 and the script stage (LL-45–LL-70)
 
 > WE DON'T START OVER. WE BUILD FORWARD.
 
@@ -55,7 +55,7 @@ The sequence follows the reference tutorial — script engine (session → title
 | 2 | Production-system audit | audit + upgrade plan | **G1** producer approval |
 | 3 | Research | `docs/01_RESEARCH.md` with source list | every claim sourced |
 | 4 | Story Bible | `docs/02_CLAIM_LEDGER.md`, `docs/03_STORY_BIBLE.md`, `docs/04_STORY_LOCK.md` | **G2 Story Lock** approval |
-| 5 | Script | `script/script_v<N>.md` + computed script audit + fact ledger | audit within targets (§6) |
+| 5 | Script | `script/script_v<N>.json` (the source of truth) → generated `SCRIPT_v<N>.md`, ElevenLabs paste text, `AUDIT_v<N>.md` (script audit + fact ledger) | audit within targets (§6) |
 | 6 | Script review | review notes, revised script | **G3 Script** approval |
 | 7 | Voiceover prep | producer generates the MP3 in ElevenLabs; `audio/voice.json` | **G4 Voice accepted** (§7) |
 | 8 | Project setup | `core/` + video project; word timestamps | Video #1 regression checks pass |
@@ -101,6 +101,7 @@ The sequence follows the reference tutorial — script engine (session → title
 * Every factual sentence in a script has a claim ID; the fact ledger lists claim → script line.
 * **Sources:** peer-reviewed papers, reviews and meta-analyses; government and intergovernmental agencies (NIH, CDC, BLS, UN, IARC); professional societies (AASM, SRS). Press releases and news are used only to locate or summarise a primary source and are marked as such.
 * **Numbers keep their qualifiers** ("up to", "about", "in one study of 164 adults"). Arithmetic is shown in the ledger.
+* **Construct re-check at the script stage (v1.4, LL-68):** every narration-safe wording in the ledger is compared once more with the source's own terms before it is narrated — the ledger's wording is not trusted just because it passed earlier reviews.
 * **Contested findings** are presented with both sides, or not used.
 * **Check section:** where a story could be mistaken for advice, a short real-world line is included. (REF "check section", "safety lesson")
 * **Video #2 guardrails (BRIEF):** never claim scientists know every purpose of sleep; never give REM sleep one definitive function; never overstate brain-waste clearance; keep the need for sleep and the body clock as separate mechanisms.
@@ -116,7 +117,7 @@ The sequence follows the reference tutorial — script engine (session → title
 
 Scenes must be logical inside the world's rules (e.g. where people are at 3 a.m. in a 24-hour world).
 
-**Pacing plan (v1.1, LL-53).** Every chapter's beats get planned seconds, and words are **counted from the draft beats, not estimated**. Chapters stay within ±15 % of their window, and any chapter faster than the voice's measured pace is flagged.
+**Pacing plan (v1.1, LL-53).** Every chapter's beats get planned seconds, and words are **counted from the draft beats, not estimated**. Chapters stay within ±15 % of their window, and any chapter faster than the voice's measured pace is flagged. **(v1.4, LL-69)** Draft beats are written with their final qualifiers — hedges, attributions, scope words — before their words are counted, because those words cost time.
 
 **Critical review before every gate (v1.1, LL-51).** Before a gate document (Story Lock, script, storyboard, preview) is presented, it gets a written **review log** of problems found and fixes made, against this checklist:
 1. every claim sourced, classed and worded to its class (§5);
@@ -138,7 +139,7 @@ Scenes must be logical inside the world's rules (e.g. where people are at 3 a.m.
 **The first three seconds (v1.3, LL-59, LL-65).**
 * No black or silent first frame.
 * **Frame 1 must be readable at a glance at phone size:** the core premise or paradox image, in motion, with sound. No reveal may depend on a long camera move.
-* The thumbnail image (or its in-film source) appears **within the first 3 s**.
+* The thumbnail image (or its in-film source) appears **at the first cut after the opening line** — never cutting away from frame 1 mid-line; target ≤ 3.5 s (v1.4, LL-67). Cut times are set from the spoken line, not from a fixed clock.
 * A curiosity line lands within 3 s.
 * The premise is clear within 10–15 s.
 
@@ -147,7 +148,7 @@ Scenes must be logical inside the world's rules (e.g. where people are at 3 a.m.
 * **Hook:** the premise is understood within 10–15 s, with one concrete image, one open question and a reason to stay.
 * **No generic outro.** The story's last line is the video's last line. (BRIEF)
 
-**Script audit** — computed by a script, never estimated. Targets come from the reference engine scaled to long form; Video #1's measured values are shown for comparison.
+**Script audit** — computed by a script, never estimated, and the script first passes its own known-answer self-tests (v1.4, LL-70). Targets come from the reference engine scaled to long form; Video #1's measured values are shown for comparison. A metric outside its target is reported with its cause, never forced: splitting a sentence that carries a qualifier is not an acceptable fix.
 
 | Metric | Target | Video #1 |
 |---|---|---|
@@ -259,6 +260,7 @@ Destructive changes · deleting or overwriting existing assets · major architec
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-11-15 | First edition, from the Video #1 audit, the reference tutorial and the Video #2 brief. |
+| 1.4 | 2026-11-15 | Script stage (script v1). §4: the script is a JSON source of truth with generated documents. §5.3: construct re-check of ledger wording before narration. §6: the thumbnail appears at the first cut after the opening line, never mid-line (production requirement 3); draft beats carry their final qualifiers before counting; the audit tool self-tests; off-target metrics are explained, not forced. Evidence: LL-67–LL-70. |
 | 1.3 | 2026-11-15 | After the producer's narrow pass on Story Lock v3. §5.2: real statistics stay in their own frame; world-rule consistency. §6: first-three-seconds rule refined (frame 1 readable at a glance; thumbnail within 3 s); recognition test; per-beat speech rate; diegetic dates. Evidence: LL-62–LL-66. |
 | 1.2 | 2026-11-15 | After the final independent review of Story Lock v2: recency and scope, effect-measure and construct-fidelity rules (§5.2); MOMENT ZERO field, setup/payoff audit, timeline check, narration-vs-picture rule, first-three-seconds rule (§6). Evidence: LL-55–LL-61. |
 | 1.1 | 2026-11-15 | After the producer's review of Story Lock v1 (six issues) and a self-review that found 15 more. Changes: full definitions of the five classes; the one-class and weakest-input rule; world rule vs speculation; level-A sources for narration; no scaling up; the calculation rule; the mechanism check (§5). Character motivation fields; measured pacing plan; a critical-review protocol before every gate (§6). Evidence: LL-45–LL-54. |

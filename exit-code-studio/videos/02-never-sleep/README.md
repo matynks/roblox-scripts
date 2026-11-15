@@ -8,8 +8,8 @@
 |---|---|---|---|
 | 1–2 | Inspect, audit, upgrade plan | ✅ **G1 approved** 2026-11-15 | audit presented in session; standards in `../../docs/` |
 | 3 | Research | ✅ v1.2, 2026-11-15 | [docs/01_RESEARCH.md](docs/01_RESEARCH.md) — 62 sources with verification levels (S52–S63 added in reviews) |
-| 4 | Story Bible + Story Lock | ⏳ **v4 awaiting G2** — v1 reviewed by the producer (6 issues); v2 independently reviewed (27 findings); v3 narrow producer pass (5 points) | [docs/02_CLAIM_LEDGER.md](docs/02_CLAIM_LEDGER.md) v4, [docs/03_STORY_BIBLE.md](docs/03_STORY_BIBLE.md) v4, [docs/04_STORY_LOCK.md](docs/04_STORY_LOCK.md) v4, [docs/05_FINAL_REVIEW.md](docs/05_FINAL_REVIEW.md), [docs/06_V4_CORRECTIONS.md](docs/06_V4_CORRECTIONS.md) |
-| 5–6 | Script + review | not started | — |
+| 4 | Story Bible + Story Lock | ✅ **G2 approved** 2026-11-15 (v4) — v1 reviewed by the producer (6 issues); v2 independently reviewed (27 findings); v3 narrow producer pass (5 points); errata recorded at the script stage | [docs/02_CLAIM_LEDGER.md](docs/02_CLAIM_LEDGER.md) v4, [docs/03_STORY_BIBLE.md](docs/03_STORY_BIBLE.md) v4, [docs/04_STORY_LOCK.md](docs/04_STORY_LOCK.md) v4, [docs/05_FINAL_REVIEW.md](docs/05_FINAL_REVIEW.md), [docs/06_V4_CORRECTIONS.md](docs/06_V4_CORRECTIONS.md) |
+| 5–6 | Script + review | ⏳ **script v1 awaiting G3** — 173 sentences, 1,066 spoken words, 7:56 planned; computed audit: 0 errors, 8 warnings (explained) | [script/SCRIPT_v1.md](script/SCRIPT_v1.md), [script/AUDIT_v1.md](script/AUDIT_v1.md), [script/VOICEOVER_v1.txt](script/VOICEOVER_v1.txt) — all generated from [script/script_v1.json](script/script_v1.json) by [tools/script_audit.py](tools/script_audit.py); ledger v4.1 |
 | 7 | Voiceover (producer, ElevenLabs web app) | not started | — |
 | 8 | Project setup (shared core) | not started | — |
 | 9–18 | Storyboard → final render | not started | — |
@@ -22,6 +22,15 @@
 * No final script, voiceover, animation or video before G2.
 * Voice: reuse Video #1's ElevenLabs voice if its identity can be established; otherwise the producer chooses later and generates the MP3 themself.
 * No analytics; no invented performance data.
+
+## Requirements from the G2 approval (2026-11-15)
+
+* Exact September dates and a consistent ten-year timeline, with Mia's departure (13 September, 07:00) the day before her programme starts (14 September).
+* The notebook caption and tally marks readable on a phone; legibility before quantity.
+* The full playground on screen for the whole first line, "It's three a.m. — and the playground is full."
+* No voiceover, animation or renders before the script is approved (G3).
+
+These are specified in [script/SCRIPT_v1.md](script/SCRIPT_v1.md) ("Locked production requirements") and checked in [script/AUDIT_v1.md](script/AUDIT_v1.md).
 
 ## Voice status
 
