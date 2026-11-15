@@ -285,6 +285,19 @@ export default function register(r) {
       app.db.run('INSERT INTO event_runs (event_id, triggered_by_user_id, target, result, created_at) VALUES (?, ?, ?, ?, ?)', ev.id, ctx.user.id, toJson({ sessionId: rt.id }), '{}', now());
     }
     if (!type) throw E.bad('Choose an event');
+    // Platform rewards (Sparks, items, badges) can only come from unlocked staff. Hosts and
+    // director roles run the in-game part of an event; in-game amounts are capped for them.
+    const isStaffRun = ctx.perms.has('game.manage') && ctx.elevated;
+    if (!isStaffRun) {
+      params = { ...params };
+      delete params.rewardSparks;
+      delete params.rewardItemSku;
+      delete params.badgeKey;
+      delete params.winnerAccountId;
+      if (params.amount !== undefined) params.amount = Math.min(500, Math.max(1, Number(params.amount) || 50));
+      if (params.count !== undefined) params.count = Math.min(60, Math.max(1, Number(params.count) || 20));
+      if (params.value !== undefined) params.value = Math.min(50, Math.max(1, Number(params.value) || 10));
+    }
     const rl = app.cfg.rateLimits;
     if (rl) ctx.limiter.enforce(`gameevent:${rt.id}`, 30, 60_000, 'Too many events, slow down');
     return app.game.triggerEvent(rt.id, type, params, { accountId: ctx.account.id, userId: ctx.user.id });

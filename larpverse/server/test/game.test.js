@@ -244,6 +244,30 @@ describe('session privacy, codes, invites and objectives completion', () => {
     assert.equal(tx.items.length, 1);
   });
 
+  test('hosts cannot mint platform rewards through events', async () => {
+    const h = env.client();
+    await h.register('greedy_host', 'Password123');
+    const s = await h.ok('POST', '/api/game/sessions', { experienceId: flagship.id, scenarioId: scenario('sandbox').id });
+    await h.ok('POST', `/api/game/sessions/${s.id}/control`, { action: 'start' });
+    const before = (await h.ok('GET', '/api/wallet')).balance;
+    const r = await h.ok('POST', `/api/game/sessions/${s.id}/event`, { type: 'award_ceremony', params: { rewardSparks: 1000000, badgeKey: 'roleplay_verified', rewardItemSku: 'collectible-golden-crown-of-larpverse' } });
+    assert.deepEqual(r.winner.rewards, []);
+    const owner = env.client();
+    await owner.loginOwner();
+    const stored = (await owner.ok('GET', '/api/admin/events')).events.find((e) => e.type === 'award_ceremony');
+    const r2 = await h.ok('POST', `/api/game/sessions/${s.id}/event`, { eventId: stored.id, params: { rewardSparks: 999999 } });
+    assert.deepEqual(r2.winner.rewards, []);
+    assert.equal((await h.ok('GET', '/api/wallet')).balance, before);
+    const prof = await h.ok('GET', `/api/accounts/${h.me.account.id}/profile`);
+    assert.equal(prof.verified, false);
+    const bonus = await h.ok('POST', `/api/game/sessions/${s.id}/event`, { type: 'cash_bonus', params: { amount: 999999 } });
+    assert.equal(bonus.type, 'cash_bonus');
+    const stream = await h.stream(`/api/game/sessions/${s.id}/stream`);
+    const init = await stream.waitFor((m) => m.type === 'init');
+    assert.ok(init.self.cash <= 1000 + 500, 'in-game bonus capped for hosts');
+    stream.close();
+  });
+
   test('performers earn tips on stage and roleplay extras wander the city', async () => {
     const owner = env.client();
     await owner.loginOwner();
