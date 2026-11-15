@@ -1,0 +1,17 @@
+{
+  "name": "larpverse-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Larpverse backend: fictional roleplay platform API, LARP game engine and admin control center",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/index.js",
+    "migrate": "node --disable-warning=ExperimentalWarning src/cli.js migrate",
+    "reset-admin": "node --disable-warning=ExperimentalWarning src/cli.js reset-admin",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 test/"
+  }
+}
