@@ -1,10 +1,10 @@
 # Video #2 — Research: *What If Humans Never Needed Sleep?*
 
-**Stage 3 · 2026-11-15 · status: complete for the Story Lock (G2)**
+**Stage 3 · v1.1 · 2026-11-15 · revised after the producer's review.** It corrects the circadian and melatonin findings, adds S52–S61 and upgrades or retires level-S claims. See *Changes in v1.1* at the end.
 
 ## Method and limitations
 
-* **Searches:** 43 web searches on 2026-11-15, covering the ten topics in the brief plus the society, economy and city topics the chapters need. Notes were saved after every batch.
+* **Searches:** 54 web searches on 2026-11-15 (43 for v1, 11 for the review fixes), covering the ten topics in the brief plus the society, economy and city topics the chapters need. Notes were saved after every batch.
 * **What was read:** search summaries of abstracts, agency pages (NIH, NIGMS, CDC, BLS, UN, IARC), society statements (AASM/SRS) and university press releases.
 * **What was not read:** full papers. Direct access to PubMed, Crossref and the agencies' sites is blocked in this environment ("CONNECT tunnel failed, response 403"). Each source below has a **verification level**:
   * **A** — abstract, official page or the authors' own release.
@@ -16,15 +16,18 @@
 
 1. **Sleep fills about a third of life.** — ESTABLISHED (S01)
 2. **Two systems time it.**
-   * A **homeostatic sleep pressure** builds while you are awake — the "hourglass". Adenosine is a key signal, and caffeine blocks it.
-   * A **circadian body clock** in the brain is set by light — the "clock". Melatonin is its night signal.
-   * They are **separate mechanisms**, which is exactly why the premise can remove the need for sleep while keeping the clock. — ESTABLISHED / RESEARCH-SUPPORTED (S03, S04, S05, S07, S08)
+   * A **homeostatic sleep pressure** builds while you are awake — the "hourglass". Adenosine is one key signal, and caffeine blocks it.
+   * A **circadian system** — the "clock":
+     * The master clock in the brain (the SCN) runs about 24 h 11 min on its own, so light reaching the eyes resets it every day.
+     * The SCN drives the **pineal gland** to make melatonin in darkness. **Light at night suppresses melatonin and can shift the clock.**
+   * They are **separate mechanisms**, which is exactly why the premise can remove the need for sleep while keeping the clock.
+   * Evidence: ESTABLISHED / RESEARCH-SUPPORTED (S03, S04, S05, S07, S08, S52–S54)
 3. **Sleep is linked to memory, immunity and metabolism.** The evidence is strong but mostly from limited studies, so it is narrated as "studies suggest" or "in one study". — RESEARCH-SUPPORTED (S10, S12, S14–S16)
 4. **Nobody knows all of what sleep does.** Its core function is still debated. — UNKNOWN (S24, S25)
 5. **REM sleep has no agreed single function.** Dreams happen in both REM and non-REM sleep. — UNKNOWN / RESEARCH-SUPPORTED (S20–S23)
 6. **Whether sleep "washes" waste from the brain is contested.** A 2013 mouse study said yes; a 2024 mouse study said clearance is *lower* during sleep. — RESEARCH-SUPPORTED, contested → UNKNOWN for humans (S17–S19)
 7. **Sleep looks ancient and universal.** Even brainless animals (jellyfish, Hydra) show sleep-like states. — RESEARCH-SUPPORTED (S27, S28)
-8. **Nature has nudged the dial, never to zero.** A few rare families feel rested on about 4–6 hours. — RESEARCH-SUPPORTED, small studies (S30, S31)
+8. **Nature has nudged the dial, never to zero.** A rare gene variant is linked to naturally shorter sleep, apparently without harm — but carriers still sleep. — RESEARCH-SUPPORTED (S30). Hour figures (e.g. "4–6 h") appear only in secondary coverage and are not narrated.
 9. **More hours ≠ more output or happiness.**
    * Output per hour fell beyond about 49 hours a week (WWI data).
    * Well-being levels off around 2 hours of daily free time and can dip beyond about 5.
@@ -76,14 +79,33 @@
 * Adenosine is widely accepted as an endogenous sleep-regulating substance. **Caffeine** acts mainly by **blocking adenosine A1/A2A receptors**. — ESTABLISHED for caffeine; RESEARCH-SUPPORTED for adenosine's exact role (S08)
 * The **two-process model** has been the field's main framework for three decades. Homeostatic **Process S** interacts with circadian **Process C**, continuously. — ESTABLISHED as the standard model (S04)
 
-### 2.6 Circadian rhythms
-* The master clock is the **suprachiasmatic nucleus (SCN)**. Light and dark influence it most; food, stress, activity and temperature also do. It synchronises clocks in organs and controls melatonin from the light the eyes receive. — ESTABLISHED (S05)
-* The molecular clock is a feedback loop of clock genes and proteins (PER, TIM) shared by all multicellular organisms. It won the **2017 Nobel Prize** (Hall, Rosbash, Young). — ESTABLISHED (S06)
-* **Core body temperature** has a daily rhythm: lowest in the **early-morning hours** (about 0.5 °C below 37 °C), highest in the late afternoon. The exact low point varies between people. — ESTABLISHED in general; only educational sources were found (S09)
+### 2.6 Circadian rhythms (corrected in v1.1)
+* **The master clock** is the **suprachiasmatic nucleus (SCN)**, a cluster of nerve cells in the hypothalamus.
+  * It synchronises clocks in organs and tissues throughout the body.
+  * Light and dark influence it most; food, stress, activity, social cues and temperature also do. — ESTABLISHED (S05, S53)
+* **It keeps time on its own, imperfectly.** In forced-desynchrony studies the human clock's intrinsic period averaged **24.18 hours** (about 24 h 11 min) in young and older adults, so it must be reset daily. **Light through the eyes** is the main reset signal. — ESTABLISHED (S54, S05)
+* **Light at the wrong time shifts it.** Night-shift research points to three problems:
+  * the internal clock misaligned with work, sleep and meals;
+  * partial sleep loss;
+  * melatonin suppressed by light at night.
 
-### 2.7 Melatonin
-* Made mainly by the **pineal gland**, peaking **at night**. Darkness signals via the eyes; light suppresses it; the master clock drives the rhythm. — ESTABLISHED (S07, S05)
-* Melatonin is a **darkness / timing signal**, not an off switch. Nothing in the sources supports describing it as "the hormone that puts you to sleep". — wording guardrail
+  The clock tends to **resist** adapting fully to a night schedule. — RESEARCH-SUPPORTED, reviews (S55, S56)
+* The molecular clock is a feedback loop of clock genes and proteins (PER, TIM) shared by all multicellular organisms. It won the **2017 Nobel Prize** (Hall, Rosbash, Young). — ESTABLISHED (S06)
+* **Core body temperature** has a daily rhythm, lowest in the early-morning hours. Only educational and secondary sources were found (S09). It is **not narrated** under the level-A rule.
+
+### 2.7 Melatonin (corrected in v1.1)
+* **Who makes it:** the **pineal gland**, not the clock. The SCN *drives* its production and light *inhibits* it. Levels rise in the evening darkness and peak at night. — ESTABLISHED (S07, S53)
+* **What it does:** it carries the "message of darkness" to the clock and the body. In humans it also helps prepare for sleep: sleep propensity rises about **two hours after** melatonin's evening onset. It is **not a sedative**. — RESEARCH-SUPPORTED (S53, a review whose author declares a commercial interest)
+* **Light suppresses it.** In 116 young adults, ordinary room light (< 200 lux) before bedtime:
+  * delayed melatonin's onset in 99 %;
+  * shortened its duration by about 90 minutes.
+
+  Room light during usual sleep hours suppressed it by **more than 50 %**. — RESEARCH-SUPPORTED, retrospective (S52)
+* **Wording guardrail:**
+  * Not "the clock releases melatonin" — wrong organ.
+  * Not "light switches it off" — light suppresses it.
+  * Not "the sleep hormone" — it is not a sedative.
+  * Use: "a gland deep in the brain releases melatonin, the body's signal of night".
 
 ### 2.8 REM and NREM sleep, and dreams
 * REM sleep was described in **1953** (Aserinsky & Kleitman, 20 sleeping adults). Awakenings from REM produced far more dream reports. — ESTABLISHED (S02)
@@ -105,11 +127,8 @@
   Definitions are debated. — RESEARCH-SUPPORTED (S27, S28)
 * **Frigatebirds sleep in flight**, one hemisphere at a time or both, very little and in short bouts. — RESEARCH-SUPPORTED (S29)
 * **Natural short sleepers:**
-  * DEC2 carriers averaged ~6.25 h vs 8.06 h (as reported).
-  * ADRB1 was found in a three-generation family.
-  * Coverage says 4–6 hours "without apparent ill effects".
-
-  Small family studies. — RESEARCH-SUPPORTED, limited (S30, S31)
+  * The **DEC2 (P385R)** variant is associated with a human short-sleep phenotype. Mice carrying it slept less and recovered less sleep after deprivation, and the authors suggest carriers "live unaffected by shorter sleep". — RESEARCH-SUPPORTED, level A (S30, abstract)
+  * Hour figures (6.25 vs 8.06 h; "4–6 hours"), ADRB1 and other genes appear only in secondary coverage (S31) and are **not narrated**.
 * **Not available in the literature:** what humans would be like with **no fatigue at all** (focus, motivation, mood over 20+ waking hours). — UNKNOWN
 
 ### 2.11 Society, economy and the city (for chapters 4–7)
@@ -121,7 +140,11 @@
   * The share of free time spent with people from other households fell from 21.9 % (2003) to 17.3 % (2019) (S42).
 
   — RESEARCH-SUPPORTED
-* **Right to disconnect:** France was first (2016). Australia's law took effect in **August 2024** and lets employees refuse unreasonable after-hours contact. Portugal, Spain, Belgium and Ontario are also cited. — ESTABLISHED (S43)
+* **Right to disconnect** — ESTABLISHED, official sources:
+  * **France:** the law of 8 August 2016 (art. 55) created Labour Code art. L2242-17, **in force since 1 January 2017**. Companies must negotiate how employees exercise the right, or adopt a charter. (S60)
+  * **Australia:** in force **26 August 2024** for larger employers and 2025 for small businesses. Employees may refuse to monitor or answer contact outside working hours unless that is unreasonable; contact itself is not made unlawful. (S59)
+  * "France was first" appears only in secondary coverage (S43) and is not narrated.
+* **Night-time maintenance:** London's all-night Tube runs only on Friday and Saturday nights, and TfL still does upgrade and maintenance work overnight from Sunday to Thursday. — ESTABLISHED (S61)
 * **Night work and health:** IARC classifies night shift work as **Group 2A, "probably carcinogenic"** (2019). Human evidence is limited, and the class reflects the strength of evidence, not the size of risk. — ESTABLISHED as a classification (S44). *Not planned for the story* (see the ledger, E03).
 * **Transit:** the New York City subway runs **24/7/365**, with lighter late-night service and maintenance reroutes. — ESTABLISHED (S45)
 * **Energy:** lighting uses roughly **15 %** of global electricity (UNEP; another UNEP page says 15–19 % of energy). Solar panels produce nothing at night (physics). — RESEARCH-SUPPORTED estimate / ESTABLISHED
@@ -142,9 +165,14 @@ This is reasoning from the findings above, not science about a real mechanism.
    * Unknown work: whatever else sleep does that science has not identified (UNKNOWN, S24, S25).
 
    The premise must cover both, or people would be harmed — and the brief rules harm out.
-3. **Leave the clock alone.** The brief requires the circadian system to stay. So melatonin still rises at night, body temperature still dips in the early morning, and light still sets the clock. People notice night; they are simply not tired.
-4. **Logical consequence: no dreams.** Dreams are experiences during sleep, so a world without sleep has no dreams. What that would do to people is UNKNOWN, because the function of dreaming and REM is unknown.
-5. **Energy bill.** Waking costs more energy than sleeping (S36), so bodies awake 24 hours would eat more. The size of this at population scale is a SPECULATIVE extrapolation.
+3. **Leave the clock alone — with its real behaviour.** The brief requires the circadian system to stay, and it stays exactly as it works today:
+   * reset by light;
+   * melatonin from the pineal gland in darkness;
+   * **suppressed and shifted by light at night**.
+
+   In a world awake around the clock under artificial light, people's clocks would get weaker night signals and drift (SPECULATIVE, grounded in S52, S55, S56). Whether that would harm anyone in this world is UNKNOWN.
+4. **Dreams — a world rule, not a deduction.** We **choose** that nobody dreams (world rule HR5). Science doesn't know what dreams are for, or whether dream-like experience could exist without sleep (UNKNOWN), so "no dreams" cannot be derived scientifically. It is stated on screen as a rule of the thought experiment.
+5. *(Withdrawn in v1.1)* The population-scale "energy bill" (calories → food for 550 million people). It extrapolated a 7-person in-bed lab study (S36) far beyond its evidence.
 
 ## 4. Source list
 
@@ -202,9 +230,21 @@ Levels: **A** = abstract / official page / authors' release seen; **S** = second
 | S49 | Sanders D, Frago E, Kehoe R, Patterson C, Gaston KJ (2021). A meta-analysis of biological impacts of artificial light at night. *Nat Ecol Evol* 5. https://www.nature.com/articles/s41559-020-01322-x | A |
 | S50 | DarkSky International: 250 International Dark Sky Places (https://darksky.org/news/250-international-dark-sky-places/); Flagstaff first Dark Sky City, 24 Oct 2001 (https://www.knau.org/post/flagstaff-marks-20-years-first-international-dark-sky-city) | A |
 | S51 | United Nations (2024). World Population Prospects 2024. https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/ | A |
+| S52 | Gooley JJ et al. (2011). Exposure to room light before bedtime suppresses melatonin onset and shortens melatonin duration in humans. *J Clin Endocrinol Metab* 96(3):E463. https://pmc.ncbi.nlm.nih.gov/articles/PMC3047226/ | A |
+| S53 | Zisapel N (2018). New perspectives on the role of melatonin in human sleep, circadian rhythms and their regulation. *Br J Pharmacol* 175(16):3190–3199. doi:10.1111/bph.14116. https://pmc.ncbi.nlm.nih.gov/articles/PMC6057895/ (author declares a commercial interest) | A |
+| S54 | Czeisler CA et al. (1999). Stability, precision, and near-24-hour period of the human circadian pacemaker. *Science* 284(5423):2177–2181. PMID 10381883. https://pubmed.ncbi.nlm.nih.gov/10381883/ | A |
+| S55 | Smith et al. (2012). Shift work: health, performance and safety problems, traditional countermeasures, and innovative management strategies to reduce circadian misalignment. *Nature and Science of Sleep* 4. https://www.dovepress.com/shift-work-health-performance-and-safety-problems-traditional-counterm-peer-reviewed-article-NSS | A |
+| S56 | (2022) Disturbance of the circadian system in shift work and its health impact. *J Biol Rhythms*. PMID 34969316. https://pubmed.ncbi.nlm.nih.gov/34969316/ | A |
+| S57 | Walch OJ, Cochran A, Forger DB (2016). A global quantification of "normal" sleep schedules using smartphone data. *Science Advances* 2(5):e1501705. https://www.sciencedaily.com/releases/2016/05/160506160105.htm | A |
+| S58 | Paruthi S et al. (2016). Recommended amount of sleep for pediatric populations: a consensus statement of the AASM. *J Clin Sleep Med* 12(6):785–786. https://psychnews.psychiatryonline.org/doi/10.1176/appi.pn.2016.8b15 | A |
+| S59 | Fair Work Ombudsman (26 Aug 2024). *Right to disconnect begins today.* https://www.fairwork.gov.au/newsroom/media-releases/2024-media-releases/august-2024/20240826-right-to-disconnect-stage-1-media-release ; https://www.fairwork.gov.au/employment-conditions/right-to-disconnect | A |
+| S60 | France, Loi n° 2016-1088 du 8 août 2016 (art. 55) → Code du travail art. L2242-17, in force 1 Jan 2017: INRS https://www.inrs.fr/publications/juridique/focus-juridiques/focus-droit-deconnexion.html ; Library of Congress https://www.loc.gov/item/global-legal-monitor/2017-01-13/france-right-to-disconnect-takes-effect/ | A |
+| S61 | Transport for London, *The Night Tube.* https://www.tfl.gov.uk/campaign/tube-improvements/what-we-are-doing/night-tube | A |
 | L01 | Video #1 narration, measured locally (pitch, pace, loudness) — `PRODUCTION_STANDARD.md` §7 | local |
 
-(S26 was dropped: its title could not be confirmed.)
+* S26 was dropped: its title could not be confirmed.
+* **S30 is upgraded to level A in v1.1:** He Y et al. (2009). The transcriptional repressor DEC2 regulates sleep length in mammals. *Science* 325(5942):866–870. doi:10.1126/science.1174443. PMC2884988.
+* **S43 is superseded** by the official sources S59 and S60 for narration.
 
 ## 5. Checked and not used
 
@@ -218,3 +258,15 @@ Levels: **A** = abstract / official page / authors' release seen; **S** = second
 | Melatonin as "the sleep hormone" | it is a darkness / timing signal (S07) |
 | "Sleep cleans the brain" stated as fact | contested (S17–S19) |
 | Fatal familial insomnia, rat sleep-deprivation deaths | not needed; risk of implying a cause the sources don't support |
+| Calorie extrapolation (135 kcal × 8.2 bn ≈ food for 550 million) — *withdrawn in v1.1* | scaled a 7-person, lying-in-bed study to the whole population |
+| "The clock releases melatonin"; "light switches it off" — *corrected in v1.1* | wrong organ (pineal gland); light suppresses, not switches off (S52, S53) |
+| "Sleep = unconscious / switching off" — *corrected in v1.1* | the sleeping brain is active; dreams are experiences |
+| A single global average sleep figure | none found; CALC-03 uses 8 h with a 7–9 h range |
+
+## Changes in v1.1 (after the producer's review)
+* Circadian and melatonin sections rewritten (§2.6, §2.7) from S52–S56.
+* Dreams moved from "logical consequence" to an explicit world rule (§3.4).
+* Calorie extrapolation withdrawn (§3.5).
+* Short sleepers rebuilt on the DEC2 abstract (S30 → level A).
+* Disconnect laws and night maintenance rebuilt on official sources (S59–S61).
+* New method inputs for the four-billion comparison (S57, S58).
