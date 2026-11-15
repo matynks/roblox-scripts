@@ -74,6 +74,13 @@ Sources of evidence:
 | LL-52 | Science | Narration resting on secondary sources | §5 |
 | LL-53 | Story | Pacing planned by guesswork | §6 |
 | LL-54 | Story | Predictable ending repeating Video #1 | §6 |
+| LL-55 | Science | An outdated statistic (lighting "15 %") | §5 |
+| LL-56 | Science | Odds ratio narrated as "times as likely" | §5 |
+| LL-57 | Science | Construct drift ("tiredness alone") | §5 |
+| LL-58 | Story | Climax motivation not set up | §6 |
+| LL-59 | Story | Hook opened on black with a low-information line | §6 |
+| LL-60 | Story | The story's moment zero was undefined | §6 |
+| LL-61 | Story | Redundancy and narration that repeats the picture | §6 |
 
 ---
 
@@ -523,6 +530,57 @@ Sources of evidence:
 * **Fix:** the choice now comes from Leo's own habit: he refuses, Mia leaves the notebook, he changes his mind.
 * **Standard?** Yes, §6: checklist item "predictability and repetition against earlier episodes".
 * **Avoid:** compare every climax with the climaxes of earlier videos.
+
+## Video #2 pre-production — from the final independent review of Story Lock v2 (2026-11-15)
+
+### LL-55 · An outdated statistic (lighting "15 %") — Critical
+* **What happened:** v2 planned to narrate "Lighting already uses roughly fifteen percent of the world's electricity" (UNEP en.lighten). The IEA's current figure is about 8 % in 2024 (buildings plus outdoor lighting), or about 9–12 % including industry. The 15 % predates the switch to LEDs.
+* **Why:** the first credible number found was accepted without checking its data year or looking for a newer authoritative estimate. The scope (energy vs electricity; buildings vs industry) wasn't recorded either.
+* **Fix:** replaced with the IEA's 2024 estimate and its scope ("homes, offices and streets"); S46 withdrawn.
+* **Standard?** Yes, §5.2 "recency and scope".
+* **Avoid:** every statistic records its data year and scope. Anything older than about five years gets a search for a newer authoritative figure.
+
+### LL-56 · Odds ratio narrated as "times as likely" — High
+* **What happened:** the cold study reports odds ratios (4.24 and 4.50, 95 % CI 1.08–16.71 and 1.08–18.69). v2 said "four times likelier", which is a risk ratio. The wide uncertainty wasn't recorded.
+* **Why:** the wording was taken from the press release ("four times more likely"), not the abstract.
+* **Fix:** "about four times the odds", with an on-screen tag (*1 study · 164 adults*) and the limits recorded.
+* **Standard?** Yes, §5.2 "effect measures".
+* **Avoid:** record the effect measure (OR, RR or HR), the CI and n from the abstract. Odds are said as odds. If the CI is extreme, give the direction and leave the number out.
+
+### LL-57 · Construct drift ("tiredness alone") — Medium
+* **What happened:** RAND estimates the cost of *insufficient sleep* (productivity plus mortality, upper bound). v2 narrated "**Tiredness alone** is estimated…" — the wrong construct, plus an emphasis word the source doesn't support.
+* **Why:** paraphrasing for rhythm.
+* **Fix:** "the cost of too little sleep, estimated at up to…".
+* **Standard?** Yes, §5.2 "construct fidelity".
+* **Avoid:** narration keeps the source's construct. No unsourced emphasis words ("alone", "just", "only").
+
+### LL-58 · Climax motivation not set up — High
+* **What happened:** the notebook moved the audience but had no personal meaning for Leo. "Goodnight" was paid off in chapter 8 without being set up anywhere. The drawing matching the view read as coincidence.
+* **Why:** the payoffs were designed before their setups, and there was no setup/payoff check.
+* **Fix:** a chain: "When I have time" (ch. 3) → "Next week" (ch. 6) → 👍 (ch. 7) → he reads WHEN LEO HAS TIME aloud (ch. 8). "Nobody says goodnight anymore" (ch. 6) sets up "Goodnight, Mia". The hill is named at breakfast.
+* **Standard?** Yes, §6 "setup/payoff audit".
+* **Avoid:** every payoff lists its setup — chapter and line — and the setup must involve the character who pays it off.
+
+### LL-59 · Hook opened on black with a low-information line — High
+* **What happened:** v2 opened on black with a single tick and the words "3 a.m.". The paradox and the premise only landed at about 0:08, and the thumbnail image was just one cut among several.
+* **Why:** the opening was designed for atmosphere, not for the decision viewers make in the first seconds.
+* **Fix:** frame 1 is the thumbnail image in motion, sound starts on frame 1, and the line is "It's three a.m. — and the playground is full."
+* **Standard?** Yes, §6 "first three seconds".
+* **Avoid:** no black or silent first frame. Within 3 s: the thumbnail image, motion and a curiosity line.
+
+### LL-60 · The story's moment zero was undefined — Medium
+* **What happened:** v2 said "One ordinary Tuesday, it happens", but the last dream was dreamt the night before, so it was unclear when sleep actually ended.
+* **Why:** the Story Lock had no field for the world's exact starting moment.
+* **Fix:** moment zero is a Monday night, labelled on screen; HR1 was rewritten; there is a timeline table with ages.
+* **Standard?** Yes, §6: a MOMENT ZERO field in the Story Lock.
+* **Avoid:** fix the date and time anchor and check every chapter's ages and times against it.
+
+### LL-61 · Redundancy and narration that repeats the picture — Medium
+* **What happened:** school shifts were narrated in chapters 5, 6 and 7. Lines like "Every light is on" and "She leaves you the notebook. Ten years of blank pages…" described what the picture already shows.
+* **Why:** each chapter was drafted on its own, with no cross-chapter fact list.
+* **Fix:** each fact is told once; picture-only beats carry the rest.
+* **Standard?** Yes, §6 "narration vs picture".
+* **Avoid:** keep a cross-chapter fact list. Narration adds what the picture can't; motifs are the only deliberate repeats.
 
 ---
 

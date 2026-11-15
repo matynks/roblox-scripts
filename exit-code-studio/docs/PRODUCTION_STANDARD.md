@@ -1,6 +1,6 @@
 # EXIT CODE — PRODUCTION STANDARD
 
-**Version 1.1 · 2026-11-15 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1 tightens §5 and §6 after the producer's review of Story Lock v1 (LL-45–LL-54)
+**Version 1.2 · 2026-11-15 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1 and v1.2 tighten §5 and §6 after the producer's review of Story Lock v1 (LL-45–LL-54) and the final review of v2 (LL-55–LL-61)
 
 > WE DON'T START OVER. WE BUILD FORWARD.
 
@@ -91,6 +91,9 @@ The sequence follows the reference tutorial — script engine (session → title
 * **Calculations:** every derived number has a worked method, sourced inputs, stated assumptions and a sensitivity range. The narration wording must hold across the whole range, and the assumption is shown on screen where it matters. (LL-46)
 * **Mechanism check:** every sentence about how the body works names the right structure, the condition (for example light or dark) and a verb no stronger than the source ("suppresses", not "switches off"). It is checked against a level-A source. Metaphors (e.g. "hourglass", "clock") are labelled as metaphors in the ledger. (LL-47)
 * **Everyday words must not contradict the science** — for example, sleep is not "unconscious" or "switching off". (LL-47)
+* **Recency and scope (v1.2):** every statistic records its **data year** and **scope**. Figures more than about five years old get a search for a newer authoritative estimate before narration; superseded figures are withdrawn in the ledger. (LL-55)
+* **Effect measures (v1.2):** record the measure (odds ratio, risk ratio, hazard ratio), the confidence interval and n from the abstract — not the press release. Narrate odds as "odds". If the interval is extreme, give the direction without a number. (LL-56)
+* **Construct fidelity (v1.2):** narration keeps the source's construct (e.g. "too little sleep", not "tiredness"). No emphasis words ("alone", "just", "only") that the source doesn't support. (LL-57)
 
 ### 5.3 Ledger and sources
 * Every factual sentence in a script has a claim ID; the fact ledger lists claim → script line.
@@ -102,7 +105,7 @@ The sequence follows the reference tutorial — script engine (session → title
 
 ## 6. Story and script standard [IN FORCE]
 
-**Story Lock fields** (REF, extended): title · central question · hook · signature line · payoff · the rule · baseline → extreme · hero · cast · **character motivations** · planted detail · hidden cost · crisis · the choice · resolution · check section · safety lesson · final line · fact bank · packaging · voice · length. Locked at G2, before any script.
+**Story Lock fields** (REF, extended): title · **moment zero** (v1.2) · central question · hook · signature line · payoff · the rule · baseline → extreme · hero · cast · **character motivations** · planted detail · hidden cost · crisis · the choice · resolution · check section · safety lesson · final line · fact bank · packaging · voice · length. Locked at G2, before any script.
 
 **Characters (v1.1, LL-50).** Every named character has a written:
 * **want** and **need**;
@@ -122,7 +125,12 @@ Scenes must be logical inside the world's rules (e.g. where people are at 3 a.m.
 6. repetition — within the video and against earlier episodes;
 7. predictability (LL-54);
 8. overgeneralisation and overstatement;
-9. every sentence serves a purpose — no filler, no unnecessary explanation.
+9. every sentence serves a purpose — no filler, no unnecessary explanation;
+10. **setup/payoff audit** (v1.2): every payoff names its setup — chapter and line — and the setup involves the character who pays it off (LL-58);
+11. **timeline check** (v1.2): every chapter's times and ages agree with the moment zero (LL-60);
+12. **narration vs picture** (v1.2): each fact is told once across the video; narration adds what the picture can't show (LL-61).
+
+**The first three seconds (v1.2, LL-59).** No black or silent first frame. Frame 1 shows the thumbnail image (or its in-film source) in motion with sound, and a curiosity line lands within 3 s. The premise is clear within 10–15 s.
 
 **Retention principles** (BRIEF): immediate payoff · open questions answered later · escalation from individuals to cities and civilisation · meaningful visual changes · new information throughout · strong chapter transitions · no unnecessary repetition · no artificial suspense · emotional payoff.
 
@@ -241,4 +249,5 @@ Destructive changes · deleting or overwriting existing assets · major architec
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-11-15 | First edition, from the Video #1 audit, the reference tutorial and the Video #2 brief. |
+| 1.2 | 2026-11-15 | After the final independent review of Story Lock v2: recency and scope, effect-measure and construct-fidelity rules (§5.2); MOMENT ZERO field, setup/payoff audit, timeline check, narration-vs-picture rule, first-three-seconds rule (§6). Evidence: LL-55–LL-61. |
 | 1.1 | 2026-11-15 | After the producer's review of Story Lock v1 (six issues) and a self-review that found 15 more. Changes: full definitions of the five classes; the one-class and weakest-input rule; world rule vs speculation; level-A sources for narration; no scaling up; the calculation rule; the mechanism check (§5). Character motivation fields; measured pacing plan; a critical-review protocol before every gate (§6). Evidence: LL-45–LL-54. |

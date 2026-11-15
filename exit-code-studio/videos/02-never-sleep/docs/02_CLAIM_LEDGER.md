@@ -1,6 +1,6 @@
 # Video #2 — Claim Ledger
 
-**v2 · 2026-11-15 · revised after the producer's review of v1.** Changes from v1 are at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
+**v3 · 2026-11-15 · revised after the producer's review of v1 and the final review of v2.** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
 
 Sources are in [01_RESEARCH.md §4](01_RESEARCH.md#4-source-list):
 * **Level A** — abstract, official page or the authors' own release.
@@ -63,7 +63,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 |---|---|---|---|---|---|
 | C01 | Studies suggest that in deep sleep the brain replays recent learning and helps lock it in. | RESEARCH-SUPPORTED EVIDENCE | S10 | — | 2 |
 | C02 | One leading idea: sleep rebalances brain connections that strengthen while we learn. | RESEARCH-SUPPORTED EVIDENCE | S11 | A hypothesis. | opt |
-| C03 | In one study, people who had slept under six hours were about four times more likely to catch a cold when exposed to the virus. | RESEARCH-SUPPORTED EVIDENCE | S12 | 164 adults; an association, adjusted for confounders. | 2 |
+| C03 | In one study, people sleeping six hours or less had about four times the odds of catching a cold. | RESEARCH-SUPPORTED EVIDENCE | S12 | 164 healthy adults aged 18–55. Sleep measured for 7 days (actigraphy), then a cold virus given. **Odds ratios** 4.24 (5–6 h; 95 % CI 1.08–16.71) and 4.50 (< 5 h; 1.08–18.69) against > 7 h. Adjusted for antibodies, season, BMI and more. Limits: one study; an association, since sleep was measured, not assigned; very wide uncertainty. On-screen tag: *1 study · 164 adults*. **Never** "four times likelier" or "four times more colds". | 2 |
 | C04 | Short sleep is linked to weaker antibody responses to vaccines. | RESEARCH-SUPPORTED EVIDENCE | S14, S15 (S13 level S) | Only objectively measured sleep showed the link. | opt |
 | C05 | In one small study, six nights of four hours' sleep left healthy young men handling blood sugar worse — the researchers compared it to ageing — and it recovered with sleep. | RESEARCH-SUPPORTED EVIDENCE | S16 | 11 men. | 2 |
 | C06 | In a 2013 mouse study, the space between brain cells grew by about 60 % during sleep, and waste cleared faster. | RESEARCH-SUPPORTED EVIDENCE | S17 | Mice; **only together with C08**. | 2 |
@@ -102,7 +102,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Claim | Class | Sources | Notes | Ch |
 |---|---|---|---|---|---|
-| G01 | Insufficient sleep is estimated to cost the US economy up to $411 billion a year. | RESEARCH-SUPPORTED EVIDENCE | S37 | A model estimate; "up to". | 4 |
+| G01 | The cost of too little sleep is estimated at up to $411 billion a year in the US. | RESEARCH-SUPPORTED EVIDENCE | S37 | RAND Europe, 2016. A **model estimate and upper bound**. Covers lost productivity (absenteeism, presenteeism) and higher mortality among workers sleeping < 7 h compared with 7–9 h (≈ 2.28 % of GDP; ≈ 1.2 M working days). The model's internals were not read in full. The construct is **insufficient sleep**, never "tiredness". No emphasis words ("alone"). | 4 |
 | G02 | Even today, about one in six US workers doesn't work a regular daytime schedule. | ESTABLISHED FACT | S38 | BLS, 2017–18. | 4 |
 | G03 | In First World War munitions factories, past about 49 hours a week each extra hour added less, and a 70-hour week produced little more than 56 hours. | RESEARCH-SUPPORTED EVIDENCE | S39 | Historical, one sector, workers who got tired — pair with D05. | 4 |
 | G04 | Research suggests free time lifts well-being up to about two hours a day, then levels off; beyond about five it can dip, unless the time is spent on something meaningful. | RESEARCH-SUPPORTED EVIDENCE | S40 | Correlational data plus experiments. Say "around". | 6 |
@@ -114,7 +114,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | ID | Claim | Class | Sources | Notes | Ch |
 |---|---|---|---|---|---|
 | H01 | New York's subway already runs 24 hours a day. | ESTABLISHED FACT | S45 | Never "one of the few". | 5 |
-| H02 | Lighting uses roughly 15 % of the world's electricity. | RESEARCH-SUPPORTED EVIDENCE | S46 | A UNEP estimate; "roughly". | 5 |
+| H02 | Lighting in homes, offices and streets takes about 8 % of the world's electricity. | RESEARCH-SUPPORTED EVIDENCE | S62 | IEA, 2024 data: ≈ 8 % (≈ 2,200 TWh) for buildings plus outdoor lighting, excluding industry and agriculture. Including industry, estimates reach about 9–12 % (S63, level S). **v2's "15 %" (UNEP, S46) is withdrawn**: it predates the switch to LEDs. Keep the scope words ("homes, offices and streets"). | 5 |
 | H03 | Solar panels produce nothing at night. | ESTABLISHED FACT | — | Physics. | 5 |
 | H04 | More than 80 % of people live under light-polluted skies, and the Milky Way is hidden from more than a third of humanity. | ESTABLISHED FACT | S47 | — | 5 |
 | H05 | Citizen scientists found the night sky brightening by almost 10 % a year. | RESEARCH-SUPPORTED EVIDENCE | S48 | 2011–2022. | opt |
@@ -128,7 +128,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 |---|---|---|---|---|
 | I01 | About 8.2 billion people live on Earth; global life expectancy is about 73 years. | ESTABLISHED FACT | S51 (2024) | 1, 4 |
 | CALC-01 | About a third of a lifetime adds up to **more than twenty years** asleep. | ESTABLISHED FACT | See the method below | 1 |
-| CALC-02 | Eight hours a day back is 2,920 hours a year. | HYPOTHETICAL ASSUMPTION | 8 × 365. Rule-derived; assumes 8 h of sleep regained. | 3 |
+| CALC-02 | Eight hours a day back is almost 3,000 hours a year (2,920). | HYPOTHETICAL ASSUMPTION | 8 × 365. Rule-derived; assumes 8 h of sleep regained. Narrated as "almost three thousand". | 3 |
 | CALC-03 | Humanity's waking time would grow by **about half** — roughly the waking hours of **four billion** extra people. | HYPOTHETICAL ASSUMPTION | Rule-derived; the method below | 4 |
 | CALC-05 | Ten years of extra hours ≈ 29,000 hours per person. | HYPOTHETICAL ASSUMPTION | 2,920 × 10. Rule-derived. | 8 opt |
 
@@ -167,7 +167,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Rule |
 |---|---|
-| HR1 | From one day onward, no human needs sleep, including babies born afterwards. The change is global and simultaneous. |
+| HR1 | **Moment zero:** one ordinary **Monday night** is the last time anyone sleeps; people wake on Tuesday morning as usual. From then on, no human needs sleep, including babies born afterwards. The change is global and simultaneous, and nobody notices it until Tuesday night. |
 | HR2 | Sleep pressure never builds: nobody ever feels sleepy or exhausted from being awake. |
 | HR3 | Whatever sleep does for brain and body — the parts science knows and the parts it doesn't — now happens while awake. Not sleeping causes no harm. |
 | HR4 | **The circadian system works exactly as it does today.** The master clock keeps roughly 24-hour time and is reset by light. In darkness it drives the pineal gland to make melatonin; light at night still suppresses melatonin and can shift the clock. **The only change: none of this ever makes anyone sleepy.** |
@@ -197,6 +197,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | SP-15 | "3 a.m. is just another rush hour." | SP-01, SP-07 | 7 |
 | SP-16 | *(optional)* Entertainment that simulates dreams becomes popular. | HR5 | opt |
 | SP-17 | Under lights that never go off, people's body clocks drift out of step with the sun and with each other. | B08, B09; health effects UNKNOWN (D06), not narrated | 6, 8 |
+| SP-18 | With no bedtime, the habit of saying "goodnight" fades. | HR1, HR2 (cultural guess) | 6 |
 
 ## Withdrawn or not narrated
 
@@ -221,3 +222,11 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 * Circadian and melatonin claims rebuilt (B04–B09) from S52–S54 and the shift-work reviews S55–S56.
 * No dreams is now an explicit world rule (HR5); SP-13 covers only its human effects.
 * F03, G06 and H08 rebuilt on level-A sources; B10 and A03 marked not narrated.
+
+## Changes in v3 (final review of Story Lock v2)
+* **C03** — the effect is an **odds ratio** with wide uncertainty; narration changed from "four times likelier" to "about four times the odds"; limitations recorded.
+* **G01** — the construct is **insufficient sleep**, not "tiredness alone"; narration rewritten; components and limits recorded.
+* **H02** — **15 % withdrawn** (outdated UNEP figure). Replaced by the IEA's 2024 estimate of about 8 % for buildings plus outdoor lighting, with the scope stated.
+* **HR1** — moment zero defined: the last sleep is a Monday night.
+* **CALC-02** — narrated as "almost three thousand hours".
+* **SP-18** added ("goodnight" fades), as the setup for chapter 8.

@@ -1,6 +1,6 @@
 # Video #2 — Research: *What If Humans Never Needed Sleep?*
 
-**Stage 3 · v1.1 · 2026-11-15 · revised after the producer's review.** It corrects the circadian and melatonin findings, adds S52–S61 and upgrades or retires level-S claims. See *Changes in v1.1* at the end.
+**Stage 3 · v1.2 · 2026-11-15 · revised after the producer's review (v1.1) and the final review of Story Lock v2 (v1.2).** See *Changes* at the end.
 
 ## Method and limitations
 
@@ -34,7 +34,7 @@
 
    — RESEARCH-SUPPORTED (S39, S40)
 10. **The night already matters beyond sleep.**
-    * Lighting uses roughly 15 % of the world's electricity.
+    * Lighting in buildings and outdoors uses about 8 % of the world's electricity (IEA, 2024 data). *(v1.2: replaces an outdated 15 %.)*
     * Over 80 % of people live under light-polluted skies.
     * Artificial light at night changes how animals behave.
 
@@ -51,14 +51,24 @@
   * Six hours a night for two weeks produced deficits comparable to **up to two nights** of total sleep loss.
 
   — RESEARCH-SUPPORTED (S35, S34)
-* Insufficient sleep is estimated to cost the US economy **up to $411 billion a year** (2.28 % of GDP; ~1.2 million working days). — RESEARCH-SUPPORTED, a model estimate (S37)
+* Insufficient sleep is estimated to cost the US economy **up to $411 billion a year** (2.28 % of GDP; just over 1.2 million working days). — RESEARCH-SUPPORTED, a model estimate (S37)
+  * The estimate covers productivity losses (absenteeism and presenteeism) and higher mortality among workers who sleep less than the 7–9-hour range (13 % higher mortality risk under 6 h).
+  * "Up to" marks the upper end of the model's estimate. Raising sleep from under 6 h to 6–7 h was put at +$226.4 bn.
+  * The model's internals were not read; only the RAND release and summaries.
+  * The construct is *insufficient sleep*, not "tiredness".
 
 ### 2.2 Memory and learning
 * Current theory gives sleep an **active** role. Recently learned memories are reactivated ("replayed") during **slow-wave (deep) sleep** and integrated into long-term memory. The emphasis has shifted from REM to slow-wave sleep. — RESEARCH-SUPPORTED (S10)
 * **One leading hypothesis** (synaptic homeostasis): learning while awake strengthens connections, and sleep renormalises them. It is a hypothesis, not settled. — RESEARCH-SUPPORTED (S11)
 
 ### 2.3 Immune function
-* In a quarantine study of **164 adults** given a cold virus, those who had slept **under 6 hours** (measured by wrist actigraphy) were **4.2× more likely** to develop a cold than those sleeping over 7 hours. Under 5 hours: 4.5×. The result was adjusted for season, weight, income, stress, smoking and more. — RESEARCH-SUPPORTED (S12)
+* In a quarantine study of **164 healthy adults (18–55)**, sleep was measured by wrist actigraphy and diaries for 7 days, then a cold virus was given. Compared with sleeping more than 7 hours:
+  * **5–6 hours: odds ratio 4.24** (95 % CI 1.08–16.71);
+  * **under 5 hours: odds ratio 4.50** (95 % CI 1.08–18.69).
+
+  The results were adjusted for prechallenge antibodies, demographics, season, BMI, psychological variables and health practices. Sleep fragmentation was not related. — RESEARCH-SUPPORTED (S12)
+  * **Limits:** one study; sleep was measured, not assigned, so this is an association; these are odds ratios, not "times as likely"; the uncertainty is very wide (lower bound ≈ 1.1); healthy adults only.
+  * The press releases' "four times more likely" rounds the odds ratios.
 * Vaccine responses:
   * Short sleep around vaccination is linked to weaker antibody responses (flu: small experiment, 2002; hepatitis B: 125 adults, 2012).
   * A 2023 meta-analysis found the link where sleep was **objectively measured**, not when self-reported.
@@ -147,7 +157,10 @@
 * **Night-time maintenance:** London's all-night Tube runs only on Friday and Saturday nights, and TfL still does upgrade and maintenance work overnight from Sunday to Thursday. — ESTABLISHED (S61)
 * **Night work and health:** IARC classifies night shift work as **Group 2A, "probably carcinogenic"** (2019). Human evidence is limited, and the class reflects the strength of evidence, not the size of risk. — ESTABLISHED as a classification (S44). *Not planned for the story* (see the ledger, E03).
 * **Transit:** the New York City subway runs **24/7/365**, with lighter late-night service and maintenance reroutes. — ESTABLISHED (S45)
-* **Energy:** lighting uses roughly **15 %** of global electricity (UNEP; another UNEP page says 15–19 % of energy). Solar panels produce nothing at night (physics). — RESEARCH-SUPPORTED estimate / ESTABLISHED
+* **Energy (corrected in v1.2):** in 2024, lighting in buildings and outdoors used about **8 %** of global electricity demand (≈ 2,200 TWh), excluding industry and agriculture. — RESEARCH-SUPPORTED estimate, level A (S62)
+  * Including industrial lighting, estimates run to 2,500–3,500 TWh, roughly 9–12 %. A third-party analysis puts lighting at ~19 % (2000) → ~12 % (2025) (S63, level S).
+  * The older UNEP "≈ 15 %" (S46) predates the switch to LEDs and is **withdrawn**.
+  * Solar panels produce nothing at night (physics). — ESTABLISHED
 * **Light pollution:**
   * **More than 80 %** of the world's people, and over 99 % in the US and Europe, live under light-polluted skies. The Milky Way is hidden from over a third of humanity (S47).
   * Citizen scientists measured **+9.6 % sky brightness per year** from 2011 to 2022. At that rate brightness quadruples in 18 years, so 250 visible stars become ~100 (S48).
@@ -224,7 +237,7 @@ Levels: **A** = abstract / official page / authors' release seen; **S** = second
 | S43 | Right to disconnect: World Economic Forum (2023) https://weforum.org/agenda/2023/02/belgium-right-to-disconnect-from-work ; NPR (26 Aug 2024) https://www.npr.org/2024/08/26/nx-s1-5089792/australia-right-to-disconnect-workers-respond-after-work | S |
 | S44 | IARC Monographs Volume 124 (2019): Night shift work. https://www.iarc.who.int/news-events/iarc-monographs-volume-124-night-shift-work/ | A |
 | S45 | MTA, New York City Transit: Subway. https://www.mta.info/subway | A |
-| S46 | UNEP / UNFCCC en.lighten: lighting ≈ 15 % of global electricity. https://unfccc.int/node/14384 ; https://www.unep.org/en/news-and-stories/story/brighten-making-switch-efficient-lighting | A |
+| S46 | UNEP / UNFCCC en.lighten: lighting ≈ 15 % of global electricity (**outdated; superseded by S62 in v1.2**). https://unfccc.int/node/14384 ; https://www.unep.org/en/news-and-stories/story/brighten-making-switch-efficient-lighting | A |
 | S47 | Falchi F et al. (2016). The new world atlas of artificial night sky brightness. *Science Advances*. https://www.nps.gov/orgs/1207/06-10-2016.htm | A |
 | S48 | Kyba CCM et al. (2023). *Science* — Globe at Night: global loss of star visibility 2011–2022. https://kpno.noirlab.edu/news/noirlab2302 | A |
 | S49 | Sanders D, Frago E, Kehoe R, Patterson C, Gaston KJ (2021). A meta-analysis of biological impacts of artificial light at night. *Nat Ecol Evol* 5. https://www.nature.com/articles/s41559-020-01322-x | A |
@@ -240,6 +253,8 @@ Levels: **A** = abstract / official page / authors' release seen; **S** = second
 | S59 | Fair Work Ombudsman (26 Aug 2024). *Right to disconnect begins today.* https://www.fairwork.gov.au/newsroom/media-releases/2024-media-releases/august-2024/20240826-right-to-disconnect-stage-1-media-release ; https://www.fairwork.gov.au/employment-conditions/right-to-disconnect | A |
 | S60 | France, Loi n° 2016-1088 du 8 août 2016 (art. 55) → Code du travail art. L2242-17, in force 1 Jan 2017: INRS https://www.inrs.fr/publications/juridique/focus-juridiques/focus-droit-deconnexion.html ; Library of Congress https://www.loc.gov/item/global-legal-monitor/2017-01-13/france-right-to-disconnect-takes-effect/ | A |
 | S61 | Transport for London, *The Night Tube.* https://www.tfl.gov.uk/campaign/tube-improvements/what-we-are-doing/night-tube | A |
+| S62 | International Energy Agency (2026). *The next wave of LED lighting: smarter, circular and more efficient* (commentary; 2024 data). https://www.iea.org/commentaries/the-next-wave-of-led-lighting-smarter-circular-and-more-efficient | A |
+| S63 | IEA 4E Technology Collaboration Programme: *The role of LED lighting in climate* (reports a third-party ISSLA analysis). https://www.iea-4e.org/news/ssl/the-role-of-led-lighting-in-climate/ | S |
 | L01 | Video #1 narration, measured locally (pitch, pace, loudness) — `PRODUCTION_STANDARD.md` §7 | local |
 
 * S26 was dropped: its title could not be confirmed.
@@ -270,3 +285,8 @@ Levels: **A** = abstract / official page / authors' release seen; **S** = second
 * Short sleepers rebuilt on the DEC2 abstract (S30 → level A).
 * Disconnect laws and night maintenance rebuilt on official sources (S59–S61).
 * New method inputs for the four-billion comparison (S57, S58).
+
+## Changes in v1.2 (final review of Story Lock v2)
+* **Cold study:** exact odds ratios, confidence intervals and limits recorded; it is an odds ratio, not "times as likely".
+* **RAND:** what the $411 bn covers (productivity and mortality from insufficient sleep) and that it is an upper-bound model estimate.
+* **Lighting:** the outdated UNEP 15 % is replaced by the IEA's 2024 estimate of about 8 % for buildings plus outdoor lighting (S62), with the scope range in S63.
