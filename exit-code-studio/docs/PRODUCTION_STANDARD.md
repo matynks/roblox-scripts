@@ -1,6 +1,6 @@
 # EXIT CODE — PRODUCTION STANDARD
 
-**Version 1.6 · 2026-11-16 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1–v1.6 tighten §5 and §6 after the producer's reviews of Story Lock v1 and v3, the final review of v2, the script stage and the producer's reviews of scripts v1 and v2 (LL-45–LL-80)
+**Version 1.7 · 2026-11-16 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1–v1.7 tighten §5 and §6 after the producer's reviews of Story Lock v1 and v3, the final review of v2, the script stage and the producer's reviews of scripts v1–v3 (LL-45–LL-82)
 
 > WE DON'T START OVER. WE BUILD FORWARD.
 
@@ -96,6 +96,8 @@ The sequence follows the reference tutorial — script engine (session → title
 * **Effect measures (v1.2):** record the measure (odds ratio, risk ratio, hazard ratio), the confidence interval and n from the abstract — not the press release. Narrate odds as "odds". If the interval is extreme, give the direction without a number. (LL-56)
 * **Construct fidelity (v1.2):** narration keeps the source's construct (e.g. "too little sleep", not "tiredness"). No emphasis words ("alone", "just", "only") that the source doesn't support. (LL-57)
 * **Real statistics stay in their own frame (v1.3):** a real figure is always attributed (source and year) and described as the source measured it. It is never projected into the hypothetical world as if its model applied there; any consequence for the hypothetical world is a SPECULATIVE SCENARIO and is hedged. (LL-62)
+* **Universal claims without a shared schedule (v1.7, LL-81):** a claim that something happens to almost everyone ("almost everyone sleeps") must not imply that it happens at the same time or in the same way.
+* **Speculative magnitudes (v1.7, LL-82):** a speculative sentence that names a timescale or size ("in a year", "half", "billions") carries its own speculation marker ("our guess", "might", "could") even inside the imagined frame — otherwise it sounds like a forecast.
 * **World-rule scope (v1.5, LL-71):** the narration of a world rule says exactly what the rule removes or keeps — "no harm from going without sleep", not "not sick"; "the dreams that come with sleep", not all imagination.
 * **Time-dependent figures (v1.5, LL-72):** a real figure that changes over time (population, prices, shares) is never stated as a fact of a scene set at another time. Use scale words, or a form of the calculation that doesn't depend on the figure.
 * **Character-state check (v1.5, LL-73):** a science line about a character must hold for that character at that point in the story — for example, a normal melatonin rhythm can't be assumed after years of night work.
@@ -153,7 +155,7 @@ Scenes must be logical inside the world's rules (e.g. where people are at 3 a.m.
 * **Hook:** the premise is understood within 10–15 s, with one concrete image, one open question and a reason to stay.
 * **No generic outro.** The story's last line is the video's last line. (BRIEF)
 
-**Script audit** — computed by a script, never estimated, and the script first passes its own known-answer self-tests (v1.4, LL-70). Targets come from the reference engine scaled to long form; Video #1's measured values are shown for comparison. A metric outside its target is reported with its cause, never forced: splitting a sentence that carries a qualifier is not an acceptable fix. **(v1.5, LL-75)** The checker reads a claim's narrated status from the ledger's chapter column, never from free-text notes; withdrawn-wording patterns name the exact overclaim; thresholds follow the current version of this standard; near repeats of a content word in neighbouring beats are listed for review. **(v1.6, LL-80)** Every date the checker tests comes from the script's timeline; nothing is hard-coded.
+**Script audit** — computed by a script, never estimated, and the script first passes its own known-answer self-tests (v1.4, LL-70). Targets come from the reference engine scaled to long form; Video #1's measured values are shown for comparison. A metric outside its target is reported with its cause, never forced: splitting a sentence that carries a qualifier is not an acceptable fix. **(v1.5, LL-75)** The checker reads a claim's narrated status from the ledger's chapter column, never from free-text notes; withdrawn-wording patterns name the exact overclaim; thresholds follow the current version of this standard; near repeats of a content word in neighbouring beats are listed for review. **(v1.6, LL-80)** Every date the checker tests comes from the script's timeline; nothing is hard-coded. **(v1.7, LL-82)** The checker rejects a speculative timescale or magnitude with no speculation marker in its sentence or the one before.
 
 | Metric | Target | Video #1 |
 |---|---|---|
@@ -265,6 +267,7 @@ Destructive changes · deleting or overwriting existing assets · major architec
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-11-15 | First edition, from the Video #1 audit, the reference tutorial and the Video #2 brief. |
+| 1.7 | 2026-11-16 | Producer's review of script v3. §5.2: universal claims without a shared schedule; speculative magnitudes carry their own marker. §6: checker rule for speculative magnitudes. Evidence: LL-81, LL-82 (and follow-ups to LL-77, LL-78). |
 | 1.6 | 2026-11-16 | Producer's review of script v2. §5.2: mechanism target and direction (receptors, not the molecule; darkness is not a signal); a closing unknown names the knowns. §6: moment zero as an exact instant, with every span and label computed as elapsed time; no hard-coded dates in the checker. Evidence: LL-76–LL-80. |
 | 1.5 | 2026-11-16 | Producer's review of script v1. §5.2: world-rule scope, time-dependent figures, character-state check, partial unknowns. §6: checker rules (narrated status from the ledger's chapter column, exact withdrawn patterns, current thresholds, near repeats). Evidence: LL-71–LL-75. |
 | 1.4 | 2026-11-15 | Script stage (script v1). §4: the script is a JSON source of truth with generated documents. §5.3: construct re-check of ledger wording before narration. §6: the thumbnail appears at the first cut after the opening line, never mid-line (production requirement 3); draft beats carry their final qualifiers before counting; the audit tool self-tests; off-target metrics are explained, not forced. Evidence: LL-67–LL-70. |

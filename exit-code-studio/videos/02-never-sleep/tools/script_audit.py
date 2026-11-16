@@ -51,6 +51,9 @@ REAL_WORLD = ["today", "already", "even now", "twenty sixteen", "study", "studie
               "before this", "science", "estimated"]
 IMAGINE = ["imagine", "in this world", "would", "what if", "here,"]
 MODAL = [" might ", " could ", " may ", " would "]
+GUESS = ["our guess", " might ", " could ", " may ", " would ", "maybe", "perhaps"]
+# v4 (LL-82): a speculative timescale or magnitude needs its own marker, even inside the story
+SPEC_QUANT = re.compile(r"\b(in|within) (a|one|two|three|five|ten) (year|years|decade|month|months)\b|\bpercent\b|\bbillion\b|\bmillion\b|\bby (about )?half\b", re.I)
 SCIENCE_WORDS = ["study", "studies", "research", "scientists", "science"]
 EMPHASIS = re.compile(r"\b(just|only|alone|actually|really|even)\b", re.I)
 WITHDRAWN = [  # phrases withdrawn by the ledger and the Story Bible guardrails (§9)
@@ -151,6 +154,9 @@ def _selftest():
     T.append(("uncertainty found in '…but not everything.'", has_any("Scientists know a lot about why… but not everything.", UNCERTAIN)))
     T.append(("real-world marker found in 'Even now, …'", has_any("Even now, over eighty percent of people live under light-polluted skies.", REAL_WORLD)))
     T.append(("no real-world marker in 'Earlier deaths.'", not has_any("Earlier deaths.", REAL_WORLD)))
+    T.append(("speculative 'Cities adapted in a year.' needs a marker (the v3 line)", bool(SPEC_QUANT.search("Cities adapted in a year.")) and not has_any("Cities adapted in a year.", GUESS)))
+    T.append(("'Our guess?' counts as a speculation marker", has_any("Our guess?", GUESS)))
+    T.append(("'Dinner at three.' is not a speculative magnitude", not SPEC_QUANT.search("Dinner at three.")))
     bad = [n for n, ok in T if not ok]
     if bad:
         sys.exit("checker self-test failed: " + "; ".join(bad))
@@ -380,6 +386,13 @@ for s in sents:
             errors.append(f"{s['beat']} sentence {s['n']}: world rule inside a real-world beat → “{s['text']}”")
         if ok:
             s["checks"].append("framed as the premise" if s["frame"] in ("rules", "imagined") else "framed")
+    if c == SPEC and SPEC_QUANT.search(v):
+        prev = [o for o in by_beat[s["beat"]] if o["idx"] == s["idx"] - 1]
+        if has_any(v, GUESS) or (prev and has_any(prev[0]["vo"], GUESS)):
+            s["checks"].append("speculative magnitude marked as a guess")
+        else:
+            ok = False
+            errors.append(f"{s['beat']} sentence {s['n']}: speculative timescale or magnitude stated as fact → “{s['text']}”")
     if c == SPEC:
         if s["frame"] == "imagined" or has_any(v, MODAL):
             s["checks"].append("inside the imagined frame" if s["frame"] == "imagined" else "modal verb")
@@ -754,7 +767,7 @@ for y0 in years:
     s21, y21 = span(resolve(_story["2.1"], y0), hook)
     tl("'TEN YEARS EARLIER' (1.7) jumps back ten whole years", y21 == 10, f"hook → 2.1 (Monday night) = {s21}")
     s14, y14 = span(ls_start, hook)
-    tl("'TEN YEARS FROM NOW' (1.3), counted from 'Tonight… sleep' (1.4)", y14 == 10, f"start of the last sleep → hook = {s14}")
+    tl("'TEN YEARS FROM NOW' (1.3), counted from the start of the last sleep (the 'today' of 1.4)", y14 == 10, f"start of the last sleep → hook = {s14}")
     ch7 = [b for b in beats if b["ch"] == 7 and re.match(r"Y\d+-\d\d-\d\d \d\d:\d\d$", b.get("story_time") or "")]
     yrs7 = {b["id"]: (resolve(b["story_time"], y0) - mz).days / 365.2425 for b in ch7}
     tl("'Imagine it's ten years on' (7.1): every dated chapter 7 scene is ten years on, rounded",

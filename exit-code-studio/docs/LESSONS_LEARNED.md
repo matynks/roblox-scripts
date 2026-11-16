@@ -100,6 +100,8 @@ Sources of evidence:
 | LL-78 | Science | Darkness described as a signal | §5.2 |
 | LL-79 | Science | A closing unknown that named no knowns | §5.2 |
 | LL-80 | Tools | Checker validated the calendar, not the narrated span | §6 |
+| LL-81 | Science | "Tonight, almost everyone… in the dark" implied one shared schedule | §5.2 |
+| LL-82 | Science | A speculative timescale sounded like a forecast — and the checker passed it | §5.2, §6 |
 
 ---
 
@@ -729,6 +731,7 @@ Sources of evidence:
 * **Fix:** "Caffeine blocks adenosine receptors, so the hourglass feels emptier than it is." It's the same length, and it keeps the point that the pressure is still there.
 * **Standard?** Yes — §5.2 "mechanism check" (v1.6).
 * **Avoid:** for every "X blocks Y", check that Y is what is actually blocked.
+* **v4 follow-up:** the producer found that the replacement metaphor — "the hourglass feels emptier than it is" — didn't work aloud (an hourglass can't feel, and "emptier" forced listeners to work out which way the sand runs). It is now "Caffeine blocks adenosine receptors. You feel alert… but the hourglass keeps filling." A metaphor gets the same read-aloud test as a fact.
 
 ### LL-78 · Darkness described as a signal
 * **What happened:** chapter 8 said "no light tells your body clock it's day", and chapter 3 said "In the dark, a gland… releases melatonin". Both read as darkness actively doing something. The body clock times melatonin for the biological night; light suppresses it; darkness alone switches nothing on. And after years of night work, Leo's clock phase is unknown.
@@ -736,6 +739,7 @@ Sources of evidence:
 * **Fix:** chapter 3 says "At night, a tiny gland…" (the first sleepless night, every clock normal). Chapter 8 says "Up here, the lights are finally off" — no physiology, and the payoff of "The lights never go off".
 * **Standard?** Yes — §5.2 "mechanism check" (v1.6).
 * **Avoid:** describe what light does; never credit darkness with an action.
+* **v4 follow-up:** "At night, a tiny gland… releases melatonin" still left the timing unexplained, and "Switch on a bright light, and it fades" blurred suppression into fading. Now: "At night, your body clock still tells a tiny gland… to release melatonin. Switch on a bright light, and the gland holds back." The clock times the release; light holds it back — two separate effects, said separately.
 
 ### LL-79 · A closing unknown that named no knowns
 * **What happened:** "Scientists know a lot about why… but not everything" was accurate but empty — it said "a lot" without saying what.
@@ -750,6 +754,20 @@ Sources of evidence:
 * **Fix:** all dates now come from the script's timeline. A new section computes moment zero + 10 years, the hook's offset, the time since the last sleep, "ten years before the hook", and the whole years in every "TEN YEARS" label, for every reference year. Four known-answer tests cover the date arithmetic, including the v2 case: 07:00 → 03:00 ten years later counts as only 9 whole years.
 * **Standard?** Yes — §6 checker (v1.6).
 * **Avoid:** check the words' meaning ("has slept in ten years"), not just that the dates exist; never hard-code a date the script defines.
+
+### LL-81 · "Tonight, almost everyone… in the dark" implied one shared schedule
+* **What happened:** the opening line made a true point (nearly everyone sleeps every day) in words that implied everyone sleeps at night, at the same time.
+* **Why:** the line was written for drama, and checked for its fact (A01), not for what its framing implied.
+* **Fix:** "Sometime today, almost everyone on Earth will lie down… and sleep." The montage adds a night-shift nurse pulling blackout blinds at noon.
+* **Standard?** Yes — §5.2 "universal claims without a shared schedule" (v1.7).
+* **Avoid:** when a claim says "almost everyone", check what the time words around it imply.
+
+### LL-82 · A speculative timescale sounded like a forecast — and the checker passed it
+* **What happened:** "Cities adapted in a year" (SP-05) read as a prediction, or as history. The checker passed it, because every speculative sentence inside the imagined frame passed automatically.
+* **Why:** the frame rule treated all speculation alike; a guess with a number in it needs its own signal.
+* **Fix:** "Our guess? Cities adapt in a year. People take longer." The checker now rejects a speculative timescale or magnitude with no marker in its sentence or the one before. Run over script v3, the rule flags exactly this line and nothing else. Three self-tests were added (32 in total).
+* **Standard?** Yes — §5.2 "speculative magnitudes" and §6 (v1.7).
+* **Avoid:** whenever a guess contains a number or a timescale, say it's a guess.
 
 ---
 

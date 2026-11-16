@@ -1,6 +1,6 @@
 # Video #2 — Claim Ledger
 
-**v4.3 · 2026-11-16 · v4 plus script-stage bookkeeping (v4.1) and the producer's reviews of script v1 (v4.2) and v2 (v4.3).** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
+**v4.4 · 2026-11-16 · v4 plus script-stage bookkeeping (v4.1) and the producer's reviews of scripts v1 (v4.2), v2 (v4.3) and v3 (v4.4).** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
 
 Sources are in [01_RESEARCH.md §4](01_RESEARCH.md#4-source-list):
 * **Level A** — abstract, official page or the authors' own release.
@@ -30,7 +30,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Claim (narration-safe wording) | Class | Sources | Notes / guardrail | Ch |
 |---|---|---|---|---|---|
-| A01 | We spend about a third of our time asleep. | ESTABLISHED FACT | S01 | Approximate; adults vary (A08). | 1 |
+| A01 | We spend about a third of our time asleep. | ESTABLISHED FACT | S01 | Approximate; adults vary (A08). v4.4: the opening says "Sometime today, almost everyone on Earth will lie down… and sleep" — a daily need, with no shared schedule implied (people sleep at different hours, many by day). | 1 |
 | A02 | Sleep has two main types, REM and non-REM, which cycle through the night; deep non-REM comes mostly early, and REM periods grow toward morning. | ESTABLISHED FACT | S01 | — | opt |
 | A03 | REM sleep was first described in 1953. | ESTABLISHED FACT | S02 | Level S → **not narrated**. | — |
 | A04 | We dream in both REM and non-REM sleep. | RESEARCH-SUPPORTED EVIDENCE | S20 | Never "dreams only happen in REM". | opt |
@@ -48,11 +48,11 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 |---|---|---|---|---|---|
 | B01 | Two separate systems time our sleep: a pressure that builds the longer we're awake, and a body clock. | ESTABLISHED FACT | S04, S01 | The standard two-process model. | 2 |
 | B02 | While we're awake, a chemical called adenosine builds up in the brain — one of the signals behind sleep pressure. | RESEARCH-SUPPORTED EVIDENCE | S03, S08 | Key evidence is animal microdialysis. Say "one of the signals", not "the cause". | 2 |
-| B03 | Caffeine keeps you alert mainly by blocking adenosine's receptors. | ESTABLISHED FACT | S08 | Narrate as "blocking its signal". **v4.3 narration:** "Caffeine blocks adenosine receptors, so the hourglass feels emptier than it is." Caffeine occupies the receptors; it does not block or remove adenosine itself (v4.2's "blocks a sleep signal called adenosine" is withdrawn). Blocking the receptors hides the pressure; it does not remove the need for sleep. Not narrated: any claim that caffeine changes adenosine levels, or the build-up claim itself (B02). | 2 |
+| B03 | Caffeine keeps you alert mainly by blocking adenosine's receptors. | ESTABLISHED FACT | S08 | Narrate as "blocking its signal". **v4.4 narration:** "Caffeine blocks adenosine receptors. You feel alert… but the hourglass keeps filling." (v4.3's "the hourglass feels emptier than it is" withdrawn: a mixed metaphor.) Caffeine occupies the receptors; it does not block or remove adenosine itself (v4.2's "blocks a sleep signal called adenosine" is withdrawn). Blocking the receptors hides the pressure; it does not remove the need for sleep. Not narrated: any claim that caffeine changes adenosine levels, or the build-up claim itself (B02). | 2 |
 | B04 | The master clock is a small cluster of nerve cells deep in the brain (the suprachiasmatic nucleus). It keeps clocks all over the body in step. | ESTABLISHED FACT | S05, S53 | v4.2: shown in the ch. 2 picture (a small clock deep in the brain); the narration says "a body clock". | 2 (picture) |
 | B05 | Left alone, the human clock runs a little longer than a day — about 24 hours 11 minutes — so it is reset every day, mainly by light reaching the eyes. | ESTABLISHED FACT | S54, S05 | v4.3: no longer used in ch. 8 — that line now makes no circadian claim ("Up here, the lights are finally off"). | 2 |
-| B06 | Melatonin is made by the **pineal gland**, not by the clock itself. The master clock drives its production and light inhibits it, so levels rise in darkness and peak at night. | ESTABLISHED FACT | S07, S53 | **Never** "the clock releases melatonin". v4.2: used on the first sleepless night only (ch. 3), when every clock is still normal. Not used in ch. 8: after years of night work Leo's clock may have shifted (B09, SP-17), so his melatonin at 3–4 a.m. is unknown. | 3 |
-| B07 | Melatonin carries the message of darkness to the clock and the body. In humans it helps prepare for sleep — sleepiness rises about two hours after its evening onset — but it is not a sedative. | RESEARCH-SUPPORTED EVIDENCE | S53 | A review; the author has a declared commercial interest. Narrate only "the body's signal of night". | 3 |
+| B06 | Melatonin is made by the **pineal gland**, not by the clock itself. The master clock drives its production and light inhibits it, so levels rise in darkness and peak at night. | ESTABLISHED FACT | S07, S53 | **Never** "the clock releases melatonin". v4.2: used on the first sleepless night only (ch. 3), when every clock is still normal. Not used in ch. 8: after years of night work Leo's clock may have shifted (B09, SP-17), so his melatonin at 3–4 a.m. is unknown. **v4.4 narration (ch. 3):** "At night, your body clock still tells a tiny gland in your brain to release melatonin. Switch on a bright light, and the gland holds back." — two separate effects: the clock times the release; light suppresses it (it neither resets the clock here nor drains melatonin away). | 3 |
+| B07 | Melatonin carries the message of darkness to the clock and the body. In humans it helps prepare for sleep — sleepiness rises about two hours after its evening onset — but it is not a sedative. | RESEARCH-SUPPORTED EVIDENCE | S53 | A review; the author has a declared commercial interest. Narrate only "the body's signal of night". v4.4: no longer narrated (cut from ch. 3). | — |
 | B08 | Ordinary room light at night suppresses melatonin — by more than half during usual sleep hours in one study — and delays its evening rise. | RESEARCH-SUPPORTED EVIDENCE | S52 | Retrospective analysis, 116 young adults. Never "light switches it off". Not narrated (script v1+): it governs the ch. 3 picture (the glow thins, never to zero). | 3 (picture) |
 | B09 | Light is the clock's strongest time cue. Light at the wrong time can shift the clock, and night-shift workers' clocks often stay out of step with their schedules. | RESEARCH-SUPPORTED EVIDENCE | S05, S55, S56 | Reviews of shift work. | 6 |
 | B10 | Core body temperature has a daily rhythm, lowest in the early-morning hours. | ESTABLISHED FACT | S09 | Level S only → **not narrated** (dropped from chapter 3). | — |
@@ -185,7 +185,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | SP-02 | When everyone can work more, an hour of work might be worth less, while round-the-clock demand creates new jobs. | Basic supply and demand | 4 |
 | SP-03 | Industries built around sleep (mattresses, sleeping pills) shrink. | HR1 | 4 |
 | SP-04 | *Withdrawn* (food demand; it depended on CALC-04). | — | — |
-| SP-05 | Cities split: many try 24/7, others choose dark, quiet hours. | H07 | 5 |
+| SP-05 | Cities split: many try 24/7, others choose dark, quiet hours. | H07. v4.4: the adaptation timescale is narrated as a guess — "Our guess? Cities adapt in a year. People take longer." | 5 |
 | SP-06 | Cities lose the night-time window they use for maintenance. | H08 | 5 |
 | SP-07 | Schools could run in shifts around the clock. | — | 5 |
 | SP-08 | Night electricity demand rises just when solar produces nothing. | H02, H03 | 5 |
@@ -257,3 +257,9 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 * **B03** — caffeine blocks adenosine **receptors**, not adenosine; the narration says so.
 * **A09** (new, ESTABLISHED) — sleep's established roles in memory, immunity and metabolism (NINDS; AASM/SRS consensus, as associations). Used in the closing real-world line.
 * **B05** — no longer used in chapter 8, which now makes no claim about Leo's body clock. **D01** — narrated after A09 as "…and more we're still learning about".
+
+## Changes in v4.4 (producer's review of script v3, 2026-11-16)
+* **A01** — the opening no longer implies a shared night-time schedule.
+* **B03** — caffeine line in plain words: receptors blocked, you feel alert, the pressure keeps building.
+* **B06** — circadian timing (the clock times the release) and light suppression (light holds it back) are now stated as two separate effects. **B07** is no longer narrated.
+* **SP-05** — the adaptation timescale is marked as a guess.
