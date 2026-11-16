@@ -1,0 +1,3412 @@
+{
+  "doc": {
+    "title": "What If Humans Never Needed Sleep?",
+    "kind": "EXIT_CODE_NEVER-SLEEP_SCRIPT",
+    "version": "v2",
+    "date": "2026-11-16",
+    "status": "for G3 (script approval) — v2 after the producer's targeted review of v1",
+    "built_from": "Story Lock v4 (approved 2026-11-15), Story Bible v4, Claim Ledger v4.2, producer's review of script v1 (2026-11-16)",
+    "note": "Source of truth for the script. SCRIPT_v2.md, VOICEOVER_v2*.txt and AUDIT_v2.* are generated from this file by tools/script_audit.py — edit here, then re-run."
+  },
+  "voice": {
+    "overall_wpm": 141,
+    "speaking_wpm": 192,
+    "fps": 30,
+    "source": "Video #1 narration MP3, measured (Production Standard §7)"
+  },
+  "limits": {
+    "beat_wpm": 160,
+    "emotional_wpm": 145,
+    "chapter_tolerance_pct": 15,
+    "label_max_words": 6,
+    "long_sentence_words": 18
+  },
+  "tts_substitutions": [
+    [
+      "BLACK 24's",
+      "Black Twenty-Four's"
+    ],
+    [
+      "BLACK 24",
+      "Black Twenty-Four"
+    ],
+    [
+      "Mr. Black",
+      "Mister Black"
+    ],
+    [
+      "RAND",
+      "Rand"
+    ],
+    [
+      "US economy",
+      "U.S. economy"
+    ],
+    [
+      "US workers",
+      "U.S. workers"
+    ]
+  ],
+  "pronunciation": [
+    [
+      "melatonin",
+      "MEL-uh-TOH-nin"
+    ],
+    [
+      "REM",
+      "one syllable, \"rem\" (rhymes with gem). If the voice spells it R-E-M, change it to \"rem\" in the paste text."
+    ],
+    [
+      "RAND",
+      "\"Rand\" — the paste text already says Rand, so it isn't spelled out"
+    ],
+    [
+      "BLACK 24",
+      "\"Black Twenty-Four\" (written out in the paste text)"
+    ],
+    [
+      "Mr. Black",
+      "\"Mister Black\" (written out)"
+    ],
+    [
+      "US",
+      "written \"U.S.\" in the paste text so it isn't read as \"us\""
+    ],
+    [
+      "a.m. / p.m.",
+      "\"ay em\" / \"pee em\""
+    ],
+    [
+      "Mia",
+      "MEE-uh"
+    ],
+    [
+      "Leo",
+      "LEE-oh"
+    ],
+    [
+      "Flagstaff, Arizona",
+      "as normal"
+    ],
+    [
+      "maths, Mum, grey, centre",
+      "British usage (Video #1 convention) — keep"
+    ]
+  ],
+  "requirements": {
+    "dates": {
+      "title": "Production requirement 1 — exact dates and the ten-year timeline",
+      "rule": "Every on-screen date and time must match this table; tools/script_audit.py checks them against a real calendar.",
+      "rows": [
+        [
+          "Moment zero",
+          "Night of Monday 12 → Tuesday 13 September, Year 0",
+          "The last night anyone sleeps. Mia's last dream (the hill)."
+        ],
+        [
+          "Day 1",
+          "Tuesday 13 September, Year 0, breakfast",
+          "The drawing; \"When I have time\"; caption sighting 1."
+        ],
+        [
+          "First sleepless night",
+          "Tuesday 13 → Wednesday 14 September, Year 0",
+          "10 p.m. couch, 1 a.m. montage, 4 a.m. kitchen."
+        ],
+        [
+          "Twenty-four hours awake",
+          "Wednesday 14 September, Year 0, sunrise ≈ 06:35",
+          "Ch 3 sunrise."
+        ],
+        [
+          "Year 1",
+          "—",
+          "Economy goes 24/7. Mum takes the night shift. Schools split into shifts (Leo 16, Mia 9)."
+        ],
+        [
+          "Year 3",
+          "—",
+          "Leo turns 18 and joins BLACK 24. Mia (11): \"Next week.\" First tally mark; caption sighting 2."
+        ],
+        [
+          "Ch 7 · 7.8a",
+          "Year 10 · 12 May · 03:02 (label 12 MAY · 3:02 A.M.)",
+          "\"I GOT IN!! 🎓 Hill before I go?\" → 👍."
+        ],
+        [
+          "Ch 7 · 7.8b",
+          "Year 10 · 12 May · ≈ 03:10, the same night",
+          "Mum at the warehouse sees the acceptance photo."
+        ],
+        [
+          "Ch 7 · 7.8c",
+          "Year 10 · 12 September · 20:00 (label 12 SEPTEMBER · 8 P.M.)",
+          "Packing. \"She leaves tomorrow.\" Ticket 13 SEP · 07:00; letter TERM STARTS 14 SEPTEMBER."
+        ],
+        [
+          "Ch 7 · 7.8d → ch 8",
+          "Year 10 · 13 September · 03:00 (label 13 SEPTEMBER · 3 A.M.)",
+          "Midnight has passed: the train is now this morning, 4 hours away. Exactly ten years to the night after the last sleep (not narrated)."
+        ],
+        [
+          "Ch 8 · the hill",
+          "13 September · ≈ 03:10 leave · ≈ 04:00–05:00 under the stars",
+          "Still full night at these times in September (checked below)."
+        ],
+        [
+          "Departure",
+          "13 September · 07:00 train",
+          "\"My train's at seven\", said at 03:01."
+        ],
+        [
+          "Programme start",
+          "14 September",
+          "Term starts the day after she travels."
+        ]
+      ],
+      "ages": {
+        "Leo": {
+          "Y0": 15,
+          "Y1": 16,
+          "Y3": 18,
+          "Y10": 25
+        },
+        "Mia": {
+          "Y0": 8,
+          "Y1": 9,
+          "Y3": 11,
+          "Y10": 18
+        }
+      },
+      "not_shown": "No year and no Year 10 weekday is ever shown on screen. On-screen dates: 12 SEP (ch 2 wall calendar); 12 MAY · 3:02 A.M., 12 SEPTEMBER · 8 P.M. and 13 SEPTEMBER · 3 A.M. (ch 7 labels); 12 MAY · 03:02 (phone); TERM STARTS 14 SEPTEMBER and 13 SEP · 07:00 (letter and ticket)."
+    },
+    "notebook": {
+      "title": "Production requirement 2 — notebook caption and tally legible on a phone",
+      "rule": "Legibility beats quantity. Every sighting is an insert (a close-up cut), never a detail in a wide shot.",
+      "caption_text": "WHEN LEO / HAS TIME — two lines, thick marker capitals in a child's hand, clean letterforms (no reversed letters, no joined-up writing)",
+      "ink_hex": "#1B2333",
+      "paper_hex": "#F3EBD7",
+      "min_contrast": 7.0,
+      "cap_height_pct_of_frame_h": 7.0,
+      "caption_width_pct_of_frame_w": 50,
+      "min_hold_s": 2.0,
+      "max_push_pct": 2,
+      "zone": "inside the content zone, y 200–850; nothing in the subtitle band (y 850–1026); no other text in the insert",
+      "tally": {
+        "ch3": 0,
+        "ch6": 1,
+        "ch8": 15,
+        "ch8_layout": "three groups of five (four uprights + one diagonal), stacked as a short column under the caption",
+        "mark_height_pct_of_frame_h": 6.0,
+        "stroke_px_min": 9,
+        "gap_px_min": 18,
+        "group_gap_px_min": 40,
+        "max_groups": 3
+      },
+      "phone_checks": "Checked at 960×540 and 640×360 at G5 (style samples) and G6 (preview): the caption must read in under 2 s; the tally must read as 'many times'. Pixel-sample the rendered paper and ink: contrast ≥ 7:1 under the scene's lighting.",
+      "other_text": [
+        [
+          "12 MAY · 03:02 (ch 7 phone date header and time)",
+          "cap height ≥ 5 % of frame height (≥ 54 px); held ≥ 2.5 s in a gap in the narration"
+        ],
+        [
+          "Message text (ch 7)",
+          "≥ 43 px (≥ 4 %); no narration over it"
+        ],
+        [
+          "13 SEP · 07:00 (ticket) and TERM STARTS 14 SEPTEMBER (letter)",
+          "≥ 54 px and ≥ 43 px; each held ≥ 1.5 s"
+        ]
+      ]
+    },
+    "opening_sync": {
+      "title": "Production requirement 3 — the full playground is on screen for the whole first line",
+      "rows": [
+        [
+          "0:00.0 (frame 1)",
+          "The full playground under the 3:00 clock, already in motion, with sound. No black frame, no fade, no pull-back."
+        ],
+        [
+          "0:00.2 (frame 6)",
+          "Narration starts: \"It's three a.m. — and the playground is full.\""
+        ],
+        [
+          "Whole line",
+          "The playground shot stays on screen and complete: the camera pushes in 2 % at most; every piece of play equipment stays at least 5 % inside the frame edges; the swings, the slide and the clock sit in the content zone (y 200–850), with only ground in the subtitle band."
+        ],
+        [
+          "Cut rule",
+          "The first cut comes when the word \"full\" ends plus 4 frames — never mid-line. If the generated line runs long, the shot runs long and everything after it moves later. The line is never sped up to fit."
+        ],
+        [
+          "Planned cut",
+          "0:03.2. At Video #1's measured speaking rate (≈ 192 words/min), the 8 words plus the dash pause end at ≈ 0:02.95, so the cut lands at ≈ 0:03.1."
+        ],
+        [
+          "Then",
+          "The thumbnail shot (Leo's eyes) for 1.0 s, then the 'ten years from now' cuts."
+        ],
+        [
+          "Stage 7 check",
+          "Once your MP3 exists, the end of \"full\" is measured from the word timings and the cut is set from it."
+        ]
+      ],
+      "deviation": "Story Lock v4 put the thumbnail cut at 0:02.0, and Production Standard v1.3 §6 says the thumbnail image appears 'within the first 3 s'. Requirement 3 makes both impossible: 8 words cannot be spoken naturally in 1.8 s. The cut therefore moves to the end of the line (planned 0:03.2, measured ≈ 0:03.1). Standard v1.4 rewords the rule accordingly (LL-67)."
+    }
+  },
+  "timeline": {
+    "reference_year_rule": "Any year in which 12 September is a Monday. The audit checks every such year from 2026 to 2060.",
+    "events": [
+      {
+        "id": "T01",
+        "when": "Y0-09-12 22:00",
+        "what": "Monday night: the last night anyone sleeps",
+        "ch": "2"
+      },
+      {
+        "id": "T02",
+        "when": "Y0-09-13 07:30",
+        "what": "Tuesday breakfast: the drawing, 'When I have time', caption 1/3",
+        "ch": "3"
+      },
+      {
+        "id": "T03",
+        "when": "Y0-09-13 22:00",
+        "what": "10 p.m.: nobody gets tired",
+        "ch": "3"
+      },
+      {
+        "id": "T04",
+        "when": "Y0-09-14 01:00",
+        "what": "1 a.m. montage",
+        "ch": "3"
+      },
+      {
+        "id": "T05",
+        "when": "Y0-09-14 04:00",
+        "what": "4 a.m. kitchen: melatonin and light",
+        "ch": "3"
+      },
+      {
+        "id": "T06",
+        "when": "Y0-09-14 06:35",
+        "what": "Sunrise: 'Twenty-four hours awake'",
+        "ch": "3",
+        "check": "after_sunrise"
+      },
+      {
+        "id": "T07",
+        "when": "Y10-05-12 03:02",
+        "what": "Mia: 'I GOT IN!! Hill before I go?' → 👍",
+        "ch": "7"
+      },
+      {
+        "id": "T07b",
+        "when": "Y10-05-12 03:10",
+        "what": "Mum at the warehouse sees the acceptance photo",
+        "ch": "7"
+      },
+      {
+        "id": "T08",
+        "when": "Y10-09-12 20:00",
+        "what": "Packing: 'She leaves tomorrow'",
+        "ch": "7"
+      },
+      {
+        "id": "T09",
+        "when": "Y10-09-13 03:00",
+        "what": "The hook; Mia at Leo's desk",
+        "ch": "1, 8"
+      },
+      {
+        "id": "T10",
+        "when": "Y10-09-13 03:10",
+        "what": "They leave the office",
+        "ch": "8"
+      },
+      {
+        "id": "T11",
+        "when": "Y10-09-13 04:00",
+        "what": "On the hill under the stars",
+        "ch": "8",
+        "check": "dark"
+      },
+      {
+        "id": "T12",
+        "when": "Y10-09-13 05:00",
+        "what": "Leave the hill",
+        "ch": "8",
+        "check": "dark"
+      },
+      {
+        "id": "T13",
+        "when": "Y10-09-13 07:00",
+        "what": "Mia's train",
+        "ch": "7, 8"
+      },
+      {
+        "id": "T14",
+        "when": "Y10-09-14 09:00",
+        "what": "Term starts",
+        "ch": "7"
+      }
+    ],
+    "astronomy_sites": [
+      {
+        "name": "London-like city",
+        "lat": 51.5,
+        "lon": -0.1,
+        "utc_offset_h": 1,
+        "zone": "BST"
+      },
+      {
+        "name": "Paris-like city",
+        "lat": 48.9,
+        "lon": 2.35,
+        "utc_offset_h": 2,
+        "zone": "CEST"
+      },
+      {
+        "name": "New York-like city",
+        "lat": 40.7,
+        "lon": -74.0,
+        "utc_offset_h": -4,
+        "zone": "EDT"
+      }
+    ],
+    "story_city_note": "The story's city is never named; the check uses three typical northern cities on summer time.",
+    "age_assertions": [
+      {
+        "who": "Leo",
+        "when": "Y0-09-13 07:30",
+        "age": 15,
+        "where": "2.1 / 3.1 pictures"
+      },
+      {
+        "who": "Leo",
+        "when": "Y10-05-12 03:02",
+        "age": 25,
+        "where": "7.1 'You're twenty-five' covers Year 10, including May"
+      },
+      {
+        "who": "Leo",
+        "when": "Y10-09-13 03:00",
+        "age": 25,
+        "where": "1.2 picture, ch 8"
+      },
+      {
+        "who": "Mia",
+        "when": "Y0-09-13 07:30",
+        "age": 8,
+        "where": "3.1 picture"
+      },
+      {
+        "who": "Mia",
+        "when": "Y10-09-12 20:00",
+        "age": 18,
+        "where": "7.8c picture"
+      },
+      {
+        "who": "Mia",
+        "when": "Y10-09-13 03:01",
+        "age": 18,
+        "where": "8.2 picture"
+      }
+    ]
+  },
+  "callbacks": [
+    "a whole generation",
+    "never had a single dream",
+    "science still can't",
+    "what dreams were for",
+    "three a.m.",
+    "even today",
+    "when i have time",
+    "when leo has time",
+    "goodnight",
+    "body clock",
+    "the night shift",
+    "night operations",
+    "the hourglass",
+    "your body clock",
+    "everyone on earth"
+  ],
+  "chapters": [
+    {
+      "n": 1,
+      "title": "The Impossible Question",
+      "window": [
+        "0:00",
+        "0:35"
+      ],
+      "music": "Hook cue: a low pulse under the playground sound from frame 1; a hit on the cut to Leo's eyes; builds through the premise; cuts to silence for the title hit, then a rewind whoosh.",
+      "beats": [
+        {
+          "id": "1.1",
+          "dur": 3.2,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:00",
+          "picture": "FRAME 1 (0:00.0) — a wide shot already in motion, no pull-back. A floodlit playground packed with children fills the lower two-thirds: two swings at the top of their arc, a slide, kids running. Behind it, the night city: a navy sky without stars, every window lit. Centred above the skyline, a huge luminous analog clock reads 3:00 (teal and cool white). Night, 3:00 and a full playground all read at phone size from the first frame. The whole playground stays in frame for the entire line (opening-sync spec, requirement 3).",
+          "sound": "From frame 1, no fade-in: children's laughter, swing chains, a distant school bell, traffic hum. Music: low pulse.",
+          "onscreen": [
+            {
+              "text": "3:00 (the skyline clock)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "It's three a.m. — and the playground is full.",
+              "claims": [
+                "HR1",
+                "SP-07"
+              ],
+              "role": "HOOK",
+              "timing": "starts 0:00.2; the shot holds until 'full' ends + 4 frames"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "dur": 1.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:00",
+          "picture": "First cut — THE THUMBNAIL SHOT: an extreme close-up of Leo's (25) wide-open eyes at an office window, the 3:00 clock and the floodlit playground reflected in the glass. Subject inside the centred 9:16 column.",
+          "sound": "A low hit on the cut; the playground sound drops behind glass.",
+          "onscreen": [],
+          "lines": []
+        },
+        {
+          "id": "1.3",
+          "dur": 6.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:00",
+          "picture": "Fast cuts, about 2 s each: a school with every classroom lit; a gridlocked street under the 3:00 clock; back to the swings.",
+          "sound": "School bell, car horns; the pulse quickens.",
+          "onscreen": [
+            {
+              "text": "TEN YEARS FROM NOW",
+              "kind": "label",
+              "claims": [
+                "FRAME"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "The schools are open.",
+              "claims": [
+                "SP-07"
+              ],
+              "role": "HOOK"
+            },
+            {
+              "who": "N",
+              "text": "Traffic's jammed.",
+              "claims": [
+                "SP-15"
+              ],
+              "role": "HOOK"
+            },
+            {
+              "who": "N",
+              "text": "And nobody here has slept… in ten years.",
+              "claims": [
+                "HR1"
+              ],
+              "role": "PREMISE"
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "dur": 9.5,
+          "frame": "real",
+          "story_time": "TODAY",
+          "picture": "Today: Earth's night side from orbit; windows going dark in waves across a city; people lying down — a parent switches off a child's lamp.",
+          "sound": "The music drops to a soft bed; a clock ticking; the city's hush.",
+          "onscreen": [
+            {
+              "text": "TODAY",
+              "kind": "label",
+              "claims": [
+                "FRAME"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Tonight, almost everyone on Earth will lie down in the dark and sleep.",
+              "claims": [
+                "A01"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "About a third of your life.",
+              "claims": [
+                "A01"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "More than twenty years.",
+              "claims": [
+                "CALC-01"
+              ],
+              "role": "FACT"
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "dur": 6.5,
+          "frame": "rules",
+          "story_time": null,
+          "picture": "Leo (15) in bed in the dark; his eyes snap open. (A hook image, not a story moment.)",
+          "sound": "A sharp whoosh on the eyes opening; the pulse returns.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "So what if you never needed to sleep again?",
+              "claims": [
+                "HR1"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "Not tired.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "No harm done.",
+              "claims": [
+                "HR3"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Just… awake.",
+              "claims": [
+                "HR1"
+              ],
+              "role": "RULE"
+            }
+          ]
+        },
+        {
+          "id": "1.6",
+          "dur": 10.5,
+          "frame": "imagined",
+          "story_time": null,
+          "picture": "Glimpses: a sunrise after a sleepless night; the 24-hour city at full speed; a child's notebook flipping through blank pages (never Mia's drawing).",
+          "sound": "The music builds to the title.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "This is the first twenty-four hours.",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "PROMISE"
+            },
+            {
+              "who": "N",
+              "text": "The next ten years.",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "PROMISE"
+            },
+            {
+              "who": "N",
+              "text": "And why, in this world, a whole generation of kids has never had a single dream.",
+              "claims": [
+                "HR5"
+              ],
+              "role": "PROMISE"
+            }
+          ]
+        },
+        {
+          "id": "1.7",
+          "dur": 2.0,
+          "frame": "title",
+          "story_time": null,
+          "picture": "Title card, then the clock's hands spin backwards into chapter 2.",
+          "sound": "Title hit; a rewind whoosh as the clock spins back.",
+          "onscreen": [
+            {
+              "text": "WHAT IF HUMANS NEVER NEEDED SLEEP?",
+              "kind": "title",
+              "claims": [
+                "FRAME"
+              ]
+            },
+            {
+              "text": "EXIT CODE",
+              "kind": "title",
+              "claims": [
+                "FRAME"
+              ]
+            },
+            {
+              "text": "TEN YEARS EARLIER",
+              "kind": "label",
+              "claims": [
+                "FRAME"
+              ]
+            }
+          ],
+          "lines": []
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "title": "The Biological Breakthrough",
+      "window": [
+        "0:35",
+        "1:30"
+      ],
+      "music": "Curious science cue (light arpeggio); it thins under the unknowns; a tick-tock motif for the clock; it stops for one beat under 'nobody dreams'.",
+      "beats": [
+        {
+          "id": "2.1",
+          "dur": 3.8,
+          "frame": "real",
+          "story_time": "Y0-09-12 22:00",
+          "picture": "Monday night. Leo (15) yawning over homework; a wall calendar behind him shows 12 SEP (background detail). Mum leans in at the door, then switches off the hall light. Through the next door, Mia (8) asleep, her notebook under her hand.",
+          "sound": "Room tone; a yawn; Mum's voice from the doorway; the hall light clicks off.",
+          "onscreen": [
+            {
+              "text": "MONDAY — THE LAST NIGHT ANYONE SLEEPS",
+              "kind": "label",
+              "claims": [
+                "HR1"
+              ]
+            },
+            {
+              "text": "12 SEP (wall calendar)",
+              "kind": "diegetic",
+              "claims": [
+                "HR1"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "MUM",
+              "text": "Goodnight, you two.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "SETUP"
+            },
+            {
+              "who": "N",
+              "text": "First, what does sleep actually do?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "QUESTION"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "dur": 16.0,
+          "frame": "real",
+          "story_time": null,
+          "picture": "Navy science graphic. Three fast icons rise from a sleeping brain: a film strip replaying Leo's guitar chord (memory); virus icons around a nose (immunity); sugar cubes beside an 'age' dial (metabolism).",
+          "sound": "Science cue; a soft tick as each icon lands.",
+          "onscreen": [
+            {
+              "text": "1 study · 164 adults",
+              "kind": "tag",
+              "claims": [
+                "C03"
+              ]
+            },
+            {
+              "text": "Prather et al., 2015",
+              "kind": "source",
+              "claims": [
+                "C03"
+              ]
+            },
+            {
+              "text": "1 study · 11 men",
+              "kind": "tag",
+              "claims": [
+                "C05"
+              ]
+            },
+            {
+              "text": "Spiegel et al., 1999",
+              "kind": "source",
+              "claims": [
+                "C05"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Studies suggest it helps lock in what you learned.",
+              "claims": [
+                "C01"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "In one study, people sleeping six hours or less… had about four times the odds of catching a cold.",
+              "claims": [
+                "C03"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "In another, after six short nights, young men handled blood sugar worse.",
+              "claims": [
+                "C05"
+              ],
+              "role": "EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "dur": 6.4,
+          "frame": "real",
+          "story_time": null,
+          "picture": "Two mouse-lab cards land, stamped YES and NO; a question mark settles over a dreaming brain.",
+          "sound": "Two stamp thuds; the arpeggio thins.",
+          "onscreen": [
+            {
+              "text": "YES · mouse study, 2013",
+              "kind": "card",
+              "claims": [
+                "C06"
+              ]
+            },
+            {
+              "text": "NO · mouse study, 2024",
+              "kind": "card",
+              "claims": [
+                "C08"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Some of it, nobody fully understands.",
+              "claims": [
+                "D01"
+              ],
+              "role": "UNKNOWN"
+            },
+            {
+              "who": "N",
+              "text": "What's REM sleep for?",
+              "claims": [
+                "D02"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "Does sleep really clean the brain?",
+              "claims": [
+                "D04"
+              ],
+              "role": "QUESTION"
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "dur": 15.2,
+          "frame": "real",
+          "story_time": null,
+          "picture": "The brain again, with two devices inside. An HOURGLASS whose sand of tiny dots fills as a day passes, with a signal line running from it to a 'sleepy' dial. A coffee cup slides onto the line: the dial drops, but the sand keeps falling. A small CLOCK deep in the brain, its hands nudged back into place by light from the eyes.",
+          "sound": "Sand hiss; a cup clink as the dial drops; a gentle tick-tock.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "But two systems decide when you get sleepy.",
+              "claims": [
+                "B01"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "An hourglass — pressure that builds while you're awake.",
+              "claims": [
+                "B01"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Coffee blocks a sleep signal called adenosine.",
+              "claims": [
+                "B03"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "The hourglass keeps filling anyway.",
+              "claims": [
+                "B01",
+                "B03"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "And a body clock, reset every day, mainly by light.",
+              "claims": [
+                "B05"
+              ],
+              "role": "FACT"
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "dur": 11.2,
+          "frame": "rules",
+          "story_time": null,
+          "picture": "The hourglass freezes mid-pour; the clock keeps ticking. The memory, immunity and metabolism icons keep glowing while the eyes stay open.",
+          "sound": "The sand hiss stops dead; the tick-tock continues alone.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "A breakthrough would have to stop the hourglass.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "And do all of sleep's work while you're awake.",
+              "claims": [
+                "HR3"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Even the parts we don't understand.",
+              "claims": [
+                "HR3",
+                "D01"
+              ],
+              "role": "UNKNOWN"
+            },
+            {
+              "who": "N",
+              "text": "How?",
+              "claims": [
+                "HR8"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "That's the thought experiment.",
+              "claims": [
+                "HR8"
+              ],
+              "role": "RULE"
+            }
+          ]
+        },
+        {
+          "id": "2.6",
+          "dur": 10.3,
+          "frame": "rules",
+          "story_time": null,
+          "picture": "THE RULE CARD — four lines appear one by one, each with an icon: no yawn; no harm; the clock ticking; a sleeping face with an empty dream bubble. Under line 4, smaller: 'daydreams stay', with an open-eyed face and a thought bubble.",
+          "sound": "A soft chime per line; the music stops for one beat under 'nobody dreams'.",
+          "onscreen": [
+            {
+              "text": "IN THIS WORLD",
+              "kind": "card",
+              "claims": [
+                "HR1"
+              ]
+            },
+            {
+              "text": "1 · NEVER TIRED",
+              "kind": "card",
+              "claims": [
+                "HR2"
+              ]
+            },
+            {
+              "text": "2 · NO HARM FROM NOT SLEEPING",
+              "kind": "card",
+              "claims": [
+                "HR3"
+              ]
+            },
+            {
+              "text": "3 · BODY CLOCK KEEPS TICKING",
+              "kind": "card",
+              "claims": [
+                "HR4"
+              ]
+            },
+            {
+              "text": "4 · NO DREAMS — a rule we chose",
+              "kind": "card",
+              "claims": [
+                "HR5"
+              ]
+            },
+            {
+              "text": "daydreams stay",
+              "kind": "label",
+              "claims": [
+                "HR5",
+                "HR7"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "In this world, you're never tired.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Going without sleep never hurts.",
+              "claims": [
+                "HR3"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Your body clock keeps ticking.",
+              "claims": [
+                "HR4"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "And with no sleep… the dreams go too.",
+              "claims": [
+                "HR5"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Daydreams stay.",
+              "claims": [
+                "HR5",
+                "HR7"
+              ],
+              "role": "RULE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "title": "The First 24 Hours",
+      "window": [
+        "1:30",
+        "2:20"
+      ],
+      "music": "Warm amber cue at breakfast; playful percussion for the 1 a.m. montage; near-silence in the 4 a.m. kitchen; a sunrise swell.",
+      "beats": [
+        {
+          "id": "3.1",
+          "dur": 8.0,
+          "frame": "imagined",
+          "story_time": "Y0-09-13 07:30",
+          "emotional": true,
+          "picture": "Tuesday breakfast. Mia (8) holds up her drawing: two stick figures on a hill under a sky crowded with stars. Leo (15), grabbing toast on his way out, barely looks. Alone, Mia writes underneath in big capitals. INSERT — caption sighting 1 of 3, held ≥ 2.0 s (notebook spec): WHEN LEO / HAS TIME.",
+          "sound": "Kettle, toast pop, the front door; then a marker squeaking on paper.",
+          "onscreen": [
+            {
+              "text": "TUESDAY",
+              "kind": "label",
+              "claims": [
+                "HR1"
+              ]
+            },
+            {
+              "text": "WHEN LEO / HAS TIME",
+              "kind": "caption",
+              "claims": [
+                "STORY"
+              ],
+              "spec": "notebook spec — sighting 1 of 3, no tally yet"
+            }
+          ],
+          "lines": [
+            {
+              "who": "MIA",
+              "text": "Look — it's us, on the hill!",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "MIA",
+              "text": "Can we go?",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "LEO",
+              "text": "Sure.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "LEO",
+              "text": "When I have time.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "SETUP"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "dur": 5.0,
+          "frame": "imagined",
+          "story_time": "Y0-09-13 22:00",
+          "picture": "10 p.m. The family on the couch, wide awake; the wall clock reads 10:00.",
+          "sound": "TV murmur, a clock tick; nobody yawns.",
+          "onscreen": [
+            {
+              "text": "10:00 (wall clock)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "That night, nobody gets tired.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Not you.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Not Mum.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Not anyone.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "dur": 13.0,
+          "frame": "imagined",
+          "story_time": "Y0-09-14 01:00",
+          "picture": "THE 1 A.M. MONTAGE — each beat 1–1.5 s in its own colour pocket of the city: a packed 24-hour gym; a game server crashing under record players; Grandma starting a painting; a student opening a language course; a dad and kid building a treehouse by headlamp; a garage band; then one office where a man in a grey suit books 3 a.m. meetings.",
+          "sound": "Playful percussion builds — gym clank, game chimes, a guitar chord — and stops dead on Mr. Black's pen click.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "So what do you do with eight extra hours?",
+              "claims": [
+                "CALC-02"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "By one a.m., the city is training, gaming, painting, studying.",
+              "claims": [
+                "SP-22"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "And one man in a grey suit is booking meetings for three a.m.",
+              "claims": [
+                "STORY",
+                "SP-01"
+              ],
+              "role": "SETUP"
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "dur": 2.0,
+          "frame": "imagined",
+          "story_time": "Y0-09-14 02:00",
+          "emotional": true,
+          "picture": "Mia in bed, eyes open in the dark, her notebook open at a fresh page beside the pillow. No words.",
+          "sound": "One soft sustained note; the distant city.",
+          "onscreen": [],
+          "lines": []
+        },
+        {
+          "id": "3.5",
+          "dur": 14.0,
+          "frame": "imagined",
+          "story_time": "Y0-09-14 04:00",
+          "picture": "4 a.m., the dark kitchen, lights off; Leo at the window. A soft indigo glow drifts from a small gland at the centre of a cut-away brain. He switches on the bright ceiling light: the glow thins, never to zero. Off again: it slowly returns.",
+          "sound": "Fridge hum; light-switch clicks; a low shimmer for the glow.",
+          "onscreen": [
+            {
+              "text": "4 A.M.",
+              "kind": "label",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "PINEAL GLAND",
+              "kind": "label",
+              "claims": [
+                "B06"
+              ]
+            },
+            {
+              "text": "MELATONIN",
+              "kind": "label",
+              "claims": [
+                "B06"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "In the dark, a tiny gland in your brain still releases melatonin.",
+              "claims": [
+                "B06",
+                "HR4"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Your body's signal of night.",
+              "claims": [
+                "B06",
+                "HR4"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Switch on a bright light, and it fades.",
+              "claims": [
+                "B06",
+                "HR4"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "You're not tired.",
+              "claims": [
+                "HR2"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "Your body clock just knows it's night.",
+              "claims": [
+                "HR4"
+              ],
+              "role": "RULE"
+            }
+          ]
+        },
+        {
+          "id": "3.6",
+          "dur": 12.0,
+          "frame": "imagined",
+          "story_time": "Y0-09-14 06:35",
+          "picture": "Sunrise over the city. Leo on the balcony, wide awake, squinting into the light.",
+          "sound": "Birdsong; the music swells with the light.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Twenty-four hours awake… and you feel fine.",
+              "claims": [
+                "HR3"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "You just got eight hours back.",
+              "claims": [
+                "CALC-02"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Almost three thousand hours a year.",
+              "claims": [
+                "CALC-02"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Everyone on Earth did the same maths.",
+              "claims": [
+                "HR1",
+                "CALC-02"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "So did their bosses.",
+              "claims": [
+                "SP-01"
+              ],
+              "role": "TRANSITION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "title": "The World Economy",
+      "window": [
+        "2:20",
+        "3:20"
+      ],
+      "music": "Driving, mechanical cue (ticking hi-hats, synth bass); its rhythm slows as the output curve flattens; it drops out for Mum's empty chair.",
+      "beats": [
+        {
+          "id": "4.1",
+          "dur": 6.5,
+          "frame": "imagined",
+          "story_time": "Y0",
+          "picture": "A world map. On every continent the crowd icons grow by half — two become three (not double: the claim is +50 %).",
+          "sound": "The economy cue starts.",
+          "onscreen": [
+            {
+              "text": "waking hours only · assumes ~8 h of sleep · 7–9 h gives +41 % to +60 %",
+              "kind": "footnote",
+              "claims": [
+                "CALC-03"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Overnight, humanity's waking time grows by about half.",
+              "claims": [
+                "CALC-03"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "The waking hours of billions of extra people.",
+              "claims": [
+                "CALC-03"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "dur": 12.5,
+          "frame": "imagined",
+          "story_time": "Y0",
+          "picture": "Mr. Black's sign reads BLACK & CO.; the '& CO.' slides off and a neon '24' lights up. Warehouses and call centres glow at 3 a.m.",
+          "sound": "Neon buzzing on; warehouse beeps; phones ringing.",
+          "onscreen": [
+            {
+              "text": "BLACK & CO. → BLACK 24 (sign)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "US Bureau of Labor Statistics, 2017–18",
+              "kind": "source",
+              "claims": [
+                "G02"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Mr. Black's company becomes BLACK 24.",
+              "claims": [
+                "STORY",
+                "SP-01"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "It never closes.",
+              "claims": [
+                "SP-01"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Even today, about one in six US workers doesn't work a regular daytime schedule.",
+              "claims": [
+                "G02"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Now the night shift is just… a shift.",
+              "claims": [
+                "SP-01"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "dur": 2.0,
+          "frame": "imagined",
+          "story_time": "Y0",
+          "picture": "Montage, no on-screen text: a bank, a dentist and a delivery at 3 a.m.; a mattress shop and a sleeping-pill display going dark.",
+          "sound": "Two quick whooshes.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Some jobs boom.",
+              "claims": [
+                "SP-02"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Others shrink.",
+              "claims": [
+                "SP-03"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "dur": 23.5,
+          "frame": "imagined",
+          "story_time": "Y0",
+          "picture": "Split cards: winners (a business owner, a customer) and losers (a worker). The RAND card builds while the figure is spoken: the number, what it measured, its source. Then the scale tips: new costs stack on the other side.",
+          "sound": "A register ping on 'Winners?'; a low tone under the RAND figure; a dull thud on 'Losers?'.",
+          "onscreen": [
+            {
+              "text": "WINNERS · LOSERS",
+              "kind": "card",
+              "claims": [
+                "FRAME"
+              ]
+            },
+            {
+              "text": "$411 BN A YEAR",
+              "kind": "card",
+              "claims": [
+                "G01"
+              ]
+            },
+            {
+              "text": "lack of sleep · upper estimate",
+              "kind": "card",
+              "claims": [
+                "G01"
+              ]
+            },
+            {
+              "text": "missed work · lower productivity · earlier deaths",
+              "kind": "card",
+              "claims": [
+                "G01"
+              ]
+            },
+            {
+              "text": "RAND Europe, 2016 · US",
+              "kind": "source",
+              "claims": [
+                "G01"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Winners?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "Companies and customers.",
+              "claims": [
+                "SP-01",
+                "SP-02"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "In twenty sixteen, RAND estimated that lack of sleep cost the US economy… up to four hundred and eleven billion dollars a year.",
+              "claims": [
+                "G01"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Missed work.",
+              "claims": [
+                "G01"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Lower productivity.",
+              "claims": [
+                "G01"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Earlier deaths.",
+              "claims": [
+                "G01"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Here, that cost could fall.",
+              "claims": [
+                "SP-19"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Though a nonstop world may bring new costs.",
+              "claims": [
+                "SP-19"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Losers?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "Workers.",
+              "claims": [
+                "SP-02"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "When everyone can work more, your hour might be worth less.",
+              "claims": [
+                "SP-02"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "dur": 15.0,
+          "frame": "imagined",
+          "story_time": "Y0",
+          "picture": "An output curve rises, flattens past 49 hours a week, and ends in a question mark where a tireless worker stands.",
+          "sound": "The cue's rhythm slows as the curve flattens.",
+          "onscreen": [
+            {
+              "text": "UK munitions factories, 1914–18",
+              "kind": "source",
+              "claims": [
+                "G03"
+              ]
+            },
+            {
+              "text": "Pencavel, 2015",
+              "kind": "source",
+              "claims": [
+                "G03"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "But more hours don't always mean more output.",
+              "claims": [
+                "G03"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "A study of First World War munitions factories found… each hour past about forty-nine a week added less.",
+              "claims": [
+                "G03"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Could you stay focused if you never got tired?",
+              "claims": [
+                "D05"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "Nobody knows.",
+              "claims": [
+                "D05"
+              ],
+              "role": "UNKNOWN"
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "dur": 9.0,
+          "frame": "imagined",
+          "story_time": "Y1",
+          "emotional": true,
+          "picture": "Mum signs BLACK 24's night-shift contract. Cut to dinner: her chair is empty; Leo and Mia eat without talking.",
+          "sound": "A pen scratch; the music drops out — room tone and cutlery only.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Mum takes BLACK 24's night shift.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "It pays more.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "Enough to start Mia's university fund.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "SETUP"
+            },
+            {
+              "who": "N",
+              "text": "Her chair at dinner stays empty.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "SETUP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "title": "A City That Never Sleeps",
+      "window": [
+        "3:20",
+        "4:20"
+      ],
+      "music": "Urban pulse; filtered under the grid graphic; it cuts to a hush on the dark-sky side.",
+      "beats": [
+        {
+          "id": "5.1",
+          "dur": 8.0,
+          "frame": "imagined",
+          "story_time": "Y1 00:00",
+          "picture": "Midnight: Mum, BLACK 24 lanyard on, squeezed into a packed train; the platform clock reads 00:00.",
+          "sound": "Train doors, crowd murmur, the urban pulse.",
+          "onscreen": [
+            {
+              "text": "00:00 (platform clock)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Mum's train to work leaves at midnight.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "It's packed.",
+              "claims": [
+                "SP-01"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "New York's subway already runs all night.",
+              "claims": [
+                "H01"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Now many cities try.",
+              "claims": [
+                "SP-05"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "dur": 10.5,
+          "frame": "imagined",
+          "story_time": "Y1",
+          "picture": "Engineers with head-torches on empty tracks at night; then the same tracks with trains thundering past the crew.",
+          "sound": "Echoing tunnel, tools clinking; then a train roars through.",
+          "onscreen": [
+            {
+              "text": "Night Tube: Fridays and Saturdays only",
+              "kind": "source",
+              "claims": [
+                "H08"
+              ]
+            },
+            {
+              "text": "Transport for London",
+              "kind": "source",
+              "claims": [
+                "H08"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "But even today, London keeps its all-night Tube to weekends.",
+              "claims": [
+                "H08"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Weeknights are for repairs.",
+              "claims": [
+                "H08"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "So in a city that never stops… when do you fix it?",
+              "claims": [
+                "SP-06"
+              ],
+              "role": "QUESTION"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "dur": 4.0,
+          "frame": "imagined",
+          "story_time": "Y1",
+          "picture": "Montage: a diner at 3 a.m., an operating theatre at 4 a.m., a concert at 5 a.m. — each with a wall clock.",
+          "sound": "Diner bell; monitor beep; a crowd roar.",
+          "onscreen": [
+            {
+              "text": "3:00 · 4:00 · 5:00 (wall clocks)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Dinner at three.",
+              "claims": [
+                "SP-01"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Surgery at four.",
+              "claims": [
+                "SP-01"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Concerts at five.",
+              "claims": [
+                "SP-01"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "5.4",
+          "dur": 6.0,
+          "frame": "imagined",
+          "story_time": "Y1",
+          "picture": "A school timetable with three sessions. Mia (9) arrives at 8 a.m.; Leo (16) at 9 p.m.",
+          "sound": "A school bell, twice — morning, then night.",
+          "onscreen": [
+            {
+              "text": "08:00 · 16:00 · 21:00 (timetable)",
+              "kind": "diegetic",
+              "claims": [
+                "SP-07"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Schools split into shifts.",
+              "claims": [
+                "SP-07"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Mia's starts at eight a.m.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "Yours… at nine p.m.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            }
+          ]
+        },
+        {
+          "id": "5.5",
+          "dur": 12.0,
+          "frame": "imagined",
+          "story_time": "Y1",
+          "picture": "Grid graphic: a lighting load line climbs through the night while the solar line sits at zero; batteries, wind, dams and gas plants slide in to fill the gap.",
+          "sound": "Electrical hum rising; a power-down blip as the solar line flattens.",
+          "onscreen": [
+            {
+              "text": "≈ 8 % OF WORLD ELECTRICITY",
+              "kind": "card",
+              "claims": [
+                "H02"
+              ]
+            },
+            {
+              "text": "IEA · 2024 data · homes, offices, streets",
+              "kind": "source",
+              "claims": [
+                "H02"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Lighting in homes, offices and streets already takes an estimated eight percent of the world's electricity.",
+              "claims": [
+                "H02"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Keep it on all night, and demand climbs.",
+              "claims": [
+                "SP-08"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Just when solar panels produce nothing.",
+              "claims": [
+                "SP-08",
+                "H03"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "5.6",
+          "dur": 12.5,
+          "frame": "imagined",
+          "story_time": "Y1–Y10",
+          "picture": "Stars fading out over the city; birds singing under streetlights; turtle hatchlings crawling toward a promenade's lights instead of the sea.",
+          "sound": "A thin high tone as the stars fade; birdsong at night; waves.",
+          "onscreen": [
+            {
+              "text": "Falchi et al., 2016",
+              "kind": "source",
+              "claims": [
+                "H04"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Even now, more than four in five people live under light-polluted skies.",
+              "claims": [
+                "H04"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Here, the stars fade faster.",
+              "claims": [
+                "SP-09"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Birds sing at the wrong hour.",
+              "claims": [
+                "SP-09",
+                "H06"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Turtle hatchlings lose their way to the sea.",
+              "claims": [
+                "SP-09",
+                "H06"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "5.7",
+          "dur": 14.5,
+          "frame": "imagined",
+          "story_time": "Y1",
+          "picture": "Split screen: a megacity's glare beside a small town under a sky full of stars; the town's streetlights dim on a timer.",
+          "sound": "The urban cue cuts to a hush on the dark side: crickets, wind.",
+          "onscreen": [
+            {
+              "text": "Flagstaff, Arizona · since 2001",
+              "kind": "source",
+              "claims": [
+                "H07"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "But not every place switches on.",
+              "claims": [
+                "SP-05"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Some towns follow Flagstaff, Arizona — the world's first International Dark Sky City.",
+              "claims": [
+                "H07",
+                "SP-05"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "They keep their nights dark.",
+              "claims": [
+                "SP-05"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "On purpose.",
+              "claims": [
+                "SP-05"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Cities adapted in a year.",
+              "claims": [
+                "SP-05"
+              ],
+              "role": "TRANSITION"
+            },
+            {
+              "who": "N",
+              "text": "People took longer.",
+              "claims": [
+                "SP-10"
+              ],
+              "role": "TRANSITION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "title": "The Hidden Cost",
+      "window": [
+        "4:20",
+        "5:30"
+      ],
+      "music": "A warm reprise of the breakfast theme, thinning as the schedules split; sparse piano; near-silence for the signature line.",
+      "beats": [
+        {
+          "id": "6.1",
+          "dur": 5.0,
+          "frame": "imagined",
+          "story_time": "Y1",
+          "picture": "Warm amber vignettes of Leo's family in the first weeks: a midnight dinner with all three at the table; a 4 a.m. walk together; Mum reading to Mia.",
+          "sound": "The warm reprise.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Do you spend more time with your family?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "At first, you do.",
+              "claims": [
+                "SP-20"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "dur": 12.0,
+          "frame": "imagined",
+          "story_time": "Y1–Y2",
+          "picture": "A 24-hour clock with three coloured arcs that barely overlap. Then a small inner clock in each family member's silhouette drifts out of step under lights that never switch off.",
+          "sound": "The reprise thins to one line; three clock ticks slip out of sync.",
+          "onscreen": [
+            {
+              "text": "MUM · NIGHTS",
+              "kind": "label",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "LEO · NIGHT SCHOOL",
+              "kind": "label",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "MIA · MORNINGS",
+              "kind": "label",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Then the schedules split.",
+              "claims": [
+                "SP-10"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "You're all awake twenty-four hours a day… and almost never together.",
+              "claims": [
+                "SP-10"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Nobody says goodnight anymore.",
+              "claims": [
+                "SP-18"
+              ],
+              "role": "SETUP"
+            },
+            {
+              "who": "N",
+              "text": "Even your body clocks drift apart.",
+              "claims": [
+                "SP-17"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "The lights never go off.",
+              "claims": [
+                "SP-17"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "dur": 7.0,
+          "frame": "imagined",
+          "story_time": "Y3",
+          "picture": "Leo, 18, gets a BLACK 24 lanyard. He's quick and good at it: three screens, a headset, a nod from Mr. Black.",
+          "sound": "Office hum; a badge beep.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "At eighteen, you join BLACK 24 too.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "Nights.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "You're good at it.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "You're always available.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "SETUP"
+            }
+          ]
+        },
+        {
+          "id": "6.4",
+          "dur": 3.5,
+          "frame": "imagined",
+          "story_time": "Y3",
+          "emotional": true,
+          "picture": "Mia (11) at his door, holding the notebook open at the drawing. Leo, on a call, doesn't turn round. INSERT — caption sighting 2 of 3, held ≥ 2.0 s: WHEN LEO / HAS TIME, and her pencil adds the first tally mark beneath.",
+          "sound": "Call chatter; one pencil stroke, loud in the quiet.",
+          "onscreen": [
+            {
+              "text": "WHEN LEO / HAS TIME + 1 tally mark",
+              "kind": "caption",
+              "claims": [
+                "STORY"
+              ],
+              "spec": "notebook spec — sighting 2 of 3"
+            }
+          ],
+          "lines": [
+            {
+              "who": "LEO",
+              "text": "Next week.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "SETUP"
+            }
+          ]
+        },
+        {
+          "id": "6.5",
+          "dur": 13.0,
+          "frame": "imagined",
+          "story_time": "Y3–Y10 03:00",
+          "picture": "Leo's night off: 3 a.m., lying on his bed with a book. His phone lights up — MR. BLACK: “You're up, right?” He puts the book down and answers.",
+          "sound": "Phone buzz; a sigh; a keyboard.",
+          "onscreen": [
+            {
+              "text": "MR. BLACK: You're up, right?",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "France 2017 · Australia 2024",
+              "kind": "source",
+              "claims": [
+                "G06"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Sleep was the one excuse nobody could argue with.",
+              "claims": [
+                "SP-11"
+              ],
+              "role": "THEME"
+            },
+            {
+              "who": "N",
+              "text": "Now nobody's ever asleep.",
+              "claims": [
+                "HR1"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "France and Australia already give workers a right to disconnect.",
+              "claims": [
+                "G06"
+              ],
+              "role": "FACT"
+            },
+            {
+              "who": "N",
+              "text": "Work was leaking into our nights long before this.",
+              "claims": [
+                "G06"
+              ],
+              "role": "FACT"
+            }
+          ]
+        },
+        {
+          "id": "6.6",
+          "dur": 16.0,
+          "frame": "imagined",
+          "story_time": "Y3–Y10",
+          "picture": "An inverted-U curve of free time against well-being. Past about five hours it splits: one branch stays level (someone learning the cello; someone caring for a parent), the other dips (someone scrolling at 4 a.m.).",
+          "sound": "Sparse piano; the tick of a scrolling phone.",
+          "onscreen": [
+            {
+              "text": "~2 h · ~5 h",
+              "kind": "label",
+              "claims": [
+                "G04"
+              ]
+            },
+            {
+              "text": "Sharif et al., 2021",
+              "kind": "source",
+              "claims": [
+                "G04"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Would more time make you happier?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "Research suggests free time helps… up to about two hours a day.",
+              "claims": [
+                "G04"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Past about five, well-being can actually dip.",
+              "claims": [
+                "G04"
+              ],
+              "role": "EVIDENCE",
+              "review": "it marks the surprising direction S40 found (more free time, lower well-being); it does not inflate the size"
+            },
+            {
+              "who": "N",
+              "text": "Unless that time goes into something productive.",
+              "claims": [
+                "G04"
+              ],
+              "role": "EVIDENCE"
+            },
+            {
+              "who": "N",
+              "text": "Some people flourish.",
+              "claims": [
+                "SP-12"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Some just drift.",
+              "claims": [
+                "SP-12"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "6.7",
+          "dur": 6.0,
+          "frame": "imagined",
+          "story_time": "Y3–Y10",
+          "emotional": true,
+          "picture": "Mia turns the pages: one drawing, then blank page after blank page.",
+          "sound": "Page turns, nothing else.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Mia's notebook stays blank.",
+              "claims": [
+                "HR5",
+                "SP-13"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "And science still hasn't settled what dreams were for.",
+              "claims": [
+                "D03"
+              ],
+              "role": "UNKNOWN"
+            }
+          ]
+        },
+        {
+          "id": "6.8",
+          "dur": 4.0,
+          "frame": "imagined",
+          "story_time": null,
+          "emotional": true,
+          "picture": "The signature line on screen, white on near-black, each half appearing as it is spoken.",
+          "sound": "Near-silence; one low piano note.",
+          "onscreen": [
+            {
+              "text": "WE DIDN'T LOSE SLEEP. / WE LOST THE NIGHT.",
+              "kind": "title",
+              "claims": [
+                "FRAME"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "We didn't lose sleep.",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "THEME"
+            },
+            {
+              "who": "N",
+              "text": "We lost the night.",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "THEME"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "title": "Ten Years Later",
+      "window": [
+        "5:30",
+        "6:40"
+      ],
+      "music": "A wide cinematic cue; it drops to intimate piano at Leo's desk; the clock's ticking returns at 'three a.m.'.",
+      "beats": [
+        {
+          "id": "7.1",
+          "dur": 4.0,
+          "frame": "imagined",
+          "story_time": "Y10",
+          "picture": "The city at 3 a.m., brighter and denser than in chapter 5.",
+          "sound": "A wide swell.",
+          "onscreen": [
+            {
+              "text": "TEN YEARS LATER",
+              "kind": "label",
+              "claims": [
+                "FRAME"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Imagine it's ten years on.",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "TRANSITION"
+            },
+            {
+              "who": "N",
+              "text": "You're twenty-five.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "dur": 4.0,
+          "frame": "imagined",
+          "story_time": "Y10",
+          "picture": "Earth from orbit; the night side's city lights brighter and wider than in the chapter 1 shot.",
+          "sound": "A low orbital drone.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "From space, Earth's night side glows brighter than ever.",
+              "claims": [
+                "SP-09"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "dur": 6.5,
+          "frame": "imagined",
+          "story_time": "Y10 03:00",
+          "picture": "The giant 3:00 clock over a jammed street — the hook's composition again.",
+          "sound": "Rush-hour traffic at full volume.",
+          "onscreen": [
+            {
+              "text": "3:00 (the skyline clock)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Three a.m. is just another rush hour.",
+              "claims": [
+                "SP-15"
+              ],
+              "role": "CALLBACK"
+            },
+            {
+              "who": "N",
+              "text": "Days don't end anymore… they change shifts.",
+              "claims": [
+                "SP-15"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "7.4",
+          "dur": 4.5,
+          "frame": "imagined",
+          "story_time": "Y10",
+          "picture": "Trains run nose to tail; small robots repair a tunnel wall between them.",
+          "sound": "Rail rhythm; servo whirs.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Trains never stop.",
+              "claims": [
+                "SP-06"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Robots fix the tunnels between them.",
+              "claims": [
+                "SP-06"
+              ],
+              "role": "PAYOFF"
+            }
+          ]
+        },
+        {
+          "id": "7.5",
+          "dur": 6.0,
+          "frame": "imagined",
+          "story_time": "Y10",
+          "picture": "BLACK 24 logos everywhere — on trucks, towers and uniforms.",
+          "sound": "The cue's bass hits.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "The economy is bigger.",
+              "claims": [
+                "SP-21"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "But for many people, the working week crept up… not down.",
+              "claims": [
+                "SP-11"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "7.6",
+          "dur": 10.0,
+          "frame": "imagined",
+          "story_time": "Y10",
+          "picture": "A coach of tourists in a dark-sky town, every face turned up to the stars; then a QUIET HOURS sign on a parliament's steps.",
+          "sound": "Crickets and a hushed crowd; then a gavel.",
+          "onscreen": [
+            {
+              "text": "QUIET HOURS (sign)",
+              "kind": "diegetic",
+              "claims": [
+                "SP-11"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Darkness is a luxury now.",
+              "claims": [
+                "SP-14"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "People travel just to see stars.",
+              "claims": [
+                "SP-14"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Some countries pass night laws.",
+              "claims": [
+                "SP-11"
+              ],
+              "role": "CONSEQUENCE"
+            },
+            {
+              "who": "N",
+              "text": "Hours when nobody can be called to work.",
+              "claims": [
+                "SP-11"
+              ],
+              "role": "CONSEQUENCE"
+            }
+          ]
+        },
+        {
+          "id": "7.7",
+          "dur": 9.0,
+          "frame": "imagined",
+          "story_time": "Y10 03:00",
+          "picture": "A classroom at 3 a.m. A teacher describes dreams like ancient history; a child's hand goes up — a speech bubble on screen, not voiced: “What did it feel like?”",
+          "sound": "Classroom murmur, then quiet.",
+          "onscreen": [
+            {
+              "text": "What did it feel like?",
+              "kind": "speech bubble",
+              "claims": [
+                "SP-13"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "The biggest change of all?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "QUESTION"
+            },
+            {
+              "who": "N",
+              "text": "A whole generation of children… who have never had a single dream.",
+              "claims": [
+                "HR5"
+              ],
+              "role": "PAYOFF"
+            }
+          ]
+        },
+        {
+          "id": "7.8a",
+          "dur": 6.0,
+          "frame": "imagined",
+          "story_time": "Y10-05-12 03:02",
+          "picture": "Label: 12 MAY · 3:02 A.M. Leo at a BLACK 24 control desk. His phone lights up — MESSAGE INSERT, held ≥ 2.5 s in a gap in the narration: date header 12 MAY, time 03:02; MIA: “I GOT IN!! 🎓 Hill before I go?” He sends 👍 without looking up.",
+          "sound": "Control-room hum; a message chime; one thumb tap.",
+          "onscreen": [
+            {
+              "text": "12 MAY · 3:02 A.M.",
+              "kind": "label",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "12 MAY · 03:02",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ],
+              "spec": "≥ 54 px; no narration over it"
+            },
+            {
+              "text": "MIA: I GOT IN!! 🎓 Hill before I go?",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "👍",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "And you?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "TRANSITION"
+            },
+            {
+              "who": "N",
+              "text": "You run night operations at BLACK 24.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY",
+              "timing": "spoken before the message appears"
+            }
+          ]
+        },
+        {
+          "id": "7.8b",
+          "dur": 4.0,
+          "frame": "imagined",
+          "story_time": "Y10-05-12 03:10",
+          "emotional": true,
+          "picture": "Later that same night: Mum in the warehouse, older, still on nights. On her phone, a photo of Mia's acceptance letter; she smiles.",
+          "sound": "Warehouse hum; the piano.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Mum's nights paid for Mia's place at university.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "PAYOFF"
+            }
+          ]
+        },
+        {
+          "id": "7.8c",
+          "dur": 6.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-12 20:00",
+          "emotional": true,
+          "picture": "Label: 12 SEPTEMBER · 8 P.M. Mia (18) packing. The letter on her bed: NEUROSCIENCE · TERM STARTS 14 SEPTEMBER. Her ticket: 13 SEP · 07:00. The notebook goes into her bag last.",
+          "sound": "A zip; tape; a quiet piano phrase.",
+          "onscreen": [
+            {
+              "text": "12 SEPTEMBER · 8 P.M.",
+              "kind": "label",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "NEUROSCIENCE · TERM STARTS 14 SEPTEMBER",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "13 SEP · 07:00",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "She leaves tomorrow.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "STORY"
+            },
+            {
+              "who": "N",
+              "text": "To study the brain… and find out what dreams were for.",
+              "claims": [
+                "STORY",
+                "D03"
+              ],
+              "role": "SETUP"
+            }
+          ]
+        },
+        {
+          "id": "7.8d",
+          "dur": 3.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:00",
+          "picture": "Label: 13 SEPTEMBER · 3 A.M. — midnight has passed, so her train is now this morning. The skyline clock's minute hand reaches 12: 3:00. Match cut to the office window from the hook.",
+          "sound": "The ticking returns, then stops on the hour.",
+          "onscreen": [
+            {
+              "text": "13 SEPTEMBER · 3 A.M.",
+              "kind": "label",
+              "claims": [
+                "STORY"
+              ]
+            },
+            {
+              "text": "3:00 (the skyline clock)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Which brings us back to three a.m.",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "TRANSITION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "title": "The Final Question",
+      "window": [
+        "6:40",
+        "7:30"
+      ],
+      "music": "A quiet pad in the office; music only for the run; the stars cue swells gently; 1.5 s of silence before the reality line; the last line resolves into silence before the mark. No outro.",
+      "beats": [
+        {
+          "id": "8.1",
+          "dur": 3.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:00",
+          "picture": "3:00 a.m. — the hook's shot, now understood: Leo at his desk by the office window, the playground below.",
+          "sound": "The playground behind glass, as in 1.2.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "You're at your desk, like every night.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "CALLBACK"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "dur": 7.5,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:01",
+          "emotional": true,
+          "picture": "Mia (18) arrives at his desk from the glass lobby, backpack on, holding the old notebook.",
+          "sound": "Lobby doors; office hum; the music very low.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "MIA",
+              "text": "My train's at seven.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "MIA",
+              "text": "Come to the hill with me.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "MIA",
+              "text": "Just tonight.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "LEO",
+              "text": "I can't.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "LEO",
+              "text": "I'm on shift.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "dur": 6.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:02",
+          "emotional": true,
+          "picture": "She sets the notebook on his desk and goes. He flips it open — blank pages — then back, back, to the last drawing. INSERT — caption sighting 3 of 3, held ≥ 2.0 s: WHEN LEO / HAS TIME above three groups of five tally marks. He looks up at the analog skyline clock: just past three (the minute hand two minutes past 12).",
+          "sound": "Footsteps going; page flips; silence on the insert.",
+          "onscreen": [
+            {
+              "text": "WHEN LEO / HAS TIME + 15 tally marks (3 × 5)",
+              "kind": "caption",
+              "claims": [
+                "STORY"
+              ],
+              "spec": "notebook spec — sighting 3 of 3"
+            },
+            {
+              "text": "3:02 (analog skyline clock)",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "LEO",
+              "text": "When Leo has time.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "PAYOFF",
+              "timing": "barely aloud, reading the page"
+            }
+          ]
+        },
+        {
+          "id": "8.4",
+          "dur": 2.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:03",
+          "emotional": true,
+          "picture": "He stands and grabs the notebook; his chair spins empty — an echo of Mum's chair. He runs.",
+          "sound": "Music only: the run cue begins; a chair creak.",
+          "onscreen": [],
+          "lines": []
+        },
+        {
+          "id": "8.5",
+          "dur": 4.5,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 03:15",
+          "emotional": true,
+          "picture": "Leo's car leaves the glow. His phone lights up — MR. BLACK: “Where are you?” — and he switches it off. Past the last streetlight, stars appear.",
+          "sound": "Engine; a buzz cut short; the city noise falls away.",
+          "onscreen": [
+            {
+              "text": "MR. BLACK: Where are you?",
+              "kind": "diegetic",
+              "claims": [
+                "STORY"
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Out past the last streetlight, the stars come back.",
+              "claims": [
+                "H04",
+                "SP-09"
+              ],
+              "role": "PAYOFF"
+            }
+          ]
+        },
+        {
+          "id": "8.6",
+          "dur": 2.5,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 04:00",
+          "emotional": true,
+          "picture": "The hill. Mia holds the drawing up against the real sky: the same hill, the same stars. No words.",
+          "sound": "Wind in the grass; the stars cue swells.",
+          "onscreen": [],
+          "lines": []
+        },
+        {
+          "id": "8.7",
+          "dur": 7.5,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 04:05",
+          "emotional": true,
+          "picture": "They lie in the grass, awake, under the stars. In a cut-away of each silhouette, the small clock from chapter 2 — and, for once, no light reaching it. (No melatonin glow: after years of nights, Leo's clock may have shifted.)",
+          "sound": "Crickets; the music holds one chord.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Up here, no light tells your body clock it's day.",
+              "claims": [
+                "B05",
+                "HR4"
+              ],
+              "role": "PAYOFF"
+            },
+            {
+              "who": "N",
+              "text": "It isn't sleep.",
+              "claims": [
+                "HR5"
+              ],
+              "role": "RULE"
+            },
+            {
+              "who": "N",
+              "text": "It's just night.",
+              "claims": [
+                "HR4"
+              ],
+              "role": "THEME"
+            }
+          ]
+        },
+        {
+          "id": "8.8",
+          "dur": 4.0,
+          "frame": "imagined",
+          "story_time": "Y10-09-13 04:10",
+          "emotional": true,
+          "picture": "Mia, eyes closed, a half-smile. Leo smiles.",
+          "sound": "Crickets.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "MIA",
+              "text": "Don't fall asleep on me.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "DIALOGUE"
+            },
+            {
+              "who": "LEO",
+              "text": "Goodnight, Mia.",
+              "claims": [
+                "STORY"
+              ],
+              "role": "PAYOFF"
+            }
+          ]
+        },
+        {
+          "id": "8.9",
+          "dur": 10.5,
+          "frame": "real",
+          "story_time": null,
+          "emotional": true,
+          "picture": "1.5 s of stillness; then the camera rises from the two of them into the stars.",
+          "sound": "1.5 s of silence, then a soft pad.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "Back in the real world, sleep experts recommend adults get at least seven hours a night.",
+              "claims": [
+                "A05"
+              ],
+              "role": "LESSON",
+              "timing": "starts after 1.5 s of silence"
+            },
+            {
+              "who": "N",
+              "text": "Scientists know a lot about why… but not everything.",
+              "claims": [
+                "D01"
+              ],
+              "role": "UNKNOWN"
+            }
+          ]
+        },
+        {
+          "id": "8.10",
+          "dur": 8.0,
+          "frame": "rules",
+          "story_time": null,
+          "emotional": true,
+          "picture": "Hold on the stars.",
+          "sound": "The music resolves into silence under the last words.",
+          "onscreen": [],
+          "lines": [
+            {
+              "who": "N",
+              "text": "If you never had to sleep again… what would you do with the life you got back?",
+              "claims": [
+                "FRAME"
+              ],
+              "role": "FINAL"
+            }
+          ]
+        },
+        {
+          "id": "8.11",
+          "dur": 1.5,
+          "frame": "title",
+          "story_time": null,
+          "picture": "The EXIT CODE mark. No outro.",
+          "sound": "Silence, then the mark's sound.",
+          "onscreen": [
+            {
+              "text": "EXIT CODE",
+              "kind": "title",
+              "claims": [
+                "FRAME"
+              ]
+            }
+          ],
+          "lines": []
+        }
+      ]
+    }
+  ],
+  "fact_bank_notes": {
+    "G05": "Listed in the Lock v4 FACT BANK by mistake: it hasn't been narrated since v3 (it now only grounds SP-10). Errata added to the Story Lock.",
+    "B02": "Still not narrated: the build-up claim (adenosine as one of the signals behind sleep pressure) would need a hedge and more time. Caffeine's effect is now explained with B03 alone: 'Coffee blocks a sleep signal called adenosine. The hourglass keeps filling anyway.'",
+    "B07": "Not narrated as research; its sanctioned wording 'your body's signal of night' is used once, in chapter 3, resting on B06.",
+    "B08": "Not narrated; governs the chapter 3 picture (the glow thins, never to zero) and the partial verb 'fades'.",
+    "HR6": "Background rule, shown rather than said: Mia lying in bed (3.4); lying on the hill (8.7).",
+    "HR7": "Background rule; implicit throughout.",
+    "SP-04": "Withdrawn in v2 (depended on CALC-04).",
+    "SP-16": "Optional; not used (Lock decision 4 — no room).",
+    "D06": "Not narrated, by design (ledger).",
+    "B04": "Shown, not said: the picture draws the master clock deep in the brain; the narration says 'a body clock'.",
+    "B06": "Narrated in chapter 3 only (first sleepless night, every clock still normal). Removed from chapter 8, where Leo's clock may have shifted after years of nights."
+  },
+  "changes": [
+    {
+      "beat": "7.8a",
+      "kind": "timeline",
+      "point": "1",
+      "from": "(no label; the date was only in the phone's header)",
+      "to": "Label 12 MAY · 3:02 A.M.",
+      "why": "The chapter's dates are now explicit on screen, in the label band, not only inside the phone."
+    },
+    {
+      "beat": "7.8b",
+      "kind": "timeline",
+      "point": "1",
+      "from": "Mum in the warehouse — undated, 'Year 10'.",
+      "to": "Later that same night (12 May, ≈ 03:10): she looks at the acceptance photo.",
+      "why": "Gives the scene an exact date, keeps chapter 7 in order (May → September), and ties Mum's payoff to the night Mia got in."
+    },
+    {
+      "beat": "7.8c",
+      "kind": "timeline",
+      "point": "1",
+      "from": "(no label; the viewer had to infer 12 September from 'tomorrow' and the ticket)",
+      "to": "Label 12 SEPTEMBER · 8 P.M.",
+      "why": "'She leaves tomorrow' is spoken over this scene, so its date has to be visible: 12 September → train 13 September 07:00."
+    },
+    {
+      "beat": "7.8d",
+      "kind": "timeline",
+      "point": "1",
+      "from": "(no label)",
+      "to": "Label 13 SEPTEMBER · 3 A.M.",
+      "why": "Shows that midnight has passed: 'tomorrow' has become this morning, and the train is four hours away — which is why Mia says 'My train's at seven' at 03:01."
+    },
+    {
+      "beat": "1.5",
+      "kind": "science",
+      "point": "2a",
+      "from": "Not sick.",
+      "to": "No harm done.",
+      "why": "HR3 removes the harm of going without sleep, not illness in general. 'No harm done' says exactly that, and 2.6 spells it out ('Going without sleep never hurts')."
+    },
+    {
+      "beat": "2.6",
+      "kind": "science",
+      "point": "2a",
+      "from": "Card: 2 · NO HARM",
+      "to": "Card: 2 · NO HARM FROM NOT SLEEPING",
+      "why": "The same scope on screen."
+    },
+    {
+      "beat": "2.4",
+      "kind": "science",
+      "point": "2b",
+      "from": "Coffee masks it.",
+      "to": "Coffee blocks a sleep signal called adenosine. / The hourglass keeps filling anyway.",
+      "why": "Says what caffeine actually does — blocks adenosine's signal (B03) — and what it doesn't: the pressure keeps building. No receptor jargon. The picture now shows the cup blocking the signal line while the sand keeps falling."
+    },
+    {
+      "beat": "8.7",
+      "kind": "science",
+      "point": "2c",
+      "from": "No light up here holds back your body's signal of night.",
+      "to": "Up here, no light tells your body clock it's day.",
+      "why": "After seven years of night work, Leo's clock may have shifted (B09, SP-17), so his melatonin at 4 a.m. is unknown. The new line describes the sky — no light cue telling the clock it's day (B05) — not his hormones. It also pays off ch 6, 'The lights never go off'. The melatonin glow is removed from the picture."
+    },
+    {
+      "beat": "8.9",
+      "kind": "science",
+      "point": "2d",
+      "from": "And science still can't fully explain why.",
+      "to": "Scientists know a lot about why… but not everything.",
+      "why": "Matches D01 exactly — science doesn't yet agree on everything sleep is for — without suggesting it knows nothing. Chapter 2 already showed some of what it knows."
+    },
+    {
+      "beat": "6.7",
+      "kind": "science",
+      "point": "2d (same issue)",
+      "from": "And science still can't say what dreams were for.",
+      "to": "And science still hasn't settled what dreams were for.",
+      "why": "The same correction applied to dreams: there are hypotheses but no agreement (D03). 'Can't say' sounded like no knowledge at all."
+    },
+    {
+      "beat": "2.6",
+      "kind": "science",
+      "point": "2e",
+      "from": "And with no sleep… nobody dreams.",
+      "to": "And with no sleep… the dreams go too. / Daydreams stay.",
+      "why": "The rule (HR5) removes the dreams that come with sleep, not waking imagination. Card line 4 now reads 'NO DREAMS — a rule we chose', with 'daydreams stay' beneath it. Ledger HR5 states the scope."
+    },
+    {
+      "beat": "3.6",
+      "kind": "numbers",
+      "point": "3",
+      "from": "Eight billion people did the same maths.",
+      "to": "Everyone on Earth did the same maths.",
+      "why": "Moment zero lies in the future, so today's population figure isn't supported there. 'Everyone on Earth' keeps the scale with no figure, and echoes the hook's 'almost everyone on Earth'. (A first draft, 'Billions of people…', put 'billions' twice in six seconds next to 4.1.)"
+    },
+    {
+      "beat": "4.1",
+      "kind": "numbers",
+      "point": "3 (same issue)",
+      "from": "Roughly the waking hours of four billion extra people. · Footnote: assumes ~8 h of sleep · 7–9 h gives 3.4–4.9 billion",
+      "to": "The waking hours of billions of extra people. · Footnote: waking hours only · assumes ~8 h of sleep · 7–9 h gives +41 % to +60 %",
+      "why": "'Four billion' was computed from 2024's 8.2 billion people (CALC-03), so it has the same problem as 'eight billion'. 'About half' depends only on hours of sleep. The footnote now carries no population figure."
+    },
+    {
+      "beat": "2.2",
+      "kind": "pacing",
+      "point": "4",
+      "from": "…six hours or less had about four times the odds…",
+      "to": "…six hours or less… had about four times the odds…",
+      "why": "Longest-sentence review: the study and its odds ratio must stay in one sentence. A pause after the subject gives the voice a breath instead of a split."
+    },
+    {
+      "beat": "4.4",
+      "kind": "pacing",
+      "point": "4",
+      "from": "…cost the US economy up to four hundred and eleven billion dollars a year.",
+      "to": "…cost the US economy… up to four hundred and eleven billion dollars a year.",
+      "why": "Same review: RAND, its year and the figure stay in one sentence; the pause lands just before the number."
+    },
+    {
+      "beat": "4.5",
+      "kind": "pacing",
+      "point": "4",
+      "from": "A study of First World War munitions factories found each hour…",
+      "to": "A study of First World War munitions factories found… each hour…",
+      "why": "Same review: the source and the finding stay together; one pause."
+    },
+    {
+      "beat": "4.5",
+      "kind": "second person",
+      "point": "4",
+      "from": "Could people who never tire stay focused?",
+      "to": "Could you stay focused if you never got tired?",
+      "why": "Turns the unknown (D05) into the viewer's own question — in this world, you never do get tired."
+    },
+    {
+      "beat": "6.1",
+      "kind": "second person",
+      "point": "4",
+      "from": "Do people spend more time together? / At first, they do.",
+      "to": "Do you spend more time with your family? / At first, you do.",
+      "why": "The vignettes and the next beat's three arcs (Mum, Leo, Mia) are Leo's family, so second person fits; the chapter widens again at 'Sleep was the one excuse…'."
+    },
+    {
+      "beat": "6.2",
+      "kind": "second person",
+      "point": "4",
+      "from": "Awake twenty-four hours a day… and almost never together.",
+      "to": "You're all awake twenty-four hours a day… and almost never together.",
+      "why": "Says whose schedules split: the family's."
+    },
+    {
+      "beat": "7.8a",
+      "kind": "transition",
+      "point": "5",
+      "from": "You run night operations at BLACK 24.",
+      "to": "And you? / You run night operations at BLACK 24.",
+      "why": "Read-through: the cut from the classroom (civilisation) to Leo's desk had no bridge. 'And you?' turns the chapter back to the hero in two words."
+    },
+    {
+      "beat": "7.7",
+      "kind": "repetition",
+      "point": "5",
+      "from": "And the biggest change of all?",
+      "to": "The biggest change of all?",
+      "why": "Read-through: with 'And you?' next, two 'And…?' questions would sit back to back."
+    },
+    {
+      "beat": "3.5",
+      "kind": "repetition",
+      "point": "5",
+      "from": "Your body just knows it's night.",
+      "to": "Your body clock just knows it's night.",
+      "why": "Read-through: 'Your body's signal of night… Your body just knows…' repeated 'your body' two lines apart. 'Body clock' names what knows it's night (HR4), and is the term used in 2.4, 2.6 and 8.7."
+    },
+    {
+      "beat": "5.6",
+      "kind": "repetition",
+      "point": "5",
+      "from": "Over eighty percent of people already live under light-polluted skies.",
+      "to": "Even now, more than four in five people live under light-polluted skies.",
+      "why": "Read-through: this was the third 'already' in about 40 s (5.1, 5.5, 5.6), so 'Even now' keeps the real-world marker instead. 'Over eighty percent' also came ten seconds after 'eight percent' (5.5) — easy to mishear. 'More than four in five' is the same claim (H04: more than 80 %)."
+    },
+    {
+      "beat": "6.2",
+      "kind": "repetition",
+      "point": "5",
+      "from": "Your body clocks drift apart too.",
+      "to": "Even your body clocks drift apart.",
+      "why": "Read-through: 'too' ended two sentences six seconds apart ('…drift apart too.' / '…join BLACK 24 too.')."
+    },
+    {
+      "beat": "2.3",
+      "kind": "time",
+      "point": "budget",
+      "from": "Scientists still disagree.",
+      "to": "(cut)",
+      "why": "Makes room for the caffeine and daydream lines inside chapter 2's ±15 % window. The YES/NO mouse-study cards already show the disagreement, and 'Some of it, nobody fully understands' still states it."
+    },
+    {
+      "beat": "2.4",
+      "kind": "time",
+      "point": "budget",
+      "from": "And a clock deep in your brain, reset every day, mainly by light.",
+      "to": "And a body clock, reset every day, mainly by light.",
+      "why": "Saves three words for chapter 2; the picture shows where the clock is (B04), and 'body clock' is the term used from here on."
+    },
+    {
+      "beat": "2.5",
+      "kind": "time",
+      "point": "budget",
+      "from": "How? Nobody knows. That's the thought experiment.",
+      "to": "How? That's the thought experiment.",
+      "why": "Saves two words; still says plainly that no mechanism is offered (HR8)."
+    },
+    {
+      "beat": "2.1–2.6, 4.1, 4.5, 5.6, 8.9",
+      "kind": "timing",
+      "point": "budget",
+      "from": "2.1 4.5 s · 2.3 8 s · 2.4 13 s · 2.5 12 s · 2.6 9 s · 4.1 7 s · 4.5 14.5 s · 5.6 11.5 s · 8.9 10 s",
+      "to": "2.1 3.8 s · 2.3 6.4 s · 2.4 15.2 s · 2.5 11.2 s · 2.6 10.3 s · 4.1 6.5 s · 4.5 15 s · 5.6 12.5 s · 8.9 10.5 s",
+      "why": "Re-timed to the new words; every beat stays within its speaking-rate limit and every chapter within ±15 %."
+    }
+  ],
+  "changes_from_lock": "Script v1's change table (SCRIPT_v1.md) lists the 45 changes from the Story Lock draft beats to v1. Some of those v1 lines are revised again below."
+}

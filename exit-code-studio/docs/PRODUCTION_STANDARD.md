@@ -1,6 +1,6 @@
 # EXIT CODE — PRODUCTION STANDARD
 
-**Version 1.4 · 2026-11-15 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1–v1.4 tighten §5 and §6 after the producer's reviews of Story Lock v1 and v3, the final review of v2 and the script stage (LL-45–LL-70)
+**Version 1.5 · 2026-11-16 · applies from Video #2 (*What If Humans Never Needed Sleep?*) onward** · v1.1–v1.5 tighten §5 and §6 after the producer's reviews of Story Lock v1 and v3, the final review of v2, the script stage and the producer's review of script v1 (LL-45–LL-75)
 
 > WE DON'T START OVER. WE BUILD FORWARD.
 
@@ -95,6 +95,10 @@ The sequence follows the reference tutorial — script engine (session → title
 * **Effect measures (v1.2):** record the measure (odds ratio, risk ratio, hazard ratio), the confidence interval and n from the abstract — not the press release. Narrate odds as "odds". If the interval is extreme, give the direction without a number. (LL-56)
 * **Construct fidelity (v1.2):** narration keeps the source's construct (e.g. "too little sleep", not "tiredness"). No emphasis words ("alone", "just", "only") that the source doesn't support. (LL-57)
 * **Real statistics stay in their own frame (v1.3):** a real figure is always attributed (source and year) and described as the source measured it. It is never projected into the hypothetical world as if its model applied there; any consequence for the hypothetical world is a SPECULATIVE SCENARIO and is hedged. (LL-62)
+* **World-rule scope (v1.5, LL-71):** the narration of a world rule says exactly what the rule removes or keeps — "no harm from going without sleep", not "not sick"; "the dreams that come with sleep", not all imagination.
+* **Time-dependent figures (v1.5, LL-72):** a real figure that changes over time (population, prices, shares) is never stated as a fact of a scene set at another time. Use scale words, or a form of the calculation that doesn't depend on the figure.
+* **Character-state check (v1.5, LL-73):** a science line about a character must hold for that character at that point in the story — for example, a normal melatonin rhythm can't be assumed after years of night work.
+* **Partial unknowns (v1.5, LL-74):** where knowledge is partial, the unknown is worded as partial ("know a lot… but not everything", "hasn't settled"), never as total ignorance.
 * **World-rule consistency (v1.3):** science lines inside the story must agree with the world rules (e.g. a normally working body clock) and must never imply that another state (darkness, rest) substitutes for something the rules removed. (LL-63)
 
 ### 5.3 Ledger and sources
@@ -148,7 +152,7 @@ Scenes must be logical inside the world's rules (e.g. where people are at 3 a.m.
 * **Hook:** the premise is understood within 10–15 s, with one concrete image, one open question and a reason to stay.
 * **No generic outro.** The story's last line is the video's last line. (BRIEF)
 
-**Script audit** — computed by a script, never estimated, and the script first passes its own known-answer self-tests (v1.4, LL-70). Targets come from the reference engine scaled to long form; Video #1's measured values are shown for comparison. A metric outside its target is reported with its cause, never forced: splitting a sentence that carries a qualifier is not an acceptable fix.
+**Script audit** — computed by a script, never estimated, and the script first passes its own known-answer self-tests (v1.4, LL-70). Targets come from the reference engine scaled to long form; Video #1's measured values are shown for comparison. A metric outside its target is reported with its cause, never forced: splitting a sentence that carries a qualifier is not an acceptable fix. **(v1.5, LL-75)** The checker reads a claim's narrated status from the ledger's chapter column, never from free-text notes; withdrawn-wording patterns name the exact overclaim; thresholds follow the current version of this standard; near repeats of a content word in neighbouring beats are listed for review.
 
 | Metric | Target | Video #1 |
 |---|---|---|
@@ -260,6 +264,7 @@ Destructive changes · deleting or overwriting existing assets · major architec
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-11-15 | First edition, from the Video #1 audit, the reference tutorial and the Video #2 brief. |
+| 1.5 | 2026-11-16 | Producer's review of script v1. §5.2: world-rule scope, time-dependent figures, character-state check, partial unknowns. §6: checker rules (narrated status from the ledger's chapter column, exact withdrawn patterns, current thresholds, near repeats). Evidence: LL-71–LL-75. |
 | 1.4 | 2026-11-15 | Script stage (script v1). §4: the script is a JSON source of truth with generated documents. §5.3: construct re-check of ledger wording before narration. §6: the thumbnail appears at the first cut after the opening line, never mid-line (production requirement 3); draft beats carry their final qualifiers before counting; the audit tool self-tests; off-target metrics are explained, not forced. Evidence: LL-67–LL-70. |
 | 1.3 | 2026-11-15 | After the producer's narrow pass on Story Lock v3. §5.2: real statistics stay in their own frame; world-rule consistency. §6: first-three-seconds rule refined (frame 1 readable at a glance; thumbnail within 3 s); recognition test; per-beat speech rate; diegetic dates. Evidence: LL-62–LL-66. |
 | 1.2 | 2026-11-15 | After the final independent review of Story Lock v2: recency and scope, effect-measure and construct-fidelity rules (§5.2); MOMENT ZERO field, setup/payoff audit, timeline check, narration-vs-picture rule, first-three-seconds rule (§6). Evidence: LL-55–LL-61. |

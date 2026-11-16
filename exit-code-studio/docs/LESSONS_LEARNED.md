@@ -90,6 +90,11 @@ Sources of evidence:
 | LL-68 | Science | A ledger wording drifted from the study's construct | §5.3 |
 | LL-69 | Process | Accuracy qualifiers added time the plan hadn't counted | §6 |
 | LL-70 | Tools | A new checker reported its own bugs as script errors | §6 |
+| LL-71 | Science | World-rule shorthand overstated the rule | §5.2 |
+| LL-72 | Science | Today's population figure inside a future scene | §5.2 |
+| LL-73 | Science | A night-1 fact stated for a character ten years on | §5.2 |
+| LL-74 | Science | An unknown worded as total ignorance | §5.2 |
+| LL-75 | Tools | Checker: notes parsed as status, a broad pattern, a stale threshold | §6 |
 
 ---
 
@@ -665,6 +670,46 @@ Sources of evidence:
 * **Fix:** the bugs were fixed; the tool now runs 14 known-answer self-tests and refuses to report if one fails.
 * **Standard?** Yes — §6 "script audit" (v1.4).
 * **Avoid:** give every new automatic check a passing and a failing example before trusting what it reports.
+
+### LL-71 · World-rule shorthand overstated the rule
+* **What happened:** the hook said "Not tired. Not sick." The rule (HR3) is narrower — going without sleep causes no harm — so "not sick" implied immunity from all illness. The same problem appeared with "nobody dreams", which could be heard as the end of all imagination, when the rule removes only the dreams that come with sleep.
+* **Why:** short, punchy narration was checked against the rule's ID, not against the rule's exact scope.
+* **Fix:** "No harm done"; "the dreams go too. Daydreams stay."; rule card "NO HARM FROM NOT SLEEPING"; HR5's scope written into the ledger.
+* **Standard?** Yes — §5.2 "world-rule scope" (v1.5).
+* **Avoid:** for every world-rule line, ask what the rule removes and what it leaves, and make the words say exactly that.
+
+### LL-72 · Today's population figure inside a future scene
+* **What happened:** "Eight billion people did the same maths" (2024's 8.2 billion) was narrated in a scene whose moment zero lies in the future. CALC-03's "four billion extra people" was computed from the same figure.
+* **Why:** the rule that real statistics stay in their own frame (LL-62) was applied to attributed statistics, not to figures used inside the story's arithmetic.
+* **Fix:** "Everyone on Earth did the same maths"; CALC-03 is narrated as "about half" plus "billions", with a population-free footnote.
+* **Standard?** Yes — §5.2 "time-dependent figures" (v1.5).
+* **Avoid:** when a scene is set at another time, list every number in it that changes over time, and replace it with scale or a time-free form.
+
+### LL-73 · A night-1 fact stated for a character ten years on
+* **What happened:** chapter 8's "No light up here holds back your body's signal of night" implied that Leo's melatonin was rising at 4 a.m. — after seven years of night work, when his clock may have shifted (B09, SP-17).
+* **Why:** the line was checked against the physiology (B06) and the world rule (HR4), but not against the character's history inside the story.
+* **Fix:** "Up here, no light tells your body clock it's day" — a statement about the sky, not about his hormones. The melatonin glow was removed from the picture.
+* **Standard?** Yes — §5.2 "character-state check" (v1.5).
+* **Avoid:** for every science line about a character, ask whether it is still true for them at that point in the story.
+
+### LL-74 · An unknown worded as total ignorance
+* **What happened:** "Science still can't fully explain why" (ch 8) and "science still can't say what dreams were for" (ch 6) could be heard as science knowing nothing — yet chapter 2 shows some of what it knows.
+* **Why:** the UNKNOWN class's narration pattern ("nobody knows", "can't say") fits real blanks, but was applied to fields with partial knowledge.
+* **Fix:** "Scientists know a lot about why… but not everything"; "science still hasn't settled what dreams were for".
+* **Standard?** Yes — §5.2 "partial unknowns" (v1.5).
+* **Avoid:** before writing an unknown, ask whether the gap is total or partial, and word it to match.
+
+### LL-75 · Checker: notes parsed as status, a broad pattern, a stale threshold
+* **What happened:** on script v2 the checker reported 7 errors and 1 warning that were its own faults:
+  * 6 errors: a claim counted as "not narrated" whenever its ledger notes contained "not narrated" or "not used". The v4.2 notes for B03, B06 and I01 describe what is *not* narrated *about* each claim, so narrated claims were rejected.
+  * 1 error: the withdrawn-wording pattern for "scientists know [why we sleep]" matched any "scientists know", including the corrected line "Scientists know a lot about why… but not everything".
+  * 1 warning: the first-three-seconds check still used Standard v1.3's 3-second threshold after v1.4 changed it.
+
+  Display faults were also fixed: the scene clock listed rows in beat order rather than story order; a wrap-around birthday range was printed as "14 Sep – 12 Sep"; a 3 h 59 min gap was shown as "3 h". And the checker **missed** a genuine repetition — "billions" twice in six seconds — because it compared only four-word phrases; the read-through caught it.
+* **Why:** status was inferred from prose instead of a structured column; a pattern was written for the idea, not the exact overclaim; a threshold was copied, not read from the current rule.
+* **Fix:** narrated status now comes from the ledger's chapter column ("—" = not narrated, "(picture)" = picture only). The pattern now names the overclaim. The threshold follows v1.4. A near-repeat list (the same content word in neighbouring beats) is added for review; it flags the "billions" draft and, on v2, found one more genuine issue ("eight percent" then "eighty percent" ten seconds apart). Self-tests now number 24.
+* **Standard?** Yes — §6 "script audit" (v1.5).
+* **Avoid:** never infer status from free text; write patterns for the exact phrase; read thresholds from the current standard; keep reading the script aloud, because the checker can't hear.
 
 ---
 

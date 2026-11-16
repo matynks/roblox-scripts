@@ -1,0 +1,3733 @@
+{
+  "version": "v2",
+  "errors": [],
+  "warnings": [
+    "chapter 2: +14.4 % — within 2 points of the ±15 % limit",
+    "chapter 4: +14.2 % — within 2 points of the ±15 % limit",
+    "chapter 8: +14.0 % — within 2 points of the ±15 % limit",
+    "script metric: Average words per sentence = 6.22 (target 4–5 (flag above 5.5))",
+    "script metric: Sentences of 4 words or fewer = 39.1 % (target 45–55 %)",
+    "script metric: you / your per 100 words = 3.7 (target ~5–8 (documentary chapters lower))",
+    "2.2 sentence 18: 19 words — check breath and delivery → “In one study, people sleeping six hours or less… had about four times the odds of catching a cold.”",
+    "4.4 sentence 69: 23 words — check breath and delivery → “In twenty sixteen, RAND estimated that lack of sleep cost the US economy… up to four hundred and eleven billion dollars a year.”"
+  ],
+  "totals": {
+    "sentences": 174,
+    "words": 1082,
+    "runtime_s": 478.1,
+    "beats": 62,
+    "vo_chars": 6323
+  },
+  "metrics": {
+    "sentences": 174,
+    "words": 1082,
+    "avg": 6.22,
+    "short_pct": 39.08,
+    "questions": 16,
+    "ellipses": 18,
+    "you_per100": 3.7
+  },
+  "chapters": [
+    {
+      "n": 1,
+      "title": "The Impossible Question",
+      "window": "0:00–0:35",
+      "win": 35.0,
+      "start": 0.0,
+      "end": 38.7,
+      "dur": 38.7,
+      "delta": 10.57,
+      "words": 87,
+      "wpm": 134.88,
+      "ok": true
+    },
+    {
+      "n": 2,
+      "title": "The Biological Breakthrough",
+      "window": "0:35–1:30",
+      "win": 55.0,
+      "start": 38.7,
+      "end": 101.6,
+      "dur": 62.9,
+      "delta": 14.36,
+      "words": 157,
+      "wpm": 149.76,
+      "ok": true
+    },
+    {
+      "n": 3,
+      "title": "The First 24 Hours",
+      "window": "1:30–2:20",
+      "win": 50.0,
+      "start": 101.6,
+      "end": 155.6,
+      "dur": 54.0,
+      "delta": 8.0,
+      "words": 122,
+      "wpm": 135.56,
+      "ok": true
+    },
+    {
+      "n": 4,
+      "title": "The World Economy",
+      "window": "2:20–3:20",
+      "win": 60.0,
+      "start": 155.6,
+      "end": 224.1,
+      "dur": 68.5,
+      "delta": 14.17,
+      "words": 169,
+      "wpm": 148.03,
+      "ok": true
+    },
+    {
+      "n": 5,
+      "title": "A City That Never Sleeps",
+      "window": "3:20–4:20",
+      "win": 60.0,
+      "start": 224.1,
+      "end": 291.6,
+      "dur": 67.5,
+      "delta": 12.5,
+      "words": 162,
+      "wpm": 144.0,
+      "ok": true
+    },
+    {
+      "n": 6,
+      "title": "The Hidden Cost",
+      "window": "4:20–5:30",
+      "win": 70.0,
+      "start": 291.6,
+      "end": 358.1,
+      "dur": 66.5,
+      "delta": -5.0,
+      "words": 150,
+      "wpm": 135.34,
+      "ok": true
+    },
+    {
+      "n": 7,
+      "title": "Ten Years Later",
+      "window": "5:30–6:40",
+      "win": 70.0,
+      "start": 358.1,
+      "end": 421.1,
+      "dur": 63.0,
+      "delta": -10.0,
+      "words": 133,
+      "wpm": 126.67,
+      "ok": true
+    },
+    {
+      "n": 8,
+      "title": "The Final Question",
+      "window": "6:40–7:30",
+      "win": 50.0,
+      "start": 421.1,
+      "end": 478.1,
+      "dur": 57.0,
+      "delta": 14.0,
+      "words": 102,
+      "wpm": 107.37,
+      "ok": true
+    }
+  ],
+  "beats": [
+    {
+      "id": "1.1",
+      "start": 0.0,
+      "dur": 3.2,
+      "words": 8,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "1.2",
+      "start": 3.2,
+      "dur": 1.0,
+      "words": 0,
+      "wpm": 0.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "1.3",
+      "start": 4.2,
+      "dur": 6.0,
+      "words": 14,
+      "wpm": 140.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "1.4",
+      "start": 10.2,
+      "dur": 9.5,
+      "words": 23,
+      "wpm": 145.3,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "1.5",
+      "start": 19.7,
+      "dur": 6.5,
+      "words": 16,
+      "wpm": 147.7,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "1.6",
+      "start": 26.2,
+      "dur": 10.5,
+      "words": 26,
+      "wpm": 148.6,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "1.7",
+      "start": 36.7,
+      "dur": 2.0,
+      "words": 0,
+      "wpm": 0.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "2.1",
+      "start": 38.7,
+      "dur": 3.8,
+      "words": 9,
+      "wpm": 142.1,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "2.2",
+      "start": 42.5,
+      "dur": 16.0,
+      "words": 40,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "2.3",
+      "start": 58.5,
+      "dur": 6.4,
+      "words": 16,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "2.4",
+      "start": 64.9,
+      "dur": 15.2,
+      "words": 38,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "2.5",
+      "start": 80.1,
+      "dur": 11.2,
+      "words": 28,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "2.6",
+      "start": 91.3,
+      "dur": 10.3,
+      "words": 26,
+      "wpm": 151.5,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "3.1",
+      "start": 101.6,
+      "dur": 8.0,
+      "words": 14,
+      "wpm": 105.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "3.2",
+      "start": 109.6,
+      "dur": 5.0,
+      "words": 11,
+      "wpm": 132.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "3.3",
+      "start": 114.6,
+      "dur": 13.0,
+      "words": 32,
+      "wpm": 147.7,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "3.4",
+      "start": 127.6,
+      "dur": 2.0,
+      "words": 0,
+      "wpm": 0.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "3.5",
+      "start": 129.6,
+      "dur": 14.0,
+      "words": 35,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "3.6",
+      "start": 143.6,
+      "dur": 12.0,
+      "words": 30,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "4.1",
+      "start": 155.6,
+      "dur": 6.5,
+      "words": 16,
+      "wpm": 147.7,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "4.2",
+      "start": 162.1,
+      "dur": 12.5,
+      "words": 31,
+      "wpm": 148.8,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "4.3",
+      "start": 174.6,
+      "dur": 2.0,
+      "words": 5,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "4.4",
+      "start": 176.6,
+      "dur": 23.5,
+      "words": 59,
+      "wpm": 150.6,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "4.5",
+      "start": 200.1,
+      "dur": 15.0,
+      "words": 37,
+      "wpm": 148.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "4.6",
+      "start": 215.1,
+      "dur": 9.0,
+      "words": 21,
+      "wpm": 140.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "5.1",
+      "start": 224.1,
+      "dur": 8.0,
+      "words": 20,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "5.2",
+      "start": 232.1,
+      "dur": 10.5,
+      "words": 26,
+      "wpm": 148.6,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "5.3",
+      "start": 242.6,
+      "dur": 4.0,
+      "words": 9,
+      "wpm": 135.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "5.4",
+      "start": 246.6,
+      "dur": 6.0,
+      "words": 13,
+      "wpm": 130.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "5.5",
+      "start": 252.6,
+      "dur": 12.0,
+      "words": 30,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "5.6",
+      "start": 264.6,
+      "dur": 12.5,
+      "words": 31,
+      "wpm": 148.8,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "5.7",
+      "start": 277.1,
+      "dur": 14.5,
+      "words": 33,
+      "wpm": 136.6,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "6.1",
+      "start": 291.6,
+      "dur": 5.0,
+      "words": 12,
+      "wpm": 144.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "6.2",
+      "start": 296.6,
+      "dur": 12.0,
+      "words": 30,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "6.3",
+      "start": 308.6,
+      "dur": 7.0,
+      "words": 15,
+      "wpm": 128.6,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "6.4",
+      "start": 315.6,
+      "dur": 3.5,
+      "words": 2,
+      "wpm": 34.3,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "6.5",
+      "start": 319.1,
+      "dur": 13.0,
+      "words": 32,
+      "wpm": 147.7,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "6.6",
+      "start": 332.1,
+      "dur": 16.0,
+      "words": 38,
+      "wpm": 142.5,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "6.7",
+      "start": 348.1,
+      "dur": 6.0,
+      "words": 13,
+      "wpm": 130.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "6.8",
+      "start": 354.1,
+      "dur": 4.0,
+      "words": 8,
+      "wpm": 120.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "7.1",
+      "start": 358.1,
+      "dur": 4.0,
+      "words": 7,
+      "wpm": 105.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.2",
+      "start": 362.1,
+      "dur": 4.0,
+      "words": 9,
+      "wpm": 135.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.3",
+      "start": 366.1,
+      "dur": 6.5,
+      "words": 14,
+      "wpm": 129.2,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.4",
+      "start": 372.6,
+      "dur": 4.5,
+      "words": 9,
+      "wpm": 120.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.5",
+      "start": 377.1,
+      "dur": 6.0,
+      "words": 15,
+      "wpm": 150.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.6",
+      "start": 383.1,
+      "dur": 10.0,
+      "words": 24,
+      "wpm": 144.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.7",
+      "start": 393.1,
+      "dur": 9.0,
+      "words": 17,
+      "wpm": 113.3,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.8a",
+      "start": 402.1,
+      "dur": 6.0,
+      "words": 9,
+      "wpm": 90.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "7.8b",
+      "start": 408.1,
+      "dur": 4.0,
+      "words": 8,
+      "wpm": 120.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "7.8c",
+      "start": 412.1,
+      "dur": 6.0,
+      "words": 14,
+      "wpm": 140.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "7.8d",
+      "start": 418.1,
+      "dur": 3.0,
+      "words": 7,
+      "wpm": 140.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "8.1",
+      "start": 421.1,
+      "dur": 3.0,
+      "words": 7,
+      "wpm": 140.0,
+      "limit": 160,
+      "ok": true
+    },
+    {
+      "id": "8.2",
+      "start": 424.1,
+      "dur": 7.5,
+      "words": 17,
+      "wpm": 136.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.3",
+      "start": 431.6,
+      "dur": 6.0,
+      "words": 4,
+      "wpm": 40.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.4",
+      "start": 437.6,
+      "dur": 2.0,
+      "words": 0,
+      "wpm": 0.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.5",
+      "start": 439.6,
+      "dur": 4.5,
+      "words": 9,
+      "wpm": 120.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.6",
+      "start": 444.1,
+      "dur": 2.5,
+      "words": 0,
+      "wpm": 0.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.7",
+      "start": 446.6,
+      "dur": 7.5,
+      "words": 16,
+      "wpm": 128.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.8",
+      "start": 454.1,
+      "dur": 4.0,
+      "words": 7,
+      "wpm": 105.0,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.9",
+      "start": 458.1,
+      "dur": 10.5,
+      "words": 25,
+      "wpm": 142.9,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.10",
+      "start": 468.6,
+      "dur": 8.0,
+      "words": 17,
+      "wpm": 127.5,
+      "limit": 145,
+      "ok": true
+    },
+    {
+      "id": "8.11",
+      "start": 476.6,
+      "dur": 1.5,
+      "words": 0,
+      "wpm": 0.0,
+      "limit": 160,
+      "ok": true
+    }
+  ],
+  "sentences": [
+    {
+      "n": 1,
+      "beat": "1.1",
+      "who": "N",
+      "text": "It's three a.m. — and the playground is full.",
+      "vo": "It's three a.m. — and the playground is full.",
+      "words": 8,
+      "claims": [
+        "HR1",
+        "SP-07"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "HOOK",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 2,
+      "beat": "1.3",
+      "who": "N",
+      "text": "The schools are open.",
+      "vo": "The schools are open.",
+      "words": 4,
+      "claims": [
+        "SP-07"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "HOOK",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 3,
+      "beat": "1.3",
+      "who": "N",
+      "text": "Traffic's jammed.",
+      "vo": "Traffic's jammed.",
+      "words": 2,
+      "claims": [
+        "SP-15"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "HOOK",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 4,
+      "beat": "1.3",
+      "who": "N",
+      "text": "And nobody here has slept… in ten years.",
+      "vo": "And nobody here has slept… in ten years.",
+      "words": 8,
+      "claims": [
+        "HR1"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "PREMISE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 5,
+      "beat": "1.4",
+      "who": "N",
+      "text": "Tonight, almost everyone on Earth will lie down in the dark and sleep.",
+      "vo": "Tonight, almost everyone on Earth will lie down in the dark and sleep.",
+      "words": 13,
+      "claims": [
+        "A01"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 6,
+      "beat": "1.4",
+      "who": "N",
+      "text": "About a third of your life.",
+      "vo": "About a third of your life.",
+      "words": 6,
+      "claims": [
+        "A01"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 7,
+      "beat": "1.4",
+      "who": "N",
+      "text": "More than twenty years.",
+      "vo": "More than twenty years.",
+      "words": 4,
+      "claims": [
+        "CALC-01"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 8,
+      "beat": "1.5",
+      "who": "N",
+      "text": "So what if you never needed to sleep again?",
+      "vo": "So what if you never needed to sleep again?",
+      "words": 9,
+      "claims": [
+        "HR1"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "QUESTION",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 9,
+      "beat": "1.5",
+      "who": "N",
+      "text": "Not tired.",
+      "vo": "Not tired.",
+      "words": 2,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 10,
+      "beat": "1.5",
+      "who": "N",
+      "text": "No harm done.",
+      "vo": "No harm done.",
+      "words": 3,
+      "claims": [
+        "HR3"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 11,
+      "beat": "1.5",
+      "who": "N",
+      "text": "Just… awake.",
+      "vo": "Just… awake.",
+      "words": 2,
+      "claims": [
+        "HR1"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 12,
+      "beat": "1.6",
+      "who": "N",
+      "text": "This is the first twenty-four hours.",
+      "vo": "This is the first twenty-four hours.",
+      "words": 6,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "PROMISE",
+      "checks": []
+    },
+    {
+      "n": 13,
+      "beat": "1.6",
+      "who": "N",
+      "text": "The next ten years.",
+      "vo": "The next ten years.",
+      "words": 4,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "PROMISE",
+      "checks": []
+    },
+    {
+      "n": 14,
+      "beat": "1.6",
+      "who": "N",
+      "text": "And why, in this world, a whole generation of kids has never had a single dream.",
+      "vo": "And why, in this world, a whole generation of kids has never had a single dream.",
+      "words": 16,
+      "claims": [
+        "HR5"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "PROMISE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 15,
+      "beat": "2.1",
+      "who": "MUM",
+      "text": "Goodnight, you two.",
+      "vo": "Goodnight, you two.",
+      "words": 3,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "SETUP",
+      "checks": []
+    },
+    {
+      "n": 16,
+      "beat": "2.1",
+      "who": "N",
+      "text": "First, what does sleep actually do?",
+      "vo": "First, what does sleep actually do?",
+      "words": 6,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "QUESTION",
+      "checks": []
+    },
+    {
+      "n": 17,
+      "beat": "2.2",
+      "who": "N",
+      "text": "Studies suggest it helps lock in what you learned.",
+      "vo": "Studies suggest it helps lock in what you learned.",
+      "words": 9,
+      "claims": [
+        "C01"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 18,
+      "beat": "2.2",
+      "who": "N",
+      "text": "In one study, people sleeping six hours or less… had about four times the odds of catching a cold.",
+      "vo": "In one study, people sleeping six hours or less… had about four times the odds of catching a cold.",
+      "words": 19,
+      "claims": [
+        "C03"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 19,
+      "beat": "2.2",
+      "who": "N",
+      "text": "In another, after six short nights, young men handled blood sugar worse.",
+      "vo": "In another, after six short nights, young men handled blood sugar worse.",
+      "words": 12,
+      "claims": [
+        "C05"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 20,
+      "beat": "2.3",
+      "who": "N",
+      "text": "Some of it, nobody fully understands.",
+      "vo": "Some of it, nobody fully understands.",
+      "words": 6,
+      "claims": [
+        "D01"
+      ],
+      "class": "UNKNOWN",
+      "role": "UNKNOWN",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 21,
+      "beat": "2.3",
+      "who": "N",
+      "text": "What's REM sleep for?",
+      "vo": "What's REM sleep for?",
+      "words": 4,
+      "claims": [
+        "D02"
+      ],
+      "class": "UNKNOWN",
+      "role": "QUESTION",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 22,
+      "beat": "2.3",
+      "who": "N",
+      "text": "Does sleep really clean the brain?",
+      "vo": "Does sleep really clean the brain?",
+      "words": 6,
+      "claims": [
+        "D04"
+      ],
+      "class": "UNKNOWN",
+      "role": "QUESTION",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 23,
+      "beat": "2.4",
+      "who": "N",
+      "text": "But two systems decide when you get sleepy.",
+      "vo": "But two systems decide when you get sleepy.",
+      "words": 8,
+      "claims": [
+        "B01"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 24,
+      "beat": "2.4",
+      "who": "N",
+      "text": "An hourglass — pressure that builds while you're awake.",
+      "vo": "An hourglass — pressure that builds while you're awake.",
+      "words": 8,
+      "claims": [
+        "B01"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 25,
+      "beat": "2.4",
+      "who": "N",
+      "text": "Coffee blocks a sleep signal called adenosine.",
+      "vo": "Coffee blocks a sleep signal called adenosine.",
+      "words": 7,
+      "claims": [
+        "B03"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 26,
+      "beat": "2.4",
+      "who": "N",
+      "text": "The hourglass keeps filling anyway.",
+      "vo": "The hourglass keeps filling anyway.",
+      "words": 5,
+      "claims": [
+        "B01",
+        "B03"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 27,
+      "beat": "2.4",
+      "who": "N",
+      "text": "And a body clock, reset every day, mainly by light.",
+      "vo": "And a body clock, reset every day, mainly by light.",
+      "words": 10,
+      "claims": [
+        "B05"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 28,
+      "beat": "2.5",
+      "who": "N",
+      "text": "A breakthrough would have to stop the hourglass.",
+      "vo": "A breakthrough would have to stop the hourglass.",
+      "words": 8,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 29,
+      "beat": "2.5",
+      "who": "N",
+      "text": "And do all of sleep's work while you're awake.",
+      "vo": "And do all of sleep's work while you're awake.",
+      "words": 9,
+      "claims": [
+        "HR3"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 30,
+      "beat": "2.5",
+      "who": "N",
+      "text": "Even the parts we don't understand.",
+      "vo": "Even the parts we don't understand.",
+      "words": 6,
+      "claims": [
+        "HR3",
+        "D01"
+      ],
+      "class": "UNKNOWN",
+      "role": "UNKNOWN",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 31,
+      "beat": "2.5",
+      "who": "N",
+      "text": "How?",
+      "vo": "How?",
+      "words": 1,
+      "claims": [
+        "HR8"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "QUESTION",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 32,
+      "beat": "2.5",
+      "who": "N",
+      "text": "That's the thought experiment.",
+      "vo": "That's the thought experiment.",
+      "words": 4,
+      "claims": [
+        "HR8"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 33,
+      "beat": "2.6",
+      "who": "N",
+      "text": "In this world, you're never tired.",
+      "vo": "In this world, you're never tired.",
+      "words": 6,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 34,
+      "beat": "2.6",
+      "who": "N",
+      "text": "Going without sleep never hurts.",
+      "vo": "Going without sleep never hurts.",
+      "words": 5,
+      "claims": [
+        "HR3"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 35,
+      "beat": "2.6",
+      "who": "N",
+      "text": "Your body clock keeps ticking.",
+      "vo": "Your body clock keeps ticking.",
+      "words": 5,
+      "claims": [
+        "HR4"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 36,
+      "beat": "2.6",
+      "who": "N",
+      "text": "And with no sleep… the dreams go too.",
+      "vo": "And with no sleep… the dreams go too.",
+      "words": 8,
+      "claims": [
+        "HR5"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 37,
+      "beat": "2.6",
+      "who": "N",
+      "text": "Daydreams stay.",
+      "vo": "Daydreams stay.",
+      "words": 2,
+      "claims": [
+        "HR5",
+        "HR7"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 38,
+      "beat": "3.1",
+      "who": "MIA",
+      "text": "Look — it's us, on the hill!",
+      "vo": "Look — it's us, on the hill!",
+      "words": 6,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 39,
+      "beat": "3.1",
+      "who": "MIA",
+      "text": "Can we go?",
+      "vo": "Can we go?",
+      "words": 3,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 40,
+      "beat": "3.1",
+      "who": "LEO",
+      "text": "Sure.",
+      "vo": "Sure.",
+      "words": 1,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 41,
+      "beat": "3.1",
+      "who": "LEO",
+      "text": "When I have time.",
+      "vo": "When I have time.",
+      "words": 4,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "SETUP",
+      "checks": []
+    },
+    {
+      "n": 42,
+      "beat": "3.2",
+      "who": "N",
+      "text": "That night, nobody gets tired.",
+      "vo": "That night, nobody gets tired.",
+      "words": 5,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 43,
+      "beat": "3.2",
+      "who": "N",
+      "text": "Not you.",
+      "vo": "Not you.",
+      "words": 2,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 44,
+      "beat": "3.2",
+      "who": "N",
+      "text": "Not Mum.",
+      "vo": "Not Mum.",
+      "words": 2,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 45,
+      "beat": "3.2",
+      "who": "N",
+      "text": "Not anyone.",
+      "vo": "Not anyone.",
+      "words": 2,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 46,
+      "beat": "3.3",
+      "who": "N",
+      "text": "So what do you do with eight extra hours?",
+      "vo": "So what do you do with eight extra hours?",
+      "words": 9,
+      "claims": [
+        "CALC-02"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "QUESTION",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 47,
+      "beat": "3.3",
+      "who": "N",
+      "text": "By one a.m., the city is training, gaming, painting, studying.",
+      "vo": "By one a.m., the city is training, gaming, painting, studying.",
+      "words": 10,
+      "claims": [
+        "SP-22"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 48,
+      "beat": "3.3",
+      "who": "N",
+      "text": "And one man in a grey suit is booking meetings for three a.m.",
+      "vo": "And one man in a grey suit is booking meetings for three a.m.",
+      "words": 13,
+      "claims": [
+        "STORY",
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "SETUP",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 49,
+      "beat": "3.5",
+      "who": "N",
+      "text": "In the dark, a tiny gland in your brain still releases melatonin.",
+      "vo": "In the dark, a tiny gland in your brain still releases melatonin.",
+      "words": 12,
+      "claims": [
+        "B06",
+        "HR4"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "FACT",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 50,
+      "beat": "3.5",
+      "who": "N",
+      "text": "Your body's signal of night.",
+      "vo": "Your body's signal of night.",
+      "words": 5,
+      "claims": [
+        "B06",
+        "HR4"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "FACT",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 51,
+      "beat": "3.5",
+      "who": "N",
+      "text": "Switch on a bright light, and it fades.",
+      "vo": "Switch on a bright light, and it fades.",
+      "words": 8,
+      "claims": [
+        "B06",
+        "HR4"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "FACT",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 52,
+      "beat": "3.5",
+      "who": "N",
+      "text": "You're not tired.",
+      "vo": "You're not tired.",
+      "words": 3,
+      "claims": [
+        "HR2"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 53,
+      "beat": "3.5",
+      "who": "N",
+      "text": "Your body clock just knows it's night.",
+      "vo": "Your body clock just knows it's night.",
+      "words": 7,
+      "claims": [
+        "HR4"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 54,
+      "beat": "3.6",
+      "who": "N",
+      "text": "Twenty-four hours awake… and you feel fine.",
+      "vo": "Twenty-four hours awake… and you feel fine.",
+      "words": 7,
+      "claims": [
+        "HR3"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 55,
+      "beat": "3.6",
+      "who": "N",
+      "text": "You just got eight hours back.",
+      "vo": "You just got eight hours back.",
+      "words": 6,
+      "claims": [
+        "CALC-02"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 56,
+      "beat": "3.6",
+      "who": "N",
+      "text": "Almost three thousand hours a year.",
+      "vo": "Almost three thousand hours a year.",
+      "words": 6,
+      "claims": [
+        "CALC-02"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 57,
+      "beat": "3.6",
+      "who": "N",
+      "text": "Everyone on Earth did the same maths.",
+      "vo": "Everyone on Earth did the same maths.",
+      "words": 7,
+      "claims": [
+        "HR1",
+        "CALC-02"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 58,
+      "beat": "3.6",
+      "who": "N",
+      "text": "So did their bosses.",
+      "vo": "So did their bosses.",
+      "words": 4,
+      "claims": [
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "TRANSITION",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 59,
+      "beat": "4.1",
+      "who": "N",
+      "text": "Overnight, humanity's waking time grows by about half.",
+      "vo": "Overnight, humanity's waking time grows by about half.",
+      "words": 8,
+      "claims": [
+        "CALC-03"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 60,
+      "beat": "4.1",
+      "who": "N",
+      "text": "The waking hours of billions of extra people.",
+      "vo": "The waking hours of billions of extra people.",
+      "words": 8,
+      "claims": [
+        "CALC-03"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 61,
+      "beat": "4.2",
+      "who": "N",
+      "text": "Mr. Black's company becomes BLACK 24.",
+      "vo": "Mister Black's company becomes Black Twenty-Four.",
+      "words": 6,
+      "claims": [
+        "STORY",
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "STORY",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 62,
+      "beat": "4.2",
+      "who": "N",
+      "text": "It never closes.",
+      "vo": "It never closes.",
+      "words": 3,
+      "claims": [
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 63,
+      "beat": "4.2",
+      "who": "N",
+      "text": "Even today, about one in six US workers doesn't work a regular daytime schedule.",
+      "vo": "Even today, about one in six U.S. workers doesn't work a regular daytime schedule.",
+      "words": 14,
+      "claims": [
+        "G02"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 64,
+      "beat": "4.2",
+      "who": "N",
+      "text": "Now the night shift is just… a shift.",
+      "vo": "Now the night shift is just… a shift.",
+      "words": 8,
+      "claims": [
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 65,
+      "beat": "4.3",
+      "who": "N",
+      "text": "Some jobs boom.",
+      "vo": "Some jobs boom.",
+      "words": 3,
+      "claims": [
+        "SP-02"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 66,
+      "beat": "4.3",
+      "who": "N",
+      "text": "Others shrink.",
+      "vo": "Others shrink.",
+      "words": 2,
+      "claims": [
+        "SP-03"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 67,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Winners?",
+      "vo": "Winners?",
+      "words": 1,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "QUESTION",
+      "checks": []
+    },
+    {
+      "n": 68,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Companies and customers.",
+      "vo": "Companies and customers.",
+      "words": 3,
+      "claims": [
+        "SP-01",
+        "SP-02"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 69,
+      "beat": "4.4",
+      "who": "N",
+      "text": "In twenty sixteen, RAND estimated that lack of sleep cost the US economy… up to four hundred and eleven billion dollars a year.",
+      "vo": "In twenty sixteen, Rand estimated that lack of sleep cost the U.S. economy… up to four hundred and eleven billion dollars a year.",
+      "words": 23,
+      "claims": [
+        "G01"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 70,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Missed work.",
+      "vo": "Missed work.",
+      "words": 2,
+      "claims": [
+        "G01"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "continues a signalled sentence",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 71,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Lower productivity.",
+      "vo": "Lower productivity.",
+      "words": 2,
+      "claims": [
+        "G01"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "continues a signalled sentence",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 72,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Earlier deaths.",
+      "vo": "Earlier deaths.",
+      "words": 2,
+      "claims": [
+        "G01"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "continues a signalled sentence",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 73,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Here, that cost could fall.",
+      "vo": "Here, that cost could fall.",
+      "words": 5,
+      "claims": [
+        "SP-19"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 74,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Though a nonstop world may bring new costs.",
+      "vo": "Though a nonstop world may bring new costs.",
+      "words": 8,
+      "claims": [
+        "SP-19"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 75,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Losers?",
+      "vo": "Losers?",
+      "words": 1,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "QUESTION",
+      "checks": []
+    },
+    {
+      "n": 76,
+      "beat": "4.4",
+      "who": "N",
+      "text": "Workers.",
+      "vo": "Workers.",
+      "words": 1,
+      "claims": [
+        "SP-02"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 77,
+      "beat": "4.4",
+      "who": "N",
+      "text": "When everyone can work more, your hour might be worth less.",
+      "vo": "When everyone can work more, your hour might be worth less.",
+      "words": 11,
+      "claims": [
+        "SP-02"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 78,
+      "beat": "4.5",
+      "who": "N",
+      "text": "But more hours don't always mean more output.",
+      "vo": "But more hours don't always mean more output.",
+      "words": 8,
+      "claims": [
+        "G03"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 79,
+      "beat": "4.5",
+      "who": "N",
+      "text": "A study of First World War munitions factories found… each hour past about forty-nine a week added less.",
+      "vo": "A study of First World War munitions factories found… each hour past about forty-nine a week added less.",
+      "words": 18,
+      "claims": [
+        "G03"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 80,
+      "beat": "4.5",
+      "who": "N",
+      "text": "Could you stay focused if you never got tired?",
+      "vo": "Could you stay focused if you never got tired?",
+      "words": 9,
+      "claims": [
+        "D05"
+      ],
+      "class": "UNKNOWN",
+      "role": "QUESTION",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 81,
+      "beat": "4.5",
+      "who": "N",
+      "text": "Nobody knows.",
+      "vo": "Nobody knows.",
+      "words": 2,
+      "claims": [
+        "D05"
+      ],
+      "class": "UNKNOWN",
+      "role": "UNKNOWN",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 82,
+      "beat": "4.6",
+      "who": "N",
+      "text": "Mum takes BLACK 24's night shift.",
+      "vo": "Mum takes Black Twenty-Four's night shift.",
+      "words": 6,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 83,
+      "beat": "4.6",
+      "who": "N",
+      "text": "It pays more.",
+      "vo": "It pays more.",
+      "words": 3,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 84,
+      "beat": "4.6",
+      "who": "N",
+      "text": "Enough to start Mia's university fund.",
+      "vo": "Enough to start Mia's university fund.",
+      "words": 6,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "SETUP",
+      "checks": []
+    },
+    {
+      "n": 85,
+      "beat": "4.6",
+      "who": "N",
+      "text": "Her chair at dinner stays empty.",
+      "vo": "Her chair at dinner stays empty.",
+      "words": 6,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "SETUP",
+      "checks": []
+    },
+    {
+      "n": 86,
+      "beat": "5.1",
+      "who": "N",
+      "text": "Mum's train to work leaves at midnight.",
+      "vo": "Mum's train to work leaves at midnight.",
+      "words": 7,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 87,
+      "beat": "5.1",
+      "who": "N",
+      "text": "It's packed.",
+      "vo": "It's packed.",
+      "words": 2,
+      "claims": [
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 88,
+      "beat": "5.1",
+      "who": "N",
+      "text": "New York's subway already runs all night.",
+      "vo": "New York's subway already runs all night.",
+      "words": 7,
+      "claims": [
+        "H01"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 89,
+      "beat": "5.1",
+      "who": "N",
+      "text": "Now many cities try.",
+      "vo": "Now many cities try.",
+      "words": 4,
+      "claims": [
+        "SP-05"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 90,
+      "beat": "5.2",
+      "who": "N",
+      "text": "But even today, London keeps its all-night Tube to weekends.",
+      "vo": "But even today, London keeps its all-night Tube to weekends.",
+      "words": 10,
+      "claims": [
+        "H08"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 91,
+      "beat": "5.2",
+      "who": "N",
+      "text": "Weeknights are for repairs.",
+      "vo": "Weeknights are for repairs.",
+      "words": 4,
+      "claims": [
+        "H08"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 92,
+      "beat": "5.2",
+      "who": "N",
+      "text": "So in a city that never stops… when do you fix it?",
+      "vo": "So in a city that never stops… when do you fix it?",
+      "words": 12,
+      "claims": [
+        "SP-06"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "QUESTION",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 93,
+      "beat": "5.3",
+      "who": "N",
+      "text": "Dinner at three.",
+      "vo": "Dinner at three.",
+      "words": 3,
+      "claims": [
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 94,
+      "beat": "5.3",
+      "who": "N",
+      "text": "Surgery at four.",
+      "vo": "Surgery at four.",
+      "words": 3,
+      "claims": [
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 95,
+      "beat": "5.3",
+      "who": "N",
+      "text": "Concerts at five.",
+      "vo": "Concerts at five.",
+      "words": 3,
+      "claims": [
+        "SP-01"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 96,
+      "beat": "5.4",
+      "who": "N",
+      "text": "Schools split into shifts.",
+      "vo": "Schools split into shifts.",
+      "words": 4,
+      "claims": [
+        "SP-07"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 97,
+      "beat": "5.4",
+      "who": "N",
+      "text": "Mia's starts at eight a.m.",
+      "vo": "Mia's starts at eight a.m.",
+      "words": 5,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 98,
+      "beat": "5.4",
+      "who": "N",
+      "text": "Yours… at nine p.m.",
+      "vo": "Yours… at nine p.m.",
+      "words": 4,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 99,
+      "beat": "5.5",
+      "who": "N",
+      "text": "Lighting in homes, offices and streets already takes an estimated eight percent of the world's electricity.",
+      "vo": "Lighting in homes, offices and streets already takes an estimated eight percent of the world's electricity.",
+      "words": 16,
+      "claims": [
+        "H02"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 100,
+      "beat": "5.5",
+      "who": "N",
+      "text": "Keep it on all night, and demand climbs.",
+      "vo": "Keep it on all night, and demand climbs.",
+      "words": 8,
+      "claims": [
+        "SP-08"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 101,
+      "beat": "5.5",
+      "who": "N",
+      "text": "Just when solar panels produce nothing.",
+      "vo": "Just when solar panels produce nothing.",
+      "words": 6,
+      "claims": [
+        "SP-08",
+        "H03"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 102,
+      "beat": "5.6",
+      "who": "N",
+      "text": "Even now, more than four in five people live under light-polluted skies.",
+      "vo": "Even now, more than four in five people live under light-polluted skies.",
+      "words": 12,
+      "claims": [
+        "H04"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 103,
+      "beat": "5.6",
+      "who": "N",
+      "text": "Here, the stars fade faster.",
+      "vo": "Here, the stars fade faster.",
+      "words": 5,
+      "claims": [
+        "SP-09"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 104,
+      "beat": "5.6",
+      "who": "N",
+      "text": "Birds sing at the wrong hour.",
+      "vo": "Birds sing at the wrong hour.",
+      "words": 6,
+      "claims": [
+        "SP-09",
+        "H06"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 105,
+      "beat": "5.6",
+      "who": "N",
+      "text": "Turtle hatchlings lose their way to the sea.",
+      "vo": "Turtle hatchlings lose their way to the sea.",
+      "words": 8,
+      "claims": [
+        "SP-09",
+        "H06"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 106,
+      "beat": "5.7",
+      "who": "N",
+      "text": "But not every place switches on.",
+      "vo": "But not every place switches on.",
+      "words": 6,
+      "claims": [
+        "SP-05"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 107,
+      "beat": "5.7",
+      "who": "N",
+      "text": "Some towns follow Flagstaff, Arizona — the world's first International Dark Sky City.",
+      "vo": "Some towns follow Flagstaff, Arizona — the world's first International Dark Sky City.",
+      "words": 12,
+      "claims": [
+        "H07",
+        "SP-05"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "FACT",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 108,
+      "beat": "5.7",
+      "who": "N",
+      "text": "They keep their nights dark.",
+      "vo": "They keep their nights dark.",
+      "words": 5,
+      "claims": [
+        "SP-05"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 109,
+      "beat": "5.7",
+      "who": "N",
+      "text": "On purpose.",
+      "vo": "On purpose.",
+      "words": 2,
+      "claims": [
+        "SP-05"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 110,
+      "beat": "5.7",
+      "who": "N",
+      "text": "Cities adapted in a year.",
+      "vo": "Cities adapted in a year.",
+      "words": 5,
+      "claims": [
+        "SP-05"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "TRANSITION",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 111,
+      "beat": "5.7",
+      "who": "N",
+      "text": "People took longer.",
+      "vo": "People took longer.",
+      "words": 3,
+      "claims": [
+        "SP-10"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "TRANSITION",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 112,
+      "beat": "6.1",
+      "who": "N",
+      "text": "Do you spend more time with your family?",
+      "vo": "Do you spend more time with your family?",
+      "words": 8,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "QUESTION",
+      "checks": []
+    },
+    {
+      "n": 113,
+      "beat": "6.1",
+      "who": "N",
+      "text": "At first, you do.",
+      "vo": "At first, you do.",
+      "words": 4,
+      "claims": [
+        "SP-20"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 114,
+      "beat": "6.2",
+      "who": "N",
+      "text": "Then the schedules split.",
+      "vo": "Then the schedules split.",
+      "words": 4,
+      "claims": [
+        "SP-10"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 115,
+      "beat": "6.2",
+      "who": "N",
+      "text": "You're all awake twenty-four hours a day… and almost never together.",
+      "vo": "You're all awake twenty-four hours a day… and almost never together.",
+      "words": 11,
+      "claims": [
+        "SP-10"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 116,
+      "beat": "6.2",
+      "who": "N",
+      "text": "Nobody says goodnight anymore.",
+      "vo": "Nobody says goodnight anymore.",
+      "words": 4,
+      "claims": [
+        "SP-18"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "SETUP",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 117,
+      "beat": "6.2",
+      "who": "N",
+      "text": "Even your body clocks drift apart.",
+      "vo": "Even your body clocks drift apart.",
+      "words": 6,
+      "claims": [
+        "SP-17"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 118,
+      "beat": "6.2",
+      "who": "N",
+      "text": "The lights never go off.",
+      "vo": "The lights never go off.",
+      "words": 5,
+      "claims": [
+        "SP-17"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 119,
+      "beat": "6.3",
+      "who": "N",
+      "text": "At eighteen, you join BLACK 24 too.",
+      "vo": "At eighteen, you join Black Twenty-Four too.",
+      "words": 7,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 120,
+      "beat": "6.3",
+      "who": "N",
+      "text": "Nights.",
+      "vo": "Nights.",
+      "words": 1,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 121,
+      "beat": "6.3",
+      "who": "N",
+      "text": "You're good at it.",
+      "vo": "You're good at it.",
+      "words": 4,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 122,
+      "beat": "6.3",
+      "who": "N",
+      "text": "You're always available.",
+      "vo": "You're always available.",
+      "words": 3,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "SETUP",
+      "checks": []
+    },
+    {
+      "n": 123,
+      "beat": "6.4",
+      "who": "LEO",
+      "text": "Next week.",
+      "vo": "Next week.",
+      "words": 2,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "SETUP",
+      "checks": []
+    },
+    {
+      "n": 124,
+      "beat": "6.5",
+      "who": "N",
+      "text": "Sleep was the one excuse nobody could argue with.",
+      "vo": "Sleep was the one excuse nobody could argue with.",
+      "words": 9,
+      "claims": [
+        "SP-11"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "THEME",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 125,
+      "beat": "6.5",
+      "who": "N",
+      "text": "Now nobody's ever asleep.",
+      "vo": "Now nobody's ever asleep.",
+      "words": 4,
+      "claims": [
+        "HR1"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 126,
+      "beat": "6.5",
+      "who": "N",
+      "text": "France and Australia already give workers a right to disconnect.",
+      "vo": "France and Australia already give workers a right to disconnect.",
+      "words": 10,
+      "claims": [
+        "G06"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 127,
+      "beat": "6.5",
+      "who": "N",
+      "text": "Work was leaking into our nights long before this.",
+      "vo": "Work was leaking into our nights long before this.",
+      "words": 9,
+      "claims": [
+        "G06"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "FACT",
+      "checks": [
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 128,
+      "beat": "6.6",
+      "who": "N",
+      "text": "Would more time make you happier?",
+      "vo": "Would more time make you happier?",
+      "words": 6,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "QUESTION",
+      "checks": []
+    },
+    {
+      "n": 129,
+      "beat": "6.6",
+      "who": "N",
+      "text": "Research suggests free time helps… up to about two hours a day.",
+      "vo": "Research suggests free time helps… up to about two hours a day.",
+      "words": 12,
+      "claims": [
+        "G04"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 130,
+      "beat": "6.6",
+      "who": "N",
+      "text": "Past about five, well-being can actually dip.",
+      "vo": "Past about five, well-being can actually dip.",
+      "words": 7,
+      "claims": [
+        "G04"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "evidence signalled",
+        "real-world marker inside the story",
+        "emphasis 'actually' reviewed: it marks the surprising direction S40 found (more free time, lower well-being); it does not inflate the size"
+      ]
+    },
+    {
+      "n": 131,
+      "beat": "6.6",
+      "who": "N",
+      "text": "Unless that time goes into something productive.",
+      "vo": "Unless that time goes into something productive.",
+      "words": 7,
+      "claims": [
+        "G04"
+      ],
+      "class": "RESEARCH-SUPPORTED EVIDENCE",
+      "role": "EVIDENCE",
+      "checks": [
+        "continues a signalled sentence",
+        "real-world marker inside the story"
+      ]
+    },
+    {
+      "n": 132,
+      "beat": "6.6",
+      "who": "N",
+      "text": "Some people flourish.",
+      "vo": "Some people flourish.",
+      "words": 3,
+      "claims": [
+        "SP-12"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 133,
+      "beat": "6.6",
+      "who": "N",
+      "text": "Some just drift.",
+      "vo": "Some just drift.",
+      "words": 3,
+      "claims": [
+        "SP-12"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 134,
+      "beat": "6.7",
+      "who": "N",
+      "text": "Mia's notebook stays blank.",
+      "vo": "Mia's notebook stays blank.",
+      "words": 4,
+      "claims": [
+        "HR5",
+        "SP-13"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 135,
+      "beat": "6.7",
+      "who": "N",
+      "text": "And science still hasn't settled what dreams were for.",
+      "vo": "And science still hasn't settled what dreams were for.",
+      "words": 9,
+      "claims": [
+        "D03"
+      ],
+      "class": "UNKNOWN",
+      "role": "UNKNOWN",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 136,
+      "beat": "6.8",
+      "who": "N",
+      "text": "We didn't lose sleep.",
+      "vo": "We didn't lose sleep.",
+      "words": 4,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "THEME",
+      "checks": []
+    },
+    {
+      "n": 137,
+      "beat": "6.8",
+      "who": "N",
+      "text": "We lost the night.",
+      "vo": "We lost the night.",
+      "words": 4,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "THEME",
+      "checks": []
+    },
+    {
+      "n": 138,
+      "beat": "7.1",
+      "who": "N",
+      "text": "Imagine it's ten years on.",
+      "vo": "Imagine it's ten years on.",
+      "words": 5,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "TRANSITION",
+      "checks": []
+    },
+    {
+      "n": 139,
+      "beat": "7.1",
+      "who": "N",
+      "text": "You're twenty-five.",
+      "vo": "You're twenty-five.",
+      "words": 2,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 140,
+      "beat": "7.2",
+      "who": "N",
+      "text": "From space, Earth's night side glows brighter than ever.",
+      "vo": "From space, Earth's night side glows brighter than ever.",
+      "words": 9,
+      "claims": [
+        "SP-09"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 141,
+      "beat": "7.3",
+      "who": "N",
+      "text": "Three a.m. is just another rush hour.",
+      "vo": "Three a.m. is just another rush hour.",
+      "words": 7,
+      "claims": [
+        "SP-15"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CALLBACK",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 142,
+      "beat": "7.3",
+      "who": "N",
+      "text": "Days don't end anymore… they change shifts.",
+      "vo": "Days don't end anymore… they change shifts.",
+      "words": 7,
+      "claims": [
+        "SP-15"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 143,
+      "beat": "7.4",
+      "who": "N",
+      "text": "Trains never stop.",
+      "vo": "Trains never stop.",
+      "words": 3,
+      "claims": [
+        "SP-06"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 144,
+      "beat": "7.4",
+      "who": "N",
+      "text": "Robots fix the tunnels between them.",
+      "vo": "Robots fix the tunnels between them.",
+      "words": 6,
+      "claims": [
+        "SP-06"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "PAYOFF",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 145,
+      "beat": "7.5",
+      "who": "N",
+      "text": "The economy is bigger.",
+      "vo": "The economy is bigger.",
+      "words": 4,
+      "claims": [
+        "SP-21"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 146,
+      "beat": "7.5",
+      "who": "N",
+      "text": "But for many people, the working week crept up… not down.",
+      "vo": "But for many people, the working week crept up… not down.",
+      "words": 11,
+      "claims": [
+        "SP-11"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 147,
+      "beat": "7.6",
+      "who": "N",
+      "text": "Darkness is a luxury now.",
+      "vo": "Darkness is a luxury now.",
+      "words": 5,
+      "claims": [
+        "SP-14"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 148,
+      "beat": "7.6",
+      "who": "N",
+      "text": "People travel just to see stars.",
+      "vo": "People travel just to see stars.",
+      "words": 6,
+      "claims": [
+        "SP-14"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 149,
+      "beat": "7.6",
+      "who": "N",
+      "text": "Some countries pass night laws.",
+      "vo": "Some countries pass night laws.",
+      "words": 5,
+      "claims": [
+        "SP-11"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 150,
+      "beat": "7.6",
+      "who": "N",
+      "text": "Hours when nobody can be called to work.",
+      "vo": "Hours when nobody can be called to work.",
+      "words": 8,
+      "claims": [
+        "SP-11"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "CONSEQUENCE",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 151,
+      "beat": "7.7",
+      "who": "N",
+      "text": "The biggest change of all?",
+      "vo": "The biggest change of all?",
+      "words": 5,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "QUESTION",
+      "checks": []
+    },
+    {
+      "n": 152,
+      "beat": "7.7",
+      "who": "N",
+      "text": "A whole generation of children… who have never had a single dream.",
+      "vo": "A whole generation of children… who have never had a single dream.",
+      "words": 12,
+      "claims": [
+        "HR5"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "PAYOFF",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 153,
+      "beat": "7.8a",
+      "who": "N",
+      "text": "And you?",
+      "vo": "And you?",
+      "words": 2,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "TRANSITION",
+      "checks": []
+    },
+    {
+      "n": 154,
+      "beat": "7.8a",
+      "who": "N",
+      "text": "You run night operations at BLACK 24.",
+      "vo": "You run night operations at Black Twenty-Four.",
+      "words": 7,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 155,
+      "beat": "7.8b",
+      "who": "N",
+      "text": "Mum's nights paid for Mia's place at university.",
+      "vo": "Mum's nights paid for Mia's place at university.",
+      "words": 8,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "PAYOFF",
+      "checks": []
+    },
+    {
+      "n": 156,
+      "beat": "7.8c",
+      "who": "N",
+      "text": "She leaves tomorrow.",
+      "vo": "She leaves tomorrow.",
+      "words": 3,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "STORY",
+      "checks": []
+    },
+    {
+      "n": 157,
+      "beat": "7.8c",
+      "who": "N",
+      "text": "To study the brain… and find out what dreams were for.",
+      "vo": "To study the brain… and find out what dreams were for.",
+      "words": 11,
+      "claims": [
+        "STORY",
+        "D03"
+      ],
+      "class": "UNKNOWN",
+      "role": "SETUP",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 158,
+      "beat": "7.8d",
+      "who": "N",
+      "text": "Which brings us back to three a.m.",
+      "vo": "Which brings us back to three a.m.",
+      "words": 7,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "TRANSITION",
+      "checks": []
+    },
+    {
+      "n": 159,
+      "beat": "8.1",
+      "who": "N",
+      "text": "You're at your desk, like every night.",
+      "vo": "You're at your desk, like every night.",
+      "words": 7,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "CALLBACK",
+      "checks": []
+    },
+    {
+      "n": 160,
+      "beat": "8.2",
+      "who": "MIA",
+      "text": "My train's at seven.",
+      "vo": "My train's at seven.",
+      "words": 4,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 161,
+      "beat": "8.2",
+      "who": "MIA",
+      "text": "Come to the hill with me.",
+      "vo": "Come to the hill with me.",
+      "words": 6,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 162,
+      "beat": "8.2",
+      "who": "MIA",
+      "text": "Just tonight.",
+      "vo": "Just tonight.",
+      "words": 2,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 163,
+      "beat": "8.2",
+      "who": "LEO",
+      "text": "I can't.",
+      "vo": "I can't.",
+      "words": 2,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 164,
+      "beat": "8.2",
+      "who": "LEO",
+      "text": "I'm on shift.",
+      "vo": "I'm on shift.",
+      "words": 3,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 165,
+      "beat": "8.3",
+      "who": "LEO",
+      "text": "When Leo has time.",
+      "vo": "When Leo has time.",
+      "words": 4,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "PAYOFF",
+      "checks": []
+    },
+    {
+      "n": 166,
+      "beat": "8.5",
+      "who": "N",
+      "text": "Out past the last streetlight, the stars come back.",
+      "vo": "Out past the last streetlight, the stars come back.",
+      "words": 9,
+      "claims": [
+        "H04",
+        "SP-09"
+      ],
+      "class": "SPECULATIVE SCENARIO",
+      "role": "PAYOFF",
+      "checks": [
+        "inside the imagined frame"
+      ]
+    },
+    {
+      "n": 167,
+      "beat": "8.7",
+      "who": "N",
+      "text": "Up here, no light tells your body clock it's day.",
+      "vo": "Up here, no light tells your body clock it's day.",
+      "words": 10,
+      "claims": [
+        "B05",
+        "HR4"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "PAYOFF",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 168,
+      "beat": "8.7",
+      "who": "N",
+      "text": "It isn't sleep.",
+      "vo": "It isn't sleep.",
+      "words": 3,
+      "claims": [
+        "HR5"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "RULE",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 169,
+      "beat": "8.7",
+      "who": "N",
+      "text": "It's just night.",
+      "vo": "It's just night.",
+      "words": 3,
+      "claims": [
+        "HR4"
+      ],
+      "class": "HYPOTHETICAL ASSUMPTION",
+      "role": "THEME",
+      "checks": [
+        "framed as the premise"
+      ]
+    },
+    {
+      "n": 170,
+      "beat": "8.8",
+      "who": "MIA",
+      "text": "Don't fall asleep on me.",
+      "vo": "Don't fall asleep on me.",
+      "words": 5,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "DIALOGUE",
+      "checks": []
+    },
+    {
+      "n": 171,
+      "beat": "8.8",
+      "who": "LEO",
+      "text": "Goodnight, Mia.",
+      "vo": "Goodnight, Mia.",
+      "words": 2,
+      "claims": [
+        "STORY"
+      ],
+      "class": "STORY",
+      "role": "PAYOFF",
+      "checks": []
+    },
+    {
+      "n": 172,
+      "beat": "8.9",
+      "who": "N",
+      "text": "Back in the real world, sleep experts recommend adults get at least seven hours a night.",
+      "vo": "Back in the real world, sleep experts recommend adults get at least seven hours a night.",
+      "words": 16,
+      "claims": [
+        "A05"
+      ],
+      "class": "ESTABLISHED FACT",
+      "role": "LESSON",
+      "checks": [
+        "stated in a real-world beat"
+      ]
+    },
+    {
+      "n": 173,
+      "beat": "8.9",
+      "who": "N",
+      "text": "Scientists know a lot about why… but not everything.",
+      "vo": "Scientists know a lot about why… but not everything.",
+      "words": 9,
+      "claims": [
+        "D01"
+      ],
+      "class": "UNKNOWN",
+      "role": "UNKNOWN",
+      "checks": [
+        "uncertainty stated"
+      ]
+    },
+    {
+      "n": 174,
+      "beat": "8.10",
+      "who": "N",
+      "text": "If you never had to sleep again… what would you do with the life you got back?",
+      "vo": "If you never had to sleep again… what would you do with the life you got back?",
+      "words": 17,
+      "claims": [
+        "FRAME"
+      ],
+      "class": "FRAME",
+      "role": "FINAL",
+      "checks": []
+    }
+  ],
+  "timeline": [
+    {
+      "check": "Moment zero is a Monday night in September",
+      "ok": true,
+      "detail": "12 September is a Monday in 2033, 2039, 2044, 2050 (2026–2060)"
+    },
+    {
+      "check": "Day 1 is the Tuesday",
+      "ok": true,
+      "detail": "13 September 2033 is a Tuesday"
+    },
+    {
+      "check": "Events run in order (Year 0 and Year 10)",
+      "ok": true,
+      "detail": "T01 → T02 → T03 → T04 → T05 → T06 → T07 → T08 → T09 → T10 → T11 → T12 → T13 → T14"
+    },
+    {
+      "check": "The hook is exactly ten years after the last night",
+      "ok": true,
+      "detail": "Year 10, 13 September 03:00 = Year 0, 13 September 03:00 + 10 calendar years (the night of the 12th → 13th)"
+    },
+    {
+      "check": "Train leaves after the 03:00 scene, same morning",
+      "ok": true,
+      "detail": "train 07:00 is 4 h after 03:00 — 'My train's at seven'"
+    },
+    {
+      "check": "Back from the hill before the train",
+      "ok": true,
+      "detail": "leave the hill ≈ 05:00, about an hour's drive, train 07:00"
+    },
+    {
+      "check": "Programme starts the day after she travels",
+      "ok": true,
+      "detail": "train 13 Sep, term starts 14 Sep"
+    },
+    {
+      "check": "'She leaves tomorrow' (packing on 12 September)",
+      "ok": true,
+      "detail": "packing 12 Sep evening → train 13 Sep"
+    },
+    {
+      "check": "May message is months earlier, not the same night",
+      "ok": true,
+      "detail": "12 May → 12 September = 4 months before she leaves"
+    },
+    {
+      "check": "Leo's ages follow the years",
+      "ok": true,
+      "detail": "Y0: 15 → Y1: 16 → Y3: 18 → Y10: 25"
+    },
+    {
+      "check": "Mia's ages follow the years",
+      "ok": true,
+      "detail": "Y0: 8 → Y1: 9 → Y3: 11 → Y10: 18"
+    },
+    {
+      "check": "Age gap Leo–Mia is constant",
+      "ok": true,
+      "detail": "7 years"
+    },
+    {
+      "check": "1.2 picture: Leo (25) in Year 10",
+      "ok": true,
+      "detail": "expected 25"
+    },
+    {
+      "check": "2.1 picture: Leo (15) in Year 0",
+      "ok": true,
+      "detail": "expected 15"
+    },
+    {
+      "check": "2.1 picture: Mia (8) in Year 0",
+      "ok": true,
+      "detail": "expected 8"
+    },
+    {
+      "check": "3.1 picture: Mia (8) in Year 0",
+      "ok": true,
+      "detail": "expected 8"
+    },
+    {
+      "check": "3.1 picture: Leo (15) in Year 0",
+      "ok": true,
+      "detail": "expected 15"
+    },
+    {
+      "check": "5.4 picture: Mia (9) in Year 1",
+      "ok": true,
+      "detail": "expected 9"
+    },
+    {
+      "check": "5.4 picture: Leo (16) in Year 1",
+      "ok": true,
+      "detail": "expected 16"
+    },
+    {
+      "check": "6.3 picture: Leo (18) in Year 3",
+      "ok": true,
+      "detail": "expected 18"
+    },
+    {
+      "check": "6.3 narration: 'eighteen' (Leo) in Year 3",
+      "ok": true,
+      "detail": "expected 18"
+    },
+    {
+      "check": "6.4 picture: Mia (11) in Year 3",
+      "ok": true,
+      "detail": "expected 11"
+    },
+    {
+      "check": "7.1 narration: 'twenty-five' (Leo) in Year 10",
+      "ok": true,
+      "detail": "expected 25"
+    },
+    {
+      "check": "7.8c picture: Mia (18) in Year 10",
+      "ok": true,
+      "detail": "expected 18"
+    },
+    {
+      "check": "8.2 picture: Mia (18) in Year 10",
+      "ok": true,
+      "detail": "expected 18"
+    },
+    {
+      "check": "1.1 on-screen clock 3:00",
+      "ok": true,
+      "detail": "story time Y10-09-13 03:00"
+    },
+    {
+      "check": "2.1 wall calendar 12 SEP",
+      "ok": true,
+      "detail": "story time Y0-09-12 22:00"
+    },
+    {
+      "check": "3.2 on-screen clock 10:00",
+      "ok": true,
+      "detail": "story time Y0-09-13 22:00"
+    },
+    {
+      "check": "5.1 on-screen clock 0:00",
+      "ok": true,
+      "detail": "story time Y1 00:00"
+    },
+    {
+      "check": "7.3 on-screen clock 3:00",
+      "ok": true,
+      "detail": "story time Y10 03:00"
+    },
+    {
+      "check": "7.8a on-screen 12 MAY · 03:02",
+      "ok": true,
+      "detail": "= this beat's story time (Y10-05-12 03:02)"
+    },
+    {
+      "check": "7.8c letter: term starts 14 September",
+      "ok": true,
+      "detail": "= timeline T14"
+    },
+    {
+      "check": "7.8c on-screen 13 SEP · 07:00",
+      "ok": true,
+      "detail": "matches timeline event T13; beat is Y10-09-12 20:00"
+    },
+    {
+      "check": "7.8c ticket is for 'tomorrow'",
+      "ok": true,
+      "detail": "1 day(s) after the packing scene"
+    },
+    {
+      "check": "7.8d on-screen clock 3:00",
+      "ok": true,
+      "detail": "story time Y10-09-13 03:00"
+    },
+    {
+      "check": "8.3 on-screen clock 3:02",
+      "ok": true,
+      "detail": "story time Y10-09-13 03:02"
+    },
+    {
+      "check": "2.1 label “MONDAY — THE LAST NIGHT ANYONE SLEEPS”",
+      "ok": true,
+      "detail": "story time Y0-09-12 22:00 · Monday in every reference year"
+    },
+    {
+      "check": "3.1 label “TUESDAY”",
+      "ok": true,
+      "detail": "story time Y0-09-13 07:30 · Tuesday in every reference year"
+    },
+    {
+      "check": "3.5 label “4 A.M.”",
+      "ok": true,
+      "detail": "story time Y0-09-14 04:00"
+    },
+    {
+      "check": "7.8a label “12 MAY · 3:02 A.M.”",
+      "ok": true,
+      "detail": "story time Y10-05-12 03:02"
+    },
+    {
+      "check": "7.8c label “12 SEPTEMBER · 8 P.M.”",
+      "ok": true,
+      "detail": "story time Y10-09-12 20:00"
+    },
+    {
+      "check": "7.8d label “13 SEPTEMBER · 3 A.M.”",
+      "ok": true,
+      "detail": "story time Y10-09-13 03:00"
+    },
+    {
+      "check": "7.8c 'She leaves tomorrow'",
+      "ok": true,
+      "detail": "said over 12 Sep, 20:00; train 13 Sep, 07:00 = the next calendar day"
+    },
+    {
+      "check": "7.8d 'Which brings us back to three a.m.'",
+      "ok": true,
+      "detail": "this beat 13 Sep, 03:00; next beat 8.1 13 Sep, 03:00; the hook (T09) 13 Sep, 03:00"
+    },
+    {
+      "check": "8.2 'My train's at seven'",
+      "ok": true,
+      "detail": "said at 13 Sep, 03:01; train 13 Sep, 07:00 — 3 h 59 min later, the same day"
+    },
+    {
+      "check": "Leo: some birthday fits every dated age",
+      "ok": true,
+      "detail": "birthday 14 Sep – 12 May — ages 15 on 13 Sep of Year 0, 25 on 12 May of Year 10, 25 on 13 Sep of Year 10"
+    },
+    {
+      "check": "Mia: some birthday fits every dated age",
+      "ok": true,
+      "detail": "birthday any day except 13 Sep — ages 8 on 13 Sep of Year 0, 18 on 12 Sep of Year 10, 18 on 13 Sep of Year 10"
+    },
+    {
+      "check": "London-like city: 04:00 on 13 Sep is still night (sun below −12°)",
+      "ok": true,
+      "detail": "sun at -22.3° (stars clearly visible)"
+    },
+    {
+      "check": "London-like city: 05:00 on 13 Sep is still night (sun below −12°)",
+      "ok": true,
+      "detail": "sun at -14.5° (stars clearly visible)"
+    },
+    {
+      "check": "London-like city: 'Twenty-four hours awake' at Wednesday's sunrise",
+      "ok": true,
+      "detail": "up Tue 07:00 → sunrise Wed 06:35 BST = 23.6 h awake"
+    },
+    {
+      "check": "Paris-like city: 04:00 on 13 Sep is still night (sun below −12°)",
+      "ok": true,
+      "detail": "sun at -29.8° (stars clearly visible)"
+    },
+    {
+      "check": "Paris-like city: 05:00 on 13 Sep is still night (sun below −12°)",
+      "ok": true,
+      "detail": "sun at -22.7° (stars clearly visible)"
+    },
+    {
+      "check": "Paris-like city: 'Twenty-four hours awake' at Wednesday's sunrise",
+      "ok": true,
+      "detail": "up Tue 07:00 → sunrise Wed 07:27 CEST = 24.4 h awake"
+    },
+    {
+      "check": "New York-like city: 04:00 on 13 Sep is still night (sun below −12°)",
+      "ok": true,
+      "detail": "sun at -28.2° (stars clearly visible)"
+    },
+    {
+      "check": "New York-like city: 05:00 on 13 Sep is still night (sun below −12°)",
+      "ok": true,
+      "detail": "sun at -18.2° (stars clearly visible)"
+    },
+    {
+      "check": "New York-like city: 'Twenty-four hours awake' at Wednesday's sunrise",
+      "ok": true,
+      "detail": "up Tue 07:00 → sunrise Wed 06:37 EDT = 23.6 h awake"
+    }
+  ],
+  "notebook_contrast": 13.24,
+  "opening": {
+    "vo_start": 0.2,
+    "est_line_end": 2.95,
+    "earliest_cut": 3.083,
+    "planned_cut": 3.2,
+    "ok": true,
+    "thumb_at": 3.2
+  },
+  "fact_bank_not_narrated": [
+    "B02",
+    "B04",
+    "B07",
+    "B08",
+    "G05",
+    "HR6",
+    "SP-16"
+  ],
+  "narrated_not_in_fact_bank": [
+    "CALC-02",
+    "SP-20",
+    "SP-21",
+    "SP-22"
+  ]
+}

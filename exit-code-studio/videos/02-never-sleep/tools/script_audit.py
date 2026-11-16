@@ -21,7 +21,12 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent          # videos/02-never-sleep
-SCRIPT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "script" / "script_v1.json"
+def _latest_script():
+    found = sorted((ROOT / "script").glob("script_v*.json"), key=lambda q: int(re.search(r"_v(\d+)$", q.stem).group(1)))
+    return found[-1]
+
+
+SCRIPT = Path(sys.argv[1]) if len(sys.argv) > 1 else _latest_script()
 DOCS = ROOT / "docs"
 OUT = SCRIPT.parent
 VER = json.loads(SCRIPT.read_text())["doc"]["version"]
@@ -41,8 +46,8 @@ SPEAKER = {"N": "NARRATOR", "MIA": "MIA", "LEO": "LEO", "MUM": "MUM"}
 HEDGE = ["studies suggest", "study", "studies", "research suggests", "estimated", "thought to",
          "in another", "don't always", " can ", " may ", " might ", " could ", "suggest", "linked"]
 UNCERTAIN = ["nobody", "can't", "cannot", "still", "disagree", "?", "don't understand",
-             "find out", "unknown", "no one knows"]
-REAL_WORLD = ["today", "already", "twenty sixteen", "study", "studies", "research", "real world",
+             "find out", "unknown", "no one knows", "not everything", "hasn't settled", "not yet"]
+REAL_WORLD = ["today", "already", "even now", "twenty sixteen", "study", "studies", "research", "real world",
               "before this", "science", "estimated"]
 IMAGINE = ["imagine", "in this world", "would", "what if", "here,"]
 MODAL = [" might ", " could ", " may ", " would "]
@@ -67,7 +72,7 @@ WITHDRAWN = [  # phrases withdrawn by the ledger and the Story Bible guardrails 
     (r"\bonly (happen|in) rem\b", "dreams only in REM (A04)"),
     (r"\bsleep cleans the brain\b", "brain cleaning stated as fact (D04)"),
     (r"\breal night\b", "'your body clocks finally get a real night' (withdrawn v4)"),
-    (r"\bscientists know\b", "'scientists know' why we sleep (D01)"),
+    (r"\bscientists know (why|everything)\b|\bscience knows (why|everything)\b", "'scientists know why we sleep' (D01 overclaim)"),
 ]
 ID_RE = re.compile(r"^(?:[A-H]\d\d|I01|CALC-\d\d|HR\d|SP-\d\d)$")
 CLAIM_IN_TEXT = re.compile(r"\b(?:[A-H]\d\d|I01|CALC-\d\d|HR\d|SP-\d\d)\b")
@@ -76,6 +81,23 @@ CLAIM_IN_TEXT = re.compile(r"\b(?:[A-H]\d\d|I01|CALC-\d\d|HR\d|SP-\d\d)\b")
 def words(s):
     toks = s.replace("—", " ").replace("…", " ").replace("–", " ").split()
     return [t.strip(".,!?;:\"'()“”‘’") for t in toks if re.search(r"[A-Za-z0-9]", t)]
+
+
+MONTHS = {m: i for i, m in enumerate(["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST",
+                                        "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"], 1)}
+MONTHS.update({k[:3]: v for k, v in list(MONTHS.items())})
+WEEKDAYS = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+
+
+def parse_label(txt):
+    """(month, day) and (hour, minute) written in an on-screen label such as '13 SEPTEMBER · 3 A.M.'."""
+    dm = re.search(r"\b(\d{1,2}) ([A-Z]{3,9})\b", txt)
+    tm = re.search(r"\b(\d{1,2})(?::(\d{2}))?\s*(A\.M\.|P\.M\.)", txt)
+    d = (MONTHS[dm.group(2)], int(dm.group(1))) if dm and dm.group(2) in MONTHS else None
+    hm = None
+    if tm:
+        hm = (int(tm.group(1)) % 12 + (12 if tm.group(3) == "P.M." else 0), int(tm.group(2) or 0))
+    return d, hm
 
 
 def fmt_t(sec, decimals=1):
@@ -116,7 +138,18 @@ def _selftest():
     T.append(("no hedge in 'Earlier deaths.'", not has_any("Earlier deaths.", HEDGE)))
     T.append(("uncertainty found in 'Nobody knows.'", has_any("Nobody knows.", UNCERTAIN)))
     T.append(("withdrawn: 'four times more likely' caught", any(re.search(p, "four times more likely", re.I) for p, _ in WITHDRAWN)))
+    T.append(("withdrawn: 'Scientists know why we sleep' caught", any(re.search(p, "Scientists know why we sleep.", re.I) for p, _ in WITHDRAWN)))
+    T.append(("withdrawn: '…know a lot about why… but not everything' allowed",
+              not any(re.search(p, "Scientists know a lot about why… but not everything.", re.I) for p, _ in WITHDRAWN)))
     T.append(("withdrawn: 'Does sleep really clean the brain?' allowed", not any(re.search(p, "Does sleep really clean the brain?", re.I) for p, _ in WITHDRAWN)))
+    T.append(("label '13 SEPTEMBER · 3 A.M.'", parse_label("13 SEPTEMBER · 3 A.M.") == ((9, 13), (3, 0))))
+    T.append(("label '12 SEPTEMBER · 8 P.M.'", parse_label("12 SEPTEMBER · 8 P.M.") == ((9, 12), (20, 0))))
+    T.append(("label '12 MAY · 3:02 A.M.'", parse_label("12 MAY · 3:02 A.M.") == ((5, 12), (3, 2))))
+    T.append(("label '4 A.M.' (time only)", parse_label("4 A.M.") == (None, (4, 0))))
+    T.append(("label 'TEN YEARS FROM NOW' has no date", parse_label("TEN YEARS FROM NOW") == (None, None)))
+    T.append(("uncertainty found in '…but not everything.'", has_any("Scientists know a lot about why… but not everything.", UNCERTAIN)))
+    T.append(("real-world marker found in 'Even now, …'", has_any("Even now, over eighty percent of people live under light-polluted skies.", REAL_WORLD)))
+    T.append(("no real-world marker in 'Earlier deaths.'", not has_any("Earlier deaths.", REAL_WORLD)))
     bad = [n for n, ok in T if not ok]
     if bad:
         sys.exit("checker self-test failed: " + "; ".join(bad))
@@ -154,7 +187,11 @@ for line in ledger_txt.splitlines():
         row["sources"] = re.findall(r"S\d\d", cells[3])
         row["notes"] = " | ".join(cells[3:])
         nl = row["notes"].lower()
-        row["not_narrated"] = ("not narrated" in nl) or ("not used" in nl)
+        # Narrated status comes from the ledger's chapter column (the last cell), not from free-text notes:
+        # notes may describe what is *not* narrated about a claim that is itself narrated (LL-75).
+        row["ch"] = cells[-1].strip()
+        row["not_narrated"] = row["ch"] in ("—", "-", "")
+        row["picture_only"] = "(picture)" in row["ch"]
         row["not_planned"] = "not planned" in nl
     LEDGER[cid] = row
 wd = ledger_txt.split("## Withdrawn or not narrated")[1].split("\n## ")[0] if "## Withdrawn or not narrated" in ledger_txt else ""
@@ -290,6 +327,8 @@ for s in sents:
             errors.append(f"{s['beat']} sentence {s['n']}: claim {c} is withdrawn")
         if row.get("not_narrated"):
             errors.append(f"{s['beat']} sentence {s['n']}: claim {c} is marked not narrated in the ledger")
+        if row.get("picture_only"):
+            errors.append(f"{s['beat']} sentence {s['n']}: claim {c} is picture-only in the ledger")
         if row.get("not_planned"):
             warnings.append(f"{s['beat']} sentence {s['n']}: claim {c} is marked 'not planned' — review")
     known = [c for c in fact_ids if c in LEDGER]
@@ -449,9 +488,8 @@ OPENING = {"vo_start": 0.2, "est_line_end": line_end, "earliest_cut": cut_min, "
            "ok": b11["dur"] >= cut_min, "thumb_at": b11["dur"]}
 if not OPENING["ok"]:
     errors.append(f"opening sync: planned cut {b11['dur']} s is before the line can end (≈ {cut_min:.2f} s)")
-if OPENING["thumb_at"] > 3.0:
-    warnings.append(f"first three seconds: thumbnail shot at {OPENING['thumb_at']:.1f} s (Standard v1.3 said within 3 s) — "
-                    "required by production requirement 3; Standard v1.4 rewords the rule")
+if OPENING["thumb_at"] > 3.5:      # Standard v1.4 §6: first cut after the opening line, target ≤ 3.5 s
+    warnings.append(f"first three seconds: thumbnail shot at {OPENING['thumb_at']:.1f} s — later than the 3.5 s target (Standard v1.4 §6)")
 
 # ------------------------------------------------------------------------------------
 # 6. Sentence metrics
@@ -514,6 +552,37 @@ for g, where in grams.items():
         REPEATS.append((g, sorted(set(where)), deliberate))
         if not deliberate:
             warnings.append(f"repeated phrase “{g}” in sentences {sorted(set(where))} — not a declared callback")
+
+# Near repeats (v2, LL-75): the same content word in the same or the next beat.
+# The four-word check above missed 'billions' twice in six seconds; this list is for review, not a pass/fail rule.
+NEAR_STOP = {"through", "anyone", "nobody", "really", "before", "people", "anymore", "everyone", "something", "because",
+             "there's", "that's", "you're", "doesn't", "don't", "can't", "isn't", "hasn't", "they're", "night", "nights",
+             "asleep", "awake", "sleep", "hours", "dreams", "tired", "clock", "clocks", "hourglass", "twenty-four"}
+cb_words = {w for c in S.get("callbacks", []) for w in c.lower().split()}
+
+
+def content_words(v):
+    out = set()
+    for w in words(v):
+        w = w.lower().replace("’", "'")
+        w = w[:-2] if w.endswith("'s") else w
+        if len(w) >= 6 and w not in NEAR_STOP and w not in cb_words:
+            out.add(w)
+    return out
+
+
+NEAR = []
+for i, b in enumerate(beats):
+    window = by_beat[b["id"]] + (by_beat[beats[i + 1]["id"]] if i + 1 < len(beats) else [])
+    for x in range(len(window)):
+        for y in range(x + 1, len(window)):
+            sx, sy = window[x], window[y]
+            if sx["beat"] != b["id"]:
+                continue
+            for w in sorted(content_words(sx["vo"]) & content_words(sy["vo"])):
+                key = (w, sx["n"], sy["n"])
+                if key not in [(k[0], k[1], k[2]) for k in NEAR]:
+                    NEAR.append(key)
 
 # ------------------------------------------------------------------------------------
 # 7. Timeline audit
@@ -679,6 +748,107 @@ for b, o in ONSCREEN:
         t14 = resolve(ev["T14"]["when"], REF)
         tl(f"{b['id']} letter: term starts {ts.group(1)} September", (t14.month, t14.day) == (9, int(ts.group(1))), "= timeline T14")
 
+# Scene labels with a date, a time or a weekday vs the story time of their beat (v2)
+for b, o in ONSCREEN:
+    if o["kind"] != "label" or not b.get("story_time"):
+        continue
+    d_, hm = parse_label(o["text"])
+    wd_ = next((w for w in WEEKDAYS if re.search(rf"\b{w}\b", o["text"])), None)
+    if not (d_ or hm or wd_):
+        continue
+    m = re.match(r"Y(\d+)(?:-(\d\d)-(\d\d))?(?: (\d\d):(\d\d))?", b["story_time"])
+    ok, why = True, []
+    if d_:
+        ok &= bool(m and m.group(2)) and d_ == (int(m.group(2)), int(m.group(3)))
+    if hm:
+        ok &= bool(m and m.group(4)) and hm == (int(m.group(4)), int(m.group(5)))
+    if wd_:
+        if m and m.group(2):
+            wk = {WEEKDAYS[date(y0 + int(m.group(1)), int(m.group(2)), int(m.group(3))).weekday()] for y0 in years}
+            ok &= wk == {wd_}
+            why.append(f"{wd_.title()} in every reference year" if wk == {wd_} else f"weekday varies: {sorted(wk)}")
+        else:
+            ok = False
+            why.append("beat has no story date")
+    tl(f"{b['id']} label “{o['text']}”", ok, f"story time {b['story_time']}" + (f" · {'; '.join(why)}" if why else ""))
+
+
+def beat_dt(b):
+    st = b.get("story_time") or ""
+    return resolve(st, REF) if re.match(r"Y\d+-\d\d-\d\d \d\d:\d\d$", st) else None
+
+
+# Relative time words in the narration vs the timeline (v2)
+t13, t09 = resolve(ev["T13"]["when"], REF), resolve(ev["T09"]["when"], REF)
+for s in sents:
+    b = next(x for x in beats if x["id"] == s["beat"])
+    bt, v = beat_dt(b), s["vo"].lower()
+    if "leaves tomorrow" in v:
+        tl(f"{b['id']} 'She leaves tomorrow'", bool(bt) and (t13.date() - bt.date()).days == 1,
+           f"said over {bt:%d %b, %H:%M}; train {t13:%d %b, %H:%M} = the next calendar day")
+    if "back to three a.m" in v:
+        nb = beats[beats.index(b) + 1]
+        ok = bool(bt) and bt == t09 and beat_dt(nb) == t09
+        tl(f"{b['id']} 'Which brings us back to three a.m.'", ok,
+           f"this beat {bt:%d %b, %H:%M}; next beat {nb['id']} {beat_dt(nb):%d %b, %H:%M}; the hook (T09) {t09:%d %b, %H:%M}")
+    if "train's at seven" in v:
+        ok = bool(bt) and bt.date() == t13.date() and bt < t13
+        tl(f"{b['id']} 'My train's at seven'", ok,
+           f"said at {bt:%d %b, %H:%M}; train {t13:%d %b, %H:%M} — {(t13 - bt).seconds // 3600} h {(t13 - bt).seconds % 3600 // 60:02d} min later, the same day")
+
+# Birthdays that fit every dated age (v2)
+BDAYS = {}
+
+
+def _runs(days):
+    """Compress (month, day) tuples of a non-leap year into wrap-around ranges."""
+    yd = [(date(2001, m_, d__) - date(2001, 1, 1)).days for m_, d__ in days]
+    flags = [i in set(yd) for i in range(365)]
+    if all(flags):
+        return ["any day"]
+    start = next(i for i in range(365) if not flags[i])            # begin scanning just after a gap
+    runs, cur = [], None
+    for k in range(1, 366):
+        i = (start + k) % 365
+        if flags[i] and cur is None:
+            cur = i
+        if not flags[i] and cur is not None:
+            runs.append((cur, (i - 1) % 365))
+            cur = None
+    if cur is not None:
+        runs.append((cur, (start - 1) % 365))
+    f = lambda i: (date(2001, 1, 1) + timedelta(days=i)).strftime("%-d %b")
+    missing = [i for i in range(365) if not flags[i]]
+    if len(missing) <= 3:
+        return ["any day except " + ", ".join(f(i) for i in missing)]
+    return [f"{f(a)} – {f(b_)}" if a != b_ else f(a) for a, b_ in runs]
+
+
+for who in ("Leo", "Mia"):
+    asserts = [a for a in TL.get("age_assertions", []) if a["who"] == who]
+    if not asserts:
+        continue
+    fits = []
+    for k in range(365):
+        md_ = ((date(2001, 1, 1) + timedelta(days=k)).month, (date(2001, 1, 1) + timedelta(days=k)).day)
+        good = True
+        for y0 in years:
+            d_first = resolve(asserts[0]["when"], y0).date()
+            cands = (d_first.year - asserts[0]["age"] - 1, d_first.year - asserts[0]["age"])
+            if not any(all(resolve(a["when"], y0).year - born - ((resolve(a["when"], y0).month, resolve(a["when"], y0).day) < md_)
+                           == a["age"] for a in asserts) for born in cands):
+                good = False
+                break
+        if good:
+            fits.append(md_)
+    BDAYS[who] = _runs(fits)
+    tl(f"{who}: some birthday fits every dated age", bool(fits),
+       "birthday " + " or ".join(BDAYS[who]) + " — ages " + ", ".join(
+           f"{a['age']} on {resolve(a['when'], REF):%d %b} of Year {re.match(r'Y(\d+)', a['when']).group(1)}" for a in asserts))
+
+SCENES = sorted((b for b in beats if beat_dt(b) and beat_dt(b) >= resolve(ev["T07"]["when"], REF)),
+                key=lambda b: (beat_dt(b), b["start"]))
+
 # Astronomy
 SKY = []
 for site in TL["astronomy_sites"]:
@@ -810,11 +980,19 @@ for ch in S["chapters"]:
             md.append(f"> {s['text']} &nbsp;&nbsp;{tagstr(s)}{note}  ")
         md.append("")
 
-md.append("---\n\n## Changes from the Story Lock v4 draft beats\n")
-md.append("The creative direction, premise, characters, timeline, emotional arc and ending are unchanged. Every wording, timing or picture change is listed here with its reason.\n")
-md.append("| Beat | Kind | Story Lock v4 | Script v1 | Why |\n|---|---|---|---|---|")
-for c in S["changes"]:
-    md.append(f"| {c['beat']} | {c['kind']} | {c['from']} | {c['to']} | {c['why']} |")
+if S.get("changes_from_lock"):
+    prev = f"v{int(VER[1:]) - 1}"
+    md.append(f"---\n\n## Changes in this pass (script {prev} → {VER})\n")
+    md.append(S["changes_from_lock"] + " The creative direction, premise, characters, timeline, emotional arc and ending are unchanged.\n")
+    md.append(f"| Beat | Kind | Your point | Script {prev} | Script {VER} | Why |\n|---|---|---|---|---|---|")
+    for c in S["changes"]:
+        md.append(f"| {c['beat']} | {c['kind']} | {c.get('point', '')} | {c['from']} | {c['to']} | {c['why']} |")
+else:
+    md.append("---\n\n## Changes from the Story Lock v4 draft beats\n")
+    md.append("The creative direction, premise, characters, timeline, emotional arc and ending are unchanged. Every wording, timing or picture change is listed here with its reason.\n")
+    md.append("| Beat | Kind | Story Lock v4 | Script v1 | Why |\n|---|---|---|---|---|")
+    for c in S["changes"]:
+        md.append(f"| {c['beat']} | {c['kind']} | {c['from']} | {c['to']} | {c['why']} |")
 md.append("\n## Pronunciation (for the voice)\n")
 md.append("| Word | Say it |\n|---|---|")
 for a, b_ in S["pronunciation"]:
@@ -890,6 +1068,13 @@ for name, key, tgt, fn, f in TARGETS:
     A.append(f"| {name} | {f.format(M_ALL[key])} | {f.format(M_NARR[key])} | {tgt} | {V1[key]} | {'✅' if fn(M_ALL[key]) else '⚠️ off target'} |")
 A.append(f"| Words | {M_ALL['words']} | {M_NARR['words']} | ≈ 1,050 for 7:30 | 1,036 | {'✅' if 950 <= M_ALL['words'] <= 1150 else '⚠️'} |")
 A.append(f"| Sentences | {M_ALL['sentences']} | {M_NARR['sentences']} | — | — | — |\n")
+_prev = OUT / f"AUDIT_v{int(VER[1:]) - 1}.json"
+if VER != "v1" and _prev.exists():
+    P = json.loads(_prev.read_text())
+    A.append(f"**Compared with {_prev.stem.split('_')[1]}:** " + " · ".join(
+        f"{k} {P['metrics'][k]:.2f} → {M_ALL[k]:.2f}" if isinstance(P["metrics"][k], float) else f"{k} {P['metrics'][k]} → {M_ALL[k]}"
+        for k in ("words", "sentences", "avg", "short_pct", "questions", "ellipses", "you_per100")) +
+        f" · runtime {fmt_t(P['totals']['runtime_s'])} → {fmt_t(TOTAL)}\n")
 A.append("**By chapter:**\n")
 A.append("| Ch | Sentences | Words | Avg words | ≤ 4 words | Questions | Ellipses | you/your per 100 |\n|---|---|---|---|---|---|---|---|")
 for n, m in M_CH.items():
@@ -911,6 +1096,13 @@ A.append("\n**Repeated four-word phrases:**\n")
 A.append("| Phrase | Sentences | Declared callback? |\n|---|---|---|")
 for g, where, delib in sorted(REPEATS, key=lambda x: x[1]):
     A.append(f"| {g} | {', '.join(map(str, where))} | {'yes' if delib else '**no — review**'} |")
+A.append("\n**Near repeats** — the same content word (six letters or more, motif words excluded) in the same or the next beat; for review:\n")
+if NEAR:
+    A.append("| Word | Sentences |\n|---|---|")
+    for w, a_, b_ in NEAR:
+        A.append(f"| {w} | {a_} · {b_} |")
+else:
+    A.append("* none")
 A.append("\n### Long sentences (over %d words)\n" % L["long_sentence_words"])
 for s in long_sents:
     A.append(f"* {s['beat']} ({s['w']} words): {s['text']}")
@@ -969,6 +1161,18 @@ A.append("\n### Checks\n")
 A.append("| Check | Result | Detail |\n|---|---|---|")
 for name, ok, det in TL_CHECKS:
     A.append(f"| {name} | {'✅' if ok else '❌'} | {det} |")
+A.append("\n### Scene clock — from the May message to the train\n")
+A.append("In story order. The hook (film time 0:00) and chapter 8 are the same night as 7.8d.\n")
+A.append("| Beat | Film time | On-screen label | Story date and time (Year 10) | Before the 07:00 train |\n|---|---|---|---|---|")
+for b in SCENES:
+    lab = next((o["text"] for o in b.get("onscreen", []) if o["kind"] == "label"), "—")
+    dt_ = beat_dt(b)
+    gap = t13 - dt_
+    rel = (f"{gap.days} days {gap.seconds // 3600} h" if gap.days else f"{gap.seconds // 3600} h {gap.seconds % 3600 // 60:02d} min")
+    A.append(f"| {b['id']} | {fmt_t(b['start'])} | {lab} | {dt_:%d %B, %H:%M} | {rel} |")
+A.append(f"| train | — | ticket 13 SEP · 07:00 | {t13:%d %B, %H:%M} | — |")
+A.append(f"| term | — | letter TERM STARTS 14 SEPTEMBER | {resolve(ev['T14']['when'], REF):%d %B} | the next day |")
+A.append("\n**Birthdays that fit every dated age:** " + " · ".join(f"{w}: {' or '.join(r)}" for w, r in BDAYS.items()) + "\n")
 A.append(f"\n### The night sky (NOAA solar-position algorithm, Year 0 = {years[0]}, Year 10 = {years[0] + 10})\n")
 A.append("| Site | Year 10, 13 Sep: astronomical dawn | nautical dawn | sunrise | sun at 03:10 | at 04:00 | at 05:00 | Year 0, Wed 14 Sep sunrise |\n|---|---|---|---|---|---|---|---|")
 for k in SKY:

@@ -67,3 +67,14 @@ The locked fields above are left exactly as approved. These notes correct bookke
 5. **LEO'S MOTIVATION, chapter 8** (production requirement 2): "a long column of tally marks" becomes 15 marks in three groups of five, sized for a phone. The clock at the reading moment is analog and just past three (≈ 3:02), because the scene happens minutes after 3:00.
 6. **MOMENT ZERO** (production requirement 1), exact dates: last sleep on the night of Monday 12 → Tuesday 13 September; the hook is 13 September of Year 10 at 03:00; the train is at 07:00 that morning; term starts on 14 September.
 7. **LENGTH:** the script plans 7:56 and 1,066 spoken words (Lock: 7:50 and 1,031). Every chapter stays within ±15 %.
+
+### Added after the producer's review of script v1 (2026-11-16) — script v2
+
+Again, the locked fields stay as approved. Full wording, reasons and audits: [`script/SCRIPT_v2.md`](../script/SCRIPT_v2.md), [`script/AUDIT_v2.md`](../script/AUDIT_v2.md).
+
+8. **THE RULES, items 3 and 5 — scope.** "Not sick" became "No harm done": no harm from going without sleep, not immunity from illness. The dream rule covers the dreams that come with sleep: "the dreams go too. Daydreams stay." Ledger HR5 states the scope.
+9. **FACT BANK — numbers.** No population figure is narrated, because moment zero lies in the future. "Eight billion people" → "Everyone on Earth"; CALC-03's "four billion" → "billions" (the "≈ 4.1 bn" figure is no longer narrated).
+10. **RESOLUTION.** "No light up here holds back your body's signal of night" → "Up here, no light tells your body clock it's day." After seven years of night work, Leo's melatonin at 4 a.m. can't be assumed.
+11. **SAFETY LESSON.** "…and science still can't fully explain why" → "Scientists know a lot about why… but not everything."
+12. **Chapter 7 dates** are now shown on screen: 12 MAY · 3:02 A.M. (Mum's beat is the same night), 12 SEPTEMBER · 8 P.M. ("She leaves tomorrow"), 13 SEPTEMBER · 3 A.M.
+13. **LENGTH:** script v2 plans 7:58 and 1,082 spoken words. Every chapter is still within ±15 %.

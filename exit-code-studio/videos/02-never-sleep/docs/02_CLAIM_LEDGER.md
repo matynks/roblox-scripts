@@ -1,6 +1,6 @@
 # Video #2 — Claim Ledger
 
-**v4 · 2026-11-15 · v3 plus the producer's narrow correction pass.** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
+**v4.2 · 2026-11-16 · v4 plus script-stage bookkeeping (v4.1) and the producer's review of script v1 (v4.2).** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
 
 Sources are in [01_RESEARCH.md §4](01_RESEARCH.md#4-source-list):
 * **Level A** — abstract, official page or the authors' own release.
@@ -47,12 +47,12 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 |---|---|---|---|---|---|
 | B01 | Two separate systems time our sleep: a pressure that builds the longer we're awake, and a body clock. | ESTABLISHED FACT | S04, S01 | The standard two-process model. | 2 |
 | B02 | While we're awake, a chemical called adenosine builds up in the brain — one of the signals behind sleep pressure. | RESEARCH-SUPPORTED EVIDENCE | S03, S08 | Key evidence is animal microdialysis. Say "one of the signals", not "the cause". | 2 |
-| B03 | Caffeine keeps you alert mainly by blocking adenosine's receptors. | ESTABLISHED FACT | S08 | Narrate as "blocking its signal". | 2 |
-| B04 | The master clock is a small cluster of nerve cells deep in the brain (the suprachiasmatic nucleus). It keeps clocks all over the body in step. | ESTABLISHED FACT | S05, S53 | — | 2 |
-| B05 | Left alone, the human clock runs a little longer than a day — about 24 hours 11 minutes — so it is reset every day, mainly by light reaching the eyes. | ESTABLISHED FACT | S54, S05 | — | 2 |
-| B06 | Melatonin is made by the **pineal gland**, not by the clock itself. The master clock drives its production and light inhibits it, so levels rise in darkness and peak at night. | ESTABLISHED FACT | S07, S53 | **Never** "the clock releases melatonin". | 3, 8 |
+| B03 | Caffeine keeps you alert mainly by blocking adenosine's receptors. | ESTABLISHED FACT | S08 | Narrate as "blocking its signal". **v4.2 narration:** "Coffee blocks a sleep signal called adenosine. The hourglass keeps filling anyway." Blocking the receptors hides the pressure; it does not remove the need for sleep. Not narrated: any claim that caffeine changes adenosine levels, or the build-up claim itself (B02). | 2 |
+| B04 | The master clock is a small cluster of nerve cells deep in the brain (the suprachiasmatic nucleus). It keeps clocks all over the body in step. | ESTABLISHED FACT | S05, S53 | v4.2: shown in the ch. 2 picture (a small clock deep in the brain); the narration says "a body clock". | 2 (picture) |
+| B05 | Left alone, the human clock runs a little longer than a day — about 24 hours 11 minutes — so it is reset every day, mainly by light reaching the eyes. | ESTABLISHED FACT | S54, S05 | v4.2: also the basis of ch. 8 "Up here, no light tells your body clock it's day" — light as the day cue, with no claim about the character's melatonin or clock phase. | 2, 8 |
+| B06 | Melatonin is made by the **pineal gland**, not by the clock itself. The master clock drives its production and light inhibits it, so levels rise in darkness and peak at night. | ESTABLISHED FACT | S07, S53 | **Never** "the clock releases melatonin". v4.2: used on the first sleepless night only (ch. 3), when every clock is still normal. Not used in ch. 8: after years of night work Leo's clock may have shifted (B09, SP-17), so his melatonin at 3–4 a.m. is unknown. | 3 |
 | B07 | Melatonin carries the message of darkness to the clock and the body. In humans it helps prepare for sleep — sleepiness rises about two hours after its evening onset — but it is not a sedative. | RESEARCH-SUPPORTED EVIDENCE | S53 | A review; the author has a declared commercial interest. Narrate only "the body's signal of night". | 3 |
-| B08 | Ordinary room light at night suppresses melatonin — by more than half during usual sleep hours in one study — and delays its evening rise. | RESEARCH-SUPPORTED EVIDENCE | S52 | Retrospective analysis, 116 young adults. Never "light switches it off". | 3, 8 |
+| B08 | Ordinary room light at night suppresses melatonin — by more than half during usual sleep hours in one study — and delays its evening rise. | RESEARCH-SUPPORTED EVIDENCE | S52 | Retrospective analysis, 116 young adults. Never "light switches it off". Not narrated (script v1+): it governs the ch. 3 picture (the glow thins, never to zero). | 3 (picture) |
 | B09 | Light is the clock's strongest time cue. Light at the wrong time can shift the clock, and night-shift workers' clocks often stay out of step with their schedules. | RESEARCH-SUPPORTED EVIDENCE | S05, S55, S56 | Reviews of shift work. | 6 |
 | B10 | Core body temperature has a daily rhythm, lowest in the early-morning hours. | ESTABLISHED FACT | S09 | Level S only → **not narrated** (dropped from chapter 3). | — |
 | B11 | The clock's molecular gears earned the 2017 Nobel Prize. | ESTABLISHED FACT | S06 | — | opt |
@@ -75,9 +75,9 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Claim | Class | Sources | Notes | Ch |
 |---|---|---|---|---|---|
-| D01 | Science doesn't yet agree on everything sleep is for. | UNKNOWN | S25 (S24 level S) | Never "scientists know why we sleep". | 2, 8 |
+| D01 | Science doesn't yet agree on everything sleep is for. | UNKNOWN | S25 (S24 level S) | Never "scientists know why we sleep" — and never the opposite, that science knows nothing. **v4.2 narration (ch. 8):** "Scientists know a lot about why… but not everything." | 2, 8 |
 | D02 | What REM sleep is for isn't settled. | UNKNOWN | S21, S22 (S23 level S) | No single function for REM. | 2 |
-| D03 | What dreams are for — if anything — nobody knows. | UNKNOWN | S20–S22 | No consensus found. | 6, 7 |
+| D03 | What dreams are for — if anything — nobody knows. | UNKNOWN | S20–S22 | No consensus found: there are hypotheses but no agreement. **v4.2 narration (ch. 6):** "science still hasn't settled what dreams were for". | 6, 7 |
 | D04 | Whether sleep speeds up waste clearance in the human brain is unresolved. | UNKNOWN | S17–S19 | — | 2 |
 | D05 | Whether people with no fatigue could stay focused and motivated twenty hours a day is unknown. | UNKNOWN | — | No data exists. | 4 |
 | D06 | Whether a life lit all night would harm people's health in this world is unknown. | UNKNOWN | S55, S56 | Real shift work shows circadian problems, but this world is hypothetical. **Not narrated.** | — |
@@ -126,10 +126,10 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Claim | Class | Basis | Ch |
 |---|---|---|---|---|
-| I01 | About 8.2 billion people live on Earth; global life expectancy is about 73 years. | ESTABLISHED FACT | S51 (2024) | 1, 4 |
+| I01 | About 8.2 billion people live on Earth; global life expectancy is about 73 years. | ESTABLISHED FACT | S51 (2024). v4.2: not narrated — the story's moment zero lies in the future, when the population is not known; the script says "everyone on Earth" (ch. 3) and "billions of extra people" (CALC-03, ch. 4) instead. Both figures remain inputs to CALC-01 and CALC-03. | — |
 | CALC-01 | About a third of a lifetime adds up to **more than twenty years** asleep. | ESTABLISHED FACT | See the method below | 1 |
 | CALC-02 | Eight hours a day back is almost 3,000 hours a year (2,920). | HYPOTHETICAL ASSUMPTION | 8 × 365. Rule-derived; assumes 8 h of sleep regained. Narrated as "almost three thousand". | 3 |
-| CALC-03 | Humanity's waking time would grow by **about half** — roughly the waking hours of **four billion** extra people. | HYPOTHETICAL ASSUMPTION | Rule-derived; the method below | 4 |
+| CALC-03 | Humanity's waking time would grow by **about half** — the waking hours of **billions** of extra people. | HYPOTHETICAL ASSUMPTION | Rule-derived; the method below. v4.2: "four billion" is no longer narrated (it depends on the population at a future moment zero); "about half" depends only on hours of sleep. | 4 |
 | CALC-05 | Ten years of extra hours ≈ 29,000 hours per person. | HYPOTHETICAL ASSUMPTION | 2,920 × 10. Rule-derived. | 8 opt |
 
 ### CALC-01 method — "more than twenty years"
@@ -160,7 +160,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | 9 h | +60 % | 4.9 bn |
 
 * **What it does and doesn't mean:** it compares **hours only**. The hours are spread across everyone — babies, children, the elderly — so it is **not** four billion extra workers or consumers.
-* **Narration:** "Humanity's waking time would grow by about half — roughly the waking hours of four billion extra people." An on-screen footnote reads: *assumes about 8 hours of sleep; 7–9 hours gives 3.4–4.9 billion*.
+* **Narration (v4.2):** "Overnight, humanity's waking time grows by about half. The waking hours of billions of extra people." The on-screen footnote reads: *waking hours only · assumes ~8 h of sleep; 7–9 h gives +41 % to +60 %* — no population figure, because the story's moment zero is in the future. ("Billions" holds for any population above about 2 billion at 7–9 h of sleep.) The v1–v4 wording "roughly the waking hours of four billion extra people" used 2024's population and is withdrawn.
 * **Class:** HYPOTHETICAL ASSUMPTION — arithmetic on a world rule with stated inputs, not a prediction.
 
 ## J · The rules of this world (HYPOTHETICAL ASSUMPTION)
@@ -171,7 +171,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | HR2 | Sleep pressure never builds: nobody ever feels sleepy or exhausted from being awake. |
 | HR3 | Whatever sleep does for brain and body — the parts science knows and the parts it doesn't — now happens while awake. Not sleeping causes no harm. |
 | HR4 | **The circadian system works exactly as it does today.** The master clock keeps roughly 24-hour time and is reset by light. In darkness it drives the pineal gland to make melatonin; light at night still suppresses melatonin and can shift the clock. **The only change: none of this ever makes anyone sleepy.** |
-| HR5 | **Nobody falls asleep, so nobody dreams.** This is a rule of the thought experiment, *not* a scientific prediction: science doesn't know what dreams are for (D03), or whether dream-like experience could exist without sleep. It follows that children born after the change never dream. |
+| HR5 | **Nobody falls asleep, so nobody has the dreams that come with sleep.** This is a rule of the thought experiment, *not* a scientific prediction: science doesn't know what dreams are for (D03), or whether dream-like experience could exist without sleep. It follows that children born after the change never have a sleep dream. **Scope (v4.2):** waking imagination — daydreams, mind-wandering, imagining — is unchanged (HR7). Narrated as "the dreams go too. Daydreams stay." |
 | HR6 | People can still lie down, rest and close their eyes. |
 | HR7 | Everything else is unchanged: physics, the sun, human nature, the economy on day one. |
 | HR8 | **How** it happens is never explained. No mechanism is ever presented as science. |
@@ -243,3 +243,10 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 ## Changes in v4.1 (script stage, bookkeeping only)
 * **SP-20, SP-21 and SP-22 added** so that three approved beats which had no scenario ID can be traced: "At first, they do" (ch. 6), "The economy is bigger" (ch. 7) and the 1 a.m. montage (ch. 3). The story is unchanged.
 * **G04 wording corrected:** "something meaningful" → "something productive". S40 compared productive with unproductive uses of free time; "meaningful" was not what it measured (construct-fidelity rule, Standard §5.2).
+
+## Changes in v4.2 (producer's review of script v1, 2026-11-16)
+* **HR5** — scope written out: the rule removes the dreams that come with sleep; waking imagination is unchanged.
+* **B03** — the narration now explains caffeine: it blocks adenosine's signal, and the hourglass keeps filling. B02's build-up claim is still not narrated.
+* **B05** — also the basis of the new chapter 8 line. **B06** is no longer used in chapter 8: after years of night work, Leo's melatonin at 3–4 a.m. is unknown. **B04** and **B08** now govern pictures only.
+* **I01, CALC-03** — no population figure is narrated, because moment zero lies in the future. CALC-03 is narrated as "about half" plus "billions"; its footnote is population-independent.
+* **D01, D03** — unknowns are worded as partial knowledge ("know a lot… but not everything"; "hasn't settled").
