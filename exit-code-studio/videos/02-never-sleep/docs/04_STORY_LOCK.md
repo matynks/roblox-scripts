@@ -78,3 +78,14 @@ Again, the locked fields stay as approved. Full wording, reasons and audits: [`s
 11. **SAFETY LESSON.** "…and science still can't fully explain why" → "Scientists know a lot about why… but not everything."
 12. **Chapter 7 dates** are now shown on screen: 12 MAY · 3:02 A.M. (Mum's beat is the same night), 12 SEPTEMBER · 8 P.M. ("She leaves tomorrow"), 13 SEPTEMBER · 3 A.M.
 13. **LENGTH:** script v2 plans 7:58 and 1,082 spoken words. Every chapter is still within ±15 %.
+
+### Added after the producer's review of script v2 (2026-11-16) — script v3
+
+Full wording, reasons and the computed calculation: [`script/SCRIPT_v3.md`](../script/SCRIPT_v3.md), [`script/AUDIT_v3.md`](../script/AUDIT_v3.md) §3.
+
+14. **MOMENT ZERO — defined as an exact instant:** the beginning of the first night without sleep, **Tuesday 13 September, Year 0, 22:00** (the story's city). The last sleep is still Monday night; it ends at 07:00 on Tuesday. "The ending is exactly ten years later" now holds to the night: the Year-10 night is **13 → 14 September**, the tenth anniversary of the first sleepless night. The hook and chapter 8 are at 03:00 on 14 September — moment zero + 10 years + 5 hours, and 10 years + 20 hours after the last sleep ended. With the old 03:00 on 13 September, "nobody here has slept… in ten years" was 4 hours short.
+15. **MIA'S MOTIVATION — dates:** train 07:00 on 14 September; term starts **15 September** (was 14). Chapter 7 labels: 13 SEPTEMBER · 8 P.M. and 14 SEPTEMBER · 3 A.M.
+16. **RESOLUTION:** "Up here, no light tells your body clock it's day" (v2) → **"Up here, the lights are finally off."** No claim about Leo's body clock.
+17. **SAFETY LESSON:** "Back in the real world, experts recommend adults get at least seven hours a night. Sleep helps memory, immunity, metabolism… and more we're still learning about."
+18. **FACT BANK:** caffeine now blocks adenosine *receptors* (B03); new established claim A09 (sleep's roles in memory, immunity and metabolism — NINDS; AASM/SRS). The script now contains no population line.
+19. **LENGTH:** script v3 plans 7:57 and 1,075 spoken words. Every chapter is still within ±15 %.

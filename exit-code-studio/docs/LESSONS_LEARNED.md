@@ -95,6 +95,11 @@ Sources of evidence:
 | LL-73 | Science | A night-1 fact stated for a character ten years on | §5.2 |
 | LL-74 | Science | An unknown worded as total ignorance | §5.2 |
 | LL-75 | Tools | Checker: notes parsed as status, a broad pattern, a stale threshold | §6 |
+| LL-76 | Story | "In ten years" was four hours short — moment zero had no exact instant | §6 |
+| LL-77 | Science | Caffeine said to block adenosine (it blocks the receptors) | §5.2 |
+| LL-78 | Science | Darkness described as a signal | §5.2 |
+| LL-79 | Science | A closing unknown that named no knowns | §5.2 |
+| LL-80 | Tools | Checker validated the calendar, not the narrated span | §6 |
 
 ---
 
@@ -681,7 +686,7 @@ Sources of evidence:
 ### LL-72 · Today's population figure inside a future scene
 * **What happened:** "Eight billion people did the same maths" (2024's 8.2 billion) was narrated in a scene whose moment zero lies in the future. CALC-03's "four billion extra people" was computed from the same figure.
 * **Why:** the rule that real statistics stay in their own frame (LL-62) was applied to attributed statistics, not to figures used inside the story's arithmetic.
-* **Fix:** "Everyone on Earth did the same maths"; CALC-03 is narrated as "about half" plus "billions", with a population-free footnote.
+* **Fix:** "Everyone on Earth did the same maths"; CALC-03 is narrated as "about half" plus "billions", with a population-free footnote. **v3 follow-up:** the producer noted that the replacement line added no information; it was removed, and "And bosses everywhere did the same maths" carries the transition alone.
 * **Standard?** Yes — §5.2 "time-dependent figures" (v1.5).
 * **Avoid:** when a scene is set at another time, list every number in it that changes over time, and replace it with scale or a time-free form.
 
@@ -710,6 +715,41 @@ Sources of evidence:
 * **Fix:** narrated status now comes from the ledger's chapter column ("—" = not narrated, "(picture)" = picture only). The pattern now names the overclaim. The threshold follows v1.4. A near-repeat list (the same content word in neighbouring beats) is added for review; it flags the "billions" draft and, on v2, found one more genuine issue ("eight percent" then "eighty percent" ten seconds apart). Self-tests now number 24.
 * **Standard?** Yes — §6 "script audit" (v1.5).
 * **Avoid:** never infer status from free text; write patterns for the exact phrase; read thresholds from the current standard; keep reading the script aloud, because the checker can't hear.
+
+### LL-76 · "In ten years" was four hours short — moment zero had no exact instant
+* **What happened:** moment zero was "a Monday night in September". The hook — "nobody here has slept… in ten years" — was set at 03:00 on 13 September, Year 10. The last sleep ended at 07:00 on 13 September, Year 0, so only 9 years, 364 days and 20 hours had passed. The producer caught it.
+* **Why:** the timeline was defined by dates and nights, not by an instant, and spans were checked on a calendar rather than computed.
+* **Fix:** moment zero = the beginning of the first night without sleep, Tuesday 13 September, Year 0, 22:00. The Year-10 night moved one day, to 13 → 14 September: the hook is now moment zero + 10 years + 5 hours, and 10 years + 20 hours after the last sleep. No line changed.
+* **Standard?** Yes — §6 "timeline check" (v1.6).
+* **Avoid:** define moment zero as a date and a time, then compute every narrated span from it.
+
+### LL-77 · Caffeine said to block adenosine (it blocks the receptors)
+* **What happened:** v2 said "Coffee blocks a sleep signal called adenosine". Caffeine occupies adenosine's receptors; it doesn't block or remove adenosine itself.
+* **Why:** the mechanism check covered the structure and the verb, not the target of the verb.
+* **Fix:** "Caffeine blocks adenosine receptors, so the hourglass feels emptier than it is." It's the same length, and it keeps the point that the pressure is still there.
+* **Standard?** Yes — §5.2 "mechanism check" (v1.6).
+* **Avoid:** for every "X blocks Y", check that Y is what is actually blocked.
+
+### LL-78 · Darkness described as a signal
+* **What happened:** chapter 8 said "no light tells your body clock it's day", and chapter 3 said "In the dark, a gland… releases melatonin". Both read as darkness actively doing something. The body clock times melatonin for the biological night; light suppresses it; darkness alone switches nothing on. And after years of night work, Leo's clock phase is unknown.
+* **Why:** the lines described the absence of a cue as if it were a cue.
+* **Fix:** chapter 3 says "At night, a tiny gland…" (the first sleepless night, every clock normal). Chapter 8 says "Up here, the lights are finally off" — no physiology, and the payoff of "The lights never go off".
+* **Standard?** Yes — §5.2 "mechanism check" (v1.6).
+* **Avoid:** describe what light does; never credit darkness with an action.
+
+### LL-79 · A closing unknown that named no knowns
+* **What happened:** "Scientists know a lot about why… but not everything" was accurate but empty — it said "a lot" without saying what.
+* **Why:** LL-74's fix avoided total ignorance but didn't add information.
+* **Fix:** "Sleep helps memory, immunity, metabolism… and more we're still learning about." It is backed by NINDS and the AASM/SRS consensus (new claim A09, as associations).
+* **Standard?** Yes — §5.2 "partial unknowns" (v1.6).
+* **Avoid:** when a line says what isn't known, let it name what is.
+
+### LL-80 · Checker validated the calendar, not the narrated span
+* **What happened:** in v2 the checker reported "The hook is exactly ten years after the last night ✅". It compared the hook with a hard-coded 03:00 on 13 September, Year 0 — an hour *inside* the last sleep — instead of computing the time since the last sleep *ended*. It passed a hook for which "in ten years" was 4 hours short. About a dozen other dates were hard-coded too (check names, table headers, the astronomy dates); after the one-day shift they would have mislabelled or mis-checked the results.
+* **Why:** the check was written for the timeline as it stood, not derived from the definitions in the script.
+* **Fix:** all dates now come from the script's timeline. A new section computes moment zero + 10 years, the hook's offset, the time since the last sleep, "ten years before the hook", and the whole years in every "TEN YEARS" label, for every reference year. Four known-answer tests cover the date arithmetic, including the v2 case: 07:00 → 03:00 ten years later counts as only 9 whole years.
+* **Standard?** Yes — §6 checker (v1.6).
+* **Avoid:** check the words' meaning ("has slept in ten years"), not just that the dates exist; never hard-code a date the script defines.
 
 ---
 

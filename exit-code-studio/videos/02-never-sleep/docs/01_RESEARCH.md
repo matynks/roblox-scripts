@@ -45,6 +45,7 @@
 ### 2.1 Why humans need sleep
 * Sleep takes about one-third of our time. It has two main types, REM and non-REM (three stages), which cycle through the night. — ESTABLISHED (S01)
 * Most adults (18–60) need **at least 7 hours** a night on a regular basis (AASM/SRS consensus). — ESTABLISHED, as a recommendation (S32)
+* **Established roles (added v1.3):** sleep affects almost every type of tissue and system in the body — the brain, heart and lungs, metabolism, immune function, mood and disease resistance — and without it you can't form or maintain the brain pathways that let you learn and create new memories (S01, NINDS). Regularly sleeping under 7 hours is associated with weight gain and obesity, diabetes, hypertension, heart disease and stroke, depression, impaired immune function, impaired performance and more errors and accidents (S32 — associations, not proven causes). — ESTABLISHED (official page and consensus statement); checked 2026-11-16 through search summaries, wording paraphrased, full texts not fetched.
 * About **1 in 3 US adults** reported less than 7 hours (CDC, 2014 data; 444,306 adults; 65.2 % got ≥ 7 h). — ESTABLISHED, survey (S33)
 * Losing sleep impairs the brain fast:
   * After **17–19 hours awake**, performance on some tests matched or was worse than at a **0.05 % blood-alcohol level** (39 adults; computer tests, not driving).
@@ -290,3 +291,6 @@ Levels: **A** = abstract / official page / authors' release seen; **S** = second
 * **Cold study:** exact odds ratios, confidence intervals and limits recorded; it is an odds ratio, not "times as likely".
 * **RAND:** what the $411 bn covers (productivity and mortality from insufficient sleep) and that it is an upper-bound model estimate.
 * **Lighting:** the outdated UNEP 15 % is replaced by the IEA's 2024 estimate of about 8 % for buildings plus outdoor lighting (S62), with the scope range in S63.
+
+## Changes in v1.3 (producer's review of script v2)
+* §2.1: sleep's established roles recorded from S01 (NINDS) and S32 (AASM/SRS), for the closing real-world line (ledger A09). Checked through search summaries of the official pages on 2026-11-16; the network policy still blocks the full texts, so the wording above is a paraphrase.

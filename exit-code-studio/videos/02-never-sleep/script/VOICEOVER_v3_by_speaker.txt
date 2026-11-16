@@ -1,0 +1,303 @@
+# VOICEOVER by speaker — for the editor, or for a second voice (do not paste this file into ElevenLabs)
+# Generated from script_v3.json · planned timecodes
+
+[  1.1 · 0:00.0] NARRATOR It's three a.m. — and the playground is full.
+[  1.3 · 0:04.2] NARRATOR The schools are open.
+[  1.3 · 0:04.2] NARRATOR Traffic's jammed.
+[  1.3 · 0:04.2] NARRATOR And nobody here has slept… in ten years.
+[  1.4 · 0:10.2] NARRATOR Tonight, almost everyone on Earth will lie down in the dark and sleep.
+[  1.4 · 0:10.2] NARRATOR About a third of your life.
+[  1.4 · 0:10.2] NARRATOR More than twenty years.
+[  1.5 · 0:19.7] NARRATOR So what if you never needed to sleep again?
+[  1.5 · 0:19.7] NARRATOR Not tired.
+[  1.5 · 0:19.7] NARRATOR No harm done.
+[  1.5 · 0:19.7] NARRATOR Just… awake.
+[  1.6 · 0:26.2] NARRATOR This is the first twenty-four hours.
+[  1.6 · 0:26.2] NARRATOR The next ten years.
+[  1.6 · 0:26.2] NARRATOR And why, in this world, a whole generation of kids has never had a single dream.
+[  2.1 · 0:38.7] MUM      Goodnight, you two.
+[  2.1 · 0:38.7] NARRATOR First, what does sleep actually do?
+[  2.2 · 0:42.5] NARRATOR Studies suggest it helps lock in what you learned.
+[  2.2 · 0:42.5] NARRATOR In one study, people sleeping six hours or less… had about four times the odds of catching a cold.
+[  2.2 · 0:42.5] NARRATOR In another, after six short nights, young men handled blood sugar worse.
+[  2.3 · 0:58.5] NARRATOR Some of it, nobody fully understands.
+[  2.3 · 0:58.5] NARRATOR What's REM sleep for?
+[  2.3 · 0:58.5] NARRATOR Does sleep really clean the brain?
+[  2.4 · 1:04.9] NARRATOR But two systems decide when you get sleepy.
+[  2.4 · 1:04.9] NARRATOR An hourglass — pressure that builds while you're awake.
+[  2.4 · 1:04.9] NARRATOR Caffeine blocks adenosine receptors, so the hourglass feels emptier than it is.
+[  2.4 · 1:04.9] NARRATOR And a body clock, reset every day, mainly by light.
+[  2.5 · 1:20.1] NARRATOR A breakthrough would have to stop the hourglass.
+[  2.5 · 1:20.1] NARRATOR And do all of sleep's work while you're awake.
+[  2.5 · 1:20.1] NARRATOR Even the parts we don't understand.
+[  2.5 · 1:20.1] NARRATOR How?
+[  2.5 · 1:20.1] NARRATOR That's the thought experiment.
+[  2.6 · 1:31.3] NARRATOR In this world, you're never tired.
+[  2.6 · 1:31.3] NARRATOR Going without sleep never hurts.
+[  2.6 · 1:31.3] NARRATOR Your body clock keeps ticking.
+[  2.6 · 1:31.3] NARRATOR And with no sleep… the dreams go too.
+[  2.6 · 1:31.3] NARRATOR Daydreams stay.
+[  3.1 · 1:41.6] MIA      Look — it's us, on the hill!
+[  3.1 · 1:41.6] MIA      Can we go?
+[  3.1 · 1:41.6] LEO      Sure.
+[  3.1 · 1:41.6] LEO      When I have time.
+[  3.2 · 1:49.6] NARRATOR That night, nobody gets tired.
+[  3.2 · 1:49.6] NARRATOR Not you.
+[  3.2 · 1:49.6] NARRATOR Not Mum.
+[  3.2 · 1:49.6] NARRATOR Not anyone.
+[  3.3 · 1:54.6] NARRATOR So what do you do with eight extra hours?
+[  3.3 · 1:54.6] NARRATOR By one a.m., the city is training, gaming, painting, studying.
+[  3.3 · 1:54.6] NARRATOR And one man in a grey suit is booking meetings for three a.m.
+[  3.5 · 2:09.6] NARRATOR At night, a tiny gland in your brain still releases melatonin.
+[  3.5 · 2:09.6] NARRATOR Your body's signal of night.
+[  3.5 · 2:09.6] NARRATOR Switch on a bright light, and it fades.
+[  3.5 · 2:09.6] NARRATOR You're not tired.
+[  3.5 · 2:09.6] NARRATOR Your body clock just knows it's night.
+[  3.6 · 2:23.6] NARRATOR Twenty-four hours awake… and you feel fine.
+[  3.6 · 2:23.6] NARRATOR You just got eight hours back.
+[  3.6 · 2:23.6] NARRATOR Almost three thousand hours a year.
+[  3.6 · 2:23.6] NARRATOR And bosses everywhere did the same maths.
+[  4.1 · 2:34.6] NARRATOR Overnight, humanity's waking time grows by about half.
+[  4.1 · 2:34.6] NARRATOR The waking hours of billions of extra people.
+[  4.2 · 2:41.1] NARRATOR Mister Black's company becomes Black Twenty-Four.
+[  4.2 · 2:41.1] NARRATOR It never closes.
+[  4.2 · 2:41.1] NARRATOR Even today, about one in six U.S. workers doesn't work a regular daytime schedule.
+[  4.2 · 2:41.1] NARRATOR Now the night shift is just… a shift.
+[  4.3 · 2:53.6] NARRATOR Some jobs boom.
+[  4.3 · 2:53.6] NARRATOR Others shrink.
+[  4.4 · 2:55.6] NARRATOR Winners?
+[  4.4 · 2:55.6] NARRATOR Companies and customers.
+[  4.4 · 2:55.6] NARRATOR In twenty sixteen, Rand estimated that lack of sleep cost the U.S. economy… up to four hundred and eleven billion dollars a year.
+[  4.4 · 2:55.6] NARRATOR Missed work.
+[  4.4 · 2:55.6] NARRATOR Lower productivity.
+[  4.4 · 2:55.6] NARRATOR Earlier deaths.
+[  4.4 · 2:55.6] NARRATOR Here, that cost could fall.
+[  4.4 · 2:55.6] NARRATOR Though a nonstop world may bring new costs.
+[  4.4 · 2:55.6] NARRATOR Losers?
+[  4.4 · 2:55.6] NARRATOR Workers.
+[  4.4 · 2:55.6] NARRATOR When everyone can work more, your hour might be worth less.
+[  4.5 · 3:19.1] NARRATOR But more hours don't always mean more output.
+[  4.5 · 3:19.1] NARRATOR A study of First World War munitions factories found… each hour past about forty-nine a week added less.
+[  4.5 · 3:19.1] NARRATOR Could you stay focused if you never got tired?
+[  4.5 · 3:19.1] NARRATOR Nobody knows.
+[  4.6 · 3:34.1] NARRATOR Mum takes Black Twenty-Four's night shift.
+[  4.6 · 3:34.1] NARRATOR It pays more.
+[  4.6 · 3:34.1] NARRATOR Enough to start Mia's university fund.
+[  4.6 · 3:34.1] NARRATOR Her chair at dinner stays empty.
+[  5.1 · 3:43.1] NARRATOR Mum's train to work leaves at midnight.
+[  5.1 · 3:43.1] NARRATOR It's packed.
+[  5.1 · 3:43.1] NARRATOR New York's subway already runs all night.
+[  5.1 · 3:43.1] NARRATOR Now many cities try.
+[  5.2 · 3:51.1] NARRATOR But even today, London keeps its all-night Tube to weekends.
+[  5.2 · 3:51.1] NARRATOR Weeknights are for repairs.
+[  5.2 · 3:51.1] NARRATOR So in a city that never stops… when do you fix it?
+[  5.3 · 4:01.6] NARRATOR Dinner at three.
+[  5.3 · 4:01.6] NARRATOR Surgery at four.
+[  5.3 · 4:01.6] NARRATOR Concerts at five.
+[  5.4 · 4:05.6] NARRATOR Schools split into shifts.
+[  5.4 · 4:05.6] NARRATOR Mia's starts at eight a.m.
+[  5.4 · 4:05.6] NARRATOR Yours… at nine p.m.
+[  5.5 · 4:11.6] NARRATOR Lighting in homes, offices and streets already takes an estimated eight percent of the world's electricity.
+[  5.5 · 4:11.6] NARRATOR Keep it on all night, and demand climbs.
+[  5.5 · 4:11.6] NARRATOR Just when solar panels produce nothing.
+[  5.6 · 4:23.6] NARRATOR Even now, more than four in five people live under light-polluted skies.
+[  5.6 · 4:23.6] NARRATOR Here, the stars fade faster.
+[  5.6 · 4:23.6] NARRATOR Birds sing at the wrong hour.
+[  5.6 · 4:23.6] NARRATOR Turtle hatchlings lose their way to the sea.
+[  5.7 · 4:36.1] NARRATOR But not every place switches on.
+[  5.7 · 4:36.1] NARRATOR Some towns follow Flagstaff, Arizona — the world's first International Dark Sky City.
+[  5.7 · 4:36.1] NARRATOR They keep their nights dark.
+[  5.7 · 4:36.1] NARRATOR On purpose.
+[  5.7 · 4:36.1] NARRATOR Cities adapted in a year.
+[  5.7 · 4:36.1] NARRATOR People took longer.
+[  6.1 · 4:50.6] NARRATOR Do you spend more time with your family?
+[  6.1 · 4:50.6] NARRATOR At first, you do.
+[  6.2 · 4:55.6] NARRATOR Then the schedules split.
+[  6.2 · 4:55.6] NARRATOR You're all awake twenty-four hours a day… and almost never together.
+[  6.2 · 4:55.6] NARRATOR Nobody says goodnight anymore.
+[  6.2 · 4:55.6] NARRATOR Even your body clocks drift apart.
+[  6.2 · 4:55.6] NARRATOR The lights never go off.
+[  6.3 · 5:07.6] NARRATOR At eighteen, you join Black Twenty-Four too.
+[  6.3 · 5:07.6] NARRATOR Nights.
+[  6.3 · 5:07.6] NARRATOR You're good at it.
+[  6.3 · 5:07.6] NARRATOR You're always available.
+[  6.4 · 5:14.6] LEO      Next week.
+[  6.5 · 5:18.1] NARRATOR Sleep was the one excuse nobody could argue with.
+[  6.5 · 5:18.1] NARRATOR Now nobody's ever asleep.
+[  6.5 · 5:18.1] NARRATOR France and Australia already give workers a right to disconnect.
+[  6.5 · 5:18.1] NARRATOR Work was leaking into our nights long before this.
+[  6.6 · 5:31.1] NARRATOR Would more time make you happier?
+[  6.6 · 5:31.1] NARRATOR Research suggests free time helps… up to about two hours a day.
+[  6.6 · 5:31.1] NARRATOR Past about five, well-being can actually dip.
+[  6.6 · 5:31.1] NARRATOR Unless that time goes into something productive.
+[  6.6 · 5:31.1] NARRATOR Some people flourish.
+[  6.6 · 5:31.1] NARRATOR Some just drift.
+[  6.7 · 5:47.1] NARRATOR Mia's notebook stays blank.
+[  6.7 · 5:47.1] NARRATOR And science still hasn't settled what dreams were for.
+[  6.8 · 5:53.1] NARRATOR We didn't lose sleep.
+[  6.8 · 5:53.1] NARRATOR We lost the night.
+[  7.1 · 5:57.1] NARRATOR Imagine it's ten years on.
+[  7.1 · 5:57.1] NARRATOR You're twenty-five.
+[  7.2 · 6:01.1] NARRATOR From space, Earth's night side glows brighter than ever.
+[  7.3 · 6:05.1] NARRATOR Three a.m. is just another rush hour.
+[  7.3 · 6:05.1] NARRATOR Days don't end anymore… they change shifts.
+[  7.4 · 6:11.6] NARRATOR Trains never stop.
+[  7.4 · 6:11.6] NARRATOR Robots fix the tunnels between them.
+[  7.5 · 6:16.1] NARRATOR The economy is bigger.
+[  7.5 · 6:16.1] NARRATOR But for many people, the working week crept up… not down.
+[  7.6 · 6:22.1] NARRATOR Darkness is a luxury now.
+[  7.6 · 6:22.1] NARRATOR People travel just to see stars.
+[  7.6 · 6:22.1] NARRATOR Some countries pass night laws.
+[  7.6 · 6:22.1] NARRATOR Hours when nobody can be called to work.
+[  7.7 · 6:32.1] NARRATOR The biggest change of all?
+[  7.7 · 6:32.1] NARRATOR A whole generation of children… who have never had a single dream.
+[ 7.8a · 6:41.1] NARRATOR And you?
+[ 7.8a · 6:41.1] NARRATOR You run night operations at Black Twenty-Four.
+[ 7.8b · 6:47.1] NARRATOR Mum's nights paid for Mia's place at university.
+[ 7.8c · 6:51.1] NARRATOR She leaves tomorrow.
+[ 7.8c · 6:51.1] NARRATOR To study the brain… and find out what dreams were for.
+[ 7.8d · 6:57.1] NARRATOR Which brings us back to three a.m.
+[  8.1 · 7:00.1] NARRATOR You're at your desk, like every night.
+[  8.2 · 7:03.1] MIA      My train's at seven.
+[  8.2 · 7:03.1] MIA      Come to the hill with me.
+[  8.2 · 7:03.1] MIA      Just tonight.
+[  8.2 · 7:03.1] LEO      I can't.
+[  8.2 · 7:03.1] LEO      I'm on shift.
+[  8.3 · 7:10.6] LEO      When Leo has time.
+[  8.5 · 7:18.6] NARRATOR Out past the last streetlight, the stars come back.
+[  8.7 · 7:25.6] NARRATOR Up here, the lights are finally off.
+[  8.7 · 7:25.6] NARRATOR It isn't sleep.
+[  8.7 · 7:25.6] NARRATOR It's just night.
+[  8.8 · 7:32.1] MIA      Don't fall asleep on me.
+[  8.8 · 7:32.1] LEO      Goodnight, Mia.
+[  8.9 · 7:36.1] NARRATOR Back in the real world, experts recommend adults get at least seven hours a night.
+[  8.9 · 7:36.1] NARRATOR Sleep helps memory, immunity, metabolism… and more we're still learning about.
+[ 8.10 · 7:47.1] NARRATOR If you never had to sleep again… what would you do with the life you got back?
+
+## MIA only
+
+[3.1] Look — it's us, on the hill!
+[3.1] Can we go?
+[8.2] My train's at seven.
+[8.2] Come to the hill with me.
+[8.2] Just tonight.
+[8.8] Don't fall asleep on me.
+
+## LEO only
+
+[3.1] Sure.
+[3.1] When I have time.
+[6.4] Next week.
+[8.2] I can't.
+[8.2] I'm on shift.
+[8.3] When Leo has time.
+[8.8] Goodnight, Mia.
+
+## MUM only
+
+[2.1] Goodnight, you two.
+
+## NARRATOR only (paste this instead of VOICEOVER if the characters get their own voices)
+
+It's three a.m. — and the playground is full.
+
+The schools are open. Traffic's jammed. And nobody here has slept… in ten years.
+
+Tonight, almost everyone on Earth will lie down in the dark and sleep. About a third of your life. More than twenty years.
+
+So what if you never needed to sleep again? Not tired. No harm done. Just… awake.
+
+This is the first twenty-four hours. The next ten years. And why, in this world, a whole generation of kids has never had a single dream.
+
+First, what does sleep actually do?
+
+Studies suggest it helps lock in what you learned. In one study, people sleeping six hours or less… had about four times the odds of catching a cold. In another, after six short nights, young men handled blood sugar worse.
+
+Some of it, nobody fully understands. What's REM sleep for? Does sleep really clean the brain?
+
+But two systems decide when you get sleepy. An hourglass — pressure that builds while you're awake. Caffeine blocks adenosine receptors, so the hourglass feels emptier than it is. And a body clock, reset every day, mainly by light.
+
+A breakthrough would have to stop the hourglass. And do all of sleep's work while you're awake. Even the parts we don't understand. How? That's the thought experiment.
+
+In this world, you're never tired. Going without sleep never hurts. Your body clock keeps ticking. And with no sleep… the dreams go too. Daydreams stay.
+
+That night, nobody gets tired. Not you. Not Mum. Not anyone.
+
+So what do you do with eight extra hours? By one a.m., the city is training, gaming, painting, studying. And one man in a grey suit is booking meetings for three a.m.
+
+At night, a tiny gland in your brain still releases melatonin. Your body's signal of night. Switch on a bright light, and it fades. You're not tired. Your body clock just knows it's night.
+
+Twenty-four hours awake… and you feel fine. You just got eight hours back. Almost three thousand hours a year. And bosses everywhere did the same maths.
+
+Overnight, humanity's waking time grows by about half. The waking hours of billions of extra people.
+
+Mister Black's company becomes Black Twenty-Four. It never closes. Even today, about one in six U.S. workers doesn't work a regular daytime schedule. Now the night shift is just… a shift.
+
+Some jobs boom. Others shrink.
+
+Winners? Companies and customers. In twenty sixteen, Rand estimated that lack of sleep cost the U.S. economy… up to four hundred and eleven billion dollars a year. Missed work. Lower productivity. Earlier deaths. Here, that cost could fall. Though a nonstop world may bring new costs. Losers? Workers. When everyone can work more, your hour might be worth less.
+
+But more hours don't always mean more output. A study of First World War munitions factories found… each hour past about forty-nine a week added less. Could you stay focused if you never got tired? Nobody knows.
+
+Mum takes Black Twenty-Four's night shift. It pays more. Enough to start Mia's university fund. Her chair at dinner stays empty.
+
+Mum's train to work leaves at midnight. It's packed. New York's subway already runs all night. Now many cities try.
+
+But even today, London keeps its all-night Tube to weekends. Weeknights are for repairs. So in a city that never stops… when do you fix it?
+
+Dinner at three. Surgery at four. Concerts at five.
+
+Schools split into shifts. Mia's starts at eight a.m. Yours… at nine p.m.
+
+Lighting in homes, offices and streets already takes an estimated eight percent of the world's electricity. Keep it on all night, and demand climbs. Just when solar panels produce nothing.
+
+Even now, more than four in five people live under light-polluted skies. Here, the stars fade faster. Birds sing at the wrong hour. Turtle hatchlings lose their way to the sea.
+
+But not every place switches on. Some towns follow Flagstaff, Arizona — the world's first International Dark Sky City. They keep their nights dark. On purpose. Cities adapted in a year. People took longer.
+
+Do you spend more time with your family? At first, you do.
+
+Then the schedules split. You're all awake twenty-four hours a day… and almost never together. Nobody says goodnight anymore. Even your body clocks drift apart. The lights never go off.
+
+At eighteen, you join Black Twenty-Four too. Nights. You're good at it. You're always available.
+
+Sleep was the one excuse nobody could argue with. Now nobody's ever asleep. France and Australia already give workers a right to disconnect. Work was leaking into our nights long before this.
+
+Would more time make you happier? Research suggests free time helps… up to about two hours a day. Past about five, well-being can actually dip. Unless that time goes into something productive. Some people flourish. Some just drift.
+
+Mia's notebook stays blank. And science still hasn't settled what dreams were for.
+
+We didn't lose sleep. We lost the night.
+
+Imagine it's ten years on. You're twenty-five.
+
+From space, Earth's night side glows brighter than ever.
+
+Three a.m. is just another rush hour. Days don't end anymore… they change shifts.
+
+Trains never stop. Robots fix the tunnels between them.
+
+The economy is bigger. But for many people, the working week crept up… not down.
+
+Darkness is a luxury now. People travel just to see stars. Some countries pass night laws. Hours when nobody can be called to work.
+
+The biggest change of all? A whole generation of children… who have never had a single dream.
+
+And you? You run night operations at Black Twenty-Four.
+
+Mum's nights paid for Mia's place at university.
+
+She leaves tomorrow. To study the brain… and find out what dreams were for.
+
+Which brings us back to three a.m.
+
+You're at your desk, like every night.
+
+Out past the last streetlight, the stars come back.
+
+Up here, the lights are finally off. It isn't sleep. It's just night.
+
+Back in the real world, experts recommend adults get at least seven hours a night. Sleep helps memory, immunity, metabolism… and more we're still learning about.
+
+If you never had to sleep again… what would you do with the life you got back?
+

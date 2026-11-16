@@ -1,6 +1,6 @@
 # Video #2 — Claim Ledger
 
-**v4.2 · 2026-11-16 · v4 plus script-stage bookkeeping (v4.1) and the producer's review of script v1 (v4.2).** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
+**v4.3 · 2026-11-16 · v4 plus script-stage bookkeeping (v4.1) and the producer's reviews of script v1 (v4.2) and v2 (v4.3).** The changes are listed at the end. At the script stage every factual sentence gets one of these IDs (the fact ledger).
 
 Sources are in [01_RESEARCH.md §4](01_RESEARCH.md#4-source-list):
 * **Level A** — abstract, official page or the authors' own release.
@@ -38,6 +38,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 | A06 | About one in three US adults reported sleeping less than seven hours. | ESTABLISHED FACT | S33 | 2014 survey; say the year. | opt |
 | A07 | Children and teens need more sleep than adults: 8–10 hours for teens, 12–16 hours including naps for infants aged 4–12 months. | ESTABLISHED FACT | S58 | Method input for CALC-03 only. | — |
 | A08 | National average sleep among adult app users ranged from about 7 h 24 min (Singapore, Japan) to 8 h 12 min (Netherlands). | RESEARCH-SUPPORTED EVIDENCE | S57 | App users, not representative. Method input for CALC-03 only. | — |
+| A09 | Sleep matters for memory and learning, immune function and metabolism; regularly sleeping less than seven hours is linked to worse health. | ESTABLISHED FACT | S01, S32 | v4.3. NINDS (S01): sleep affects almost every tissue and system, including metabolism and immune function, and is needed to form and keep the brain pathways for learning and new memories. AASM/SRS consensus (S32): regularly sleeping under 7 h is associated with weight gain, diabetes, hypertension, heart disease, depression, impaired immune function and impaired performance — **associations, not proven causes**. Narrated as "Sleep helps memory, immunity, metabolism". Verified 2026-11-16 from search summaries of the official pages (full texts not fetched — network policy). | 8 |
 
 ## B · The hourglass and the clock
 
@@ -47,9 +48,9 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 |---|---|---|---|---|---|
 | B01 | Two separate systems time our sleep: a pressure that builds the longer we're awake, and a body clock. | ESTABLISHED FACT | S04, S01 | The standard two-process model. | 2 |
 | B02 | While we're awake, a chemical called adenosine builds up in the brain — one of the signals behind sleep pressure. | RESEARCH-SUPPORTED EVIDENCE | S03, S08 | Key evidence is animal microdialysis. Say "one of the signals", not "the cause". | 2 |
-| B03 | Caffeine keeps you alert mainly by blocking adenosine's receptors. | ESTABLISHED FACT | S08 | Narrate as "blocking its signal". **v4.2 narration:** "Coffee blocks a sleep signal called adenosine. The hourglass keeps filling anyway." Blocking the receptors hides the pressure; it does not remove the need for sleep. Not narrated: any claim that caffeine changes adenosine levels, or the build-up claim itself (B02). | 2 |
+| B03 | Caffeine keeps you alert mainly by blocking adenosine's receptors. | ESTABLISHED FACT | S08 | Narrate as "blocking its signal". **v4.3 narration:** "Caffeine blocks adenosine receptors, so the hourglass feels emptier than it is." Caffeine occupies the receptors; it does not block or remove adenosine itself (v4.2's "blocks a sleep signal called adenosine" is withdrawn). Blocking the receptors hides the pressure; it does not remove the need for sleep. Not narrated: any claim that caffeine changes adenosine levels, or the build-up claim itself (B02). | 2 |
 | B04 | The master clock is a small cluster of nerve cells deep in the brain (the suprachiasmatic nucleus). It keeps clocks all over the body in step. | ESTABLISHED FACT | S05, S53 | v4.2: shown in the ch. 2 picture (a small clock deep in the brain); the narration says "a body clock". | 2 (picture) |
-| B05 | Left alone, the human clock runs a little longer than a day — about 24 hours 11 minutes — so it is reset every day, mainly by light reaching the eyes. | ESTABLISHED FACT | S54, S05 | v4.2: also the basis of ch. 8 "Up here, no light tells your body clock it's day" — light as the day cue, with no claim about the character's melatonin or clock phase. | 2, 8 |
+| B05 | Left alone, the human clock runs a little longer than a day — about 24 hours 11 minutes — so it is reset every day, mainly by light reaching the eyes. | ESTABLISHED FACT | S54, S05 | v4.3: no longer used in ch. 8 — that line now makes no circadian claim ("Up here, the lights are finally off"). | 2 |
 | B06 | Melatonin is made by the **pineal gland**, not by the clock itself. The master clock drives its production and light inhibits it, so levels rise in darkness and peak at night. | ESTABLISHED FACT | S07, S53 | **Never** "the clock releases melatonin". v4.2: used on the first sleepless night only (ch. 3), when every clock is still normal. Not used in ch. 8: after years of night work Leo's clock may have shifted (B09, SP-17), so his melatonin at 3–4 a.m. is unknown. | 3 |
 | B07 | Melatonin carries the message of darkness to the clock and the body. In humans it helps prepare for sleep — sleepiness rises about two hours after its evening onset — but it is not a sedative. | RESEARCH-SUPPORTED EVIDENCE | S53 | A review; the author has a declared commercial interest. Narrate only "the body's signal of night". | 3 |
 | B08 | Ordinary room light at night suppresses melatonin — by more than half during usual sleep hours in one study — and delays its evening rise. | RESEARCH-SUPPORTED EVIDENCE | S52 | Retrospective analysis, 116 young adults. Never "light switches it off". Not narrated (script v1+): it governs the ch. 3 picture (the glow thins, never to zero). | 3 (picture) |
@@ -75,7 +76,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Claim | Class | Sources | Notes | Ch |
 |---|---|---|---|---|---|
-| D01 | Science doesn't yet agree on everything sleep is for. | UNKNOWN | S25 (S24 level S) | Never "scientists know why we sleep" — and never the opposite, that science knows nothing. **v4.2 narration (ch. 8):** "Scientists know a lot about why… but not everything." | 2, 8 |
+| D01 | Science doesn't yet agree on everything sleep is for. | UNKNOWN | S25 (S24 level S) | Never "scientists know why we sleep" — and never the opposite, that science knows nothing. **v4.3 narration (ch. 8):** "…and more we're still learning about", after the established functions (A09). | 2, 8 |
 | D02 | What REM sleep is for isn't settled. | UNKNOWN | S21, S22 (S23 level S) | No single function for REM. | 2 |
 | D03 | What dreams are for — if anything — nobody knows. | UNKNOWN | S20–S22 | No consensus found: there are hypotheses but no agreement. **v4.2 narration (ch. 6):** "science still hasn't settled what dreams were for". | 6, 7 |
 | D04 | Whether sleep speeds up waste clearance in the human brain is unresolved. | UNKNOWN | S17–S19 | — | 2 |
@@ -167,7 +168,7 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 
 | ID | Rule |
 |---|---|
-| HR1 | **Moment zero:** one ordinary **Monday night in September** is the last time anyone sleeps; people wake on Tuesday morning as usual. From then on, no human needs sleep, including babies born afterwards. The change is global and simultaneous, and nobody notices it until Tuesday night. |
+| HR1 | **Moment zero (v4.3): the beginning of the first night without sleep — Tuesday 13 September, Year 0, 22:00** (local time in the story's city), the hour Leo's family would normally go to bed. The **last sleep** is the night before: Monday 12 September ≈ 22:30 → Tuesday 13 September 07:00, when people wake as usual. The change happens unseen during that Tuesday (HR8); it is global and simultaneous, nobody notices until that night, and from then on no human needs or falls into sleep, including babies born afterwards. **The Year-10 night** is the night of 13 → 14 September, Year 10: the hook (03:00 on 14 September) is moment zero + 10 years + 5 hours, and 10 years + 20 hours after the last sleep ended. |
 | HR2 | Sleep pressure never builds: nobody ever feels sleepy or exhausted from being awake. |
 | HR3 | Whatever sleep does for brain and body — the parts science knows and the parts it doesn't — now happens while awake. Not sleeping causes no harm. |
 | HR4 | **The circadian system works exactly as it does today.** The master clock keeps roughly 24-hour time and is reset by light. In darkness it drives the pineal gland to make melatonin; light at night still suppresses melatonin and can shift the clock. **The only change: none of this ever makes anyone sleepy.** |
@@ -250,3 +251,9 @@ Every claim carries **exactly one** of these classes. Qualifiers such as sample 
 * **B05** — also the basis of the new chapter 8 line. **B06** is no longer used in chapter 8: after years of night work, Leo's melatonin at 3–4 a.m. is unknown. **B04** and **B08** now govern pictures only.
 * **I01, CALC-03** — no population figure is narrated, because moment zero lies in the future. CALC-03 is narrated as "about half" plus "billions"; its footnote is population-independent.
 * **D01, D03** — unknowns are worded as partial knowledge ("know a lot… but not everything"; "hasn't settled").
+
+## Changes in v4.3 (producer's review of script v2, 2026-11-16)
+* **HR1** — moment zero is defined as an exact instant: the beginning of the first night without sleep, Tuesday 13 September, Year 0, 22:00. The Year-10 night moves to 13 → 14 September, so "nobody here has slept… in ten years" is literally true at the hook (10 years + 20 hours after the last sleep ended).
+* **B03** — caffeine blocks adenosine **receptors**, not adenosine; the narration says so.
+* **A09** (new, ESTABLISHED) — sleep's established roles in memory, immunity and metabolism (NINDS; AASM/SRS consensus, as associations). Used in the closing real-world line.
+* **B05** — no longer used in chapter 8, which now makes no claim about Leo's body clock. **D01** — narrated after A09 as "…and more we're still learning about".

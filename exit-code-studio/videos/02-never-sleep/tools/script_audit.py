@@ -143,6 +143,7 @@ def _selftest():
               not any(re.search(p, "Scientists know a lot about why… but not everything.", re.I) for p, _ in WITHDRAWN)))
     T.append(("withdrawn: 'Does sleep really clean the brain?' allowed", not any(re.search(p, "Does sleep really clean the brain?", re.I) for p, _ in WITHDRAWN)))
     T.append(("label '13 SEPTEMBER · 3 A.M.'", parse_label("13 SEPTEMBER · 3 A.M.") == ((9, 13), (3, 0))))
+    T.append(("label '14 SEPTEMBER · 3 A.M.'", parse_label("14 SEPTEMBER · 3 A.M.") == ((9, 14), (3, 0))))
     T.append(("label '12 SEPTEMBER · 8 P.M.'", parse_label("12 SEPTEMBER · 8 P.M.") == ((9, 12), (20, 0))))
     T.append(("label '12 MAY · 3:02 A.M.'", parse_label("12 MAY · 3:02 A.M.") == ((5, 12), (3, 2))))
     T.append(("label '4 A.M.' (time only)", parse_label("4 A.M.") == (None, (4, 0))))
@@ -630,8 +631,47 @@ def elev_at(site, dt_local):
     return solar_elevation(site["lat"], site["lon"], dt_local - timedelta(hours=site["utc_offset_h"]))
 
 
-years = [y for y in range(2026, 2061) if date(y, 9, 12).weekday() == 0]
+_ls_start = TL.get("last_sleep", {}).get("start", "Y0-09-12 22:30")
+_lsm = re.match(r"Y0-(\d\d)-(\d\d)", _ls_start)
+LS_MD = (int(_lsm.group(1)), int(_lsm.group(2)))
+years = [y for y in range(2026, 2061) if date(y, *LS_MD).weekday() == 0]   # the last sleep is a Monday night
 REF = years[1] if len(years) > 1 else years[0]          # a representative future year
+
+
+def add_years(dt, n):
+    """Same calendar date and time n years on (29 February falls back to the 28th)."""
+    try:
+        return dt.replace(year=dt.year + n)
+    except ValueError:
+        return dt.replace(year=dt.year + n, day=28)
+
+
+def span(a, b):
+    """Elapsed time from a to b as whole calendar years + days + hours + minutes (computed, not estimated)."""
+    sign = ""
+    if b < a:
+        a, b, sign = b, a, "−"
+    yrs = 0
+    while add_years(a, yrs + 1) <= b:
+        yrs += 1
+    rest = b - add_years(a, yrs)
+    d, h, mi = rest.days, rest.seconds // 3600, rest.seconds % 3600 // 60
+    parts = ([f"{yrs} years"] if yrs else []) + ([f"{d} day{'s' if d != 1 else ''}"] if d else []) + \
+            ([f"{h} h"] if h else []) + ([f"{mi} min"] if mi else [])
+    return sign + (" + ".join(parts) or "0"), yrs
+
+
+_T2 = [  # known answers for the date arithmetic (v3)
+    ("span 13 Sep 2033 07:00 → 14 Sep 2043 03:00 = 10 years + 20 h",
+     span(datetime(2033, 9, 13, 7), datetime(2043, 9, 14, 3))[0] == "10 years + 20 h"),
+    ("span 13 Sep 2033 07:00 → 13 Sep 2043 03:00 is only 9 whole years (the v2 hook)",
+     span(datetime(2033, 9, 13, 7), datetime(2043, 9, 13, 3))[1] == 9),
+    ("add_years 13 Sep 2033 22:00 + 10 = 13 Sep 2043 22:00", add_years(datetime(2033, 9, 13, 22), 10) == datetime(2043, 9, 13, 22)),
+    ("add_years 29 Feb 2036 + 1 = 28 Feb 2037", add_years(datetime(2036, 2, 29), 1) == datetime(2037, 2, 28)),
+]
+if [n for n, ok in _T2 if not ok]:
+    sys.exit("checker self-test failed: " + "; ".join(n for n, ok in _T2 if not ok))
+SELFTESTS += len(_T2)
 
 
 def resolve(when, y0):
@@ -655,35 +695,70 @@ ev = {e["id"]: e for e in TL["events"]}
 year_rows = []
 for y0 in years:
     E = {k: resolve(v["when"], y0) for k, v in ev.items()}
+    ls_a, ls_b = resolve(TL["last_sleep"]["start"], y0), resolve(TL["last_sleep"]["end"], y0)
     row = {"Y0": y0, "Y10": y0 + 10,
-           "last night": f"Mon 12 → {E['T02']:%a} 13 Sep {y0}",
-           "13 Sep Y10": f"{E['T09']:%a}", "14 Sep Y10": f"{E['T14']:%a}", "12 May Y10": f"{E['T07']:%a}"}
+           "last sleep": f"{ls_a:%a %d} → {ls_b:%a %d %b}",
+           "moment zero": f"{resolve(TL['moment_zero']['when'], y0):%a %d %b, %H:%M}",
+           "hook": f"{E['T09']:%a %d %b, %H:%M}", "train": f"{E['T13']:%a %d %b}", "term": f"{E['T14']:%a %d %b}",
+           "may": f"{E['T07']:%a %d %b}"}
     year_rows.append(row)
     order = ["T01", "T02", "T03", "T04", "T05", "T06"]
-    order10 = ["T07", "T08", "T09", "T10", "T11", "T12", "T13", "T14"]
+    order10 = [k for k in ("T07", "T07b", "T08", "T09", "T10", "T11", "T12", "T13", "T14") if k in E]
     seq_ok = all(E[a] < E[b] for a, b in zip(order, order[1:])) and all(E[a] < E[b] for a, b in zip(order10, order10[1:]))
     if y0 == years[0]:
-        tl("Moment zero is a Monday night in September", date(y0, 9, 12).weekday() == 0,
-           f"12 September is a Monday in {', '.join(map(str, years))} (2026–2060)")
-        tl("Day 1 is the Tuesday", E["T02"].weekday() == 1, f"13 September {y0} is a {E['T02']:%A}")
+        tl("The last sleep is a Monday night in September", ls_a.weekday() == 0 and ls_b.weekday() == 1,
+           f"{ls_a:%A %d %B} {ls_a:%H:%M} → {ls_b:%A %d %B} {ls_b:%H:%M} in every reference year ({', '.join(map(str, years))})")
+        tl("Day 1 is the Tuesday", E["T02"].weekday() == 1, f"{E['T02']:%d %B} {y0} is a {E['T02']:%A}")
         tl("Events run in order (Year 0 and Year 10)", seq_ok, " → ".join(order + order10))
-        anniv = E["T09"].replace(year=E["T09"].year - 10) - datetime(y0, 9, 13, 3, 0)
-        tl("The hook is exactly ten years after the last night", anniv == timedelta(0),
-           f"Year 10, 13 September 03:00 = Year 0, 13 September 03:00 + 10 calendar years (the night of the 12th → 13th)")
         gap = E["T13"] - E["T09"]
-        tl("Train leaves after the 03:00 scene, same morning", timedelta(0) < gap <= timedelta(hours=6),
-           f"train 07:00 is {gap.seconds // 3600} h after 03:00 — 'My train's at seven'")
+        tl("Train leaves after the 03:00 scene, same morning", timedelta(0) < gap <= timedelta(hours=6) and E["T13"].date() == E["T09"].date(),
+           f"train {E['T13']:%d %b, %H:%M} is {gap.seconds // 3600} h after the {E['T09']:%H:%M} scene — 'My train's at seven'")
         tl("Back from the hill before the train", E["T12"] + timedelta(hours=1) <= E["T13"],
            "leave the hill ≈ 05:00, about an hour's drive, train 07:00")
         tl("Programme starts the day after she travels", (E["T14"].date() - E["T13"].date()).days == 1,
            f"train {E['T13']:%d %b}, term starts {E['T14']:%d %b}")
-        tl("'She leaves tomorrow' (packing on 12 September)", (E["T13"].date() - E["T08"].date()).days == 1,
+        tl(f"'She leaves tomorrow' (packing on {E['T08']:%d %B})", (E["T13"].date() - E["T08"].date()).days == 1,
            f"packing {E['T08']:%d %b} evening → train {E['T13']:%d %b}")
         months = (E["T08"].year - E["T07"].year) * 12 + E["T08"].month - E["T07"].month
         tl("May message is months earlier, not the same night", months == 4 and E["T07"].date() != E["T09"].date(),
-           f"12 May → 12 September = {months} months before she leaves")
+           f"{E['T07']:%d %B} → {E['T08']:%d %B} = {months} months before she leaves")
     elif not seq_ok:
         tl(f"Event order in reference year {y0}", False, "out of order")
+
+# Moment zero arithmetic (v3): every 'ten years' in the script computed as elapsed time, not just checked on a calendar
+MZ_ROWS = []
+_story = {b["id"]: b.get("story_time") for b in beats}
+for y0 in years:
+    mz = resolve(TL["moment_zero"]["when"], y0)
+    ls_start, ls_end = resolve(TL["last_sleep"]["start"], y0), resolve(TL["last_sleep"]["end"], y0)
+    hook = resolve(ev["T09"]["when"], y0)
+    mz10 = add_years(mz, 10)
+    MZ_ROWS.append({"y0": y0, "mz": mz, "mz10": mz10, "days": (mz10 - mz).days, "hook": hook,
+                    "hook_after_mz10": hook - mz10, "since_sleep": span(ls_end, hook), "back10": add_years(hook, -10)})
+    if y0 != years[0]:
+        continue
+    tl("Moment zero = the beat that shows it (3.2, 'That night, nobody gets tired')", resolve(_story["3.2"], y0) == mz,
+       f"{TL['moment_zero']['definition']}: {mz:%A %d %B, %H:%M}, Year 0")
+    tl("The last sleep ends before moment zero", ls_end < mz, f"last sleep {ls_start:%a %H:%M} → {ls_end:%a %H:%M}; moment zero {mz:%a %H:%M}")
+    off = hook - mz10
+    tl("The hook falls in the night that begins exactly ten years after moment zero",
+       timedelta(0) <= off < timedelta(hours=12),
+       f"moment zero + 10 years = {mz10:%d %B, %H:%M} ({(mz10 - mz).days:,} days in this reference year); "
+       f"hook {hook:%d %B, %H:%M} = moment zero + 10 years + {off.seconds // 3600} h")
+    since, yrs = MZ_ROWS[-1]["since_sleep"]
+    tl("'Nobody here has slept… in ten years' (1.3) is literally true at the hook", hook >= add_years(ls_end, 10),
+       f"end of the last sleep {ls_end:%d %b} Year 0, {ls_end:%H:%M} → hook = {since}")
+    b10 = add_years(hook, -10)
+    tl("Ten years before the hook falls inside the first sleepless night", mz <= b10 < resolve(ev["T06"]["when"], y0),
+       f"hook − 10 years = {b10:%a %d %B, %H:%M}, Year 0 — between moment zero and the sunrise beat")
+    s21, y21 = span(resolve(_story["2.1"], y0), hook)
+    tl("'TEN YEARS EARLIER' (1.7) jumps back ten whole years", y21 == 10, f"hook → 2.1 (Monday night) = {s21}")
+    s14, y14 = span(ls_start, hook)
+    tl("'TEN YEARS FROM NOW' (1.3), counted from 'Tonight… sleep' (1.4)", y14 == 10, f"start of the last sleep → hook = {s14}")
+    ch7 = [b for b in beats if b["ch"] == 7 and re.match(r"Y\d+-\d\d-\d\d \d\d:\d\d$", b.get("story_time") or "")]
+    yrs7 = {b["id"]: (resolve(b["story_time"], y0) - mz).days / 365.2425 for b in ch7}
+    tl("'Imagine it's ten years on' (7.1): every dated chapter 7 scene is ten years on, rounded",
+       all(9.5 <= v < 10.5 for v in yrs7.values()), "; ".join(f"{k} {v:.2f} years after moment zero" for k, v in yrs7.items()))
 
 ages = REQ["dates"]["ages"]
 for who, a in ages.items():
@@ -852,20 +927,20 @@ SCENES = sorted((b for b in beats if beat_dt(b) and beat_dt(b) >= resolve(ev["T0
 # Astronomy
 SKY = []
 for site in TL["astronomy_sites"]:
-    d0 = date(years[0], 9, 14)
-    d10 = date(years[0] + 10, 9, 13)
+    d0 = resolve(ev["T06"]["when"], years[0]).date()          # the 'twenty-four hours awake' sunrise (Year 0)
+    d10 = resolve(ev["T11"]["when"], years[0]).date()         # the hill (Year 10)
     m0, m10 = morning(site, d0), morning(site, d10)
     e = {hh: elev_at(site, datetime(d10.year, d10.month, d10.day, hh, mm)) for hh, mm in ((3, 10), (4, 0), (5, 0))}
     e = {f"{k:02d}:{'10' if k == 3 else '00'}": v for k, v in e.items()}
     SKY.append({"site": site, "y0": m0, "y10": m10, "elev": e})
     for key, evid in (("04:00", "T11"), ("05:00", "T12")):
-        tl(f"{site['name']}: {key} on 13 Sep is still night (sun below −12°)", e[key] < -12,
+        tl(f"{site['name']}: {key} on {d10:%d %b} is still night (sun below −12°)", e[key] < -12,
            f"sun at {e[key]:.1f}° ({'stars clearly visible' if e[key] < -12 else 'twilight'})")
     wake = resolve(ev["T02"]["when"], years[0]) - timedelta(minutes=30)      # up ~30 min before breakfast
     sr = datetime.strptime(f"{d0} {m0['sunrise']}", "%Y-%m-%d %H:%M")
     hrs = (sr - wake).total_seconds() / 3600
-    tl(f"{site['name']}: 'Twenty-four hours awake' at Wednesday's sunrise", 22.5 <= hrs <= 25.5,
-       f"up Tue {wake:%H:%M} → sunrise Wed {m0['sunrise']} {site['zone']} = {hrs:.1f} h awake")
+    tl(f"{site['name']}: 'Twenty-four hours awake' at sunrise on {d0:%A %d %b}", 22.5 <= hrs <= 25.5,
+       f"up {wake:%a %H:%M} → sunrise {d0:%a} {m0['sunrise']} {site['zone']} = {hrs:.1f} h awake")
 
 # Notebook contrast (production requirement 2)
 
@@ -926,6 +1001,11 @@ md.append(R1["rule"] + "\n")
 md.append("| Moment | Date and time | What happens |\n|---|---|---|")
 for r in R1["rows"]:
     md.append(f"| {r[0]} | {r[1]} | {r[2]} |")
+if R1.get("moment_zero"):
+    md.append("\n**Moment zero and the ten-year jump**\n")
+    md.append("| | |\n|---|---|")
+    for k, v in R1["moment_zero"]:
+        md.append(f"| {k} | {v} |")
 md.append("\n**Ages:** " + " · ".join(f"{w} " + " → ".join(f"{v}" for v in a.values()) + f" (Years {', '.join(k[1:] for k in a)})" for w, a in R1["ages"].items()))
 md.append(f"\n{R1['not_shown']}\n")
 md.append(f"### 2 · {NB['title'].split('— ')[1].capitalize()}\n")
@@ -1154,9 +1234,17 @@ A.append(f"\n* **Narrated but not listed in the Lock's fact bank:** {', '.join(n
 A.append("---\n\n## 3 · Timeline audit\n")
 A.append(f"Reference years: every year from 2026 to 2060 in which 12 September is a Monday — **{', '.join(map(str, years))}**. "
          "Each is checked; the weekday of Year 10 dates differs by year and is never shown on screen.\n")
-A.append("| Year 0 | Year 10 | Last night | 13 Sep, Year 10 | 14 Sep, Year 10 | 12 May, Year 10 |\n|---|---|---|---|---|---|")
+A.append("| Year 0 | Year 10 | Last sleep | Moment zero | May message | Hook | Train | Term starts |\n|---|---|---|---|---|---|---|---|")
 for r in year_rows:
-    A.append(f"| {r['Y0']} | {r['Y10']} | {r['last night']} | {r['13 Sep Y10']} | {r['14 Sep Y10']} | {r['12 May Y10']} |")
+    A.append(f"| {r['Y0']} | {r['Y10']} | {r['last sleep']} | {r['moment zero']} | {r['may']} | {r['hook']} | {r['train']} | {r['term']} |")
+A.append("\n### Moment zero — the calculation\n")
+A.append(f"**Definition:** moment zero = {TL['moment_zero']['definition']}, **{MZ_ROWS[0]['mz']:%A %d %B}, {MZ_ROWS[0]['mz']:%H:%M}, Year 0** "
+         f"({TL['moment_zero']['where']}). {TL['moment_zero']['why']}\n")
+A.append("| Reference years | Moment zero + 10 years | Days elapsed | Hook | Hook − (moment zero + 10 years) | End of last sleep → hook | Hook − 10 years |\n|---|---|---|---|---|---|---|")
+for r in MZ_ROWS:
+    A.append(f"| {r['y0']} → {r['y0'] + 10} | {r['mz10']:%a %d %b, %H:%M} | {r['days']:,} | {r['hook']:%a %d %b, %H:%M} | "
+             f"+{r['hook_after_mz10'].seconds // 3600} h | {r['since_sleep'][0]} | {r['back10']:%a %d %b, %H:%M} (Year 0) |")
+A.append("\nDays elapsed differ by year only because of how many 29 Februaries fall in the ten years; every narrated span holds in every reference year.\n")
 A.append("\n### Checks\n")
 A.append("| Check | Result | Detail |\n|---|---|---|")
 for name, ok, det in TL_CHECKS:
@@ -1174,7 +1262,8 @@ A.append(f"| train | — | ticket 13 SEP · 07:00 | {t13:%d %B, %H:%M} | — |")
 A.append(f"| term | — | letter TERM STARTS 14 SEPTEMBER | {resolve(ev['T14']['when'], REF):%d %B} | the next day |")
 A.append("\n**Birthdays that fit every dated age:** " + " · ".join(f"{w}: {' or '.join(r)}" for w, r in BDAYS.items()) + "\n")
 A.append(f"\n### The night sky (NOAA solar-position algorithm, Year 0 = {years[0]}, Year 10 = {years[0] + 10})\n")
-A.append("| Site | Year 10, 13 Sep: astronomical dawn | nautical dawn | sunrise | sun at 03:10 | at 04:00 | at 05:00 | Year 0, Wed 14 Sep sunrise |\n|---|---|---|---|---|---|---|---|")
+_d10 = resolve(ev["T11"]["when"], years[0]); _d0 = resolve(ev["T06"]["when"], years[0])
+A.append(f"| Site | Year 10, {_d10:%d %b}: astronomical dawn | nautical dawn | sunrise | sun at 03:10 | at 04:00 | at 05:00 | Year 0, {_d0:%a %d %b} sunrise |\n|---|---|---|---|---|---|---|---|")
 for k in SKY:
     s_, y10, e = k["site"], k["y10"], k["elev"]
     A.append(f"| {s_['name']} ({s_['lat']}°, {s_['zone']}) | {y10.get('astronomical dawn')} | {y10.get('nautical dawn')} | {y10.get('sunrise')} | "
